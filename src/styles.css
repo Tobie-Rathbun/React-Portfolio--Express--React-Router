@@ -1,0 +1,12 @@
+/* General styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #adadad; /* Slightly dimmed text for headings */
+}

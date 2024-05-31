@@ -1,0 +1,25 @@
+# JazzBot
+## AI Jazz Music Generator    
+Created by Tobie Rathbun and Estevan Aldaco           
+<br>
+Select Chord Progression, BPM, Time Signature, Main Instrument, Next / Previous Track
+Share Your Track if you find something you like!
+
+
+### Install Dependencies
+```
+npm i express
+npm i react react-dom
+npm i webpack webpack-cli
+npm i babel-loader @babel/core @babel/node @babel/preset-env @babel/preset-react
+npm i -D nodemon
+npm i -D eslint @babel/eslint-parser eslint-plugin-react eslint-plugin-react-hooks
+npm install style-loader --save-dev
+```
+### Run it locally
+Open terminal in **project root directory**, run:
+<br> `**npm run dev:server**`
+<br> Navigate to **http://localhost:4242/**
+
+
+
