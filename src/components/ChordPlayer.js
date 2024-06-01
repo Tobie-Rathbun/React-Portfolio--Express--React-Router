@@ -1,6 +1,7 @@
 // src/components/ChordPlayer.js
 import React, { useState, useEffect, useRef } from 'react';
 import * as Tone from 'tone';
+import '../styles.css';  // Adjusted path for all components
 
 const importAllSounds = (requireContext) => {
     let sounds = {};
