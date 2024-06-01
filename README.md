@@ -20,6 +20,8 @@ npm i -D eslint @babel/eslint-parser eslint-plugin-react eslint-plugin-react-hoo
 npm install style-loader --save-dev
 npm install react-bootstrap bootstrap
 npm install file-loader --save-dev
+npm install redux react-redux
+
 
 ```
 ### Run it locally

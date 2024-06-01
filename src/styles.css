@@ -161,19 +161,39 @@ button:active, input[type="text"]:active, input[type="password"]:active {
 
 
 /* About Styles */
-.skill-category {
-  display: flex; /* Use flexbox */
-  justify-content: space-between; /* Space elements evenly */
+/* Skills Grid Container */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px; /* Adds padding around the grid for better spacing */
 }
 
-.skill-category ul {
-  flex: 1; /* Allow the list to grow and take up available space */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  list-style-type: none; /* Remove default list styles */
+/* Skill Category Styles */
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  background: var(--chord-element-background); /* Optional for better visibility */
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden; /* Keeps the expanding content within the box */
 }
 
 .skill-category h3 {
-  flex: 0 0 auto; /* Do not allow heading to grow */
-  margin-right: 20px; /* Add some space between heading and list */
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.skill-category .skill-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  max-height: 0; /* Start with zero height */
+  overflow: hidden; /* Hide content initially */
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Smooth transition for max-height and padding */
+}
+
+.skill-category:hover .skill-list {
+  max-height: 500px; /* Enough max-height to show all content */
+  padding: 10px; /* Add padding during hover */
 }

@@ -4,27 +4,26 @@ import '../styles.css';  // Adjusted path for all components
 const About = () => {
   return (
     <div className="about-page">
-    
-    <div className="skills">
-      <h2>Skills</h2>
-      <div className="skill-category">
-        <h3>JavaScript:</h3>
-        <ul>
-          <li>Angular</li>
-          <li>Node</li>
-          <li>ES6</li>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Three</li>
-          <li>jQuery</li>
-          <li>D3</li>
-          <li>TypeScript</li>
-          <li>Vue</li>
-        </ul>
-      </div>
-      <div className="skill-category">
+      <div className="skills">
+        <h2>Skills</h2>
+        <div className="skill-category">
+          <h3>JavaScript:</h3>
+          <ul className="skill-list">
+            <li>React</li>
+            <li>Node</li>
+            <li>ES6</li>
+            
+            <li>Redux</li>
+            <li>Three</li>
+            <li>jQuery</li>
+            <li>D3</li>
+            <li>TypeScript</li>
+            <li>Vue</li>
+          </ul>
+        </div>
+        <div className="skill-category">
         <h3>Python:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Django</li>
           <li>TensorFlow</li>
           <li>Machine Learning</li>
@@ -35,7 +34,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Front-end:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>HTML5</li>
           <li>CSS</li>
           <li>JS</li>
@@ -49,7 +48,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Back-end:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>PHP</li>
           <li>SQL</li>
           <li>MySQL</li>
@@ -62,7 +61,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Tools:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>npm</li>
           <li>yarn</li>
           <li>pip</li>
@@ -73,7 +72,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Command-lines:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Powershell</li>
           <li>CMD</li>
           <li>Linux BASH</li>
@@ -81,7 +80,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Git:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Git</li>
           <li>GitHub</li>
           <li>VisualStudio</li>
@@ -95,7 +94,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Adobe:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Illustrator</li>
           <li>Photoshop</li>
           <li>InDesign</li>
@@ -107,7 +106,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Design Patterns:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Jira</li>
           <li>Agile</li>
           <li>Scrum</li>
@@ -120,7 +119,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Cloud:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Docker</li>
           <li>Kubernetes</li>
           <li>AWS</li>
@@ -130,7 +129,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Java:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Eclipse</li>
           <li>IDEA</li>
           <li>JVM</li>
@@ -142,7 +141,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>C:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>C</li>
           <li>C++</li>
           <li>C#</li>
@@ -157,7 +156,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>3D:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>OpenGL</li>
           <li>WebGL</li>
           <li>Blender</li>
@@ -169,7 +168,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>APIs:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Bootstrap</li>
           <li>ASP.NET</li>
           <li>RESTful</li>
@@ -180,7 +179,7 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Hardware:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Arduino Uno</li>
           <li>Raspberry Pi 2B+ and 3B+</li>
           <li>IoT (Internet of Things) devices</li>
@@ -188,15 +187,15 @@ const About = () => {
       </div>
       <div className="skill-category">
         <h3>Misc:</h3>
-        <ul>
+        <ul className="skill-list">
           <li>Dart</li>
           <li>Flutter</li>
         </ul>
       </div>
+      </div>
     </div>
-
-  </div>
   );
 };
 
 export default About;
+      
