@@ -9,191 +9,97 @@ const About = () => {
         <div className="skill-category">
           <h3>JavaScript:</h3>
           <ul className="skill-list">
-            <li>React</li>
-            <li>Node</li>
-            <li>ES6</li>
-            
-            <li>Redux</li>
-            <li>Three</li>
-            <li>jQuery</li>
-            <li>D3</li>
-            <li>TypeScript</li>
-            <li>Vue</li>
+            <li>• React + JSX</li>
+            <li>• Node + npm</li>
+            <li>• jQuery</li>
+            <li>• TypeScript</li>
           </ul>
         </div>
         <div className="skill-category">
         <h3>Python:</h3>
         <ul className="skill-list">
-          <li>Django</li>
-          <li>TensorFlow</li>
-          <li>Machine Learning</li>
-          <li>Test Automation</li>
-          <li>Encryption</li>
-          <li>GraphQL</li>
+          <li>• Data Management</li>
+          <li>• Socket-based Networking (socket, default library)</li>
+          <li>• Machine Learning (TensorFlow)</li>
+          <li>• Test Automation</li>
+          <li>• Data Visualization (GraphQL)</li>
+          <li>• Data Encryption</li>
+          <li>• Virtual Environments (venv)</li>
+          <li>• Library Management & pip</li>
+          <li>• Raspberry Pi 2B+ and 3B+ (Practical Use Case)</li>
         </ul>
       </div>
       <div className="skill-category">
-        <h3>Front-end:</h3>
+        <h3>Web Stack:</h3>
         <ul className="skill-list">
-          <li>HTML5</li>
-          <li>CSS</li>
-          <li>JS</li>
-          <li>SCSS</li>
-          <li>SASS</li>
-          <li>Less</li>
-          <li>Bulma</li>
-          <li>Website Management</li>
-          <li>UI/UX</li>
+          <li>• HTML5</li>
+          <li>• CSS & Exensions</li>
+          <li>• JavaScript + React</li>
+          <li>• RESTful API Design (js, PHP, JSON, SQL)</li>
+          <li>• Bootstrap (Rapid Web Development)</li>
+          <li>• Website Migration</li>
+          <li>• User Experience Design</li>
         </ul>
       </div>
       <div className="skill-category">
-        <h3>Back-end:</h3>
+        <h3>LAMP Stack:</h3>
         <ul className="skill-list">
-          <li>PHP</li>
-          <li>SQL</li>
-          <li>MySQL</li>
-          <li>NoSQL</li>
-          <li>MariaDB</li>
-          <li>Apache</li>
-          <li>Apache Commons</li>
-          <li>OpenSSH</li>
-        </ul>
-      </div>
-      <div className="skill-category">
-        <h3>Tools:</h3>
-        <ul className="skill-list">
-          <li>npm</li>
-          <li>yarn</li>
-          <li>pip</li>
-          <li>choco</li>
-          <li>cURL</li>
-          <li>mvn</li>
-        </ul>
-      </div>
-      <div className="skill-category">
-        <h3>Command-lines:</h3>
-        <ul className="skill-list">
-          <li>Powershell</li>
-          <li>CMD</li>
-          <li>Linux BASH</li>
+          <li>• MariaDB (SQL) Database Management</li>
+          <li>• PHP & Apache Web Applications (LAMP)</li>
+          <li>• Linux BASH & Terminal Commands (Pop!_OS)</li>
         </ul>
       </div>
       <div className="skill-category">
         <h3>Git:</h3>
         <ul className="skill-list">
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>VisualStudio</li>
-          <li>Version Control</li>
-          <li>Push</li>
-          <li>Pull</li>
-          <li>Merge</li>
-          <li>Fetch</li>
-          <li>Team Coordination</li>
+          <li>• Version Control & Pull Requests</li>
+          <li>• Branch Management</li>
+          <li>• Team Coordination</li>
+          <li>• Terminal Commands in CMD and PowerShell</li>
+          <li>• Push, Pull, Merge, Fetch, Checkout</li>
         </ul>
       </div>
       <div className="skill-category">
         <h3>Adobe:</h3>
         <ul className="skill-list">
-          <li>Illustrator</li>
-          <li>Photoshop</li>
-          <li>InDesign</li>
-          <li>Photo Editing</li>
-          <li>2D Art</li>
-          <li>Graphic Design</li>
-          <li>Wireframing</li>
+          <li>• Illustrator Vector Design</li>
+          <li>• Photoshop Image Editing</li>
+          <li>• Web Application Wireframing</li>
         </ul>
       </div>
       <div className="skill-category">
-        <h3>Design Patterns:</h3>
+        <h3>Tools & Design Patterns:</h3>
         <ul className="skill-list">
-          <li>Jira</li>
-          <li>Agile</li>
-          <li>Scrum</li>
-          <li>DevOps</li>
-          <li>CI/CD</li>
-          <li>Microservices</li>
-          <li>A/B Testing</li>
-          <li>REST</li>
-        </ul>
-      </div>
-      <div className="skill-category">
-        <h3>Cloud:</h3>
-        <ul className="skill-list">
-          <li>Docker</li>
-          <li>Kubernetes</li>
-          <li>AWS</li>
-          <li>Google Cloud Platform</li>
-          <li>Containers</li>
-        </ul>
-      </div>
-      <div className="skill-category">
-        <h3>Java:</h3>
-        <ul className="skill-list">
-          <li>Eclipse</li>
-          <li>IDEA</li>
-          <li>JVM</li>
-          <li>Apache Commons</li>
-          <li>Apache HTTPCore</li>
-          <li>Google Guava</li>
-          <li>Kotlin</li>
+          <li>• Kanban (Azure, Github, Jira)</li>
+          <li>• Agile (Incremenetal Improvements)</li>
+          <li>• Scrum (Team Collaboration + Feedback)</li>
+          <li>• CI/CD (Delivery to Production)</li>
+          <li>• Microservices (Small Interoperating Systems)</li>
+          <li>• A/B Testing (Version Comparison)</li>
+          <li>• AWS (Amazon Web Services)</li>
         </ul>
       </div>
       <div className="skill-category">
         <h3>C:</h3>
         <ul className="skill-list">
-          <li>C</li>
-          <li>C++</li>
-          <li>C#</li>
-          <li>Go</li>
-          <li>GoLang</li>
-          <li>Arduino</li>
-          <li>PERL</li>
-          <li>Ruby</li>
-          <li>Ruby on Rails</li>
-          <li>GNU Compiler Collection</li>
+          <li>• C (Basic Application Design)</li>
+          <li>• C++ (Redesign Applications with Garbage Collection)</li>
+          <li>• C# + WPF (GUI Tool & Updating Existing Codebase)</li>
+          <li>• Arduino Uno (Electrical Engineering + Practical Implementations)</li>
         </ul>
       </div>
       <div className="skill-category">
         <h3>3D:</h3>
         <ul className="skill-list">
-          <li>OpenGL</li>
-          <li>WebGL</li>
-          <li>Blender</li>
-          <li>Three.js</li>
-          <li>DirectX</li>
-          <li>Panda3D</li>
-          <li>Adobe Illustrator & Dimension</li>
+          <li>• OpenGL + WebGL (3D Rendering and Engine Design)</li>
+          <li>• Blender (3D Model Design)</li>
+          <li>• Three.js (3D Web Rendering)</li>
+          <li>• DirectX (3D Desktop Rendering)</li>
+          <li>• Adobe Substance + Dimension (3D Model Design)</li>
         </ul>
-      </div>
-      <div className="skill-category">
-        <h3>APIs:</h3>
-        <ul className="skill-list">
-          <li>Bootstrap</li>
-          <li>ASP.NET</li>
-          <li>RESTful</li>
-          <li>Google Maps</li>
-          <li>Twitter</li>
-          <li>Slack</li>
-        </ul>
-      </div>
-      <div className="skill-category">
-        <h3>Hardware:</h3>
-        <ul className="skill-list">
-          <li>Arduino Uno</li>
-          <li>Raspberry Pi 2B+ and 3B+</li>
-          <li>IoT (Internet of Things) devices</li>
-        </ul>
-      </div>
-      <div className="skill-category">
-        <h3>Misc:</h3>
-        <ul className="skill-list">
-          <li>Dart</li>
-          <li>Flutter</li>
-        </ul>
-      </div>
       </div>
     </div>
+  </div>
   );
 };
 
