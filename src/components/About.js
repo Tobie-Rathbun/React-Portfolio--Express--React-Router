@@ -99,6 +99,19 @@ const About = () => {
         </ul>
       </div>
     </div>
+    <div className="bio_text">
+      <h3>Cover Letter</h3>
+      <p>
+        Growing up I always had access to a computer and further learning through my SQL developer mom or my COBAL developer grandfather. <br />
+        I tested well in high school and managed to secure $28,000 in scholarships to university. <br />
+        With dual enrollment credits that transferred as well as enrolling in up to 19 credit hours per semester, from 2016 to 2018 I completed 5 full semesters in Graphic Information Technology B.S. with a core focus in web development and graphic design. <br />
+        I left college at the end of 2018 to pursue live music performances until many of them were cancelled in 2020. <br />
+        Without putting myself above any type of work, I held miscellaneous jobs until I could move back into the technical field I had originally envisioned for myself. <br />
+        Working in entry level software quality assurance for Microsoft has allowed me to hone the skills I started building before high school, and has given me the time, resources, and connections to further my existing projects and knowledge. <br />
+        I have recently had a focus on network design, RESTful APIs, and building practical web applications in React. <br />
+        My goal is to work in full-stack development to utilize my back-end and technical knowledge, where my front-end design skills can occasionally be worked into a project's completion and elegance.
+      </p>
+    </div>
   </div>
   );
 };
