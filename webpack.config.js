@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  devtool: 'source-map',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -24,6 +25,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
+              sourceMaps: true,
               name: '[name].[ext]',
               outputPath: 'images/',
             },
