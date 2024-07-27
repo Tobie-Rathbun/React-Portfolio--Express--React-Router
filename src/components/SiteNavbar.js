@@ -12,6 +12,7 @@ const SiteNavbar = () => {
         <Link to="/about" className="nav-link">About</Link>
         <a href="https://github.com/Tobie-Rathbun" className="nav-link">GitHub</a>
         <Link to="/login" className="nav-link">Login</Link>
+        <Link to="/pokerfrogs" className="nav-link">Poker Frogs</Link>
       </div>
     </nav>
   );

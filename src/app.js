@@ -6,6 +6,8 @@ import Jazzbot from './components/Jazzbot';
 import About from './components/About';
 import GitHub from './components/GitHub';
 import Login from './components/Login';
+import PokerFrogs from './components/PokerFrogs';
+
 import './styles.css';  // Corrected path
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/github" element={<GitHub />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/pokerfrogs" element={<PokerFrogs />} />
       </Routes>
     </Router>
   );

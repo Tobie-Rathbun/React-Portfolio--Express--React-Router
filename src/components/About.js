@@ -102,7 +102,7 @@ const About = () => {
     <div className="bio_text">
       <h3>Cover Letter</h3>
       <p>
-        Growing up I always had access to a computer and further learning through my SQL developer mom or my COBAL developer grandfather. <br />
+        Growing up I always had access to a computer and mentorship through my SQL developer mom or my COBAL developer grandfather. <br />
         I tested well in high school and managed to secure $28,000 in scholarships to university. <br />
         With dual enrollment credits that transferred as well as enrolling in up to 19 credit hours per semester, from 2016 to 2018 I completed 5 full semesters in Graphic Information Technology B.S. with a core focus in web development and graphic design. <br />
         I left college at the end of 2018 to pursue live music performances until many of them were cancelled in 2020. <br />
