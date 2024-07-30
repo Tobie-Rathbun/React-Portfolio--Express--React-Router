@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import * as BABYLON from '@babylonjs/core';
 import '@babylonjs/loaders/glTF';
 import '@babylonjs/inspector';
-import '../styles.css'; // Corrected import for styles
+import axios from 'axios';
+import { HotKeys } from 'react-hotkeys';
+import '../styles.css';
 
 const PokerFrogs = () => {
     const [sliderValue, setSliderValue] = useState(50);
@@ -18,6 +20,7 @@ const PokerFrogs = () => {
     const [guiPosition, setGuiPosition] = useState({ x: '50%', y: '50%' });
     const [isMinimized, setIsMinimized] = useState(false);
     const [uvOffset, setUvOffset] = useState(0);
+    const [isSceneReady, setIsSceneReady] = useState(false);
 
     const deck = [
         '2H', '3H', '4H', '5H', '6H', '7H', '8H', '9H', '0H', 'JH', 'QH', 'KH', 'AH',
@@ -76,33 +79,28 @@ const PokerFrogs = () => {
         const cardMaterial = new BABYLON.StandardMaterial("cardMaterial", scene);
         cardMaterial.diffuseTexture = new BABYLON.Texture(`/images/${card}.png`, scene);
     
-        // Reintroduce emissive properties for better visibility
         cardMaterial.emissiveTexture = cardMaterial.diffuseTexture;
-        cardMaterial.emissiveColor = new BABYLON.Color3(1, 1, 1); // Bright white emissive color
-    
+        cardMaterial.emissiveColor = new BABYLON.Color3(1, 1, 1);
+
         const faceUV = [
-            new BABYLON.Vector4(0, 0, 1/114, 1),  // Front face (last 61/114 of the texture)
-            new BABYLON.Vector4(1/114, 0, 2/114, 1),  // Back face (next 61/114 of the texture)
-            new BABYLON.Vector4(2/114, 0, 3/114, 1),  // Right face (first 1/114 of the texture)
-            new BABYLON.Vector4(3/114, 0, 4/114, 1),  // Left face (first 1/114 of the texture)
-            new BABYLON.Vector4(4/114, 0, 59/114, 1),  // Back of card (first 1/114 of the texture)
-            new BABYLON.Vector4(59/114, 0, 1, 1)   // Face of cards (first 1/114 of the texture)
+            new BABYLON.Vector4(0, 0, 1 / 114, 1), 
+            new BABYLON.Vector4(1 / 114, 0, 2 / 114, 1), 
+            new BABYLON.Vector4(2 / 114, 0, 3 / 114, 1), 
+            new BABYLON.Vector4(3 / 114, 0, 4 / 114, 1), 
+            new BABYLON.Vector4(4 / 114, 0, 59 / 114, 1), 
+            new BABYLON.Vector4(59 / 114, 0, 1, 1)   
         ];
-    
+
         const cardMesh = BABYLON.MeshBuilder.CreateBox("card", {
-            width: 2.5 / 3.5,  // Adjusting width to height ratio to match the actual card dimensions
-            height: 0.005,  // Thickness of the card
-            depth: 1,  // This keeps the actual 3.5 height
+            width: 2.5 / 3.5, 
+            height: 0.005, 
+            depth: 1, 
             faceUV: faceUV
         }, scene);
         cardMesh.material = cardMaterial;
-        
-        // Rotate the card 90 degrees around the Y-axis
-        // cardMesh.rotation.z = Math.PI / 2;
     
         return cardMesh;
     };
-    
 
     const displayHand = (hand, scene, position, faceDown = false) => {
         if (!hand) return;
@@ -110,7 +108,7 @@ const PokerFrogs = () => {
             const cardMesh = createCard(card, scene);
             cardMesh.position = new BABYLON.Vector3(position.x + index * 0.4, 0, position.z);
             if (faceDown) {
-                cardMesh.rotation.y = Math.PI; // Face the card down
+                cardMesh.rotation.y = Math.PI;
             }
         });
     };
@@ -131,7 +129,7 @@ const PokerFrogs = () => {
         ground.position = new BABYLON.Vector3(0, -2, 0);
         ground.receiveShadows = true;
         ground.material = new BABYLON.StandardMaterial("groundMaterial", scene);
-        ground.material.diffuseColor = new BABYLON.Color3(0.6, 0.4, 0.2); // Light brown color for the ground
+        ground.material.diffuseColor = new BABYLON.Color3(0.6, 0.4, 0.2); 
 
         const cowPositions = [
             new BABYLON.Vector3(-3, 0, 4),
@@ -145,7 +143,7 @@ const PokerFrogs = () => {
             const cow = result.meshes[0];
             cow.scaling = new BABYLON.Vector3(0.25, 0.25, 0.25);
             cow.position = cowPositions[i];
-            cow.rotation = new BABYLON.Vector3(0, Math.PI / 2, 0); // Rotate cow 90 degrees clockwise
+            cow.rotation = new BABYLON.Vector3(0, Math.PI / 2, 0);
         }
 
         displayHand(hands.p0, scene, new BABYLON.Vector3(0, 0, -2));
@@ -154,7 +152,6 @@ const PokerFrogs = () => {
         }
         displayHand(community, scene, new BABYLON.Vector3(-1, 0, 1));
 
-        // Gizmo setup
         const utilLayer = new BABYLON.UtilityLayerRenderer(scene);
         const positionGizmo = new BABYLON.PositionGizmo(utilLayer);
         const rotationGizmo = new BABYLON.RotationGizmo(utilLayer);
@@ -162,7 +159,7 @@ const PokerFrogs = () => {
         let activeGizmo = null;
 
         scene.onPointerDown = function castRay(event) {
-            if (event.button === 0) { // Left click only
+            if (event.button === 0) {
                 const hit = scene.pick(scene.pointerX, scene.pointerY);
                 if (hit.pickedMesh) {
                     positionGizmo.attachedMesh = hit.pickedMesh;
@@ -245,6 +242,64 @@ const PokerFrogs = () => {
         });
     };
 
+    const createDefaultScene = (scene) => {
+        const canvas = scene.getEngine().getRenderingCanvas();
+        const camera = new BABYLON.ArcRotateCamera("defaultCamera", 0, 0, 10, BABYLON.Vector3.Zero(), scene);
+        camera.attachControl(canvas, true);
+        camera.alpha = -1.04;
+        camera.beta = 1.12;
+        camera.radius = 10;
+        camera.wheelPrecision = 100;
+
+        const light = new BABYLON.DirectionalLight("directionalLight", new BABYLON.Vector3(-1, 0, 0), scene);
+        light.intensity = 0.5;
+
+        const ground = BABYLON.MeshBuilder.CreateGround("defaultGround", { width: 50, height: 50 }, scene);
+        ground.position = new BABYLON.Vector3(0, -2, 0);
+        ground.receiveShadows = true;
+        ground.material = new BABYLON.StandardMaterial("groundMaterial", scene);
+        ground.material.diffuseColor = new BABYLON.Color3(0.6, 0.4, 0.2);
+
+        setIsSceneReady(true);
+    };
+
+    const loadInitialScene = async (scene, sceneId = 1) => {
+        try {
+            const response = await axios.get(`/api/scene/${sceneId}`);
+            const initialSceneConfig = response.data;
+
+            const canvas = scene.getEngine().getRenderingCanvas();
+            const camera = new BABYLON.ArcRotateCamera("myCamera", new BABYLON.Vector3(0, 0, 10), scene);
+            camera.attachControl(canvas, true);
+            camera.alpha = initialSceneConfig.camera.alpha;
+            camera.beta = initialSceneConfig.camera.beta;
+            camera.radius = initialSceneConfig.camera.radius;
+            camera.wheelPrecision = initialSceneConfig.camera.wheelPrecision;
+            scene.activeCamera = camera;
+
+            for (const cowConfig of initialSceneConfig.cows) {
+                const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
+                const cow = result.meshes[0];
+                cow.name = cowConfig.name;
+                cow.position = new BABYLON.Vector3(...cowConfig.position);
+                cow.rotation = new BABYLON.Vector3(...cowConfig.rotation);
+                cow.scaling = new BABYLON.Vector3(...cowConfig.scale);
+            }
+
+            for (const cardConfig of initialSceneConfig.cards) {
+                const cardMesh = createCard(cardConfig.name, scene);
+                cardMesh.position = new BABYLON.Vector3(...cardConfig.position);
+                cardMesh.rotation = new BABYLON.Vector3(...cardConfig.rotation);
+                cardMesh.scaling = new BABYLON.Vector3(...cardConfig.scale);
+            }
+
+            setIsSceneReady(true);
+        } catch (error) {
+            console.error('Error loading initial scene:', error);
+            createDefaultScene(scene);
+        }
+    };
+
     useEffect(() => {
         const canvas = document.getElementById("renderCanvas");
         const engine = new BABYLON.Engine(canvas, true);
@@ -257,9 +312,9 @@ const PokerFrogs = () => {
             });
         };
 
-        if (scene) {
-            onSceneReady(scene).then(runRenderLoop);
-        }
+        loadInitialScene(scene).then(() => {
+            runRenderLoop();
+        });
 
         window.addEventListener("resize", function () {
             engine.resize();
@@ -292,54 +347,82 @@ const PokerFrogs = () => {
         }
     };
 
+    const keyMap = {
+        save1: 'alt+1',
+        save2: 'alt+2',
+        save3: 'alt+3',
+        save4: 'alt+4',
+        save5: 'alt+5',
+        load1: '1',
+        load2: '2',
+        load3: '3',
+        load4: '4',
+        load5: '5'
+    };
+
+    const handlers = {
+        save1: () => { if (isSceneReady) saveSceneState(1); },
+        save2: () => { if (isSceneReady) saveSceneState(2); },
+        save3: () => { if (isSceneReady) saveSceneState(3); },
+        save4: () => { if (isSceneReady) saveSceneState(4); },
+        save5: () => { if (isSceneReady) saveSceneState(5); },
+        load1: () => { loadInitialScene(scene, 1); },
+        load2: () => { loadInitialScene(scene, 2); },
+        load3: () => { loadInitialScene(scene, 3); },
+        load4: () => { loadInitialScene(scene, 4); },
+        load5: () => { loadInitialScene(scene, 5); }
+    };
+
     return (
-        <div style={{ overflow: 'hidden' }} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
-            <canvas id="renderCanvas" style={{ width: '100%', height: '100vh' }}></canvas>
-            <div
-                className="gui-container purple-gui"
-                style={{ left: guiPosition.x, top: guiPosition.y, position: 'absolute', height: isMinimized ? '40px' : '200px', width: isMinimized ? '100px' : '400px' }}
-                onMouseDown={handleMouseDown}
-            >
-                <div className="button-container" style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <button className="gui-button" onClick={toggleGui} style={{ marginLeft: 'auto', marginRight: '5px' }}>{isMinimized ? '+' : '-'}</button>
+        <HotKeys keyMap={keyMap} handlers={handlers}>
+            <div style={{ overflow: 'hidden' }} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
+                <canvas id="renderCanvas" style={{ width: '100%', height: '100vh' }}></canvas>
+                <div
+                    className="gui-container purple-gui"
+                    style={{ left: guiPosition.x, top: guiPosition.y, position: 'absolute', height: isMinimized ? '40px' : '200px', width: isMinimized ? '100px' : '400px' }}
+                    onMouseDown={handleMouseDown}
+                >
+                    <div className="button-container" style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <button className="gui-button" onClick={toggleGui} style={{ marginLeft: 'auto', marginRight: '5px' }}>{isMinimized ? '+' : '-'}</button>
+                    </div>
+                    {!isMinimized && (
+                        <>
+                            <div className="slider-container">
+                                <input
+                                    type="range"
+                                    min={blind}
+                                    max="1000"
+                                    value={sliderValue}
+                                    onChange={handleSliderChange}
+                                    className="slider"
+                                    id="myRange"
+                                />
+                                <p>Value: {sliderValue}</p>
+                            </div>
+                            <div className="button-container">
+                                <button className="gui-button" onClick={() => { /* fold logic */ }}>Fold</button>
+                                <button className="gui-button" onClick={() => { /* check logic */ }}>Check</button>
+                                <button className="gui-button" onClick={() => { /* call logic */ }}>Call</button>
+                                <button className="gui-button" onClick={() => { /* raise logic */ }}>Raise</button>
+                                <button className="gui-button" onClick={decreaseBet}>-</button>
+                                <button className="gui-button" onClick={increaseBet}>+</button>
+                            </div>
+                        </>
+                    )}
                 </div>
-                {!isMinimized && (
-                    <>
-                        <div className="slider-container">
-                            <input
-                                type="range"
-                                min={blind}
-                                max="1000"
-                                value={sliderValue}
-                                onChange={handleSliderChange}
-                                className="slider"
-                                id="myRange"
-                            />
-                            <p>Value: {sliderValue}</p>
-                        </div>
-                        <div className="button-container">
-                            <button className="gui-button" onClick={() => { /* fold logic */ }}>Fold</button>
-                            <button className="gui-button" onClick={() => { /* check logic */ }}>Check</button>
-                            <button className="gui-button" onClick={() => { /* call logic */ }}>Call</button>
-                            <button className="gui-button" onClick={() => { /* raise logic */ }}>Raise</button>
-                            <button className="gui-button" onClick={decreaseBet}>-</button>
-                            <button className="gui-button" onClick={increaseBet}>+</button>
-                        </div>
-                    </>
-                )}
+                <div className="card-display">
+                    <p style={{ fontSize: '12px' }}>
+                        Player 0 Hand: {hands.p0 && hands.p0.join(', ')}<br />
+                        Player 1 Hand: {hands.p1 && hands.p1.join(', ')}<br />
+                        Player 2 Hand: {hands.p2 && hands.p2.join(', ')}<br />
+                        Player 3 Hand: {hands.p3 && hands.p3.join(', ')}<br />
+                        Player 4 Hand: {hands.p4 && hands.p4.join(', ')}<br />
+                        Community Cards: {community.join(', ')}<br />
+                        Deck: {deck.join(', ')}
+                    </p>
+                </div>
             </div>
-            <div className="card-display">
-                <p style={{ fontSize: '12px' }}>
-                    Player 0 Hand: {hands.p0 && hands.p0.join(', ')}<br />
-                    Player 1 Hand: {hands.p1 && hands.p1.join(', ')}<br />
-                    Player 2 Hand: {hands.p2 && hands.p2.join(', ')}<br />
-                    Player 3 Hand: {hands.p3 && hands.p3.join(', ')}<br />
-                    Player 4 Hand: {hands.p4 && hands.p4.join(', ')}<br />
-                    Community Cards: {community.join(', ')}<br />
-                    Deck: {deck.join(', ')}
-                </p>
-            </div>
-        </div>
+        </HotKeys>
     );
 };
 

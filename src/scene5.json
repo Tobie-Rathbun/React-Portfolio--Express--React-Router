@@ -1,0 +1,126 @@
+{
+    "camera": {
+        "alpha": -1.04,
+        "beta": 1.12,
+        "radius": 1,
+        "wheelPrecision": 100
+    },
+    "cows": [
+        {
+            "name": "cow1",
+            "position": [-3, 0, 4],
+            "rotation": [0, 1.57, 0],
+            "scale": [0.25, 0.25, 0.25]
+        },
+        {
+            "name": "cow2",
+            "position": [-1, 0, 4],
+            "rotation": [0, 1.57, 0],
+            "scale": [0.25, 0.25, 0.25]
+        },
+        {
+            "name": "cow3",
+            "position": [1, 0, 4],
+            "rotation": [0, 1.57, 0],
+            "scale": [0.25, 0.25, 0.25]
+        },
+        {
+            "name": "cow4",
+            "position": [3, 0, 4],
+            "rotation": [0, 1.57, 0],
+            "scale": [0.25, 0.25, 0.25]
+        }
+    ],
+    "cards": [
+        {
+            "name": "card1",
+            "position": [0, 0, -2],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "card2",
+            "position": [0.4, 0, -2],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "card3",
+            "position": [-3, 0, 3.5],
+            "rotation": [0, 3.14, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "card4",
+            "position": [-2.6, 0, 3.5],
+            "rotation": [0, 3.14, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "card5",
+            "position": [-1, 0, 3.5],
+            "rotation": [0, 3.14, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "card6",
+            "position": [-0.6, 0, 3.5],
+            "rotation": [0, 3.14, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "card7",
+            "position": [1, 0, 3.5],
+            "rotation": [0, 3.14, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "card8",
+            "position": [1.4, 0, 3.5],
+            "rotation": [0, 3.14, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "card9",
+            "position": [3, 0, 3.5],
+            "rotation": [0, 3.14, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "card10",
+            "position": [3.4, 0, 3.5],
+            "rotation": [0, 3.14, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "community1",
+            "position": [-1, 0, 1],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "community2",
+            "position": [-0.6, 0, 1],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "community3",
+            "position": [-0.2, 0, 1],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "community4",
+            "position": [0.2, 0, 1],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        },
+        {
+            "name": "community5",
+            "position": [0.6, 0, 1],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        }
+    ]
+}
