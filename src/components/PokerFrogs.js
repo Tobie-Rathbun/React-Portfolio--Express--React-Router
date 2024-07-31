@@ -301,7 +301,7 @@ const PokerFrogs = () => {
             light.intensity = 0.5;
 
             // Load new meshes
-            for (const cowConfig of sceneConfig.cows) {
+            for (const cowConfig of initialSceneConfig.cows) {
                 const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
                 const cow = result.meshes[0];
                 cow.name = cowConfig.name;
@@ -319,7 +319,7 @@ const PokerFrogs = () => {
                 }
             }
 
-            for (const cardConfig of sceneConfig.cards) {
+            for (const cardConfig of initialSceneConfig.cards) {
                 const cardMesh = createCard(cardConfig.name, scene);
                 cardMesh.position = new BABYLON.Vector3(...cardConfig.position);
                 cardMesh.rotation = new BABYLON.Vector3(...cardConfig.rotation);
@@ -467,7 +467,7 @@ const PokerFrogs = () => {
             ];
     
             cowConfigs = defaultCowPositions.map((pos, index) => ({
-                name: `Cow${index}`,
+                name: `Cow${index + 1}`,
                 position: [pos.x, pos.y, pos.z],
                 rotation: [0, Math.PI / 2, 0],
                 scale: [0.25, 0.25, 0.25]
@@ -488,7 +488,6 @@ const PokerFrogs = () => {
         };
     
         try {
-            // Format JSON with indentation for readability
             const formattedSceneConfig = JSON.stringify(sceneConfig, null, 4);
             await axios.post(`http://localhost:4242/api/scene/${sceneId}`, formattedSceneConfig, {
                 headers: {
@@ -500,6 +499,10 @@ const PokerFrogs = () => {
             console.error(`Error saving scene ${sceneId}:`, error);
         }
     };
+    
+    
+    
+    
     
     const loadSceneState = async (scene, sceneId) => {
         try {
@@ -551,6 +554,12 @@ const PokerFrogs = () => {
             createDefaultScene(scene);
         }
     };
+    
+    
+    
+    
+    
+    
     
     
 

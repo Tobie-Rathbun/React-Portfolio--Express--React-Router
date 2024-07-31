@@ -1,0 +1,109 @@
+Switched to Rotation Gizmo bundle.js:141347:29
+[webpack-dev-server] Disconnected! bundle.js:191474:22
+[webpack-dev-server] Trying to reconnect... bundle.js:191474:22
+[webpack-dev-server] Disconnected! bundle.js:191474:22
+[webpack-dev-server] Trying to reconnect... bundle.js:191474:22
+Source map error: request failed with status 404
+Resource URL: null
+Source Map URL: installHook.js.map
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
+[HMR] Waiting for update signal from WDS... log.js:39
+ * Tone.js v14.7.77 * Global.js:67
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
+[HMR] Waiting for update signal from WDS... log.js:39
+ * Tone.js v14.7.77 * Global.js:67
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
+WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
+Babylon.js v5.57.1 - WebGL2 2 thinEngine.js:603
+Error loading initial scene: ReferenceError: sceneConfig is not defined
+    _callee2$ PokerFrogs.js:304
+    tryCatch PokerFrogs.js:2
+    makeInvokeMethod PokerFrogs.js:2
+    defineIteratorMethods PokerFrogs.js:2
+    asyncGeneratorStep PokerFrogs.js:2
+    _next PokerFrogs.js:2
+    promise callback*asyncGeneratorStep PokerFrogs.js:2
+    _next PokerFrogs.js:2
+    _asyncToGenerator PokerFrogs.js:2
+    _asyncToGenerator PokerFrogs.js:2
+    loadInitialScene PokerFrogs.js:277
+    PokerFrogs PokerFrogs.js:379
+    React 8
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+    js scheduler.development.js:571
+    js scheduler.development.js:633
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    js index.js:6
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    React 2
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    js React
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    js React
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    js bundle.js:141985
+    __webpack_require__ bundle.js:572228
+    <anonymous> bundle.js:573345
+    <anonymous> bundle.js:573347
+PokerFrogs.js:338:20
+Error loading initial scene: ReferenceError: sceneConfig is not defined
+    _callee2$ PokerFrogs.js:304
+    tryCatch PokerFrogs.js:2
+    makeInvokeMethod PokerFrogs.js:2
+    defineIteratorMethods PokerFrogs.js:2
+    asyncGeneratorStep PokerFrogs.js:2
+    _next PokerFrogs.js:2
+    promise callback*asyncGeneratorStep PokerFrogs.js:2
+    _next PokerFrogs.js:2
+    _asyncToGenerator PokerFrogs.js:2
+    _asyncToGenerator PokerFrogs.js:2
+    loadInitialScene PokerFrogs.js:277
+    PokerFrogs PokerFrogs.js:379
+    React 8
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+    js scheduler.development.js:571
+    js scheduler.development.js:633
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    js index.js:6
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    React 2
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    js React
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    js React
+    __webpack_require__ bundle.js:572228
+    fn bundle.js:572465
+    js bundle.js:141985
+    __webpack_require__ bundle.js:572228
+    <anonymous> bundle.js:573345
+    <anonymous> bundle.js:573347
+PokerFrogs.js:338:20
+Source map error: request failed with status 404
+Resource URL: null
+Source Map URL: react_devtools_backend_compact.js.map
