@@ -265,9 +265,9 @@ const PokerFrogs = () => {
 
     const loadInitialScene = async (scene, sceneId = 1) => {
         try {
-            const response = await axios.get(`/api/scene/${sceneId}`);
+            const response = await axios.get(`http://localhost:4242/api/scene/${sceneId}`);
             const initialSceneConfig = response.data;
-
+    
             const canvas = scene.getEngine().getRenderingCanvas();
             const camera = new BABYLON.ArcRotateCamera("myCamera", new BABYLON.Vector3(0, 0, 10), scene);
             camera.attachControl(canvas, true);
@@ -276,7 +276,7 @@ const PokerFrogs = () => {
             camera.radius = initialSceneConfig.camera.radius;
             camera.wheelPrecision = initialSceneConfig.camera.wheelPrecision;
             scene.activeCamera = camera;
-
+    
             for (const cowConfig of initialSceneConfig.cows) {
                 const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
                 const cow = result.meshes[0];
@@ -285,20 +285,21 @@ const PokerFrogs = () => {
                 cow.rotation = new BABYLON.Vector3(...cowConfig.rotation);
                 cow.scaling = new BABYLON.Vector3(...cowConfig.scale);
             }
-
+    
             for (const cardConfig of initialSceneConfig.cards) {
                 const cardMesh = createCard(cardConfig.name, scene);
                 cardMesh.position = new BABYLON.Vector3(...cardConfig.position);
                 cardMesh.rotation = new BABYLON.Vector3(...cardConfig.rotation);
                 cardMesh.scaling = new BABYLON.Vector3(...cardConfig.scale);
             }
-
+    
             setIsSceneReady(true);
         } catch (error) {
             console.error('Error loading initial scene:', error);
             createDefaultScene(scene);
         }
     };
+    
 
     useEffect(() => {
         const canvas = document.getElementById("renderCanvas");
@@ -379,7 +380,7 @@ const PokerFrogs = () => {
         }));
     
         const cardConfigs = scene.meshes.filter(mesh => mesh.name.startsWith("card")).map(card => ({
-            name: card.material.diffuseTexture.name.split('/').pop().split('.')[0], // Extract the card name from the texture path
+            name: card.material.diffuseTexture.name.split('/').pop().split('.')[0],
             position: [card.position.x, card.position.y, card.position.z],
             rotation: [card.rotation.x, card.rotation.y, card.rotation.z],
             scale: [card.scaling.x, card.scaling.y, card.scaling.z]
@@ -392,16 +393,18 @@ const PokerFrogs = () => {
         };
     
         try {
-            await axios.post(`/api/scene/${sceneId}`, sceneConfig);
+            await axios.post(`http://localhost:4242/api/scene/${sceneId}`, sceneConfig);
+
             console.log(`Scene ${sceneId} saved successfully.`);
         } catch (error) {
             console.error(`Error saving scene ${sceneId}:`, error);
         }
     };
+    
 
     const loadSceneState = async (scene, sceneId) => {
         try {
-            const response = await axios.get(`/api/scene/${sceneId}`);
+            await axios.post(`http://localhost:4242/api/scene/${sceneId}`, sceneConfig);
             const sceneConfig = response.data;
     
             const camera = scene.activeCamera;
