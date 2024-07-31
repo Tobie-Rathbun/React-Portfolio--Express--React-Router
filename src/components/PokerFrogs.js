@@ -360,6 +360,88 @@ const PokerFrogs = () => {
         load5: '5'
     };
 
+    const saveSceneState = async (sceneId) => {
+        if (!scene) return;
+    
+        const camera = scene.activeCamera;
+        const cameraConfig = {
+            alpha: camera.alpha,
+            beta: camera.beta,
+            radius: camera.radius,
+            wheelPrecision: camera.wheelPrecision
+        };
+    
+        const cowConfigs = scene.meshes.filter(mesh => mesh.name.startsWith("Cow")).map(cow => ({
+            name: cow.name,
+            position: [cow.position.x, cow.position.y, cow.position.z],
+            rotation: [cow.rotation.x, cow.rotation.y, cow.rotation.z],
+            scale: [cow.scaling.x, cow.scaling.y, cow.scaling.z]
+        }));
+    
+        const cardConfigs = scene.meshes.filter(mesh => mesh.name.startsWith("card")).map(card => ({
+            name: card.material.diffuseTexture.name.split('/').pop().split('.')[0], // Extract the card name from the texture path
+            position: [card.position.x, card.position.y, card.position.z],
+            rotation: [card.rotation.x, card.rotation.y, card.rotation.z],
+            scale: [card.scaling.x, card.scaling.y, card.scaling.z]
+        }));
+    
+        const sceneConfig = {
+            camera: cameraConfig,
+            cows: cowConfigs,
+            cards: cardConfigs
+        };
+    
+        try {
+            await axios.post(`/api/scene/${sceneId}`, sceneConfig);
+            console.log(`Scene ${sceneId} saved successfully.`);
+        } catch (error) {
+            console.error(`Error saving scene ${sceneId}:`, error);
+        }
+    };
+
+    const loadSceneState = async (scene, sceneId) => {
+        try {
+            const response = await axios.get(`/api/scene/${sceneId}`);
+            const sceneConfig = response.data;
+    
+            const camera = scene.activeCamera;
+            camera.alpha = sceneConfig.camera.alpha;
+            camera.beta = sceneConfig.camera.beta;
+            camera.radius = sceneConfig.camera.radius;
+            camera.wheelPrecision = sceneConfig.camera.wheelPrecision;
+    
+            // Remove old meshes before loading new ones
+            scene.meshes.forEach(mesh => {
+                if (mesh.name !== "myGround" && mesh.name !== "defaultGround") {
+                    mesh.dispose();
+                }
+            });
+    
+            for (const cowConfig of sceneConfig.cows) {
+                const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
+                const cow = result.meshes[0];
+                cow.name = cowConfig.name;
+                cow.position = new BABYLON.Vector3(...cowConfig.position);
+                cow.rotation = new BABYLON.Vector3(...cowConfig.rotation);
+                cow.scaling = new BABYLON.Vector3(...cowConfig.scale);
+            }
+    
+            for (const cardConfig of sceneConfig.cards) {
+                const cardMesh = createCard(cardConfig.name, scene);
+                cardMesh.position = new BABYLON.Vector3(...cardConfig.position);
+                cardMesh.rotation = new BABYLON.Vector3(...cardConfig.rotation);
+                cardMesh.scaling = new BABYLON.Vector3(...cardConfig.scale);
+            }
+    
+            setIsSceneReady(true);
+            console.log(`Scene ${sceneId} loaded successfully.`);
+        } catch (error) {
+            console.error(`Error loading scene ${sceneId}:`, error);
+            createDefaultScene(scene);
+        }
+    };
+    
+
     const handlers = {
         save1: () => { if (isSceneReady) saveSceneState(1); },
         save2: () => { if (isSceneReady) saveSceneState(2); },
