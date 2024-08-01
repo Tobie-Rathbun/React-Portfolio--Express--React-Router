@@ -1,152 +1,91 @@
-[HMR] Cannot apply update. Need to do a full reload! pokerfrogs:13851:25
-[HMR] Aborted because ./src/components/PokerFrogs.js is not accepted
-Update propagation: ./src/components/PokerFrogs.js -> ./src/app.js -> ./src/index.js
-applyHandler@http://localhost:4141/bundle.js:573026:31
-internalApply/results<@http://localhost:4141/bundle.js:572722:21
-internalApply@http://localhost:4141/bundle.js:572721:54
-hotCheck/</</</<@http://localhost:4141/bundle.js:572691:26
-waitForBlockingPromises@http://localhost:4141/bundle.js:572646:48
-hotCheck/</</<@http://localhost:4141/bundle.js:572689:24
-promise callback*hotCheck/</<@http://localhost:4141/bundle.js:572688:18
-promise callback*hotCheck/<@http://localhost:4141/bundle.js:572669:43
-promise callback*hotCheck@http://localhost:4141/bundle.js:572660:15
-check@http://localhost:4141/bundle.js:192894:5
-./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:192948:4
-emit@http://localhost:4141/bundle.js:142650:17
-reloadApp@http://localhost:4141/bundle.js:192783:67
-ok@http://localhost:4141/bundle.js:190897:68
-./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:192447:29
-./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:190642:10
-EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:190641:7
-initSocket@http://localhost:4141/bundle.js:192440:10
-./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:190990:55
-__webpack_require__@http://localhost:4141/bundle.js:572238:32
-@http://localhost:4141/bundle.js:573353:30
-@http://localhost:4141/bundle.js:573357:12
-pokerfrogs:13851:25
-[HMR] Update failed: Loading hot update chunk main failed.
-(missing: http://localhost:4141/main.08340bb73cdabbdaf6ab.hot-update.js)
-loadUpdateChunk/<@http://localhost:4141/bundle.js:572854:26
-loadUpdateChunk@http://localhost:4141/bundle.js:572849:20
-__webpack_require__.hmrC.jsonp/<@http://localhost:4141/bundle.js:573309:29
-__webpack_require__.hmrC.jsonp@http://localhost:4141/bundle.js:573304:22
-hotCheck/</</<@http://localhost:4141/bundle.js:572678:47
-hotCheck/</<@http://localhost:4141/bundle.js:572674:55
-promise callback*hotCheck/<@http://localhost:4141/bundle.js:572669:43
-promise callback*hotCheck@http://localhost:4141/bundle.js:572660:15
-check@http://localhost:4141/bundle.js:192894:5
-./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:192948:4
-emit@http://localhost:4141/bundle.js:142650:17
-reloadApp@http://localhost:4141/bundle.js:192783:67
-ok@http://localhost:4141/bundle.js:190897:68
-./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:192447:29
-./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:190642:10
-EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:190641:7
-initSocket@http://localhost:4141/bundle.js:192440:10
-./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:190990:55
-__webpack_require__@http://localhost:4141/bundle.js:572238:32
-@http://localhost:4141/bundle.js:573353:30
-@http://localhost:4141/bundle.js:573357:12
-pokerfrogs:13851:25
-[webpack-dev-server] Disconnected! bundle.js:191484:22
-[webpack-dev-server] Trying to reconnect... bundle.js:191484:22
-[webpack-dev-server] Disconnected! bundle.js:191484:22
-[webpack-dev-server] Trying to reconnect... bundle.js:191484:22
-Loading failed for the <script> with source “http://localhost:4141/main.08340bb73cdabbdaf6ab.hot-update.js”. pokerfrogs:1:1
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
+[HMR] Waiting for update signal from WDS... log.js:39
+ * Tone.js v14.7.77 * Global.js:67
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:194418:38
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:194734:36
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:196418:44
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
+[HMR] Waiting for update signal from WDS... log.js:39
+ * Tone.js v14.7.77 * Global.js:67
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:194418:38
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:194734:36
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:196418:44
+WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
+Babylon.js v5.57.1 - WebGL2 2 thinEngine.js:603
+Cow 0 assigned a default material. PokerFrogs.js:157:32
+Cow 0 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:162:28
+Cow 0 position: {X: -3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
+Cow 0 successfully added to the scene. PokerFrogs.js:164:28
+Cow 0 assigned a default material. PokerFrogs.js:157:32
+Cow 0 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:162:28
+Cow 0 position: {X: -3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
+Cow 0 successfully added to the scene. PokerFrogs.js:164:28
+Error loading initial scene: 
+Object { stack: "AxiosError@http://localhost:4141/bundle.js:568307:19\nsettle@http://localhost:4141/bundle.js:569089:12\nonloadend@http://localhost:4141/bundle.js:567565:66\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
+PokerFrogs.js:332:20
+Error loading initial scene: 
+Object { stack: "AxiosError@http://localhost:4141/bundle.js:568307:19\nsettle@http://localhost:4141/bundle.js:569089:12\nonloadend@http://localhost:4141/bundle.js:567565:66\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
+PokerFrogs.js:332:20
+Cow 1 assigned a default material. PokerFrogs.js:157:32
+Cow 1 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:162:28
+Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
+Cow 1 successfully added to the scene. PokerFrogs.js:164:28
+Cow 1 assigned a default material. PokerFrogs.js:157:32
+Cow 1 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:162:28
+Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
+Cow 1 successfully added to the scene. PokerFrogs.js:164:28
+Cow 2 assigned a default material. PokerFrogs.js:157:32
+Cow 2 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:162:28
+Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
+Cow 2 successfully added to the scene. PokerFrogs.js:164:28
+Cow 2 assigned a default material. PokerFrogs.js:157:32
+Cow 2 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:162:28
+Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
+Cow 2 successfully added to the scene. PokerFrogs.js:164:28
+Cow 3 assigned a default material. PokerFrogs.js:157:32
+Cow 3 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:162:28
+Cow 3 position: {X: 3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
+Cow 3 successfully added to the scene. PokerFrogs.js:164:28
+Meshes in the scene: 
+Array(25) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
+PokerFrogs.js:268:16
+WebGL warning: uniform setter: UniformLocation is not from the current active Program. 2
+Cow 3 assigned a default material. PokerFrogs.js:157:32
+Cow 3 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:162:28
+Cow 3 position: {X: 3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
+Cow 3 successfully added to the scene. PokerFrogs.js:164:28
+Meshes in the scene: 
+Array(34) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
+PokerFrogs.js:268:16
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 4
+Cows being saved:  
+Array(4) [ {…}, {…}, {…}, {…} ]
+PokerFrogs.js:472:16
+Cards being saved:  
+Array(15) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
+PokerFrogs.js:482:16
+Scene 2 saved successfully. PokerFrogs.js:497:20
+Scene 2 loaded successfully. PokerFrogs.js:330:20
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 12
 Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: installHook.js.map
-[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
-[HMR] Waiting for update signal from WDS... log.js:39
- * Tone.js v14.7.77 * Global.js:67
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
-[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
-[HMR] Waiting for update signal from WDS... log.js:39
- * Tone.js v14.7.77 * Global.js:67
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
-Babylon.js v5.57.1 - WebGL2 2 thinEngine.js:603
-XHRGET
-http://localhost:4242/api/scene/1
-[HTTP/1.1 404 Not Found 106ms]
-
-Babylon.js v5.57.1 - WebGL2 2 thinEngine.js:603
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568297:19\nsettle@http://localhost:4141/bundle.js:569079:12\nonloadend@http://localhost:4141/bundle.js:567555:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567569:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567513:10\ndispatchRequest@http://localhost:4141/bundle.js:568891:10\n_request@http://localhost:4141/bundle.js:568204:77\nrequest@http://localhost:4141/bundle.js:568071:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568230:17\nwrap@http://localhost:4141/bundle.js:569533:15\n_callee2$@http://localhost:4141/bundle.js:141438:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141553:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141590:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167400:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169176:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169141:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169128:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169116:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171289:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171234:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171019:9\nworkLoop@http://localhost:4141/bundle.js:189817:42\nflushWork@http://localhost:4141/bundle.js:189790:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190084:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190122:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190184:5\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190200:20\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144243:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174133:5\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174210:20\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174148:28\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./src/index.js@http://localhost:4141/bundle.js:141995:93\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\n@http://localhost:4141/bundle.js:573355:56\n@http://localhost:4141/bundle.js:573357:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
-PokerFrogs.js:348:20
-XHRGET
-http://localhost:4242/api/scene/1
-[HTTP/1.1 404 Not Found 8ms]
-
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568297:19\nsettle@http://localhost:4141/bundle.js:569079:12\nonloadend@http://localhost:4141/bundle.js:567555:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567569:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567513:10\ndispatchRequest@http://localhost:4141/bundle.js:568891:10\n_request@http://localhost:4141/bundle.js:568204:77\nrequest@http://localhost:4141/bundle.js:568071:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568230:17\nwrap@http://localhost:4141/bundle.js:569533:15\n_callee2$@http://localhost:4141/bundle.js:141438:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141553:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141590:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167400:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169176:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169141:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169128:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169116:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171289:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171234:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171019:9\nworkLoop@http://localhost:4141/bundle.js:189817:42\nflushWork@http://localhost:4141/bundle.js:189790:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190084:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190122:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190184:5\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190200:20\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144243:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174133:5\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174210:20\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174148:28\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\nfn@http://localhost:4141/bundle.js:572475:21\n./src/index.js@http://localhost:4141/bundle.js:141995:93\n__webpack_require__@http://localhost:4141/bundle.js:572238:32\n@http://localhost:4141/bundle.js:573355:56\n@http://localhost:4141/bundle.js:573357:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
-PokerFrogs.js:348:20
-Cow 0 assigned a default material. PokerFrogs.js:157:32
-Cow 0 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 0 position: {X: -3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 0 successfully added to the scene. PokerFrogs.js:164:28
-Cow 0 assigned a default material. PokerFrogs.js:157:32
-Cow 0 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 0 position: {X: -3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 0 successfully added to the scene. PokerFrogs.js:164:28
-Cow 1 assigned a default material. PokerFrogs.js:157:32
-Cow 1 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 1 successfully added to the scene. PokerFrogs.js:164:28
-Cow 1 assigned a default material. PokerFrogs.js:157:32
-Cow 1 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 1 successfully added to the scene. PokerFrogs.js:164:28
-Cow 2 assigned a default material. PokerFrogs.js:157:32
-Cow 2 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 2 successfully added to the scene. PokerFrogs.js:164:28
-Cow 2 assigned a default material. PokerFrogs.js:157:32
-Cow 2 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 2 successfully added to the scene. PokerFrogs.js:164:28
-Cow 3 assigned a default material. PokerFrogs.js:157:32
-Cow 3 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 3 position: {X: 3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 3 successfully added to the scene. PokerFrogs.js:164:28
-Meshes in the scene: 
-Array(24) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
-PokerFrogs.js:274:16
-Cow 3 assigned a default material. PokerFrogs.js:157:32
-Cow 3 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 3 position: {X: 3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 3 successfully added to the scene. PokerFrogs.js:164:28
-Meshes in the scene: 
-Array(24) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
-PokerFrogs.js:274:16
 Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: react_devtools_backend_compact.js.map

@@ -169,12 +169,6 @@ const PokerFrogs = () => {
                 console.error(`Error loading cow ${i}:`, error);
             }
         }
-        
-        
-        
-        
-        
-        
     
         displayHand(hands.p0, scene, new BABYLON.Vector3(0, 0, -2));
         for (let i = 1; i <= 4; i++) {
@@ -473,6 +467,9 @@ const PokerFrogs = () => {
                 scale: [0.25, 0.25, 0.25]
             }));
         }
+
+        // Log cow configs being saved
+        console.log('Cows being saved: ', cowConfigs);
     
         const cardConfigs = scene.meshes.filter(mesh => mesh.name.startsWith("card")).map(card => ({
             name: card.material.diffuseTexture.name.split('/').pop().split('.')[0],
@@ -480,6 +477,9 @@ const PokerFrogs = () => {
             rotation: [card.rotation.x, card.rotation.y, card.rotation.z],
             scale: [card.scaling.x, card.scaling.y, card.scaling.z]
         }));
+
+        // Log card configs being saved
+        console.log('Cards being saved: ', cardConfigs);
     
         const sceneConfig = {
             camera: cameraConfig,
@@ -501,13 +501,13 @@ const PokerFrogs = () => {
     };
     
     
-    
-    
-    
     const loadSceneState = async (scene, sceneId) => {
         try {
             const response = await axios.get(`http://localhost:4242/api/scene/${sceneId}`);
             const sceneConfig = response.data;
+
+            // Log the scene config being loaded
+            console.log('Scene config being loaded: ', sceneConfig);
     
             const camera = scene.activeCamera;
             camera.alpha = sceneConfig.camera.alpha;
@@ -521,30 +521,42 @@ const PokerFrogs = () => {
                     mesh.dispose();
                 }
             });
-    
+
+            // Load new cows
             for (const cowConfig of sceneConfig.cows) {
-                const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
-                const cow = result.meshes[0];
-                cow.name = cowConfig.name;
-                cow.position = new BABYLON.Vector3(...cowConfig.position);
-                cow.rotation = new BABYLON.Vector3(...cowConfig.rotation);
-                cow.scaling = new BABYLON.Vector3(...cowConfig.scale);
-    
-                // Ensure the material is correctly applied
-                if (cow.material) {
-                    cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
-                } else {
-                    cow.material = new BABYLON.StandardMaterial("cowMaterial", scene);
-                    cow.material.diffuseColor = new BABYLON.Color3(1, 1, 1);
-                    cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
+                try {
+                    const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
+                    const cow = result.meshes[0];
+                    cow.name = cowConfig.name;
+                    cow.position = new BABYLON.Vector3(...cowConfig.position);
+                    cow.rotation = new BABYLON.Vector3(...cowConfig.rotation);
+                    cow.scaling = new BABYLON.Vector3(...cowConfig.scale);
+
+                    // Ensure the material is correctly applied
+                    if (cow.material) {
+                        cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
+                    } else {
+                        cow.material = new BABYLON.StandardMaterial("cowMaterial", scene);
+                        cow.material.diffuseColor = new BABYLON.Color3(1, 1, 1);
+                        cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
+                    }
+
+                    // Log the cow being loaded
+                    console.log(`Cow loaded: ${cow.name}`, cow);
+                } catch (error) {
+                    console.error(`Error loading cow ${cowConfig.name}:`, error);
                 }
             }
-    
+
+            // Load new cards
             for (const cardConfig of sceneConfig.cards) {
                 const cardMesh = createCard(cardConfig.name, scene);
                 cardMesh.position = new BABYLON.Vector3(...cardConfig.position);
                 cardMesh.rotation = new BABYLON.Vector3(...cardConfig.rotation);
                 cardMesh.scaling = new BABYLON.Vector3(...cardConfig.scale);
+
+                // Log the card being loaded
+                console.log(`Card loaded: ${cardConfig.name}`, cardMesh);
             }
     
             setIsSceneReady(true);
@@ -556,13 +568,6 @@ const PokerFrogs = () => {
     };
     
     
-    
-    
-    
-    
-    
-    
-
     const handlers = {
         save1: () => { if (isSceneReady) saveSceneState(1); },
         save2: () => { if (isSceneReady) saveSceneState(2); },
