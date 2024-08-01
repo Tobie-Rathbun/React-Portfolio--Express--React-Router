@@ -1,58 +1,8 @@
-[HMR] Cannot apply update. Need to do a full reload! pokerfrogs:13851:25
-[HMR] Aborted because ./src/components/PokerFrogs.js is not accepted
-Update propagation: ./src/components/PokerFrogs.js -> ./src/app.js -> ./src/index.js
-applyHandler@http://localhost:4141/bundle.js:573045:31
-internalApply/results<@http://localhost:4141/bundle.js:572741:21
-internalApply@http://localhost:4141/bundle.js:572740:54
-hotCheck/</</</<@http://localhost:4141/bundle.js:572710:26
-waitForBlockingPromises@http://localhost:4141/bundle.js:572665:48
-hotCheck/</</<@http://localhost:4141/bundle.js:572708:24
-promise callback*hotCheck/</<@http://localhost:4141/bundle.js:572707:18
-promise callback*hotCheck/<@http://localhost:4141/bundle.js:572688:43
-promise callback*hotCheck@http://localhost:4141/bundle.js:572679:15
-check@http://localhost:4141/bundle.js:192913:5
-./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:192967:4
-emit@http://localhost:4141/bundle.js:142669:17
-reloadApp@http://localhost:4141/bundle.js:192802:67
-ok@http://localhost:4141/bundle.js:190916:68
-./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:192466:29
-./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:190661:10
-EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:190660:7
-initSocket@http://localhost:4141/bundle.js:192459:10
-./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:191009:55
-__webpack_require__@http://localhost:4141/bundle.js:572257:32
-@http://localhost:4141/bundle.js:573372:30
-@http://localhost:4141/bundle.js:573376:12
-pokerfrogs:13851:25
-[HMR] Update failed: Loading hot update chunk main failed.
-(missing: http://localhost:4141/main.c6557cc5eeec60e4eb55.hot-update.js)
-loadUpdateChunk/<@http://localhost:4141/bundle.js:572873:26
-loadUpdateChunk@http://localhost:4141/bundle.js:572868:20
-__webpack_require__.hmrC.jsonp/<@http://localhost:4141/bundle.js:573328:29
-__webpack_require__.hmrC.jsonp@http://localhost:4141/bundle.js:573323:22
-hotCheck/</</<@http://localhost:4141/bundle.js:572697:47
-hotCheck/</<@http://localhost:4141/bundle.js:572693:55
-promise callback*hotCheck/<@http://localhost:4141/bundle.js:572688:43
-promise callback*hotCheck@http://localhost:4141/bundle.js:572679:15
-check@http://localhost:4141/bundle.js:192913:5
-./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:192967:4
-emit@http://localhost:4141/bundle.js:142669:17
-reloadApp@http://localhost:4141/bundle.js:192802:67
-ok@http://localhost:4141/bundle.js:190916:68
-./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:192466:29
-./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:190661:10
-EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:190660:7
-initSocket@http://localhost:4141/bundle.js:192459:10
-./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:191009:55
-__webpack_require__@http://localhost:4141/bundle.js:572257:32
-@http://localhost:4141/bundle.js:573372:30
-@http://localhost:4141/bundle.js:573376:12
-pokerfrogs:13851:25
-[webpack-dev-server] Disconnected! bundle.js:191503:22
-[webpack-dev-server] Trying to reconnect... bundle.js:191503:22
-[webpack-dev-server] Disconnected! bundle.js:191503:22
-[webpack-dev-server] Trying to reconnect... bundle.js:191503:22
-Loading failed for the <script> with source “http://localhost:4141/main.c6557cc5eeec60e4eb55.hot-update.js”. pokerfrogs:1:1
+Switched to Rotation Gizmo bundle.js:141364:29
+[webpack-dev-server] Disconnected! bundle.js:191496:22
+[webpack-dev-server] Trying to reconnect... bundle.js:191496:22
+[webpack-dev-server] Disconnected! bundle.js:191496:22
+[webpack-dev-server] Trying to reconnect... bundle.js:191496:22
 Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: installHook.js.map
@@ -80,19 +30,31 @@ WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please u
 Babylon.js v5.57.1 - WebGL2 2 thinEngine.js:603
 XHRGET
 http://localhost:4242/api/scene/1
-[HTTP/1.1 404 Not Found 7ms]
+[HTTP/1.1 404 Not Found 3ms]
 
 XHRGET
 http://localhost:4242/api/scene/1
 [HTTP/1.1 404 Not Found 2ms]
 
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
 Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568317:19\nsettle@http://localhost:4141/bundle.js:569099:12\nonloadend@http://localhost:4141/bundle.js:567575:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567589:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567533:10\ndispatchRequest@http://localhost:4141/bundle.js:568911:10\n_request@http://localhost:4141/bundle.js:568224:77\nrequest@http://localhost:4141/bundle.js:568091:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568250:17\nwrap@http://localhost:4141/bundle.js:569553:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141596:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167420:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169196:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169161:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169148:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169136:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171309:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171254:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171039:9\nworkLoop@http://localhost:4141/bundle.js:189837:42\nflushWork@http://localhost:4141/bundle.js:189810:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190104:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190142:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190204:5\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190220:20\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144263:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174153:5\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174230:20\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174168:28\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./src/index.js@http://localhost:4141/bundle.js:142015:93\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\n@http://localhost:4141/bundle.js:573375:56\n@http://localhost:4141/bundle.js:573377:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
+Object { stack: "AxiosError@http://localhost:4141/bundle.js:568309:19\nsettle@http://localhost:4141/bundle.js:569091:12\nonloadend@http://localhost:4141/bundle.js:567567:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567581:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567525:10\ndispatchRequest@http://localhost:4141/bundle.js:568903:10\n_request@http://localhost:4141/bundle.js:568216:77\nrequest@http://localhost:4141/bundle.js:568083:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568242:17\nwrap@http://localhost:4141/bundle.js:569545:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141596:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167412:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169188:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169153:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169140:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169128:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171301:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171246:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171031:9\nworkLoop@http://localhost:4141/bundle.js:189829:42\nflushWork@http://localhost:4141/bundle.js:189802:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190096:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190134:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190196:5\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190212:20\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144255:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174145:5\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174222:20\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174160:28\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./src/index.js@http://localhost:4141/bundle.js:142007:93\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\n@http://localhost:4141/bundle.js:573367:56\n@http://localhost:4141/bundle.js:573369:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
 PokerFrogs.js:351:20
 Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568317:19\nsettle@http://localhost:4141/bundle.js:569099:12\nonloadend@http://localhost:4141/bundle.js:567575:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567589:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567533:10\ndispatchRequest@http://localhost:4141/bundle.js:568911:10\n_request@http://localhost:4141/bundle.js:568224:77\nrequest@http://localhost:4141/bundle.js:568091:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568250:17\nwrap@http://localhost:4141/bundle.js:569553:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141596:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167420:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169196:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169161:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169148:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169136:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171309:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171254:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171039:9\nworkLoop@http://localhost:4141/bundle.js:189837:42\nflushWork@http://localhost:4141/bundle.js:189810:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190104:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190142:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190204:5\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190220:20\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144263:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174153:5\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174230:20\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174168:28\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\nfn@http://localhost:4141/bundle.js:572495:21\n./src/index.js@http://localhost:4141/bundle.js:142015:93\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\n@http://localhost:4141/bundle.js:573375:56\n@http://localhost:4141/bundle.js:573377:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
+Object { stack: "AxiosError@http://localhost:4141/bundle.js:568309:19\nsettle@http://localhost:4141/bundle.js:569091:12\nonloadend@http://localhost:4141/bundle.js:567567:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567581:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567525:10\ndispatchRequest@http://localhost:4141/bundle.js:568903:10\n_request@http://localhost:4141/bundle.js:568216:77\nrequest@http://localhost:4141/bundle.js:568083:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568242:17\nwrap@http://localhost:4141/bundle.js:569545:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141596:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167412:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169188:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169153:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169140:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169128:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171301:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171246:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171031:9\nworkLoop@http://localhost:4141/bundle.js:189829:42\nflushWork@http://localhost:4141/bundle.js:189802:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190096:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190134:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190196:5\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190212:20\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144255:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174145:5\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174222:20\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174160:28\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\nfn@http://localhost:4141/bundle.js:572487:21\n./src/index.js@http://localhost:4141/bundle.js:142007:93\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\n@http://localhost:4141/bundle.js:573367:56\n@http://localhost:4141/bundle.js:573369:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
 PokerFrogs.js:351:20
-WebGL warning: uniform setter: UniformLocation is not from the current active Program. 4
+WebGL warning: uniform setter: UniformLocation is not from the current active Program. 22
+WebGL warning: uniform setter: UniformLocation is not from the current active Program. 10
+After reporting 32, no further warnings will be reported for this WebGL context.
 Cow 0 assigned a default material. PokerFrogs.js:170:32
 Cow 0 created with material: 
 Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
@@ -105,26 +67,18 @@ Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null,
 PokerFrogs.js:175:28
 Cow 0 position: {X: -3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
 Cow 0 successfully added to the scene. PokerFrogs.js:177:28
-WebGL warning: uniform setter: UniformLocation is not from the current active Program. 2
 Cow 1 assigned a default material. PokerFrogs.js:170:32
 Cow 1 created with material: 
 Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
 PokerFrogs.js:175:28
 Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
 Cow 1 successfully added to the scene. PokerFrogs.js:177:28
-WebGL warning: texImage: No texture bound to TEXTURE_2D[2].
 Cow 1 assigned a default material. PokerFrogs.js:170:32
 Cow 1 created with material: 
 Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
 PokerFrogs.js:175:28
 Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
 Cow 1 successfully added to the scene. PokerFrogs.js:177:28
-Cow 2 assigned a default material. PokerFrogs.js:170:32
-Cow 2 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:175:28
-Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
-Cow 2 successfully added to the scene. PokerFrogs.js:177:28
 Cow 2 assigned a default material. PokerFrogs.js:170:32
 Cow 2 created with material: 
 Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
@@ -265,7 +219,13 @@ Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
 Material: Name: cardMaterial PokerFrogs.js:29:16
 Meshes in the scene: 
 Array(25) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
-PokerFrogs.js:287:16
+bundle.js:141407:21
+Cow 2 assigned a default material. PokerFrogs.js:170:32
+Cow 2 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:175:28
+Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
+Cow 2 successfully added to the scene. PokerFrogs.js:177:28
 Cow 3 assigned a default material. PokerFrogs.js:170:32
 Cow 3 created with material: 
 Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
@@ -400,32 +360,17 @@ Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
 Material: Name: cardMaterial PokerFrogs.js:29:16
 Meshes in the scene: 
 Array(25) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
-PokerFrogs.js:287:16
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 4
+bundle.js:141407:21
 Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: react_devtools_backend_compact.js.map
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 4
-XHRGET
-http://localhost:4242/api/scene/1
-[HTTP/1.1 404 Not Found 4ms]
-
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568317:19\nsettle@http://localhost:4141/bundle.js:569099:12\nonloadend@http://localhost:4141/bundle.js:567575:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567589:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567533:10\ndispatchRequest@http://localhost:4141/bundle.js:568911:10\n_request@http://localhost:4141/bundle.js:568224:77\nrequest@http://localhost:4141/bundle.js:568091:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568250:17\nwrap@http://localhost:4141/bundle.js:569553:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\nload1@http://localhost:4141/bundle.js:141861:23\n_callClosestMatchingHandler@http://localhost:4141/bundle.js:180669:23\n_callHandlerIfActionNotHandled@http://localhost:4141/bundle.js:181441:37\nhandleKeydown@http://localhost:4141/bundle.js:181069:14\nhandleKeydown@http://localhost:4141/bundle.js:176359:45\n_handleKeyDown@http://localhost:4141/bundle.js:183277:109\ncallCallback@http://localhost:4141/bundle.js:148400:14\ninvokeGuardedCallbackDev@http://localhost:4141/bundle.js:148449:16\ninvokeGuardedCallback@http://localhost:4141/bundle.js:148513:31\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:4141/bundle.js:148527:25\nexecuteDispatch@http://localhost:4141/bundle.js:153277:42\nprocessDispatchQueueItemsInOrder@http://localhost:4141/bundle.js:153309:22\nprocessDispatchQueue@http://localhost:4141/bundle.js:153322:37\ndispatchEventsForPlugins@http://localhost:4141/bundle.js:153333:23\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:4141/bundle.js:153524:12\nbatchedUpdates$1@http://localhost:4141/bundle.js:170410:12\nbatchedUpdates@http://localhost:4141/bundle.js:148227:12\ndispatchEventForPluginEventSystem@http://localhost:4141/bundle.js:153523:17\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:4141/bundle.js:150701:38\ndispatchEvent@http://localhost:4141/bundle.js:150693:84\ndispatchDiscreteEvent@http://localhost:4141/bundle.js:150666:18\nEventListener.handleEvent*addEventBubbleListener@http://localhost:4141/bundle.js:150923:10\naddTrappedEventListener@http://localhost:4141/bundle.js:153427:29\nlistenToNativeEvent@http://localhost:4141/bundle.js:153365:26\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:4141/bundle.js:153376:30\nlistenToAllSupportedEvents@http://localhost:4141/bundle.js:153371:21\ncreateRoot@http://localhost:4141/bundle.js:173656:29\ncreateRoot$1@http://localhost:4141/bundle.js:174086:10\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:4141/bundle.js:174174:16\n./src/index.js@http://localhost:4141/bundle.js:142031:72\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\n@http://localhost:4141/bundle.js:573375:56\n@http://localhost:4141/bundle.js:573377:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
-pokerfrogs:13851:25
-Source map error: Error: request failed with status 404
-Resource URL: null
-Source Map URL: react_devtools_backend_compact.js.map
-XHRGET
-http://localhost:4242/api/scene/2
-[HTTP/1.1 404 Not Found 2ms]
-
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568317:19\nsettle@http://localhost:4141/bundle.js:569099:12\nonloadend@http://localhost:4141/bundle.js:567575:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567589:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567533:10\ndispatchRequest@http://localhost:4141/bundle.js:568911:10\n_request@http://localhost:4141/bundle.js:568224:77\nrequest@http://localhost:4141/bundle.js:568091:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568250:17\nwrap@http://localhost:4141/bundle.js:569553:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\nload2@http://localhost:4141/bundle.js:141864:23\n_callClosestMatchingHandler@http://localhost:4141/bundle.js:180669:23\n_callHandlerIfActionNotHandled@http://localhost:4141/bundle.js:181441:37\nhandleKeydown@http://localhost:4141/bundle.js:181069:14\nhandleKeydown@http://localhost:4141/bundle.js:176359:45\n_handleKeyDown@http://localhost:4141/bundle.js:183277:109\ncallCallback@http://localhost:4141/bundle.js:148400:14\ninvokeGuardedCallbackDev@http://localhost:4141/bundle.js:148449:16\ninvokeGuardedCallback@http://localhost:4141/bundle.js:148513:31\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:4141/bundle.js:148527:25\nexecuteDispatch@http://localhost:4141/bundle.js:153277:42\nprocessDispatchQueueItemsInOrder@http://localhost:4141/bundle.js:153309:22\nprocessDispatchQueue@http://localhost:4141/bundle.js:153322:37\ndispatchEventsForPlugins@http://localhost:4141/bundle.js:153333:23\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:4141/bundle.js:153524:12\nbatchedUpdates$1@http://localhost:4141/bundle.js:170410:12\nbatchedUpdates@http://localhost:4141/bundle.js:148227:12\ndispatchEventForPluginEventSystem@http://localhost:4141/bundle.js:153523:17\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:4141/bundle.js:150701:38\ndispatchEvent@http://localhost:4141/bundle.js:150693:84\ndispatchDiscreteEvent@http://localhost:4141/bundle.js:150666:18\nEventListener.handleEvent*addEventBubbleListener@http://localhost:4141/bundle.js:150923:10\naddTrappedEventListener@http://localhost:4141/bundle.js:153427:29\nlistenToNativeEvent@http://localhost:4141/bundle.js:153365:26\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:4141/bundle.js:153376:30\nlistenToAllSupportedEvents@http://localhost:4141/bundle.js:153371:21\ncreateRoot@http://localhost:4141/bundle.js:173656:29\ncreateRoot$1@http://localhost:4141/bundle.js:174086:10\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:4141/bundle.js:174174:16\n./src/index.js@http://localhost:4141/bundle.js:142031:72\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\n@http://localhost:4141/bundle.js:573375:56\n@http://localhost:4141/bundle.js:573377:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
-pokerfrogs:13851:25
+Cow configurations being saved: 
+Array(4) [ {…}, {…}, {…}, {…} ]
+PokerFrogs.js:489:16
 Saving scene configuration: 
 Object { camera: {…}, cows: (4) […], cards: (15) […] }
-PokerFrogs.js:502:16
+bundle.js:141707:21
+Scene 2 saved successfully. bundle.js:141717:21
 Mesh: myGround PokerFrogs.js:25:16
 Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
 Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
@@ -551,90 +496,14 @@ Position: {X: 0.6000000000000001 Y: 0 Z: 1} PokerFrogs.js:26:16
 Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
 Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
 Material: Name: cardMaterial PokerFrogs.js:29:16
-Mesh: defaultGround PokerFrogs.js:25:16
-Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
-Material: Name: groundMaterial PokerFrogs.js:29:16
-Mesh: defaultGround PokerFrogs.js:25:16
-Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
-Material: Name: groundMaterial PokerFrogs.js:29:16
-Scene 2 saved successfully. PokerFrogs.js:512:20
-XHRGET
-http://localhost:4242/api/scene/1
-[HTTP/1.1 404 Not Found 2ms]
-
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568317:19\nsettle@http://localhost:4141/bundle.js:569099:12\nonloadend@http://localhost:4141/bundle.js:567575:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567589:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567533:10\ndispatchRequest@http://localhost:4141/bundle.js:568911:10\n_request@http://localhost:4141/bundle.js:568224:77\nrequest@http://localhost:4141/bundle.js:568091:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568250:17\nwrap@http://localhost:4141/bundle.js:569553:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\nload1@http://localhost:4141/bundle.js:141861:23\n_callClosestMatchingHandler@http://localhost:4141/bundle.js:180669:23\n_callHandlerIfActionNotHandled@http://localhost:4141/bundle.js:181441:37\nhandleKeydown@http://localhost:4141/bundle.js:181069:14\nhandleKeydown@http://localhost:4141/bundle.js:176359:45\n_handleKeyDown@http://localhost:4141/bundle.js:183277:109\ncallCallback@http://localhost:4141/bundle.js:148400:14\ninvokeGuardedCallbackDev@http://localhost:4141/bundle.js:148449:16\ninvokeGuardedCallback@http://localhost:4141/bundle.js:148513:31\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:4141/bundle.js:148527:25\nexecuteDispatch@http://localhost:4141/bundle.js:153277:42\nprocessDispatchQueueItemsInOrder@http://localhost:4141/bundle.js:153309:22\nprocessDispatchQueue@http://localhost:4141/bundle.js:153322:37\ndispatchEventsForPlugins@http://localhost:4141/bundle.js:153333:23\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:4141/bundle.js:153524:12\nbatchedUpdates$1@http://localhost:4141/bundle.js:170410:12\nbatchedUpdates@http://localhost:4141/bundle.js:148227:12\ndispatchEventForPluginEventSystem@http://localhost:4141/bundle.js:153523:17\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:4141/bundle.js:150701:38\ndispatchEvent@http://localhost:4141/bundle.js:150693:84\ndispatchDiscreteEvent@http://localhost:4141/bundle.js:150666:18\nEventListener.handleEvent*addEventBubbleListener@http://localhost:4141/bundle.js:150923:10\naddTrappedEventListener@http://localhost:4141/bundle.js:153427:29\nlistenToNativeEvent@http://localhost:4141/bundle.js:153365:26\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:4141/bundle.js:153376:30\nlistenToAllSupportedEvents@http://localhost:4141/bundle.js:153371:21\ncreateRoot@http://localhost:4141/bundle.js:173656:29\ncreateRoot$1@http://localhost:4141/bundle.js:174086:10\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:4141/bundle.js:174174:16\n./src/index.js@http://localhost:4141/bundle.js:142031:72\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\n@http://localhost:4141/bundle.js:573375:56\n@http://localhost:4141/bundle.js:573377:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
-pokerfrogs:13851:25
-Scene 2 loaded successfully. PokerFrogs.js:349:20
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 2
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 14
-XHRGET
-http://localhost:4242/api/scene/1
-[HTTP/1.1 404 Not Found 2ms]
-
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568317:19\nsettle@http://localhost:4141/bundle.js:569099:12\nonloadend@http://localhost:4141/bundle.js:567575:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567589:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567533:10\ndispatchRequest@http://localhost:4141/bundle.js:568911:10\n_request@http://localhost:4141/bundle.js:568224:77\nrequest@http://localhost:4141/bundle.js:568091:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568250:17\nwrap@http://localhost:4141/bundle.js:569553:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\nload1@http://localhost:4141/bundle.js:141861:23\n_callClosestMatchingHandler@http://localhost:4141/bundle.js:180669:23\n_callHandlerIfActionNotHandled@http://localhost:4141/bundle.js:181441:37\nhandleKeydown@http://localhost:4141/bundle.js:181069:14\nhandleKeydown@http://localhost:4141/bundle.js:176359:45\n_handleKeyDown@http://localhost:4141/bundle.js:183277:109\ncallCallback@http://localhost:4141/bundle.js:148400:14\ninvokeGuardedCallbackDev@http://localhost:4141/bundle.js:148449:16\ninvokeGuardedCallback@http://localhost:4141/bundle.js:148513:31\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:4141/bundle.js:148527:25\nexecuteDispatch@http://localhost:4141/bundle.js:153277:42\nprocessDispatchQueueItemsInOrder@http://localhost:4141/bundle.js:153309:22\nprocessDispatchQueue@http://localhost:4141/bundle.js:153322:37\ndispatchEventsForPlugins@http://localhost:4141/bundle.js:153333:23\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:4141/bundle.js:153524:12\nbatchedUpdates$1@http://localhost:4141/bundle.js:170410:12\nbatchedUpdates@http://localhost:4141/bundle.js:148227:12\ndispatchEventForPluginEventSystem@http://localhost:4141/bundle.js:153523:17\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:4141/bundle.js:150701:38\ndispatchEvent@http://localhost:4141/bundle.js:150693:84\ndispatchDiscreteEvent@http://localhost:4141/bundle.js:150666:18\nEventListener.handleEvent*addEventBubbleListener@http://localhost:4141/bundle.js:150923:10\naddTrappedEventListener@http://localhost:4141/bundle.js:153427:29\nlistenToNativeEvent@http://localhost:4141/bundle.js:153365:26\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:4141/bundle.js:153376:30\nlistenToAllSupportedEvents@http://localhost:4141/bundle.js:153371:21\ncreateRoot@http://localhost:4141/bundle.js:173656:29\ncreateRoot$1@http://localhost:4141/bundle.js:174086:10\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:4141/bundle.js:174174:16\n./src/index.js@http://localhost:4141/bundle.js:142031:72\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\n@http://localhost:4141/bundle.js:573375:56\n@http://localhost:4141/bundle.js:573377:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
-pokerfrogs:13851:25
-Scene 2 loaded successfully. PokerFrogs.js:349:20
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
-After reporting 32, no further warnings will be reported for this WebGL context.
 XHRGET
 http://localhost:4242/api/scene/1
 [HTTP/1.1 404 Not Found 3ms]
 
 Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568317:19\nsettle@http://localhost:4141/bundle.js:569099:12\nonloadend@http://localhost:4141/bundle.js:567575:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567589:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567533:10\ndispatchRequest@http://localhost:4141/bundle.js:568911:10\n_request@http://localhost:4141/bundle.js:568224:77\nrequest@http://localhost:4141/bundle.js:568091:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568250:17\nwrap@http://localhost:4141/bundle.js:569553:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\nload1@http://localhost:4141/bundle.js:141861:23\n_callClosestMatchingHandler@http://localhost:4141/bundle.js:180669:23\n_callHandlerIfActionNotHandled@http://localhost:4141/bundle.js:181441:37\nhandleKeydown@http://localhost:4141/bundle.js:181069:14\nhandleKeydown@http://localhost:4141/bundle.js:176359:45\n_handleKeyDown@http://localhost:4141/bundle.js:183277:109\ncallCallback@http://localhost:4141/bundle.js:148400:14\ninvokeGuardedCallbackDev@http://localhost:4141/bundle.js:148449:16\ninvokeGuardedCallback@http://localhost:4141/bundle.js:148513:31\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:4141/bundle.js:148527:25\nexecuteDispatch@http://localhost:4141/bundle.js:153277:42\nprocessDispatchQueueItemsInOrder@http://localhost:4141/bundle.js:153309:22\nprocessDispatchQueue@http://localhost:4141/bundle.js:153322:37\ndispatchEventsForPlugins@http://localhost:4141/bundle.js:153333:23\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:4141/bundle.js:153524:12\nbatchedUpdates$1@http://localhost:4141/bundle.js:170410:12\nbatchedUpdates@http://localhost:4141/bundle.js:148227:12\ndispatchEventForPluginEventSystem@http://localhost:4141/bundle.js:153523:17\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:4141/bundle.js:150701:38\ndispatchEvent@http://localhost:4141/bundle.js:150693:84\ndispatchDiscreteEvent@http://localhost:4141/bundle.js:150666:18\nEventListener.handleEvent*addEventBubbleListener@http://localhost:4141/bundle.js:150923:10\naddTrappedEventListener@http://localhost:4141/bundle.js:153427:29\nlistenToNativeEvent@http://localhost:4141/bundle.js:153365:26\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:4141/bundle.js:153376:30\nlistenToAllSupportedEvents@http://localhost:4141/bundle.js:153371:21\ncreateRoot@http://localhost:4141/bundle.js:173656:29\ncreateRoot$1@http://localhost:4141/bundle.js:174086:10\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:4141/bundle.js:174174:16\n./src/index.js@http://localhost:4141/bundle.js:142031:72\n__webpack_require__@http://localhost:4141/bundle.js:572258:32\n@http://localhost:4141/bundle.js:573375:56\n@http://localhost:4141/bundle.js:573377:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
+Object { stack: "AxiosError@http://localhost:4141/bundle.js:568309:19\nsettle@http://localhost:4141/bundle.js:569091:12\nonloadend@http://localhost:4141/bundle.js:567567:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567581:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567525:10\ndispatchRequest@http://localhost:4141/bundle.js:568903:10\n_request@http://localhost:4141/bundle.js:568216:77\nrequest@http://localhost:4141/bundle.js:568083:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568242:17\nwrap@http://localhost:4141/bundle.js:569545:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\nload1@http://localhost:4141/bundle.js:141853:23\n_callClosestMatchingHandler@http://localhost:4141/bundle.js:180661:23\n_callHandlerIfActionNotHandled@http://localhost:4141/bundle.js:181433:37\nhandleKeydown@http://localhost:4141/bundle.js:181061:14\nhandleKeydown@http://localhost:4141/bundle.js:176351:45\n_handleKeyDown@http://localhost:4141/bundle.js:183269:109\ncallCallback@http://localhost:4141/bundle.js:148392:14\ninvokeGuardedCallbackDev@http://localhost:4141/bundle.js:148441:16\ninvokeGuardedCallback@http://localhost:4141/bundle.js:148505:31\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:4141/bundle.js:148519:25\nexecuteDispatch@http://localhost:4141/bundle.js:153269:42\nprocessDispatchQueueItemsInOrder@http://localhost:4141/bundle.js:153301:22\nprocessDispatchQueue@http://localhost:4141/bundle.js:153314:37\ndispatchEventsForPlugins@http://localhost:4141/bundle.js:153325:23\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:4141/bundle.js:153516:12\nbatchedUpdates$1@http://localhost:4141/bundle.js:170402:12\nbatchedUpdates@http://localhost:4141/bundle.js:148219:12\ndispatchEventForPluginEventSystem@http://localhost:4141/bundle.js:153515:17\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:4141/bundle.js:150693:38\ndispatchEvent@http://localhost:4141/bundle.js:150685:84\ndispatchDiscreteEvent@http://localhost:4141/bundle.js:150658:18\nEventListener.handleEvent*addEventBubbleListener@http://localhost:4141/bundle.js:150915:10\naddTrappedEventListener@http://localhost:4141/bundle.js:153419:29\nlistenToNativeEvent@http://localhost:4141/bundle.js:153357:26\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:4141/bundle.js:153368:30\nlistenToAllSupportedEvents@http://localhost:4141/bundle.js:153363:21\ncreateRoot@http://localhost:4141/bundle.js:173648:29\ncreateRoot$1@http://localhost:4141/bundle.js:174078:10\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:4141/bundle.js:174166:16\n./src/index.js@http://localhost:4141/bundle.js:142023:72\n__webpack_require__@http://localhost:4141/bundle.js:572250:32\n@http://localhost:4141/bundle.js:573367:56\n@http://localhost:4141/bundle.js:573369:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
 pokerfrogs:13851:25
-Uncaught TypeError: this._getEngine() is null
-    update rawTexture.js:52
-    prepare skeleton.js:480
-    _activeMesh BaseGradient.js:6
-    _evaluateActiveMeshes bundle.js:505957
-    _renderForCamera LinearGradient.js:32
-    _processSubCameras RadialGradient.js:31
-    render grid.js:179
-    runRenderLoop PokerFrogs.js:387
-    _renderFrame engine.js:841
-    _renderLoop engine.js:856
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-    QueueNewFrame thinEngine.js:4680
-    _queueNewFrame thinEngine.js:1179
-    _renderLoop engine.js:872
-rawTexture.js:52
+Source map error: Error: request failed with status 404
+Resource URL: null
+Source Map URL: react_devtools_backend_compact.js.map
 Scene 2 loaded successfully. PokerFrogs.js:349:20

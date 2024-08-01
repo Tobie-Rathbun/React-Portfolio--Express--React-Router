@@ -21,6 +21,7 @@ const PokerFrogs = () => {
     const [guiPosition, setGuiPosition] = useState({ x: '50%', y: '50%' });
     const [isMinimized, setIsMinimized] = useState(false);
     const [isSceneReady, setIsSceneReady] = useState(false);
+
     const logMeshDetails = (mesh) => {
         console.log(`Mesh: ${mesh.name}`);
         console.log(`Position: ${mesh.position}`);
@@ -28,6 +29,7 @@ const PokerFrogs = () => {
         console.log(`Scale: ${mesh.scaling}`);
         console.log(`Material: ${mesh.material}`);
     };
+
     const logAllMeshes = (scene) => {
         scene.meshes.forEach(mesh => {
             logMeshDetails(mesh);
@@ -90,28 +92,43 @@ const PokerFrogs = () => {
     const createCard = (card, scene) => {
         const cardMaterial = new BABYLON.StandardMaterial("cardMaterial", scene);
         cardMaterial.diffuseTexture = new BABYLON.Texture(`/images/${card}.png`, scene);
-    
+
         cardMaterial.emissiveTexture = cardMaterial.diffuseTexture;
         cardMaterial.emissiveColor = new BABYLON.Color3(1, 1, 1);
 
         const faceUV = [
-            new BABYLON.Vector4(0, 0, 1 / 114, 1), 
-            new BABYLON.Vector4(1 / 114, 0, 2 / 114, 1), 
-            new BABYLON.Vector4(2 / 114, 0, 3 / 114, 1), 
-            new BABYLON.Vector4(3 / 114, 0, 4 / 114, 1), 
-            new BABYLON.Vector4(4 / 114, 0, 59 / 114, 1), 
-            new BABYLON.Vector4(59 / 114, 0, 1, 1)   
+            new BABYLON.Vector4(0, 0, 1 / 114, 1),
+            new BABYLON.Vector4(1 / 114, 0, 2 / 114, 1),
+            new BABYLON.Vector4(2 / 114, 0, 3 / 114, 1),
+            new BABYLON.Vector4(3 / 114, 0, 4 / 114, 1),
+            new BABYLON.Vector4(4 / 114, 0, 59 / 114, 1),
+            new BABYLON.Vector4(59 / 114, 0, 1, 1)
         ];
 
         const cardMesh = BABYLON.MeshBuilder.CreateBox("card", {
-            width: 2.5 / 3.5, 
-            height: 0.005, 
-            depth: 1, 
+            width: 2.5 / 3.5,
+            height: 0.005,
+            depth: 1,
             faceUV: faceUV
         }, scene);
         cardMesh.material = cardMaterial;
-    
+
         return cardMesh;
+    };
+
+    const createCow = async (scene, position, rotation, scale, name) => {
+        const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
+        const cow = result.meshes[0];
+        cow.position = new BABYLON.Vector3(...position);
+        cow.rotation = new BABYLON.Vector3(...rotation);
+        cow.scaling = new BABYLON.Vector3(...scale);
+        cow.name = name;
+
+        cow.material = new BABYLON.StandardMaterial("cowMaterial", scene);
+        cow.material.diffuseColor = new BABYLON.Color3(1, 1, 1);
+        cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
+
+        return cow;
     };
 
     const displayHand = (hand, scene, position, faceDown = false) => {
@@ -134,68 +151,44 @@ const PokerFrogs = () => {
         camera.radius = 1;
         camera.wheelPrecision = 100;
         scene.activeCamera = camera; // Ensure the camera is assigned to the scene's activeCamera
-    
+
         const light = new BABYLON.DirectionalLight("directionalLight", new BABYLON.Vector3(-1, -1, -1), scene);
         light.intensity = 0.5;
-    
+
         const ground = BABYLON.MeshBuilder.CreateGround("myGround", { width: 50, height: 50 }, scene);
         ground.position = new BABYLON.Vector3(0, -2, 0);
         ground.receiveShadows = true;
         ground.material = new BABYLON.StandardMaterial("groundMaterial", scene);
         ground.material.diffuseColor = new BABYLON.Color3(0.6, 0.4, 0.2);
 
-    
         const cowPositions = [
             new BABYLON.Vector3(-3, 0, 4),
             new BABYLON.Vector3(-1, 0, 4),
             new BABYLON.Vector3(1, 0, 4),
             new BABYLON.Vector3(3, 0, 4)
         ];
-        
+
         for (let i = 0; i < 4; i++) {
             try {
-                const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
-                if (result.meshes.length > 0) {
-                    const cow = result.meshes[0];
-                    cow.scaling = new BABYLON.Vector3(0.25, 0.25, 0.25);
-                    cow.position = cowPositions[i];
-                    cow.rotation = new BABYLON.Vector3(0, Math.PI / 2, 0);
-        
-                    // Check if the cow has a material and if not, create a default material
-                    if (!cow.material) {
-                        let cowMaterial = new BABYLON.StandardMaterial("cowMaterial", scene);
-                        cowMaterial.diffuseColor = new BABYLON.Color3(1, 1, 1); // Ensure the cow is visible
-                        cowMaterial.emissiveColor = new BABYLON.Color3(1, 1, 1); // Ensure the cow is visible
-                        cow.material = cowMaterial;
-                        console.log(`Cow ${i} assigned a default material.`);
-                    } else {
-                        console.log(`Cow ${i} using existing material.`);
-                    }
-        
-                    console.log(`Cow ${i} created with material:`, cow.material);
-                    console.log(`Cow ${i} position: ${cow.position}, scaling: ${cow.scaling}, rotation: ${cow.rotation}`);
-                    console.log(`Cow ${i} successfully added to the scene.`);
-                } else {
-                    console.error(`No meshes found in the GLB file for cow ${i}.`);
-                }
+                await createCow(scene, [cowPositions[i].x, cowPositions[i].y, cowPositions[i].z], [0, Math.PI / 2, 0], [0.25, 0.25, 0.25], `Cow${i + 1}`);
+                console.log(`Cow ${i + 1} successfully added to the scene.`);
             } catch (error) {
-                console.error(`Error loading cow ${i}:`, error);
+                console.error(`Error loading cow ${i + 1}:`, error);
             }
         }
-    
+
         displayHand(hands.p0, scene, new BABYLON.Vector3(0, 0, -2));
         for (let i = 1; i <= 4; i++) {
             displayHand(hands[`p${i}`], scene, new BABYLON.Vector3(cowPositions[i - 1].x, 0, 3.5), true);
         }
         displayHand(community, scene, new BABYLON.Vector3(-1, 0, 1));
-    
+
         const utilLayer = new BABYLON.UtilityLayerRenderer(scene);
         const positionGizmo = new BABYLON.PositionGizmo(utilLayer);
         const rotationGizmo = new BABYLON.RotationGizmo(utilLayer);
         const scaleGizmo = new BABYLON.ScaleGizmo(utilLayer);
         let activeGizmo = null;
-    
-        
+
         console.log("Initial scene setup:");
         scene.meshes.forEach(mesh => {
             logMeshDetails(mesh);
@@ -212,7 +205,7 @@ const PokerFrogs = () => {
                 }
             }
         };
-    
+
         const logMeshInfo = (mesh) => {
             const position = mesh.position;
             const rotation = mesh.rotation;
@@ -221,7 +214,7 @@ const PokerFrogs = () => {
             console.log(`Rotation: (${rotation.x.toFixed(2)}, ${rotation.y.toFixed(2)}, ${rotation.z.toFixed(2)})`);
             console.log(`Scale: (${scaling.x.toFixed(2)}, ${scaling.y.toFixed(2)}, ${scaling.z.toFixed(2)})`);
         };
-    
+
         const deleteSelectedMesh = () => {
             if (activeGizmo && activeGizmo.attachedMesh) {
                 activeGizmo.attachedMesh.dispose();
@@ -231,7 +224,7 @@ const PokerFrogs = () => {
                 console.log('No mesh is attached to any gizmo.');
             }
         };
-    
+
         window.addEventListener('keydown', (event) => {
             switch (event.key.toLowerCase()) {
                 case 'r':
@@ -315,21 +308,7 @@ const PokerFrogs = () => {
 
             // Load new meshes
             for (const cowConfig of initialSceneConfig.cows) {
-                const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
-                const cow = result.meshes[0];
-                cow.name = cowConfig.name;
-                cow.position = new BABYLON.Vector3(...cowConfig.position);
-                cow.rotation = new BABYLON.Vector3(...cowConfig.rotation);
-                cow.scaling = new BABYLON.Vector3(...cowConfig.scale);
-
-                // Ensure the material is correctly applied
-                if (cow.material) {
-                    cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
-                } else {
-                    cow.material = new BABYLON.StandardMaterial("cowMaterial", scene);
-                    cow.material.diffuseColor = new BABYLON.Color3(1, 1, 1);
-                    cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
-                }
+                await createCow(scene, cowConfig.position, cowConfig.rotation, cowConfig.scale, cowConfig.name);
             }
 
             for (const cardConfig of initialSceneConfig.cards) {
@@ -362,16 +341,16 @@ const PokerFrogs = () => {
         camera.radius = 10;
         camera.wheelPrecision = 100;
         scene.activeCamera = camera; // Ensure the camera is assigned to the scene's activeCamera
-    
+
         const light = new BABYLON.DirectionalLight("directionalLight", new BABYLON.Vector3(-1, -1, -1), scene);
         light.intensity = 0.5;
-    
+
         const ground = BABYLON.MeshBuilder.CreateGround("defaultGround", { width: 50, height: 50 }, scene);
         ground.position = new BABYLON.Vector3(0, -2, 0);
         ground.receiveShadows = true;
         ground.material = new BABYLON.StandardMaterial("groundMaterial", scene);
         ground.material.diffuseColor = new BABYLON.Color3(0.6, 0.4, 0.2);
-    
+
         setIsSceneReady(true);
     };
 
@@ -380,7 +359,7 @@ const PokerFrogs = () => {
         const engine = new BABYLON.Engine(canvas, true);
         const scene = new BABYLON.Scene(engine);
         setScene(scene);
-    
+
         const runRenderLoop = () => {
             engine.runRenderLoop(() => {
                 if (scene && scene.activeCamera) {
@@ -388,19 +367,19 @@ const PokerFrogs = () => {
                 }
             });
         };
-    
+
         loadInitialScene(scene).then(() => {
             runRenderLoop();
         });
-    
+
         window.addEventListener("resize", function () {
             if (engine) {
                 engine.resize();
             }
         });
-    
+
         initializeGame();
-    
+
         return () => {
             window.removeEventListener("resize", function () {
                 if (engine) {
@@ -410,8 +389,7 @@ const PokerFrogs = () => {
             engine.dispose();
         };
     }, []);
-    
-    
+
     useEffect(() => {
         if (scene && Object.keys(hands).length > 0) {
             onSceneReady(scene);
@@ -455,7 +433,7 @@ const PokerFrogs = () => {
             console.error("Scene or engine is not available.");
             return;
         }
-    
+
         const camera = scene.activeCamera;
         const cameraConfig = {
             alpha: camera.alpha,
@@ -463,14 +441,14 @@ const PokerFrogs = () => {
             radius: camera.radius,
             wheelPrecision: camera.wheelPrecision
         };
-    
+
         let cowConfigs = scene.meshes.filter(mesh => mesh.name.startsWith("Cow")).map(cow => ({
             name: cow.name,
             position: [cow.position.x, cow.position.y, cow.position.z],
             rotation: [cow.rotation.x, cow.rotation.y, cow.rotation.z],
             scale: [cow.scaling.x, cow.scaling.y, cow.scaling.z]
         }));
-    
+
         if (cowConfigs.length === 0) {
             const defaultCowPositions = [
                 new BABYLON.Vector3(-3, 0, 4),
@@ -478,7 +456,7 @@ const PokerFrogs = () => {
                 new BABYLON.Vector3(1, 0, 4),
                 new BABYLON.Vector3(3, 0, 4)
             ];
-    
+
             cowConfigs = defaultCowPositions.map((pos, index) => ({
                 name: `Cow${index + 1}`,
                 position: [pos.x, pos.y, pos.z],
@@ -486,23 +464,23 @@ const PokerFrogs = () => {
                 scale: [0.25, 0.25, 0.25]
             }));
         }
-    
+        console.log("Cow configurations being saved:", cowConfigs);
+
         const cardConfigs = scene.meshes.filter(mesh => mesh.name.startsWith("card")).map(card => ({
             name: card.material.diffuseTexture.name.split('/').pop().split('.')[0],
             position: [card.position.x, card.position.y, card.position.z],
             rotation: [card.rotation.x, card.rotation.y, card.rotation.z],
             scale: [card.scaling.x, card.scaling.y, card.scaling.z]
         }));
-    
+
         const sceneConfig = {
             camera: cameraConfig,
             cows: cowConfigs,
             cards: cardConfigs
         };
-    
+
         console.log("Saving scene configuration:", sceneConfig);
-        
-    
+
         try {
             const formattedSceneConfig = JSON.stringify(sceneConfig, null, 4);
             await axios.post(`http://localhost:4242/api/scene/${sceneId}`, formattedSceneConfig, {
@@ -516,80 +494,52 @@ const PokerFrogs = () => {
             console.error(`Error saving scene ${sceneId}:`, error);
         }
     };
-    
 
-    
     const loadSceneState = async (scene, sceneId) => {
         try {
             const response = await axios.get(`http://localhost:4242/api/scene/${sceneId}`);
             const sceneConfig = response.data;
 
             console.log("Loading scene configuration:", sceneConfig);
-    
+
             const camera = scene.activeCamera;
             camera.alpha = sceneConfig.camera.alpha;
             camera.beta = sceneConfig.camera.beta;
             camera.radius = sceneConfig.camera.radius;
             camera.wheelPrecision = sceneConfig.camera.wheelPrecision;
-    
+
             // Remove old meshes before loading new ones
             scene.meshes.forEach(mesh => {
                 if (mesh.name !== "myGround" && mesh.name !== "defaultGround") {
                     mesh.dispose();
                 }
             });
-    
+
             console.log("Old meshes removed");
-    
+
             for (const cowConfig of sceneConfig.cows) {
-                const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
-                const cow = result.meshes[0];
-                cow.name = cowConfig.name;
-                cow.position = new BABYLON.Vector3(...cowConfig.position);
-                cow.rotation = new BABYLON.Vector3(...cowConfig.rotation);
-                cow.scaling = new BABYLON.Vector3(...cowConfig.scale);
-    
-                // Ensure the material is correctly applied
-                if (cow.material) {
-                    cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
-                } else {
-                    cow.material = new BABYLON.StandardMaterial("cowMaterial", scene);
-                    cow.material.diffuseColor = new BABYLON.Color3(1, 1, 1);
-                    cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
-                }
-    
-                console.log(`Loaded cow: ${cow.name} at position ${cow.position}`);
+                await createCow(scene, cowConfig.position, cowConfig.rotation, cowConfig.scale, cowConfig.name);
             }
-    
+
             for (const cardConfig of sceneConfig.cards) {
                 const cardMesh = createCard(cardConfig.name, scene);
                 cardMesh.position = new BABYLON.Vector3(...cardConfig.position);
                 cardMesh.rotation = new BABYLON.Vector3(...cardConfig.rotation);
                 cardMesh.scaling = new BABYLON.Vector3(...cardConfig.scale);
-    
+
                 console.log(`Loaded card: ${cardConfig.name} at position ${cardMesh.position}`);
             }
-    
+
             setIsSceneReady(true);
             console.log(`Scene ${sceneId} loaded successfully.`);
             logAllMeshes(scene);
-            
+
         } catch (error) {
             console.error(`Error loading scene ${sceneId}:`, error);
             createDefaultScene(scene);
         }
     };
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     const handlers = {
         save1: () => { if (isSceneReady) saveSceneState(1); },
         save2: () => { if (isSceneReady) saveSceneState(2); },
