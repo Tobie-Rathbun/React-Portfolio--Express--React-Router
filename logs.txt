@@ -1,91 +1,959 @@
-[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
-[HMR] Waiting for update signal from WDS... log.js:39
- * Tone.js v14.7.77 * Global.js:67
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:194418:38
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:194734:36
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:196418:44
-[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
-[HMR] Waiting for update signal from WDS... log.js:39
- * Tone.js v14.7.77 * Global.js:67
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:194418:38
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:194734:36
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:196418:44
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
-Babylon.js v5.57.1 - WebGL2 2 thinEngine.js:603
-Cow 0 assigned a default material. PokerFrogs.js:157:32
-Cow 0 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 0 position: {X: -3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 0 successfully added to the scene. PokerFrogs.js:164:28
-Cow 0 assigned a default material. PokerFrogs.js:157:32
-Cow 0 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 0 position: {X: -3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 0 successfully added to the scene. PokerFrogs.js:164:28
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568307:19\nsettle@http://localhost:4141/bundle.js:569089:12\nonloadend@http://localhost:4141/bundle.js:567565:66\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
-PokerFrogs.js:332:20
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568307:19\nsettle@http://localhost:4141/bundle.js:569089:12\nonloadend@http://localhost:4141/bundle.js:567565:66\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
-PokerFrogs.js:332:20
-Cow 1 assigned a default material. PokerFrogs.js:157:32
-Cow 1 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 1 successfully added to the scene. PokerFrogs.js:164:28
-Cow 1 assigned a default material. PokerFrogs.js:157:32
-Cow 1 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 1 successfully added to the scene. PokerFrogs.js:164:28
-Cow 2 assigned a default material. PokerFrogs.js:157:32
-Cow 2 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 2 successfully added to the scene. PokerFrogs.js:164:28
-Cow 2 assigned a default material. PokerFrogs.js:157:32
-Cow 2 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 2 successfully added to the scene. PokerFrogs.js:164:28
-Cow 3 assigned a default material. PokerFrogs.js:157:32
-Cow 3 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 3 position: {X: 3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 3 successfully added to the scene. PokerFrogs.js:164:28
-Meshes in the scene: 
-Array(25) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
-PokerFrogs.js:268:16
-WebGL warning: uniform setter: UniformLocation is not from the current active Program. 2
-Cow 3 assigned a default material. PokerFrogs.js:157:32
-Cow 3 created with material: 
-Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
-PokerFrogs.js:162:28
-Cow 3 position: {X: 3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:163:28
-Cow 3 successfully added to the scene. PokerFrogs.js:164:28
-Meshes in the scene: 
-Array(34) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
-PokerFrogs.js:268:16
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 4
-Cows being saved:  
-Array(4) [ {…}, {…}, {…}, {…} ]
-PokerFrogs.js:472:16
-Cards being saved:  
-Array(15) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
-PokerFrogs.js:482:16
-Scene 2 saved successfully. PokerFrogs.js:497:20
-Scene 2 loaded successfully. PokerFrogs.js:330:20
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 12
+[webpack-dev-server] Disconnected! bundle.js:191504:22
+[webpack-dev-server] Trying to reconnect... bundle.js:191504:22
+[webpack-dev-server] Disconnected! bundle.js:191504:22
+[webpack-dev-server] Trying to reconnect... bundle.js:191504:22
+Loading failed for the <script> with source “http://localhost:4141/main.761bbc2b31f7825d2b29.hot-update.js”. pokerfrogs:1:1
 Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: installHook.js.map
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
+[HMR] Waiting for update signal from WDS... log.js:39
+ * Tone.js v14.7.77 * Global.js:67
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
+[HMR] Waiting for update signal from WDS... log.js:39
+ * Tone.js v14.7.77 * Global.js:67
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
+WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
+Babylon.js v5.57.1 - WebGL2 2 thinEngine.js:603
+XHRGET
+http://localhost:4242/api/scene/1
+[HTTP/1.1 404 Not Found 9ms]
+
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+XHRGET
+http://localhost:4242/api/scene/1
+[HTTP/1.1 404 Not Found 12ms]
+
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Error loading initial scene: 
+Object { stack: "AxiosError@http://localhost:4141/bundle.js:568318:19\nsettle@http://localhost:4141/bundle.js:569100:12\nonloadend@http://localhost:4141/bundle.js:567576:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567590:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567534:10\ndispatchRequest@http://localhost:4141/bundle.js:568912:10\n_request@http://localhost:4141/bundle.js:568225:77\nrequest@http://localhost:4141/bundle.js:568092:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568251:17\nwrap@http://localhost:4141/bundle.js:569554:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141596:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167421:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169197:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169162:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169149:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169137:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171310:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171255:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171040:9\nworkLoop@http://localhost:4141/bundle.js:189838:42\nflushWork@http://localhost:4141/bundle.js:189811:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190105:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190143:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190205:5\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190221:20\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144264:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174154:5\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174231:20\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174169:28\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./src/index.js@http://localhost:4141/bundle.js:142016:93\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\n@http://localhost:4141/bundle.js:573376:56\n@http://localhost:4141/bundle.js:573378:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
+PokerFrogs.js:351:20
+Cow 0 assigned a default material. PokerFrogs.js:170:32
+Cow 0 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:175:28
+Cow 0 position: {X: -3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
+Cow 0 successfully added to the scene. PokerFrogs.js:177:28
+Cow 0 assigned a default material. PokerFrogs.js:170:32
+Cow 0 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:175:28
+Cow 0 position: {X: -3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
+Cow 0 successfully added to the scene. PokerFrogs.js:177:28
+Error loading initial scene: 
+Object { stack: "AxiosError@http://localhost:4141/bundle.js:568318:19\nsettle@http://localhost:4141/bundle.js:569100:12\nonloadend@http://localhost:4141/bundle.js:567576:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567590:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567534:10\ndispatchRequest@http://localhost:4141/bundle.js:568912:10\n_request@http://localhost:4141/bundle.js:568225:77\nrequest@http://localhost:4141/bundle.js:568092:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568251:17\nwrap@http://localhost:4141/bundle.js:569554:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141596:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167421:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169197:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169162:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169149:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169137:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171310:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171255:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171040:9\nworkLoop@http://localhost:4141/bundle.js:189838:42\nflushWork@http://localhost:4141/bundle.js:189811:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190105:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190143:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190205:5\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190221:20\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144264:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174154:5\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174231:20\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174169:28\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\nfn@http://localhost:4141/bundle.js:572496:21\n./src/index.js@http://localhost:4141/bundle.js:142016:93\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\n@http://localhost:4141/bundle.js:573376:56\n@http://localhost:4141/bundle.js:573378:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
+PokerFrogs.js:351:20
+Cow 1 assigned a default material. PokerFrogs.js:170:32
+Cow 1 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:175:28
+Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
+Cow 1 successfully added to the scene. PokerFrogs.js:177:28
+Cow 1 assigned a default material. PokerFrogs.js:170:32
+Cow 1 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:175:28
+Cow 1 position: {X: -1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
+Cow 1 successfully added to the scene. PokerFrogs.js:177:28
+WebGL warning: texImage: No texture bound to TEXTURE_2D[4].
+Cow 2 assigned a default material. PokerFrogs.js:170:32
+Cow 2 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:175:28
+Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
+Cow 2 successfully added to the scene. PokerFrogs.js:177:28
+WebGL warning: uniform setter: UniformLocation is not from the current active Program.
+WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE.
+WebGL warning: uniform setter: UniformLocation is not from the current active Program.
+WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE.
+Cow 2 assigned a default material. PokerFrogs.js:170:32
+Cow 2 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:175:28
+Cow 2 position: {X: 1 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
+Cow 2 successfully added to the scene. PokerFrogs.js:177:28
+Cow 3 assigned a default material. PokerFrogs.js:170:32
+Cow 3 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:175:28
+Cow 3 position: {X: 3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
+Cow 3 successfully added to the scene. PokerFrogs.js:177:28
+Initial scene setup: PokerFrogs.js:199:16
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: defaultGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.4 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -2.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.19999999999999996 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.20000000000000018 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.6000000000000001 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Meshes in the scene: 
+Array(25) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
+PokerFrogs.js:287:16
+Cow 3 assigned a default material. PokerFrogs.js:170:32
+Cow 3 created with material: 
+Object { shadowDepthWrapper: null, allowShaderHotSwapping: true, metadata: null, reservedDataStore: null, checkReadyOnEveryCall: false, checkReadyOnlyOnce: false, state: "", _alpha: 1, _backFaceCulling: true, _cullBackFaces: true, … }
+PokerFrogs.js:175:28
+Cow 3 position: {X: 3 Y: 0 Z: 4}, scaling: {X: 0.25 Y: 0.25 Z: 0.25}, rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:176:28
+Cow 3 successfully added to the scene. PokerFrogs.js:177:28
+Initial scene setup: PokerFrogs.js:199:16
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: defaultGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.4 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -2.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.19999999999999996 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.20000000000000018 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.6000000000000001 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Meshes in the scene: 
+Array(25) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, … ]
+PokerFrogs.js:287:16
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 27
+After reporting 32, no further warnings will be reported for this WebGL context.
 Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: react_devtools_backend_compact.js.map
+Saving scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:503:16
+Scene 2 saved successfully. bundle.js:141716:21
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: defaultGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.4 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -2.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.19999999999999996 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.20000000000000018 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.6000000000000001 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Saving scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:503:16
+Scene 3 saved successfully. bundle.js:141716:21
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: defaultGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.4 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -2.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.19999999999999996 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.20000000000000018 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.6000000000000001 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Saving scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:503:16
+Scene 4 saved successfully. bundle.js:141716:21
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: defaultGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.4 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -2.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.19999999999999996 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.20000000000000018 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.6000000000000001 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Saving scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:503:16
+Scene 5 saved successfully. bundle.js:141716:21
+Mesh: myGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: defaultGround PokerFrogs.js:25:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: groundMaterial PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: __root__ PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 4} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:28:16
+Material: Name: cowMaterial PokerFrogs.js:29:16
+Mesh: cow PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cowtexture PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.4 Y: 0 Z: -2} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -2.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 1.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 3.4 Y: 0 Z: 3.5} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -1 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.6 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: -0.19999999999999996 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.20000000000000018 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+Mesh: card PokerFrogs.js:25:16
+Position: {X: 0.6000000000000001 Y: 0 Z: 1} PokerFrogs.js:26:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:28:16
+Material: Name: cardMaterial PokerFrogs.js:29:16
+XHRGET
+http://localhost:4242/api/scene/1
+[HTTP/1.1 404 Not Found 2ms]
+
+Error loading initial scene: 
+Object { stack: "AxiosError@http://localhost:4141/bundle.js:568318:19\nsettle@http://localhost:4141/bundle.js:569100:12\nonloadend@http://localhost:4141/bundle.js:567576:66\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567590:7\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567534:10\ndispatchRequest@http://localhost:4141/bundle.js:568912:10\n_request@http://localhost:4141/bundle.js:568225:77\nrequest@http://localhost:4141/bundle.js:568092:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568251:17\nwrap@http://localhost:4141/bundle.js:569554:15\n_callee2$@http://localhost:4141/bundle.js:141443:66\ntryCatch@http://localhost:4141/bundle.js:141082:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141082:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141082:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141083:70\n_next@http://localhost:4141/bundle.js:141084:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141084:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141084:90\nloadInitialScene@http://localhost:4141/bundle.js:141559:20\nload1@http://localhost:4141/bundle.js:141862:23\n_callClosestMatchingHandler@http://localhost:4141/bundle.js:180670:23\n_callHandlerIfActionNotHandled@http://localhost:4141/bundle.js:181442:37\nhandleKeydown@http://localhost:4141/bundle.js:181070:14\nhandleKeydown@http://localhost:4141/bundle.js:176360:45\n_handleKeyDown@http://localhost:4141/bundle.js:183278:109\ncallCallback@http://localhost:4141/bundle.js:148401:14\ninvokeGuardedCallbackDev@http://localhost:4141/bundle.js:148450:16\ninvokeGuardedCallback@http://localhost:4141/bundle.js:148514:31\ninvokeGuardedCallbackAndCatchFirstError@http://localhost:4141/bundle.js:148528:25\nexecuteDispatch@http://localhost:4141/bundle.js:153278:42\nprocessDispatchQueueItemsInOrder@http://localhost:4141/bundle.js:153310:22\nprocessDispatchQueue@http://localhost:4141/bundle.js:153323:37\ndispatchEventsForPlugins@http://localhost:4141/bundle.js:153334:23\n./node_modules/react-dom/cjs/react-dom.development.js/dispatchEventForPluginEventSystem/<@http://localhost:4141/bundle.js:153525:12\nbatchedUpdates$1@http://localhost:4141/bundle.js:170411:12\nbatchedUpdates@http://localhost:4141/bundle.js:148228:12\ndispatchEventForPluginEventSystem@http://localhost:4141/bundle.js:153524:17\ndispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay@http://localhost:4141/bundle.js:150702:38\ndispatchEvent@http://localhost:4141/bundle.js:150694:84\ndispatchDiscreteEvent@http://localhost:4141/bundle.js:150667:18\nEventListener.handleEvent*addEventBubbleListener@http://localhost:4141/bundle.js:150924:10\naddTrappedEventListener@http://localhost:4141/bundle.js:153428:29\nlistenToNativeEvent@http://localhost:4141/bundle.js:153366:26\n./node_modules/react-dom/cjs/react-dom.development.js/listenToAllSupportedEvents/<@http://localhost:4141/bundle.js:153377:30\nlistenToAllSupportedEvents@http://localhost:4141/bundle.js:153372:21\ncreateRoot@http://localhost:4141/bundle.js:173657:29\ncreateRoot$1@http://localhost:4141/bundle.js:174087:10\n./node_modules/react-dom/client.js/exports.createRoot@http://localhost:4141/bundle.js:174175:16\n./src/index.js@http://localhost:4141/bundle.js:142032:72\n__webpack_require__@http://localhost:4141/bundle.js:572259:32\n@http://localhost:4141/bundle.js:573376:56\n@http://localhost:4141/bundle.js:573378:12\n", message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…} }
+pokerfrogs:13851:25
+Source map error: Error: request failed with status 404
+Resource URL: null
+Source Map URL: react_devtools_backend_compact.js.map
+Scene 2 loaded successfully. PokerFrogs.js:349:20
+Scene 3 loaded successfully. PokerFrogs.js:349:20
+Uncaught TypeError: this._getEngine() is null
+    update rawTexture.js:52
+    prepare skeleton.js:480
+    _activeMesh BaseGradient.js:6
+    _evaluateActiveMeshes bundle.js:505958
+    _renderForCamera LinearGradient.js:32
+    _processSubCameras RadialGradient.js:31
+    render grid.js:179
+    runRenderLoop PokerFrogs.js:387
+    _renderFrame engine.js:841
+    _renderLoop engine.js:856
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+    QueueNewFrame thinEngine.js:4680
+    _queueNewFrame thinEngine.js:1179
+    _renderLoop engine.js:872
+rawTexture.js:52
+Scene 4 loaded successfully. PokerFrogs.js:349:20
