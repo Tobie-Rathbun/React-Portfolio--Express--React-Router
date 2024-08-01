@@ -1,7 +1,61 @@
-[webpack-dev-server] Disconnected! bundle.js:191583:22
-[webpack-dev-server] Trying to reconnect... bundle.js:191583:22
-[webpack-dev-server] Disconnected! bundle.js:191583:22
-[webpack-dev-server] Trying to reconnect... bundle.js:191583:22
+[HMR] Cannot apply update. Need to do a full reload! pokerfrogs:13851:25
+[HMR] Aborted because ./src/components/PokerGUI.js is not accepted
+Update propagation: ./src/components/PokerGUI.js -> ./src/components/PokerFrogs.js -> ./src/app.js -> ./src/index.js
+applyHandler@http://localhost:4141/bundle.js:573203:31
+internalApply/results<@http://localhost:4141/bundle.js:572899:21
+internalApply@http://localhost:4141/bundle.js:572898:54
+hotCheck/</</</<@http://localhost:4141/bundle.js:572868:26
+waitForBlockingPromises@http://localhost:4141/bundle.js:572823:48
+hotCheck/</</<@http://localhost:4141/bundle.js:572866:24
+promise callback*hotCheck/</<@http://localhost:4141/bundle.js:572865:18
+promise callback*hotCheck/<@http://localhost:4141/bundle.js:572846:43
+promise callback*hotCheck@http://localhost:4141/bundle.js:572837:15
+check@http://localhost:4141/bundle.js:193071:5
+./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:193125:4
+emit@http://localhost:4141/bundle.js:142827:17
+reloadApp@http://localhost:4141/bundle.js:192960:67
+ok@http://localhost:4141/bundle.js:191074:68
+./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:192624:29
+./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:190819:10
+EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:190818:7
+initSocket@http://localhost:4141/bundle.js:192617:10
+./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:191167:55
+__webpack_require__@http://localhost:4141/bundle.js:572415:32
+@http://localhost:4141/bundle.js:573530:30
+@http://localhost:4141/bundle.js:573534:12
+pokerfrogs:13851:25
+[HMR] Update failed: Loading hot update chunk main failed.
+(missing: http://localhost:4141/main.2985fb8b22982cafac9d.hot-update.js)
+loadUpdateChunk/<@http://localhost:4141/bundle.js:573031:26
+loadUpdateChunk@http://localhost:4141/bundle.js:573026:20
+__webpack_require__.hmrC.jsonp/<@http://localhost:4141/bundle.js:573486:29
+__webpack_require__.hmrC.jsonp@http://localhost:4141/bundle.js:573481:22
+hotCheck/</</<@http://localhost:4141/bundle.js:572855:47
+hotCheck/</<@http://localhost:4141/bundle.js:572851:55
+promise callback*hotCheck/<@http://localhost:4141/bundle.js:572846:43
+promise callback*hotCheck@http://localhost:4141/bundle.js:572837:15
+check@http://localhost:4141/bundle.js:193071:5
+./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:193125:4
+emit@http://localhost:4141/bundle.js:142827:17
+reloadApp@http://localhost:4141/bundle.js:192960:67
+ok@http://localhost:4141/bundle.js:191074:68
+./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:192624:29
+./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:190819:10
+EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:190818:7
+initSocket@http://localhost:4141/bundle.js:192617:10
+./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:191167:55
+__webpack_require__@http://localhost:4141/bundle.js:572415:32
+@http://localhost:4141/bundle.js:573530:30
+@http://localhost:4141/bundle.js:573534:12
+pokerfrogs:13851:25
+[webpack-dev-server] Disconnected! bundle.js:191661:22
+[webpack-dev-server] Trying to reconnect... bundle.js:191661:22
+[webpack-dev-server] Disconnected! bundle.js:191661:22
+[webpack-dev-server] Trying to reconnect... bundle.js:191661:22
+Loading failed for the <script> with source “http://localhost:4141/main.2985fb8b22982cafac9d.hot-update.js”. pokerfrogs:1:1
+Source map error: request failed with status 404
+Resource URL: null
+Source Map URL: react_devtools_backend_compact.js.map
 Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: installHook.js.map
@@ -23,291 +77,194 @@ An AudioContext was prevented from starting automatically. It must be created or
 [HMR] Waiting for update signal from WDS... log.js:39
  * Tone.js v14.7.77 * Global.js:67
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
-Babylon.js v5.57.1 - WebGL2 2 thinEngine.js:603
-Mesh: myGround PokerFrogs.js:24:16
-Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: groundMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 0 Y: 0 Z: -2} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 0.4 Y: 0 Z: -2} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -3 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -2.6 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -1 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -0.6 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 1 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 1.4 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 3 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 3.4 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -1 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -0.6 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -0.19999999999999996 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 0.20000000000000018 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 0.6000000000000001 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: myGround PokerFrogs.js:24:16
-Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: groundMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 0 Y: 0 Z: -2} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 0.4 Y: 0 Z: -2} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -3 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -2.6 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -1 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -0.6 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 1 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 1.4 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 3 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 3.4 Y: 0 Z: 3.5} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -1 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -0.6 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: -0.19999999999999996 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 0.20000000000000018 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Mesh: card PokerFrogs.js:24:16
-Position: {X: 0.6000000000000001 Y: 0 Z: 1} PokerFrogs.js:25:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
-Material: Name: cardMaterial PokerFrogs.js:28:16
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:4242/api/scene/1. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 200.
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568396:19\nhandleError@http://localhost:4141/bundle.js:567705:14\nEventHandlerNonNull*dispatchXhrRequest@http://localhost:4141/bundle.js:567702:5\n./node_modules/axios/lib/adapters/xhr.js/__WEBPACK_DEFAULT_EXPORT__<@http://localhost:4141/bundle.js:567612:10\ndispatchRequest@http://localhost:4141/bundle.js:568990:10\n_request@http://localhost:4141/bundle.js:568303:77\nrequest@http://localhost:4141/bundle.js:568170:25\n./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568329:17\nwrap@http://localhost:4141/bundle.js:569632:15\n_callee3$@http://localhost:4141/bundle.js:141517:66\ntryCatch@http://localhost:4141/bundle.js:141172:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141172:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141172:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141180:70\n_next@http://localhost:4141/bundle.js:141181:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141181:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141181:90\nloadInitialScene@http://localhost:4141/bundle.js:141617:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141654:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167499:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169275:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169240:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169227:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169215:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171388:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171333:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171118:9\nworkLoop@http://localhost:4141/bundle.js:189916:42\nflushWork@http://localhost:4141/bundle.js:189889:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190183:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190221:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190283:5\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190299:20\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144342:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174232:5\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174309:20\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174247:28\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./src/index.js@http://localhost:4141/bundle.js:142081:93\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\n@http://localhost:4141/bundle.js:573454:56\n@http://localhost:4141/bundle.js:573456:12\n", message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest }
-PokerFrogs.js:323:20
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:4242/api/scene/1. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 200.
-Error loading initial scene: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:568396:19\nhandleError@http://localhost:4141/bundle.js:567705:14\n\nasync*./node_modules/axios/lib/core/Axios.js/forEachMethodNoData/Axios.prototype[method]@http://localhost:4141/bundle.js:568329:17\nwrap@http://localhost:4141/bundle.js:569632:15\n_callee3$@http://localhost:4141/bundle.js:141517:66\ntryCatch@http://localhost:4141/bundle.js:141172:1062\n./src/components/PokerFrogs.js/_regeneratorRuntime/makeInvokeMethod/<@http://localhost:4141/bundle.js:141172:3016\n./src/components/PokerFrogs.js/_regeneratorRuntime/defineIteratorMethods/</<@http://localhost:4141/bundle.js:141172:1699\nasyncGeneratorStep@http://localhost:4141/bundle.js:141180:70\n_next@http://localhost:4141/bundle.js:141181:181\n./src/components/PokerFrogs.js/_asyncToGenerator/</<@http://localhost:4141/bundle.js:141181:304\n./src/components/PokerFrogs.js/_asyncToGenerator/<@http://localhost:4141/bundle.js:141181:90\nloadInitialScene@http://localhost:4141/bundle.js:141617:20\n./src/components/PokerFrogs.js/PokerFrogs/<@http://localhost:4141/bundle.js:141654:21\ncommitHookEffectListMount@http://localhost:4141/bundle.js:167499:26\ncommitPassiveMountOnFiber@http://localhost:4141/bundle.js:169275:38\ncommitPassiveMountEffects_complete@http://localhost:4141/bundle.js:169240:34\ncommitPassiveMountEffects_begin@http://localhost:4141/bundle.js:169227:41\ncommitPassiveMountEffects@http://localhost:4141/bundle.js:169215:34\nflushPassiveEffectsImpl@http://localhost:4141/bundle.js:171388:28\nflushPassiveEffects@http://localhost:4141/bundle.js:171333:14\n./node_modules/react-dom/cjs/react-dom.development.js/commitRootImpl/<@http://localhost:4141/bundle.js:171118:9\nworkLoop@http://localhost:4141/bundle.js:189916:42\nflushWork@http://localhost:4141/bundle.js:189889:14\nperformWorkUntilDeadline@http://localhost:4141/bundle.js:190183:21\nEventHandlerNonNull*./node_modules/scheduler/cjs/scheduler.development.js/<@http://localhost:4141/bundle.js:190221:3\n./node_modules/scheduler/cjs/scheduler.development.js@http://localhost:4141/bundle.js:190283:5\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./node_modules/scheduler/index.js@http://localhost:4141/bundle.js:190299:20\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./node_modules/react-dom/cjs/react-dom.development.js/<@http://localhost:4141/bundle.js:144342:36\n./node_modules/react-dom/cjs/react-dom.development.js@http://localhost:4141/bundle.js:174232:5\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./node_modules/react-dom/index.js@http://localhost:4141/bundle.js:174309:20\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./node_modules/react-dom/client.js@http://localhost:4141/bundle.js:174247:28\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\nfn@http://localhost:4141/bundle.js:572574:21\n./src/index.js@http://localhost:4141/bundle.js:142081:93\n__webpack_require__@http://localhost:4141/bundle.js:572337:32\n@http://localhost:4141/bundle.js:573454:56\n@http://localhost:4141/bundle.js:573456:12\n", message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest }
-PokerFrogs.js:323:20
-WebGL warning: uniform setter: UniformLocation is not from the current active Program. 7
+Uncaught ReferenceError: toggleGui is not defined
+    PokerGUI PokerGUI.js:40
+    React 11
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+    js scheduler.development.js:571
+    js scheduler.development.js:633
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js index.js:6
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    React 2
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js bundle.js:142128
+    __webpack_require__ bundle.js:572396
+    <anonymous> bundle.js:573513
+    <anonymous> bundle.js:573515
+PokerGUI.js:40:47
+Uncaught ReferenceError: toggleGui is not defined
+    PokerGUI PokerGUI.js:40
+    React 12
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+    js scheduler.development.js:571
+    js scheduler.development.js:633
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js index.js:6
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    React 2
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js bundle.js:142128
+    __webpack_require__ bundle.js:572396
+    <anonymous> bundle.js:573513
+    <anonymous> bundle.js:573515
+PokerGUI.js:40:47
+The above error occurred in the <PokerGUI> component:
+
+PokerGUI@http://localhost:4141/bundle.js:141956:66
+div
+div
+HotKeysWrapper@http://localhost:4141/bundle.js:174608:20
+HotKeysEnabled@http://localhost:4141/bundle.js:183210:22
+PokerFrogs@http://localhost:4141/bundle.js:141198:66
+RenderedRoute@http://localhost:4141/bundle.js:185994:7
+Routes@http://localhost:4141/bundle.js:186683:7
+Router@http://localhost:4141/bundle.js:186622:7
+BrowserRouter@http://localhost:4141/bundle.js:184575:7
+App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. 2 react-dom.development.js:18704
+Uncaught ReferenceError: toggleGui is not defined
+    PokerGUI PokerGUI.js:40
+    React 9
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+    js scheduler.development.js:571
+    js scheduler.development.js:633
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js index.js:6
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    React 2
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js bundle.js:142128
+    __webpack_require__ bundle.js:572396
+    <anonymous> bundle.js:573513
+    <anonymous> bundle.js:573515
+PokerGUI.js:40:47
+Uncaught ReferenceError: toggleGui is not defined
+    PokerGUI PokerGUI.js:40
+    React 11
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+    js scheduler.development.js:571
+    js scheduler.development.js:633
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js index.js:6
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    React 2
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js bundle.js:142128
+    __webpack_require__ bundle.js:572396
+    <anonymous> bundle.js:573513
+    <anonymous> bundle.js:573515
+PokerGUI.js:40:47
+Uncaught ReferenceError: toggleGui is not defined
+    PokerGUI PokerGUI.js:40
+    React 12
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+    js scheduler.development.js:571
+    js scheduler.development.js:633
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js index.js:6
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    React 2
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js bundle.js:142128
+    __webpack_require__ bundle.js:572396
+    <anonymous> bundle.js:573513
+    <anonymous> bundle.js:573515
+PokerGUI.js:40:47
+Uncaught ReferenceError: toggleGui is not defined
+    PokerGUI PokerGUI.js:40
+    React 9
+    workLoop scheduler.development.js:266
+    flushWork scheduler.development.js:239
+    performWorkUntilDeadline scheduler.development.js:533
+    js scheduler.development.js:571
+    js scheduler.development.js:633
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js index.js:6
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    React 2
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js React
+    __webpack_require__ bundle.js:572396
+    fn bundle.js:572633
+    js bundle.js:142128
+    __webpack_require__ bundle.js:572396
+    <anonymous> bundle.js:573513
+    <anonymous> bundle.js:573515
+PokerGUI.js:40:47
 Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: react_devtools_backend_compact.js.map
-Uncaught (in promise) TypeError: cow.animationGroups is undefined
-    _callee$ PokerFrogs.js:126
-    tryCatch PokerFrogs.js:2
-    makeInvokeMethod PokerFrogs.js:2
-    defineIteratorMethods PokerFrogs.js:2
-    asyncGeneratorStep PokerFrogs.js:2
-    _next PokerFrogs.js:2
-    promise callback*asyncGeneratorStep PokerFrogs.js:2
-    _next PokerFrogs.js:2
-    _asyncToGenerator PokerFrogs.js:2
-    _asyncToGenerator PokerFrogs.js:2
-    createCow PokerFrogs.js:112
-    _callee2$ PokerFrogs.js:171
-    tryCatch PokerFrogs.js:2
-    makeInvokeMethod PokerFrogs.js:2
-    defineIteratorMethods PokerFrogs.js:2
-    asyncGeneratorStep PokerFrogs.js:2
-    _next PokerFrogs.js:2
-    _asyncToGenerator PokerFrogs.js:2
-    _asyncToGenerator PokerFrogs.js:2
-    onSceneReady PokerFrogs.js:145
-    PokerFrogs PokerFrogs.js:390
-    React 8
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    js index.js:6
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    React 2
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    js React
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    js React
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    js bundle.js:142081
-    __webpack_require__ bundle.js:572337
-    <anonymous> bundle.js:573454
-    <anonymous> bundle.js:573456
-PokerFrogs.js:126:12
-WebGL warning: uniform setter: UniformLocation is not from the current active Program.
-WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 4
-WebGL warning: uniform setter: UniformLocation is not from the current active Program. 5
-Uncaught (in promise) TypeError: cow.animationGroups is undefined
-    _callee$ PokerFrogs.js:126
-    tryCatch PokerFrogs.js:2
-    makeInvokeMethod PokerFrogs.js:2
-    defineIteratorMethods PokerFrogs.js:2
-    asyncGeneratorStep PokerFrogs.js:2
-    _next PokerFrogs.js:2
-    promise callback*asyncGeneratorStep PokerFrogs.js:2
-    _next PokerFrogs.js:2
-    _asyncToGenerator PokerFrogs.js:2
-    _asyncToGenerator PokerFrogs.js:2
-    createCow PokerFrogs.js:112
-    _callee2$ PokerFrogs.js:171
-    tryCatch PokerFrogs.js:2
-    makeInvokeMethod PokerFrogs.js:2
-    defineIteratorMethods PokerFrogs.js:2
-    asyncGeneratorStep PokerFrogs.js:2
-    _next PokerFrogs.js:2
-    _asyncToGenerator PokerFrogs.js:2
-    _asyncToGenerator PokerFrogs.js:2
-    onSceneReady PokerFrogs.js:145
-    PokerFrogs PokerFrogs.js:390
-    React 8
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    js index.js:6
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    React 2
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    js React
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    js React
-    __webpack_require__ bundle.js:572337
-    fn bundle.js:572574
-    js bundle.js:142081
-    __webpack_require__ bundle.js:572337
-    <anonymous> bundle.js:573454
-    <anonymous> bundle.js:573456
-PokerFrogs.js:126:12
-WebGL warning: uniform setter: UniformLocation is not from the current active Program. 2
-WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE.
-WebGL warning: uniform setter: UniformLocation is not from the current active Program.
-WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE.
-WebGL warning: uniform setter: UniformLocation is not from the current active Program.
-WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE.
-WebGL warning: uniform setter: UniformLocation is not from the current active Program.
-WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE.
-WebGL warning: uniform setter: UniformLocation is not from the current active Program.
-WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE.
-WebGL warning: uniform setter: UniformLocation is not from the current active Program.
-WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE.
-WebGL warning: uniform setter: UniformLocation is not from the current active Program.
-WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE.
-After reporting 32, no further warnings will be reported for this WebGL context.

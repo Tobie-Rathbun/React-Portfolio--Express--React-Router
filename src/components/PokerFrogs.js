@@ -116,20 +116,21 @@ const PokerFrogs = () => {
         cow.position = new BABYLON.Vector3(...position);
         cow.rotation = new BABYLON.Vector3(...rotation);
         cow.scaling = new BABYLON.Vector3(...scale);
-
+    
         // Ensure the material is correctly applied
         cow.material = new BABYLON.StandardMaterial("cowMaterial", scene);
         cow.material.diffuseColor = new BABYLON.Color3(1, 1, 1);
         cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
-
-        // Play animation
-        if (cow.animationGroups.length > 0) {
+    
+        // Play animation if available
+        if (cow.animationGroups && cow.animationGroups.length > 0) {
             cow.animationGroups[0].start(true, 1.0, cow.animationGroups[0].from, cow.animationGroups[0].to, false);
         }
-
+    
         console.log(`Created cow: ${cow.name} at position ${cow.position}`);
         return cow;
     };
+    
 
     const displayHand = (hand, scene, position, faceDown = false) => {
         if (!hand) return;
