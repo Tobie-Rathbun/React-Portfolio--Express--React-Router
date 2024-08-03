@@ -2,16 +2,16 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js', // adjust according to your entry file
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
     publicPath: '/'
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
@@ -22,21 +22,35 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
-        type: 'asset/resource'
+        test: /\.(png|jpg|jpeg|gif|svg|mp3)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              outputPath: 'assets/',
+            }
+          }
+        ]
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html', // adjust according to your template file
-      filename: 'index.html'
-    })
-  ],
-  devServer: {
-    historyApiFallback: true,
-  },
   resolve: {
     extensions: ['.js', '.jsx'],
-  }
+    alias: {
+      'tone': 'tone/build/esm'
+    }
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'build'),
+    compress: true,
+    port: 4141,
+    historyApiFallback: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      filename: 'index.html'
+    })
+  ]
 };
