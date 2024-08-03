@@ -51,14 +51,148 @@ db.serialize(() => {
                         { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
                         { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
                     ]),
-                    cards: JSON.stringify(Array.from({ length: 15 }, (_, i) => ({
-                        name: `card_${i}`,
-                        position: [i * 0.4 - 2.8, 0, 1],
-                        rotation: [0, 0, 0],
-                        scale: [1, 1, 1]
-                    })))
+                    cards: JSON.stringify([
+                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                    ])
                 },
-                // Add more default scenes if needed
+                {
+                    camera: JSON.stringify({
+                        alpha: -1.04,
+                        beta: 1.12,
+                        radius: 11,
+                        wheelPrecision: 100
+                    }),
+                    cows: JSON.stringify([
+                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
+                    ]),
+                    cards: JSON.stringify([
+                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                    ])
+                },
+                {
+                    camera: JSON.stringify({
+                        alpha: -1.04,
+                        beta: 1.12,
+                        radius: 12,
+                        wheelPrecision: 100
+                    }),
+                    cows: JSON.stringify([
+                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
+                    ]),
+                    cards: JSON.stringify([
+                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                    ])
+                },
+                {
+                    camera: JSON.stringify({
+                        alpha: -1.04,
+                        beta: 1.12,
+                        radius: 13,
+                        wheelPrecision: 100
+                    }),
+                    cows: JSON.stringify([
+                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
+                    ]),
+                    cards: JSON.stringify([
+                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                    ])
+                },
+                {
+                    camera: JSON.stringify({
+                        alpha: -1.04,
+                        beta: 1.12,
+                        radius: 14,
+                        wheelPrecision: 100
+                    }),
+                    cows: JSON.stringify([
+                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
+                    ]),
+                    cards: JSON.stringify([
+                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                    ])
+                }
             ];
 
             defaultScenes.forEach(scene => {
