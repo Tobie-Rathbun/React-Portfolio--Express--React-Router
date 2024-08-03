@@ -1,20 +1,30 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    clean: true,
+  },
+  resolve: {
+    alias: {
+      tone: 'tone/build/esm'
+    },
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
         }
       },
       {
@@ -22,35 +32,44 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg|mp3)$/,
+        test: /\.(png|jpg|gif)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[path][name].[ext]',
-              outputPath: 'assets/',
-            }
-          }
-        ]
-      }
+              name: '[name].[ext]',
+              outputPath: 'images/',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.mp3$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'audio/',
+            },
+          },
+        ],
+      },
     ]
-  },
-  resolve: {
-    extensions: ['.js', '.jsx'],
-    alias: {
-      'tone': 'tone/build/esm'
-    }
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'build'),
-    compress: true,
-    port: 4141,
-    historyApiFallback: true
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-      filename: 'index.html'
-    })
-  ]
+      template: './public/index.html'
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'public/models', to: 'models' },
+        { from: 'public/images', to: 'images' },
+      ],
+    }),
+  ],
+  devServer: {
+    static: path.join(__dirname, 'dist'),
+    port: 4141,
+  },
 };
