@@ -1,12 +1,6 @@
 [build]
-  publish = "dist"
-  command = "npm run build"
-
-[build.environment]
-  NODE_ENV = "production"
-
-[functions]
-  directory = "netlify/functions"
+  functions = "netlify/functions"
+  publish = "build"
 
 [[redirects]]
   from = "/*"

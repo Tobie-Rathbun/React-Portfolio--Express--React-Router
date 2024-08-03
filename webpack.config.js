@@ -2,56 +2,41 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'source-map',
-  entry: './src/index.js',
+  entry: './src/index.js', // adjust according to your entry file
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: {
+          loader: 'babel-loader'
+        }
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              sourceMaps: true,
-              name: '[name].[ext]',
-              outputPath: 'images/',
-            },
-          },
-        ],
-      },
-      {
-        test: /\.mp3$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'audio/', // Adjust the output path as needed
-            },
-          },
-        ],
-      },
-    ],
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        type: 'asset/resource'
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
+      template: './public/index.html', // adjust according to your template file
+      filename: 'index.html'
+    })
   ],
   devServer: {
     historyApiFallback: true,
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  }
 };
