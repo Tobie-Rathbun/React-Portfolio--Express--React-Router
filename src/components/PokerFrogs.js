@@ -357,6 +357,7 @@ const PokerFrogs = () => {
     
             // Get current card names for the round
             const currentCardNames = getCurrentCardNames();
+            console.log("Current card names:", currentCardNames);
             
             let cardIndex = 0;
             for (const cardConfig of sceneConfig.cards) {
