@@ -19,6 +19,18 @@ const PokerFrogs = () => {
     const [community, setCommunity] = useState([]);
     const [scene, setScene] = useState(null);
     const [isSceneReady, setIsSceneReady] = useState(false);
+    const logMeshDetails = (mesh) => {
+        console.log(`Mesh: ${mesh.name}`);
+        console.log(`Position: ${mesh.position}`);
+        console.log(`Rotation: ${mesh.rotation}`);
+        console.log(`Scale: ${mesh.scaling}`);
+        console.log(`Material: ${mesh.material}`);
+    };
+    const logAllMeshes = (scene) => {
+        scene.meshes.forEach(mesh => {
+            logMeshDetails(mesh);
+        });
+    };
 
     const deck = [
         '2H', '3H', '4H', '5H', '6H', '7H', '8H', '9H', '0H', 'JH', 'QH', 'KH', 'AH',
@@ -51,11 +63,15 @@ const PokerFrogs = () => {
             newHands[`p${i}`] = drawHand(shuffledDeck);
         }
         setHands(newHands);
-        setCommunity([
+        const newCommunity = [
             draw(shuffledDeck), draw(shuffledDeck), draw(shuffledDeck),
             draw(shuffledDeck), draw(shuffledDeck)
-        ]);
+        ];
+        setCommunity(newCommunity);
+        console.log("Hands initialized:", newHands);
+        console.log("Community cards initialized:", community);
     };
+    
 
     const handleSliderChange = (event) => {
         setSliderValue(parseInt(event.target.value));
@@ -69,34 +85,54 @@ const PokerFrogs = () => {
         setSliderValue(prevValue => Math.max(prevValue - 100, blind));
     };
 
+    const getCurrentCardNames = () => {
+        let cardNames = [];
+        for (let i = 0; i <= 4; i++) {
+            if (hands[`p${i}`]) {
+                cardNames.push(...hands[`p${i}`]);
+            }
+        }
+        cardNames.push(...community);
+        console.log("Current card names:", cardNames);
+        return cardNames;
+    };
+    
+
+    const getCardImage = (card) => {
+        console.log('card name to pass: ', card);
+        return `/images/${card}.png`;
+    };    
+
     const createCard = (card, scene, position, rotation, scale) => {
         const cardMaterial = new BABYLON.StandardMaterial("cardMaterial", scene);
-        cardMaterial.diffuseTexture = new BABYLON.Texture(`/images/${card}.png`, scene);
+        cardMaterial.diffuseTexture = new BABYLON.Texture(getCardImage(card), scene);
+        
         cardMaterial.emissiveTexture = cardMaterial.diffuseTexture;
         cardMaterial.emissiveColor = new BABYLON.Color3(1, 1, 1);
-
+        
         const faceUV = [
-            new BABYLON.Vector4(0, 0, 1 / 114, 1), 
-            new BABYLON.Vector4(1 / 114, 0, 2 / 114, 1), 
-            new BABYLON.Vector4(2 / 114, 0, 3 / 114, 1), 
-            new BABYLON.Vector4(3 / 114, 0, 4 / 114, 1), 
-            new BABYLON.Vector4(4 / 114, 0, 59 / 114, 1), 
-            new BABYLON.Vector4(59 / 114, 0, 1, 1)   
+            new BABYLON.Vector4(0, 0, 1 / 114, 1),
+            new BABYLON.Vector4(1 / 114, 0, 2 / 114, 1),
+            new BABYLON.Vector4(2 / 114, 0, 3 / 114, 1),
+            new BABYLON.Vector4(3 / 114, 0, 4 / 114, 1),
+            new BABYLON.Vector4(4 / 114, 0, 59 / 114, 1),
+            new BABYLON.Vector4(59 / 114, 0, 1, 1)
         ];
-
+        
         const cardMesh = BABYLON.MeshBuilder.CreateBox(card, {
-            width: 2.5 / 3.5, 
-            height: 0.005, 
-            depth: 1, 
+            width: 2.5 / 3.5,
+            height: 0.005,
+            depth: 1,
             faceUV: faceUV
         }, scene);
         cardMesh.material = cardMaterial;
         cardMesh.position = new BABYLON.Vector3(...position);
         cardMesh.rotation = new BABYLON.Vector3(...rotation);
         cardMesh.scaling = new BABYLON.Vector3(...scale);
-    
+        
         return cardMesh;
-    };
+    };    
+    
 
     const createCow = async (name, position, rotation, scale, scene) => {
         const result = await BABYLON.SceneLoader.ImportMeshAsync(null, '/models/', 'Cow.glb', scene);
@@ -106,10 +142,12 @@ const PokerFrogs = () => {
         cow.rotation = new BABYLON.Vector3(...rotation);
         cow.scaling = new BABYLON.Vector3(...scale);
 
+        // Ensure the material is correctly applied
         cow.material = new BABYLON.StandardMaterial("cowMaterial", scene);
         cow.material.diffuseColor = new BABYLON.Color3(1, 1, 1);
         cow.material.emissiveColor = new BABYLON.Color3(0.2, 0.2, 0.2);
 
+        // Play animation if available
         if (cow.animationGroups && cow.animationGroups.length > 0) {
             cow.animationGroups[0].start(true, 1.0, cow.animationGroups[0].from, cow.animationGroups[0].to, false);
         }
@@ -118,50 +156,39 @@ const PokerFrogs = () => {
         return cow;
     };
 
-    const loadInitialScene = async (scene, sceneId = 1) => {
-        try {
-            const response = await axios.get(`http://localhost:4242/api/scene/${sceneId}`);
-            if (response.status === 404) {
-                throw new Error(`Scene with ID ${sceneId} not found.`);
+    const displayHand = (hand, scene, cardConfig, faceDown = false) => {
+        if (!hand) return;
+        hand.forEach((card, index) => {
+            const position = cardConfig && cardConfig.position ? new BABYLON.Vector3(...cardConfig.position[index]) : new BABYLON.Vector3(0, 0, 0);
+            const cardMesh = createCard(card, scene, [position.x + index * 0.4, position.y, position.z], [0, 0, 0], [1, 1, 1]);
+            if (faceDown) {
+                cardMesh.rotation.y = Math.PI;
             }
-            const initialSceneConfig = response.data;
+        });
+    };
+    
+    
 
-            scene.meshes.forEach(mesh => mesh.dispose());
-            scene.lights.forEach(light => light.dispose());
-            scene.cameras.forEach(cam => cam.dispose());
-            scene.textures.forEach(texture => texture.dispose());
+    const createDefaultScene = (scene) => {
+        const canvas = scene.getEngine().getRenderingCanvas();
+        const camera = new BABYLON.ArcRotateCamera("defaultCamera", 0, 0, 10, BABYLON.Vector3.Zero(), scene);
+        camera.attachControl(canvas, true);
+        camera.alpha = -1.04;
+        camera.beta = 1.12;
+        camera.radius = 10;
+        camera.wheelPrecision = 100;
+        scene.activeCamera = camera; // Ensure the camera is assigned to the scene's activeCamera
 
-            const canvas = scene.getEngine().getRenderingCanvas();
-            const camera = new BABYLON.ArcRotateCamera("myCamera", new BABYLON.Vector3(0, 0, 10), scene);
-            camera.attachControl(canvas, true);
-            camera.alpha = initialSceneConfig.camera.alpha;
-            camera.beta = initialSceneConfig.camera.beta;
-            camera.radius = initialSceneConfig.camera.radius;
-            camera.wheelPrecision = initialSceneConfig.camera.wheelPrecision;
-            scene.activeCamera = camera;
+        const light = new BABYLON.DirectionalLight("directionalLight", new BABYLON.Vector3(-1, -1, -1), scene);
+        light.intensity = 0.5;
 
-            const light = new BABYLON.DirectionalLight("directionalLight", new BABYLON.Vector3(-1, -1, -1), scene);
-            light.intensity = 0.5;
+        const ground = BABYLON.MeshBuilder.CreateGround("defaultGround", { width: 50, height: 50 }, scene);
+        ground.position = new BABYLON.Vector3(0, -2, 0);
+        ground.receiveShadows = true;
+        ground.material = new BABYLON.StandardMaterial("groundMaterial", scene);
+        ground.material.diffuseColor = new BABYLON.Color3(0.6, 0.4, 0.2);
 
-            for (const cowConfig of initialSceneConfig.cows) {
-                await createCow(cowConfig.name, cowConfig.position, cowConfig.rotation, cowConfig.scale, scene);
-            }
-
-            for (const cardConfig of initialSceneConfig.cards) {
-                createCard(cardConfig.name, scene, cardConfig.position, cardConfig.rotation, cardConfig.scale);
-            }
-
-            const ground = BABYLON.MeshBuilder.CreateGround("myGround", { width: 50, height: 50 }, scene);
-            ground.position = new BABYLON.Vector3(0, -2, 0);
-            ground.receiveShadows = true;
-            ground.material = new BABYLON.StandardMaterial("groundMaterial", scene);
-            ground.material.diffuseColor = new BABYLON.Color3(0.6, 0.4, 0.2);
-
-            setIsSceneReady(true);
-            console.log(`Scene ${sceneId} loaded successfully.`);
-        } catch (error) {
-            console.error('Error loading initial scene:', error);
-        }
+        setIsSceneReady(true);
     };
 
     useEffect(() => {
@@ -178,8 +205,12 @@ const PokerFrogs = () => {
             });
         };
 
-        loadInitialScene(scene).then(() => {
-            runRenderLoop();
+        loadSceneState(scene, 1).then(() => {
+            engine.runRenderLoop(() => {
+                if (scene && scene.activeCamera) {
+                    scene.render();
+                }
+            });
         });
 
         window.addEventListener("resize", function () {
@@ -202,7 +233,7 @@ const PokerFrogs = () => {
 
     useEffect(() => {
         if (scene && Object.keys(hands).length > 0) {
-            // You can add any necessary logic here
+            logAllMeshes(scene);
         }
     }, [scene, hands]);
 
@@ -258,7 +289,7 @@ const PokerFrogs = () => {
         console.log("Cow configurations being saved:", cowConfigs);
 
         const cardConfigs = scene.meshes.filter(mesh => mesh.name.startsWith("card")).map((card, index) => ({
-            name: card.name.replace('card_', ''),
+            name: `card_${index}`,
             position: [card.position.x, card.position.y, card.position.z],
             rotation: [card.rotation.x, card.rotation.y, card.rotation.z],
             scale: [card.scaling.x, card.scaling.y, card.scaling.z]
@@ -280,6 +311,7 @@ const PokerFrogs = () => {
                 }
             });
             console.log(`Scene ${sceneId} saved successfully.`);
+            logAllMeshes(scene);
         } catch (error) {
             console.error(`Error saving scene ${sceneId}:`, error);
         }
@@ -289,38 +321,166 @@ const PokerFrogs = () => {
         try {
             const response = await axios.get(`http://localhost:4242/api/scene/${sceneId}`);
             const sceneConfig = response.data;
-
+    
             console.log("Loading scene configuration:", sceneConfig);
+    
+            // Create camera if it doesn't exist
+            if (!scene.activeCamera) {
+                const canvas = scene.getEngine().getRenderingCanvas();
+                const camera = new BABYLON.ArcRotateCamera("myCamera", 0, 0, 10, BABYLON.Vector3.Zero(), scene);
+                camera.attachControl(canvas, true);
+                camera.alpha = -1.04;
+                camera.beta = 1.12;
+                camera.radius = 1;
+                camera.wheelPrecision = 100;
+                scene.activeCamera = camera; // Ensure the camera is assigned to the scene's activeCamera
+            }
 
             const camera = scene.activeCamera;
             camera.alpha = sceneConfig.camera.alpha;
             camera.beta = sceneConfig.camera.beta;
             camera.radius = sceneConfig.camera.radius;
             camera.wheelPrecision = sceneConfig.camera.wheelPrecision;
-
+    
+            // Remove old meshes before loading new ones
             scene.meshes.forEach(mesh => {
                 if (mesh.name !== "myGround" && mesh.name !== "defaultGround") {
                     mesh.dispose();
                 }
             });
-
+    
             console.log("Old meshes removed");
-
+    
             for (const cowConfig of sceneConfig.cows) {
                 await createCow(cowConfig.name, cowConfig.position, cowConfig.rotation, cowConfig.scale, scene);
             }
-
+    
+            // Get current card names for the round
+            const currentCardNames = getCurrentCardNames();
+            
+            let cardIndex = 0;
             for (const cardConfig of sceneConfig.cards) {
-                createCard(cardConfig.name, scene, cardConfig.position, cardConfig.rotation, cardConfig.scale);
-                console.log(`Loaded card: ${cardConfig.name} at position ${cardConfig.position}`);
+                const cardName = currentCardNames[cardIndex] || 'default';
+                console.log("Card name to pass:", cardName, cardIndex);
+                const cardMesh = createCard(cardName, scene, cardConfig.position, cardConfig.rotation, cardConfig.scale);
+                cardIndex++;
             }
-
+    
+            // Set up lighting and ground
+            const light = new BABYLON.DirectionalLight("directionalLight", new BABYLON.Vector3(-1, -1, -1), scene);
+            light.intensity = 0.5;
+    
+            const ground = BABYLON.MeshBuilder.CreateGround("myGround", { width: 50, height: 50 }, scene);
+            ground.position = new BABYLON.Vector3(0, -2, 0);
+            ground.receiveShadows = true;
+            ground.material = new BABYLON.StandardMaterial("groundMaterial", scene);
+            ground.material.diffuseColor = new BABYLON.Color3(0.6, 0.4, 0.2);
+    
+            // Set up gizmos and event listeners
+            const utilLayer = new BABYLON.UtilityLayerRenderer(scene);
+            const positionGizmo = new BABYLON.PositionGizmo(utilLayer);
+            const rotationGizmo = new BABYLON.RotationGizmo(utilLayer);
+            const scaleGizmo = new BABYLON.ScaleGizmo(utilLayer);
+            let activeGizmo = null;
+    
+            scene.onPointerDown = function castRay(event) {
+                if (event.button === 0) {
+                    const hit = scene.pick(scene.pointerX, scene.pointerY);
+                    if (hit.pickedMesh) {
+                        positionGizmo.attachedMesh = hit.pickedMesh;
+                        rotationGizmo.attachedMesh = null;
+                        scaleGizmo.attachedMesh = null;
+                        activeGizmo = positionGizmo;
+                    } else {
+                        positionGizmo.attachedMesh = null;
+                        rotationGizmo.attachedMesh = null;
+                        scaleGizmo.attachedMesh = null;
+                        activeGizmo = null;
+                    }
+                }
+            };
+    
+            const logMeshInfo = (mesh) => {
+                const position = mesh.position;
+                const rotation = mesh.rotation;
+                const scaling = mesh.scaling;
+                console.log(`Position: (${position.x.toFixed(2)}, ${position.y.toFixed(2)}, ${position.z.toFixed(2)})`);
+                console.log(`Rotation: (${rotation.x.toFixed(2)}, ${rotation.y.toFixed(2)}, ${rotation.z.toFixed(2)})`);
+                console.log(`Scale: (${scaling.x.toFixed(2)}, ${scaling.y.toFixed(2)}, ${scaling.z.toFixed(2)})`);
+            };
+    
+            const deleteSelectedMesh = () => {
+                if (activeGizmo && activeGizmo.attachedMesh) {
+                    activeGizmo.attachedMesh.dispose();
+                    activeGizmo.attachedMesh = null;
+                    console.log('Selected mesh deleted.');
+                } else {
+                    console.log('No mesh is attached to any gizmo.');
+                }
+            };
+    
+            window.addEventListener('keydown', (event) => {
+                switch (event.key.toLowerCase()) {
+                    case 'r':
+                        if (activeGizmo) {
+                            rotationGizmo.attachedMesh = activeGizmo.attachedMesh;
+                            positionGizmo.attachedMesh = null;
+                            scaleGizmo.attachedMesh = null;
+                            activeGizmo = rotationGizmo;
+                            console.log('Switched to Rotation Gizmo');
+                        }
+                        break;
+                    case 's':
+                        if (activeGizmo) {
+                            scaleGizmo.attachedMesh = activeGizmo.attachedMesh;
+                            positionGizmo.attachedMesh = null;
+                            rotationGizmo.attachedMesh = null;
+                            activeGizmo = scaleGizmo;
+                            console.log('Switched to Scale Gizmo');
+                        }
+                        break;
+                    case 'p':
+                        if (activeGizmo) {
+                            positionGizmo.attachedMesh = activeGizmo.attachedMesh;
+                            rotationGizmo.attachedMesh = null;
+                            scaleGizmo.attachedMesh = null;
+                            activeGizmo = positionGizmo;
+                            console.log('Switched to Position Gizmo');
+                        }
+                        break;
+                    case 'l':
+                        if (activeGizmo && activeGizmo.attachedMesh) {
+                            console.clear();
+                            logMeshInfo(activeGizmo.attachedMesh);
+                        } else {
+                            console.log('No mesh is attached to any gizmo.');
+                        }
+                        break;
+                    case 'd':
+                        positionGizmo.attachedMesh = null;
+                        rotationGizmo.attachedMesh = null;
+                        scaleGizmo.attachedMesh = null;
+                        activeGizmo = null;
+                        console.log('Gizmo removed');
+                        break;
+                    case 'delete':
+                        deleteSelectedMesh();
+                        break;
+                    default:
+                        break;
+                }
+            });
+    
             setIsSceneReady(true);
             console.log(`Scene ${sceneId} loaded successfully.`);
+            logAllMeshes(scene);
+    
         } catch (error) {
             console.error(`Error loading scene ${sceneId}:`, error);
+            createDefaultScene(scene);
         }
     };
+    
 
     const handlers = {
         save1: () => { if (isSceneReady) saveSceneState(1); },
@@ -339,13 +499,13 @@ const PokerFrogs = () => {
         if (scene) {
             scene.dispose();
         }
-
+    
         const canvas = document.getElementById("renderCanvas");
         const engine = new BABYLON.Engine(canvas, true);
         const newScene = new BABYLON.Scene(engine);
         setScene(newScene);
-
-        loadInitialScene(newScene, sceneId).then(() => {
+    
+        loadSceneState(newScene, sceneId).then(() => {
             engine.runRenderLoop(() => {
                 if (newScene && newScene.activeCamera) {
                     newScene.render();
@@ -353,12 +513,13 @@ const PokerFrogs = () => {
             });
         });
     };
+    
 
     return (
         <HotKeys keyMap={keyMap} handlers={handlers}>
             <div>
                 <canvas id="renderCanvas" style={{ width: '100%', height: '100vh' }}></canvas>
-                <PokerGUI 
+                <PokerGUI
                     sliderValue={sliderValue}
                     handleSliderChange={handleSliderChange}
                     increaseBet={increaseBet}
