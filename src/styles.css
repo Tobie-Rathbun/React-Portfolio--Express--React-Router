@@ -311,3 +311,25 @@ body, html {
   font-size: 12px;
 }
 
+.home-page {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%; /* Adjust width as needed */
+}
+
+.home-page h1 {
+  font-size: 2em;
+}
+
+.home-page p {
+  margin: 10px 0;
+}
+
+.home-page a {
+  text-decoration: none;
+  color: #007bff; /* Customize link color */
+}
+
+.home-page a:hover {
+  text-decoration: underline;
+}

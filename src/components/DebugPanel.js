@@ -3,9 +3,23 @@ import React, { useState, useEffect } from 'react';
 const DebugPanel = ({ hands, community, deck }) => {
     const [isDragging, setIsDragging] = useState(false);
     const [panelPosition, setPanelPosition] = useState({ x: '25%', y: '25%' });
+    const [initialMousePosition, setInitialMousePosition] = useState({ x: 0, y: 0 });
+    const [initialPanelPosition, setInitialPanelPosition] = useState({ x: 0, y: 0 });
 
     const handleMouseDown = (event) => {
         setIsDragging(true);
+        setInitialMousePosition({ x: event.clientX, y: event.clientY });
+
+        // Convert percentage values to pixel values if necessary
+        const xValue = panelPosition.x.includes('%')
+            ? (parseFloat(panelPosition.x) / 100) * window.innerWidth
+            : parseFloat(panelPosition.x);
+
+        const yValue = panelPosition.y.includes('%')
+            ? (parseFloat(panelPosition.y) / 100) * window.innerHeight
+            : parseFloat(panelPosition.y);
+
+        setInitialPanelPosition({ x: xValue, y: yValue });
     };
 
     const handleMouseUp = () => {
@@ -14,9 +28,11 @@ const DebugPanel = ({ hands, community, deck }) => {
 
     const handleMouseMove = (event) => {
         if (isDragging) {
-            const x = Math.max(0, Math.min(window.innerWidth - 400, event.clientX - 150)); // Adjusted for centering
-            const y = Math.max(0, Math.min(window.innerHeight - 200, event.clientY - 100)); // Adjusted for centering
-            setPanelPosition({ x: `${x}px`, y: `${y}px` });
+            const deltaX = event.clientX - initialMousePosition.x;
+            const deltaY = event.clientY - initialMousePosition.y;
+            const newX = Math.max(0, Math.min(window.innerWidth - 400, initialPanelPosition.x + deltaX)); // Adjusted for centering
+            const newY = Math.max(0, Math.min(window.innerHeight - 200, initialPanelPosition.y + deltaY)); // Adjusted for centering
+            setPanelPosition({ x: `${newX}px`, y: `${newY}px` });
         }
     };
 
@@ -34,7 +50,7 @@ const DebugPanel = ({ hands, community, deck }) => {
             window.removeEventListener('mouseup', handleMouseUp);
             window.removeEventListener('mouseleave', handleMouseLeave);
         };
-    }, [isDragging]);
+    }, [isDragging, initialMousePosition, initialPanelPosition]);
 
     return (
         <div

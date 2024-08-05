@@ -5,20 +5,22 @@ const cors = require('cors');
 const path = require('path');
 const serverless = require('serverless-http');
 
-// Create a new SQLite database (data.db) or open the existing one
 const db = new sqlite3.Database('./data.db');
-
-// Initialize Express
 const app = express();
 
+app.use(express.static(path.join(__dirname, '..', 'dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, '..', 'build')));
+app.use((req, res, next) => {
+    res.setHeader(
+        "Content-Security-Policy",
+        "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';"
+    );
+    return next();
+});
 
-// Create a new database table for storing scene configurations if it doesn't exist
 db.serialize(() => {
     db.run(`
         CREATE TABLE IF NOT EXISTS scenes (
@@ -29,7 +31,6 @@ db.serialize(() => {
         )
     `);
 
-    // Check if scenes exist, if not, insert default scenes
     db.get("SELECT COUNT(*) as count FROM scenes", (err, row) => {
         if (err) {
             console.error("Error checking scenes count:", err);
@@ -53,26 +54,26 @@ db.serialize(() => {
                     ]),
                     cards: JSON.stringify([
                         { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_1", position: [2, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_2", position: [-9, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_3", position: [-7, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_4", position: [-4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_5", position: [-2, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
                         { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                        { name: "card_7", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_8", position: [6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_9", position: [8, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_10", position: [-4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_11", position: [-2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_12", position: [0, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_13", position: [2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_14", position: [4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
                     ])
                 },
                 {
                     camera: JSON.stringify({
-                        alpha: -1.04,
-                        beta: 1.12,
+                        alpha: 1.04,
+                        beta: -1.12,
                         radius: 11,
                         wheelPrecision: 100
                     }),
@@ -84,25 +85,25 @@ db.serialize(() => {
                     ]),
                     cards: JSON.stringify([
                         { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_1", position: [2, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_2", position: [-9, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_3", position: [-7, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_4", position: [-4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_5", position: [-2, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
                         { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                        { name: "card_7", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_8", position: [6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_9", position: [8, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_10", position: [-4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_11", position: [-2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_12", position: [0, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_13", position: [2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_14", position: [4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
                     ])
                 },
                 {
                     camera: JSON.stringify({
-                        alpha: -1.04,
+                        alpha: 1.04,
                         beta: 1.12,
                         radius: 12,
                         wheelPrecision: 100
@@ -115,26 +116,26 @@ db.serialize(() => {
                     ]),
                     cards: JSON.stringify([
                         { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_1", position: [2, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_2", position: [-9, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_3", position: [-7, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_4", position: [-4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_5", position: [-2, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
                         { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                        { name: "card_7", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_8", position: [6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_9", position: [8, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_10", position: [-4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_11", position: [-2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_12", position: [0, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_13", position: [2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_14", position: [4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
                     ])
                 },
                 {
                     camera: JSON.stringify({
                         alpha: -1.04,
-                        beta: 1.12,
+                        beta: -1.12,
                         radius: 13,
                         wheelPrecision: 100
                     }),
@@ -146,20 +147,20 @@ db.serialize(() => {
                     ]),
                     cards: JSON.stringify([
                         { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_1", position: [2, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_2", position: [-9, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_3", position: [-7, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_4", position: [-4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_5", position: [-2, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
                         { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                        { name: "card_7", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_8", position: [6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_9", position: [8, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
+                        { name: "card_10", position: [-4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_11", position: [-2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_12", position: [0, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_13", position: [2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
+                        { name: "card_14", position: [4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
                     ])
                 },
                 {
@@ -207,7 +208,6 @@ db.serialize(() => {
     });
 });
 
-// API to get a scene configuration by ID
 app.get('/api/scene/:id', (req, res) => {
     const sceneId = req.params.id;
     db.get("SELECT * FROM scenes WHERE id = ?", [sceneId], (err, row) => {
@@ -229,7 +229,6 @@ app.get('/api/scene/:id', (req, res) => {
     });
 });
 
-// API to save or update a scene configuration by ID
 app.post('/api/scene/:id', (req, res) => {
     const sceneId = req.params.id;
     const { camera, cows, cards } = req.body;
@@ -251,9 +250,8 @@ app.post('/api/scene/:id', (req, res) => {
     });
 });
 
-// The "catchall" handler: for any request that doesn't match one above, send back React's index.html file.
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
 });
 
 module.exports = app;

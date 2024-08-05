@@ -1,8 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
+  devtool: 'source-map',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -11,7 +13,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      tone: 'tone/build/esm'
+      tone: 'tone/build/esm',
+      path: 'path-browserify' // Use path-browserify for browser environment
     },
     extensions: ['.js', '.jsx'],
   },
@@ -67,9 +70,22 @@ module.exports = {
         { from: 'public/images', to: 'images' },
       ],
     }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development')
+    })
   ],
+  resolve: {
+    fallback: {
+        "fs": false,
+        "path": require.resolve("path-browserify"),
+        "util": require.resolve("util/")
+    }
+  },
   devServer: {
     static: path.join(__dirname, 'dist'),
     port: 4141,
+    historyApiFallback: true,
+    compress: true,
+    open: true,
   },
 };

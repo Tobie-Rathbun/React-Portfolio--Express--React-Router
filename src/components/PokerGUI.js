@@ -4,9 +4,24 @@ const PokerGUI = ({ sliderValue, setSliderValue, blind }) => {
     const [isDragging, setIsDragging] = useState(false);
     const [guiPosition, setGuiPosition] = useState({ x: '50%', y: '50%' });
     const [isMinimized, setIsMinimized] = useState(false);
+    const [initialMousePosition, setInitialMousePosition] = useState({ x: 0, y: 0 });
+    const [initialGuiPosition, setInitialGuiPosition] = useState({ x: 0, y: 0 });
+
     const handleMouseDown = (event) => {
         if (!event.target.classList.contains('slider') && !event.target.classList.contains('gui-button')) {
             setIsDragging(true);
+            setInitialMousePosition({ x: event.clientX, y: event.clientY });
+
+            // Convert percentage values to pixel values if necessary
+            const xValue = guiPosition.x.includes('%')
+                ? (parseFloat(guiPosition.x) / 100) * window.innerWidth
+                : parseFloat(guiPosition.x);
+
+            const yValue = guiPosition.y.includes('%')
+                ? (parseFloat(guiPosition.y) / 100) * window.innerHeight
+                : parseFloat(guiPosition.y);
+
+            setInitialGuiPosition({ x: xValue, y: yValue });
         }
     };
 
@@ -16,9 +31,11 @@ const PokerGUI = ({ sliderValue, setSliderValue, blind }) => {
 
     const handleMouseMove = (event) => {
         if (isDragging) {
-            const x = Math.max(0, Math.min(window.innerWidth - (isMinimized ? 100 : 400), event.clientX));
-            const y = Math.max(0, Math.min(window.innerHeight - (isMinimized ? 40 : 200), event.clientY));
-            setGuiPosition({ x: `${x}px`, y: `${y}px` });
+            const deltaX = event.clientX - initialMousePosition.x;
+            const deltaY = event.clientY - initialMousePosition.y;
+            const newX = Math.max(0, Math.min(window.innerWidth - (isMinimized ? 100 : 400), initialGuiPosition.x + deltaX));
+            const newY = Math.max(0, Math.min(window.innerHeight - (isMinimized ? 40 : 200), initialGuiPosition.y + deltaY));
+            setGuiPosition({ x: `${newX}px`, y: `${newY}px` });
         }
     };
 
@@ -52,7 +69,7 @@ const PokerGUI = ({ sliderValue, setSliderValue, blind }) => {
             window.removeEventListener('mouseup', handleMouseUp);
             window.removeEventListener('mouseleave', handleMouseLeave);
         };
-    }, [isDragging]);
+    }, [isDragging, initialMousePosition, initialGuiPosition]);
 
     return (
         <div

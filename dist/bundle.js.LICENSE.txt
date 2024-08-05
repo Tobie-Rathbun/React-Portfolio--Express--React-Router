@@ -3672,7 +3672,7 @@ object-assign
 
 /**
  * @license React
- * react-dom.production.min.js
+ * react-dom.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -3682,7 +3682,7 @@ object-assign
 
 /**
  * @license React
- * react.production.min.js
+ * scheduler.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -3691,17 +3691,7 @@ object-assign
  */
 
 /**
- * @license React
- * scheduler.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/**
- * @remix-run/router v1.18.0
+ * @remix-run/router v1.19.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -3726,7 +3716,7 @@ object-assign
  */
 
 /**
- * React Router DOM v6.25.1
+ * React Router DOM v6.26.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -3737,7 +3727,7 @@ object-assign
  */
 
 /**
- * React Router v6.25.1
+ * React Router v6.26.0
  *
  * Copyright (c) Remix Software Inc.
  *

@@ -1,0 +1,2998 @@
+│   │   │       │   │       PanVol.js.map
+│   │   │       │   │       Recorder.d.ts
+│   │   │       │   │       Recorder.js
+│   │   │       │   │       Recorder.js.map
+│   │   │       │   │       Solo.d.ts
+│   │   │       │   │       Solo.js
+│   │   │       │   │       Solo.js.map
+│   │   │       │   │       Split.d.ts
+│   │   │       │   │       Split.js
+│   │   │       │   │       Split.js.map
+│   │   │       │   │       Volume.d.ts
+│   │   │       │   │       Volume.js
+│   │   │       │   │       Volume.js.map
+│   │   │       │   │
+│   │   │       │   ├───dynamics
+│   │   │       │   │       Compressor.d.ts
+│   │   │       │   │       Compressor.js
+│   │   │       │   │       Compressor.js.map
+│   │   │       │   │       Gate.d.ts
+│   │   │       │   │       Gate.js
+│   │   │       │   │       Gate.js.map
+│   │   │       │   │       Limiter.d.ts
+│   │   │       │   │       Limiter.js
+│   │   │       │   │       Limiter.js.map
+│   │   │       │   │       MidSideCompressor.d.ts
+│   │   │       │   │       MidSideCompressor.js
+│   │   │       │   │       MidSideCompressor.js.map
+│   │   │       │   │       MultibandCompressor.d.ts
+│   │   │       │   │       MultibandCompressor.js
+│   │   │       │   │       MultibandCompressor.js.map
+│   │   │       │   │
+│   │   │       │   ├───envelope
+│   │   │       │   │       AmplitudeEnvelope.d.ts
+│   │   │       │   │       AmplitudeEnvelope.js
+│   │   │       │   │       AmplitudeEnvelope.js.map
+│   │   │       │   │       Envelope.d.ts
+│   │   │       │   │       Envelope.js
+│   │   │       │   │       Envelope.js.map
+│   │   │       │   │       FrequencyEnvelope.d.ts
+│   │   │       │   │       FrequencyEnvelope.js
+│   │   │       │   │       FrequencyEnvelope.js.map
+│   │   │       │   │
+│   │   │       │   └───filter
+│   │   │       │           BiquadFilter.d.ts
+│   │   │       │           BiquadFilter.js
+│   │   │       │           BiquadFilter.js.map
+│   │   │       │           Convolver.d.ts
+│   │   │       │           Convolver.js
+│   │   │       │           Convolver.js.map
+│   │   │       │           EQ3.d.ts
+│   │   │       │           EQ3.js
+│   │   │       │           EQ3.js.map
+│   │   │       │           FeedbackCombFilter.d.ts
+│   │   │       │           FeedbackCombFilter.js
+│   │   │       │           FeedbackCombFilter.js.map
+│   │   │       │           FeedbackCombFilter.worklet.d.ts
+│   │   │       │           FeedbackCombFilter.worklet.js
+│   │   │       │           FeedbackCombFilter.worklet.js.map
+│   │   │       │           Filter.d.ts
+│   │   │       │           Filter.js
+│   │   │       │           Filter.js.map
+│   │   │       │           LowpassCombFilter.d.ts
+│   │   │       │           LowpassCombFilter.js
+│   │   │       │           LowpassCombFilter.js.map
+│   │   │       │           OnePoleFilter.d.ts
+│   │   │       │           OnePoleFilter.js
+│   │   │       │           OnePoleFilter.js.map
+│   │   │       │           PhaseShiftAllpass.d.ts
+│   │   │       │           PhaseShiftAllpass.js
+│   │   │       │           PhaseShiftAllpass.js.map
+│   │   │       │
+│   │   │       ├───core
+│   │   │       │   │   Global.d.ts
+│   │   │       │   │   Global.js
+│   │   │       │   │   Global.js.map
+│   │   │       │   │   index.d.ts
+│   │   │       │   │   index.js
+│   │   │       │   │   index.js.map
+│   │   │       │   │   Tone.d.ts
+│   │   │       │   │   Tone.js
+│   │   │       │   │   Tone.js.map
+│   │   │       │   │
+│   │   │       │   ├───clock
+│   │   │       │   │       Clock.d.ts
+│   │   │       │   │       Clock.js
+│   │   │       │   │       Clock.js.map
+│   │   │       │   │       Ticker.d.ts
+│   │   │       │   │       Ticker.js
+│   │   │       │   │       Ticker.js.map
+│   │   │       │   │       TickParam.d.ts
+│   │   │       │   │       TickParam.js
+│   │   │       │   │       TickParam.js.map
+│   │   │       │   │       TickSignal.d.ts
+│   │   │       │   │       TickSignal.js
+│   │   │       │   │       TickSignal.js.map
+│   │   │       │   │       TickSource.d.ts
+│   │   │       │   │       TickSource.js
+│   │   │       │   │       TickSource.js.map
+│   │   │       │   │       Transport.d.ts
+│   │   │       │   │       Transport.js
+│   │   │       │   │       Transport.js.map
+│   │   │       │   │       TransportEvent.d.ts
+│   │   │       │   │       TransportEvent.js
+│   │   │       │   │       TransportEvent.js.map
+│   │   │       │   │       TransportRepeatEvent.d.ts
+│   │   │       │   │       TransportRepeatEvent.js
+│   │   │       │   │       TransportRepeatEvent.js.map
+│   │   │       │   │
+│   │   │       │   ├───context
+│   │   │       │   │       AbstractParam.d.ts
+│   │   │       │   │       AbstractParam.js
+│   │   │       │   │       AbstractParam.js.map
+│   │   │       │   │       AudioContext.d.ts
+│   │   │       │   │       AudioContext.js
+│   │   │       │   │       AudioContext.js.map
+│   │   │       │   │       BaseContext.d.ts
+│   │   │       │   │       BaseContext.js
+│   │   │       │   │       BaseContext.js.map
+│   │   │       │   │       Context.d.ts
+│   │   │       │   │       Context.js
+│   │   │       │   │       Context.js.map
+│   │   │       │   │       ContextInitialization.d.ts
+│   │   │       │   │       ContextInitialization.js
+│   │   │       │   │       ContextInitialization.js.map
+│   │   │       │   │       Delay.d.ts
+│   │   │       │   │       Delay.js
+│   │   │       │   │       Delay.js.map
+│   │   │       │   │       Destination.d.ts
+│   │   │       │   │       Destination.js
+│   │   │       │   │       Destination.js.map
+│   │   │       │   │       DummyContext.d.ts
+│   │   │       │   │       DummyContext.js
+│   │   │       │   │       DummyContext.js.map
+│   │   │       │   │       Gain.d.ts
+│   │   │       │   │       Gain.js
+│   │   │       │   │       Gain.js.map
+│   │   │       │   │       Listener.d.ts
+│   │   │       │   │       Listener.js
+│   │   │       │   │       Listener.js.map
+│   │   │       │   │       Offline.d.ts
+│   │   │       │   │       Offline.js
+│   │   │       │   │       Offline.js.map
+│   │   │       │   │       OfflineContext.d.ts
+│   │   │       │   │       OfflineContext.js
+│   │   │       │   │       OfflineContext.js.map
+│   │   │       │   │       Param.d.ts
+│   │   │       │   │       Param.js
+│   │   │       │   │       Param.js.map
+│   │   │       │   │       ToneAudioBuffer.d.ts
+│   │   │       │   │       ToneAudioBuffer.js
+│   │   │       │   │       ToneAudioBuffer.js.map
+│   │   │       │   │       ToneAudioBuffers.d.ts
+│   │   │       │   │       ToneAudioBuffers.js
+│   │   │       │   │       ToneAudioBuffers.js.map
+│   │   │       │   │       ToneAudioNode.d.ts
+│   │   │       │   │       ToneAudioNode.js
+│   │   │       │   │       ToneAudioNode.js.map
+│   │   │       │   │       ToneWithContext.d.ts
+│   │   │       │   │       ToneWithContext.js
+│   │   │       │   │       ToneWithContext.js.map
+│   │   │       │   │
+│   │   │       │   ├───type
+│   │   │       │   │       Conversions.d.ts
+│   │   │       │   │       Conversions.js
+│   │   │       │   │       Conversions.js.map
+│   │   │       │   │       Frequency.d.ts
+│   │   │       │   │       Frequency.js
+│   │   │       │   │       Frequency.js.map
+│   │   │       │   │       Midi.d.ts
+│   │   │       │   │       Midi.js
+│   │   │       │   │       Midi.js.map
+│   │   │       │   │       NoteUnits.d.ts
+│   │   │       │   │       NoteUnits.js
+│   │   │       │   │       NoteUnits.js.map
+│   │   │       │   │       Ticks.d.ts
+│   │   │       │   │       Ticks.js
+│   │   │       │   │       Ticks.js.map
+│   │   │       │   │       Time.d.ts
+│   │   │       │   │       Time.js
+│   │   │       │   │       Time.js.map
+│   │   │       │   │       TimeBase.d.ts
+│   │   │       │   │       TimeBase.js
+│   │   │       │   │       TimeBase.js.map
+│   │   │       │   │       TransportTime.d.ts
+│   │   │       │   │       TransportTime.js
+│   │   │       │   │       TransportTime.js.map
+│   │   │       │   │       Units.d.ts
+│   │   │       │   │       Units.js
+│   │   │       │   │       Units.js.map
+│   │   │       │   │
+│   │   │       │   ├───util
+│   │   │       │   │       AdvancedTypeCheck.d.ts
+│   │   │       │   │       AdvancedTypeCheck.js
+│   │   │       │   │       AdvancedTypeCheck.js.map
+│   │   │       │   │       Debug.d.ts
+│   │   │       │   │       Debug.js
+│   │   │       │   │       Debug.js.map
+│   │   │       │   │       Decorator.d.ts
+│   │   │       │   │       Decorator.js
+│   │   │       │   │       Decorator.js.map
+│   │   │       │   │       Defaults.d.ts
+│   │   │       │   │       Defaults.js
+│   │   │       │   │       Defaults.js.map
+│   │   │       │   │       Draw.d.ts
+│   │   │       │   │       Draw.js
+│   │   │       │   │       Draw.js.map
+│   │   │       │   │       Emitter.d.ts
+│   │   │       │   │       Emitter.js
+│   │   │       │   │       Emitter.js.map
+│   │   │       │   │       Interface.d.ts
+│   │   │       │   │       Interface.js
+│   │   │       │   │       Interface.js.map
+│   │   │       │   │       IntervalTimeline.d.ts
+│   │   │       │   │       IntervalTimeline.js
+│   │   │       │   │       IntervalTimeline.js.map
+│   │   │       │   │       Math.d.ts
+│   │   │       │   │       Math.js
+│   │   │       │   │       Math.js.map
+│   │   │       │   │       StateTimeline.d.ts
+│   │   │       │   │       StateTimeline.js
+│   │   │       │   │       StateTimeline.js.map
+│   │   │       │   │       Timeline.d.ts
+│   │   │       │   │       Timeline.js
+│   │   │       │   │       Timeline.js.map
+│   │   │       │   │       TimelineValue.d.ts
+│   │   │       │   │       TimelineValue.js
+│   │   │       │   │       TimelineValue.js.map
+│   │   │       │   │       TypeCheck.d.ts
+│   │   │       │   │       TypeCheck.js
+│   │   │       │   │       TypeCheck.js.map
+│   │   │       │   │
+│   │   │       │   └───worklet
+│   │   │       │           DelayLine.worklet.d.ts
+│   │   │       │           DelayLine.worklet.js
+│   │   │       │           DelayLine.worklet.js.map
+│   │   │       │           SingleIOProcessor.worklet.d.ts
+│   │   │       │           SingleIOProcessor.worklet.js
+│   │   │       │           SingleIOProcessor.worklet.js.map
+│   │   │       │           ToneAudioWorklet.d.ts
+│   │   │       │           ToneAudioWorklet.js
+│   │   │       │           ToneAudioWorklet.js.map
+│   │   │       │           ToneAudioWorkletProcessor.worklet.d.ts
+│   │   │       │           ToneAudioWorkletProcessor.worklet.js
+│   │   │       │           ToneAudioWorkletProcessor.worklet.js.map
+│   │   │       │           WorkletGlobalScope.d.ts
+│   │   │       │           WorkletGlobalScope.js
+│   │   │       │           WorkletGlobalScope.js.map
+│   │   │       │
+│   │   │       ├───effect
+│   │   │       │       AutoFilter.d.ts
+│   │   │       │       AutoFilter.js
+│   │   │       │       AutoFilter.js.map
+│   │   │       │       AutoPanner.d.ts
+│   │   │       │       AutoPanner.js
+│   │   │       │       AutoPanner.js.map
+│   │   │       │       AutoWah.d.ts
+│   │   │       │       AutoWah.js
+│   │   │       │       AutoWah.js.map
+│   │   │       │       BitCrusher.d.ts
+│   │   │       │       BitCrusher.js
+│   │   │       │       BitCrusher.js.map
+│   │   │       │       BitCrusher.worklet.d.ts
+│   │   │       │       BitCrusher.worklet.js
+│   │   │       │       BitCrusher.worklet.js.map
+│   │   │       │       Chebyshev.d.ts
+│   │   │       │       Chebyshev.js
+│   │   │       │       Chebyshev.js.map
+│   │   │       │       Chorus.d.ts
+│   │   │       │       Chorus.js
+│   │   │       │       Chorus.js.map
+│   │   │       │       Distortion.d.ts
+│   │   │       │       Distortion.js
+│   │   │       │       Distortion.js.map
+│   │   │       │       Effect.d.ts
+│   │   │       │       Effect.js
+│   │   │       │       Effect.js.map
+│   │   │       │       FeedbackDelay.d.ts
+│   │   │       │       FeedbackDelay.js
+│   │   │       │       FeedbackDelay.js.map
+│   │   │       │       FeedbackEffect.d.ts
+│   │   │       │       FeedbackEffect.js
+│   │   │       │       FeedbackEffect.js.map
+│   │   │       │       Freeverb.d.ts
+│   │   │       │       Freeverb.js
+│   │   │       │       Freeverb.js.map
+│   │   │       │       FrequencyShifter.d.ts
+│   │   │       │       FrequencyShifter.js
+│   │   │       │       FrequencyShifter.js.map
+│   │   │       │       index.d.ts
+│   │   │       │       index.js
+│   │   │       │       index.js.map
+│   │   │       │       JCReverb.d.ts
+│   │   │       │       JCReverb.js
+│   │   │       │       JCReverb.js.map
+│   │   │       │       LFOEffect.d.ts
+│   │   │       │       LFOEffect.js
+│   │   │       │       LFOEffect.js.map
+│   │   │       │       MidSideEffect.d.ts
+│   │   │       │       MidSideEffect.js
+│   │   │       │       MidSideEffect.js.map
+│   │   │       │       Phaser.d.ts
+│   │   │       │       Phaser.js
+│   │   │       │       Phaser.js.map
+│   │   │       │       PingPongDelay.d.ts
+│   │   │       │       PingPongDelay.js
+│   │   │       │       PingPongDelay.js.map
+│   │   │       │       PitchShift.d.ts
+│   │   │       │       PitchShift.js
+│   │   │       │       PitchShift.js.map
+│   │   │       │       Reverb.d.ts
+│   │   │       │       Reverb.js
+│   │   │       │       Reverb.js.map
+│   │   │       │       StereoEffect.d.ts
+│   │   │       │       StereoEffect.js
+│   │   │       │       StereoEffect.js.map
+│   │   │       │       StereoFeedbackEffect.d.ts
+│   │   │       │       StereoFeedbackEffect.js
+│   │   │       │       StereoFeedbackEffect.js.map
+│   │   │       │       StereoWidener.d.ts
+│   │   │       │       StereoWidener.js
+│   │   │       │       StereoWidener.js.map
+│   │   │       │       StereoXFeedbackEffect.d.ts
+│   │   │       │       StereoXFeedbackEffect.js
+│   │   │       │       StereoXFeedbackEffect.js.map
+│   │   │       │       Tremolo.d.ts
+│   │   │       │       Tremolo.js
+│   │   │       │       Tremolo.js.map
+│   │   │       │       Vibrato.d.ts
+│   │   │       │       Vibrato.js
+│   │   │       │       Vibrato.js.map
+│   │   │       │
+│   │   │       ├───event
+│   │   │       │       index.d.ts
+│   │   │       │       index.js
+│   │   │       │       index.js.map
+│   │   │       │       Loop.d.ts
+│   │   │       │       Loop.js
+│   │   │       │       Loop.js.map
+│   │   │       │       Part.d.ts
+│   │   │       │       Part.js
+│   │   │       │       Part.js.map
+│   │   │       │       Pattern.d.ts
+│   │   │       │       Pattern.js
+│   │   │       │       Pattern.js.map
+│   │   │       │       PatternGenerator.d.ts
+│   │   │       │       PatternGenerator.js
+│   │   │       │       PatternGenerator.js.map
+│   │   │       │       Sequence.d.ts
+│   │   │       │       Sequence.js
+│   │   │       │       Sequence.js.map
+│   │   │       │       ToneEvent.d.ts
+│   │   │       │       ToneEvent.js
+│   │   │       │       ToneEvent.js.map
+│   │   │       │
+│   │   │       ├───instrument
+│   │   │       │       AMSynth.d.ts
+│   │   │       │       AMSynth.js
+│   │   │       │       AMSynth.js.map
+│   │   │       │       DuoSynth.d.ts
+│   │   │       │       DuoSynth.js
+│   │   │       │       DuoSynth.js.map
+│   │   │       │       FMSynth.d.ts
+│   │   │       │       FMSynth.js
+│   │   │       │       FMSynth.js.map
+│   │   │       │       index.d.ts
+│   │   │       │       index.js
+│   │   │       │       index.js.map
+│   │   │       │       Instrument.d.ts
+│   │   │       │       Instrument.js
+│   │   │       │       Instrument.js.map
+│   │   │       │       MembraneSynth.d.ts
+│   │   │       │       MembraneSynth.js
+│   │   │       │       MembraneSynth.js.map
+│   │   │       │       MetalSynth.d.ts
+│   │   │       │       MetalSynth.js
+│   │   │       │       MetalSynth.js.map
+│   │   │       │       ModulationSynth.d.ts
+│   │   │       │       ModulationSynth.js
+│   │   │       │       ModulationSynth.js.map
+│   │   │       │       Monophonic.d.ts
+│   │   │       │       Monophonic.js
+│   │   │       │       Monophonic.js.map
+│   │   │       │       MonoSynth.d.ts
+│   │   │       │       MonoSynth.js
+│   │   │       │       MonoSynth.js.map
+│   │   │       │       NoiseSynth.d.ts
+│   │   │       │       NoiseSynth.js
+│   │   │       │       NoiseSynth.js.map
+│   │   │       │       PluckSynth.d.ts
+│   │   │       │       PluckSynth.js
+│   │   │       │       PluckSynth.js.map
+│   │   │       │       PolySynth.d.ts
+│   │   │       │       PolySynth.js
+│   │   │       │       PolySynth.js.map
+│   │   │       │       Sampler.d.ts
+│   │   │       │       Sampler.js
+│   │   │       │       Sampler.js.map
+│   │   │       │       Synth.d.ts
+│   │   │       │       Synth.js
+│   │   │       │       Synth.js.map
+│   │   │       │
+│   │   │       ├───signal
+│   │   │       │       Abs.d.ts
+│   │   │       │       Abs.js
+│   │   │       │       Abs.js.map
+│   │   │       │       Add.d.ts
+│   │   │       │       Add.js
+│   │   │       │       Add.js.map
+│   │   │       │       AudioToGain.d.ts
+│   │   │       │       AudioToGain.js
+│   │   │       │       AudioToGain.js.map
+│   │   │       │       GainToAudio.d.ts
+│   │   │       │       GainToAudio.js
+│   │   │       │       GainToAudio.js.map
+│   │   │       │       GreaterThan.d.ts
+│   │   │       │       GreaterThan.js
+│   │   │       │       GreaterThan.js.map
+│   │   │       │       GreaterThanZero.d.ts
+│   │   │       │       GreaterThanZero.js
+│   │   │       │       GreaterThanZero.js.map
+│   │   │       │       index.d.ts
+│   │   │       │       index.js
+│   │   │       │       index.js.map
+│   │   │       │       Multiply.d.ts
+│   │   │       │       Multiply.js
+│   │   │       │       Multiply.js.map
+│   │   │       │       Negate.d.ts
+│   │   │       │       Negate.js
+│   │   │       │       Negate.js.map
+│   │   │       │       Pow.d.ts
+│   │   │       │       Pow.js
+│   │   │       │       Pow.js.map
+│   │   │       │       Scale.d.ts
+│   │   │       │       Scale.js
+│   │   │       │       Scale.js.map
+│   │   │       │       ScaleExp.d.ts
+│   │   │       │       ScaleExp.js
+│   │   │       │       ScaleExp.js.map
+│   │   │       │       Signal.d.ts
+│   │   │       │       Signal.js
+│   │   │       │       Signal.js.map
+│   │   │       │       SignalOperator.d.ts
+│   │   │       │       SignalOperator.js
+│   │   │       │       SignalOperator.js.map
+│   │   │       │       Subtract.d.ts
+│   │   │       │       Subtract.js
+│   │   │       │       Subtract.js.map
+│   │   │       │       SyncedSignal.d.ts
+│   │   │       │       SyncedSignal.js
+│   │   │       │       SyncedSignal.js.map
+│   │   │       │       ToneConstantSource.d.ts
+│   │   │       │       ToneConstantSource.js
+│   │   │       │       ToneConstantSource.js.map
+│   │   │       │       WaveShaper.d.ts
+│   │   │       │       WaveShaper.js
+│   │   │       │       WaveShaper.js.map
+│   │   │       │       Zero.d.ts
+│   │   │       │       Zero.js
+│   │   │       │       Zero.js.map
+│   │   │       │
+│   │   │       └───source
+│   │   │           │   index.d.ts
+│   │   │           │   index.js
+│   │   │           │   index.js.map
+│   │   │           │   Noise.d.ts
+│   │   │           │   Noise.js
+│   │   │           │   Noise.js.map
+│   │   │           │   OneShotSource.d.ts
+│   │   │           │   OneShotSource.js
+│   │   │           │   OneShotSource.js.map
+│   │   │           │   Source.d.ts
+│   │   │           │   Source.js
+│   │   │           │   Source.js.map
+│   │   │           │   UserMedia.d.ts
+│   │   │           │   UserMedia.js
+│   │   │           │   UserMedia.js.map
+│   │   │           │
+│   │   │           ├───buffer
+│   │   │           │       GrainPlayer.d.ts
+│   │   │           │       GrainPlayer.js
+│   │   │           │       GrainPlayer.js.map
+│   │   │           │       Player.d.ts
+│   │   │           │       Player.js
+│   │   │           │       Player.js.map
+│   │   │           │       Players.d.ts
+│   │   │           │       Players.js
+│   │   │           │       Players.js.map
+│   │   │           │       ToneBufferSource.d.ts
+│   │   │           │       ToneBufferSource.js
+│   │   │           │       ToneBufferSource.js.map
+│   │   │           │
+│   │   │           └───oscillator
+│   │   │                   AMOscillator.d.ts
+│   │   │                   AMOscillator.js
+│   │   │                   AMOscillator.js.map
+│   │   │                   FatOscillator.d.ts
+│   │   │                   FatOscillator.js
+│   │   │                   FatOscillator.js.map
+│   │   │                   FMOscillator.d.ts
+│   │   │                   FMOscillator.js
+│   │   │                   FMOscillator.js.map
+│   │   │                   LFO.d.ts
+│   │   │                   LFO.js
+│   │   │                   LFO.js.map
+│   │   │                   OmniOscillator.d.ts
+│   │   │                   OmniOscillator.js
+│   │   │                   OmniOscillator.js.map
+│   │   │                   Oscillator.d.ts
+│   │   │                   Oscillator.js
+│   │   │                   Oscillator.js.map
+│   │   │                   OscillatorInterface.d.ts
+│   │   │                   OscillatorInterface.js
+│   │   │                   OscillatorInterface.js.map
+│   │   │                   PulseOscillator.d.ts
+│   │   │                   PulseOscillator.js
+│   │   │                   PulseOscillator.js.map
+│   │   │                   PWMOscillator.d.ts
+│   │   │                   PWMOscillator.js
+│   │   │                   PWMOscillator.js.map
+│   │   │                   ToneOscillatorNode.d.ts
+│   │   │                   ToneOscillatorNode.js
+│   │   │                   ToneOscillatorNode.js.map
+│   │   │
+│   │   └───Tone
+│   │       │   classes.ts
+│   │       │   fromContext.test.ts
+│   │       │   fromContext.ts
+│   │       │   index.test.ts
+│   │       │   index.ts
+│   │       │   version.ts
+│   │       │
+│   │       ├───component
+│   │       │   │   index.ts
+│   │       │   │
+│   │       │   ├───analysis
+│   │       │   │       Analyser.test.ts
+│   │       │   │       Analyser.ts
+│   │       │   │       DCMeter.test.ts
+│   │       │   │       DCMeter.ts
+│   │       │   │       FFT.test.ts
+│   │       │   │       FFT.ts
+│   │       │   │       Follower.test.ts
+│   │       │   │       Follower.ts
+│   │       │   │       Meter.test.ts
+│   │       │   │       Meter.ts
+│   │       │   │       MeterBase.ts
+│   │       │   │       Waveform.test.ts
+│   │       │   │       Waveform.ts
+│   │       │   │
+│   │       │   ├───channel
+│   │       │   │       Channel.test.ts
+│   │       │   │       Channel.ts
+│   │       │   │       CrossFade.test.ts
+│   │       │   │       CrossFade.ts
+│   │       │   │       Merge.test.ts
+│   │       │   │       Merge.ts
+│   │       │   │       MidSideMerge.test.ts
+│   │       │   │       MidSideMerge.ts
+│   │       │   │       MidSideSplit.test.ts
+│   │       │   │       MidSideSplit.ts
+│   │       │   │       Mono.test.ts
+│   │       │   │       Mono.ts
+│   │       │   │       MultibandSplit.test.ts
+│   │       │   │       MultibandSplit.ts
+│   │       │   │       Panner.test.ts
+│   │       │   │       Panner.ts
+│   │       │   │       Panner3D.test.ts
+│   │       │   │       Panner3D.ts
+│   │       │   │       PanVol.test.ts
+│   │       │   │       PanVol.ts
+│   │       │   │       Recorder.test.ts
+│   │       │   │       Recorder.ts
+│   │       │   │       Solo.test.ts
+│   │       │   │       Solo.ts
+│   │       │   │       Split.test.ts
+│   │       │   │       Split.ts
+│   │       │   │       Volume.test.ts
+│   │       │   │       Volume.ts
+│   │       │   │
+│   │       │   ├───dynamics
+│   │       │   │       Compressor.test.ts
+│   │       │   │       Compressor.ts
+│   │       │   │       Gate.test.ts
+│   │       │   │       Gate.ts
+│   │       │   │       Limiter.test.ts
+│   │       │   │       Limiter.ts
+│   │       │   │       MidSideCompressor.test.ts
+│   │       │   │       MidSideCompressor.ts
+│   │       │   │       MultibandCompressor.test.ts
+│   │       │   │       MultibandCompressor.ts
+│   │       │   │
+│   │       │   ├───envelope
+│   │       │   │       AmplitudeEnvelope.test.ts
+│   │       │   │       AmplitudeEnvelope.ts
+│   │       │   │       Envelope.test.ts
+│   │       │   │       Envelope.ts
+│   │       │   │       FrequencyEnvelope.test.ts
+│   │       │   │       FrequencyEnvelope.ts
+│   │       │   │
+│   │       │   └───filter
+│   │       │           BiquadFilter.test.ts
+│   │       │           BiquadFilter.ts
+│   │       │           Convolver.test.ts
+│   │       │           Convolver.ts
+│   │       │           EQ3.test.ts
+│   │       │           EQ3.ts
+│   │       │           FeedbackCombFilter.test.ts
+│   │       │           FeedbackCombFilter.ts
+│   │       │           FeedbackCombFilter.worklet.ts
+│   │       │           Filter.test.ts
+│   │       │           Filter.ts
+│   │       │           LowpassCombFilter.test.ts
+│   │       │           LowpassCombFilter.ts
+│   │       │           OnePoleFilter.test.ts
+│   │       │           OnePoleFilter.ts
+│   │       │           PhaseShiftAllpass.test.ts
+│   │       │           PhaseShiftAllpass.ts
+│   │       │
+│   │       ├───core
+│   │       │   │   Global.ts
+│   │       │   │   index.ts
+│   │       │   │   Tone.ts
+│   │       │   │
+│   │       │   ├───clock
+│   │       │   │       Clock.test.ts
+│   │       │   │       Clock.ts
+│   │       │   │       Ticker.test.ts
+│   │       │   │       Ticker.ts
+│   │       │   │       TickParam.test.ts
+│   │       │   │       TickParam.ts
+│   │       │   │       TickSignal.test.ts
+│   │       │   │       TickSignal.ts
+│   │       │   │       TickSource.test.ts
+│   │       │   │       TickSource.ts
+│   │       │   │       Transport.test.ts
+│   │       │   │       Transport.ts
+│   │       │   │       TransportEvent.test.ts
+│   │       │   │       TransportEvent.ts
+│   │       │   │       TransportRepeatEvent.test.ts
+│   │       │   │       TransportRepeatEvent.ts
+│   │       │   │
+│   │       │   ├───context
+│   │       │   │       AbstractParam.ts
+│   │       │   │       AudioContext.ts
+│   │       │   │       BaseContext.ts
+│   │       │   │       Context.test.ts
+│   │       │   │       Context.ts
+│   │       │   │       ContextInitialization.ts
+│   │       │   │       Delay.test.ts
+│   │       │   │       Delay.ts
+│   │       │   │       Destination.test.ts
+│   │       │   │       Destination.ts
+│   │       │   │       DummyContext.test.ts
+│   │       │   │       DummyContext.ts
+│   │       │   │       Gain.test.ts
+│   │       │   │       Gain.ts
+│   │       │   │       Listener.test.ts
+│   │       │   │       Listener.ts
+│   │       │   │       Offline.test.ts
+│   │       │   │       Offline.ts
+│   │       │   │       OfflineContext.test.ts
+│   │       │   │       OfflineContext.ts
+│   │       │   │       Param.test.ts
+│   │       │   │       Param.ts
+│   │       │   │       ToneAudioBuffer.test.ts
+│   │       │   │       ToneAudioBuffer.ts
+│   │       │   │       ToneAudioBuffers.test.ts
+│   │       │   │       ToneAudioBuffers.ts
+│   │       │   │       ToneAudioNode.test.ts
+│   │       │   │       ToneAudioNode.ts
+│   │       │   │       ToneWithContext.ts
+│   │       │   │
+│   │       │   ├───type
+│   │       │   │       Conversions.test.ts
+│   │       │   │       Conversions.ts
+│   │       │   │       Frequency.test.ts
+│   │       │   │       Frequency.ts
+│   │       │   │       Midi.test.ts
+│   │       │   │       Midi.ts
+│   │       │   │       NoteUnits.ts
+│   │       │   │       Ticks.test.ts
+│   │       │   │       Ticks.ts
+│   │       │   │       Time.test.ts
+│   │       │   │       Time.ts
+│   │       │   │       TimeBase.ts
+│   │       │   │       TransportTime.test.ts
+│   │       │   │       TransportTime.ts
+│   │       │   │       Units.ts
+│   │       │   │
+│   │       │   ├───util
+│   │       │   │       AdvancedTypeCheck.ts
+│   │       │   │       Debug.test.ts
+│   │       │   │       Debug.ts
+│   │       │   │       Decorator.ts
+│   │       │   │       Defaults.ts
+│   │       │   │       Draw.test.ts
+│   │       │   │       Draw.ts
+│   │       │   │       Emitter.test.ts
+│   │       │   │       Emitter.ts
+│   │       │   │       global.d.ts
+│   │       │   │       Interface.ts
+│   │       │   │       IntervalTimeline.test.ts
+│   │       │   │       IntervalTimeline.ts
+│   │       │   │       Math.ts
+│   │       │   │       StateTimeline.test.ts
+│   │       │   │       StateTimeline.ts
+│   │       │   │       Timeline.test.ts
+│   │       │   │       Timeline.ts
+│   │       │   │       TimelineValue.test.ts
+│   │       │   │       TimelineValue.ts
+│   │       │   │       TypeCheck.ts
+│   │       │   │
+│   │       │   └───worklet
+│   │       │           DelayLine.worklet.ts
+│   │       │           SingleIOProcessor.worklet.ts
+│   │       │           ToneAudioWorklet.ts
+│   │       │           ToneAudioWorkletProcessor.worklet.ts
+│   │       │           WorkletGlobalScope.ts
+│   │       │
+│   │       ├───effect
+│   │       │       AutoFilter.test.ts
+│   │       │       AutoFilter.ts
+│   │       │       AutoPanner.test.ts
+│   │       │       AutoPanner.ts
+│   │       │       AutoWah.test.ts
+│   │       │       AutoWah.ts
+│   │       │       BitCrusher.test.ts
+│   │       │       BitCrusher.ts
+│   │       │       BitCrusher.worklet.ts
+│   │       │       Chebyshev.test.ts
+│   │       │       Chebyshev.ts
+│   │       │       Chorus.test.ts
+│   │       │       Chorus.ts
+│   │       │       Distortion.test.ts
+│   │       │       Distortion.ts
+│   │       │       Effect.ts
+│   │       │       FeedbackDelay.test.ts
+│   │       │       FeedbackDelay.ts
+│   │       │       FeedbackEffect.ts
+│   │       │       Freeverb.test.ts
+│   │       │       Freeverb.ts
+│   │       │       FrequencyShifter.test.ts
+│   │       │       FrequencyShifter.ts
+│   │       │       index.ts
+│   │       │       JCReverb.test.ts
+│   │       │       JCReverb.ts
+│   │       │       LFOEffect.ts
+│   │       │       MidSideEffect.ts
+│   │       │       Phaser.test.ts
+│   │       │       Phaser.ts
+│   │       │       PingPongDelay.test.ts
+│   │       │       PingPongDelay.ts
+│   │       │       PitchShift.test.ts
+│   │       │       PitchShift.ts
+│   │       │       Reverb.test.ts
+│   │       │       Reverb.ts
+│   │       │       StereoEffect.ts
+│   │       │       StereoFeedbackEffect.ts
+│   │       │       StereoWidener.test.ts
+│   │       │       StereoWidener.ts
+│   │       │       StereoXFeedbackEffect.ts
+│   │       │       Tremolo.test.ts
+│   │       │       Tremolo.ts
+│   │       │       Vibrato.test.ts
+│   │       │       Vibrato.ts
+│   │       │
+│   │       ├───event
+│   │       │       index.ts
+│   │       │       Loop.test.ts
+│   │       │       Loop.ts
+│   │       │       Part.test.ts
+│   │       │       Part.ts
+│   │       │       Pattern.test.ts
+│   │       │       Pattern.ts
+│   │       │       PatternGenerator.test.ts
+│   │       │       PatternGenerator.ts
+│   │       │       Sequence.test.ts
+│   │       │       Sequence.ts
+│   │       │       ToneEvent.test.ts
+│   │       │       ToneEvent.ts
+│   │       │
+│   │       ├───instrument
+│   │       │       AMSynth.test.ts
+│   │       │       AMSynth.ts
+│   │       │       DuoSynth.test.ts
+│   │       │       DuoSynth.ts
+│   │       │       FMSynth.test.ts
+│   │       │       FMSynth.ts
+│   │       │       index.ts
+│   │       │       Instrument.ts
+│   │       │       MembraneSynth.test.ts
+│   │       │       MembraneSynth.ts
+│   │       │       MetalSynth.test.ts
+│   │       │       MetalSynth.ts
+│   │       │       ModulationSynth.ts
+│   │       │       Monophonic.ts
+│   │       │       MonoSynth.test.ts
+│   │       │       MonoSynth.ts
+│   │       │       NoiseSynth.test.ts
+│   │       │       NoiseSynth.ts
+│   │       │       PluckSynth.test.ts
+│   │       │       PluckSynth.ts
+│   │       │       PolySynth.test.ts
+│   │       │       PolySynth.ts
+│   │       │       Sampler.test.ts
+│   │       │       Sampler.ts
+│   │       │       Synth.test.ts
+│   │       │       Synth.ts
+│   │       │
+│   │       ├───signal
+│   │       │       Abs.test.ts
+│   │       │       Abs.ts
+│   │       │       Add.test.ts
+│   │       │       Add.ts
+│   │       │       AudioToGain.test.ts
+│   │       │       AudioToGain.ts
+│   │       │       GainToAudio.test.ts
+│   │       │       GainToAudio.ts
+│   │       │       GreaterThan.test.ts
+│   │       │       GreaterThan.ts
+│   │       │       GreaterThanZero.test.ts
+│   │       │       GreaterThanZero.ts
+│   │       │       index.ts
+│   │       │       Multiply.test.ts
+│   │       │       Multiply.ts
+│   │       │       Negate.test.ts
+│   │       │       Negate.ts
+│   │       │       Pow.test.ts
+│   │       │       Pow.ts
+│   │       │       Scale.test.ts
+│   │       │       Scale.ts
+│   │       │       ScaleExp.test.ts
+│   │       │       ScaleExp.ts
+│   │       │       Signal.test.ts
+│   │       │       Signal.ts
+│   │       │       SignalOperator.ts
+│   │       │       Subtract.test.ts
+│   │       │       Subtract.ts
+│   │       │       SyncedSignal.test.ts
+│   │       │       SyncedSignal.ts
+│   │       │       ToneConstantSource.test.ts
+│   │       │       ToneConstantSource.ts
+│   │       │       WaveShaper.test.ts
+│   │       │       WaveShaper.ts
+│   │       │       Zero.test.ts
+│   │       │       Zero.ts
+│   │       │
+│   │       └───source
+│   │           │   index.ts
+│   │           │   Noise.test.ts
+│   │           │   Noise.ts
+│   │           │   OneShotSource.ts
+│   │           │   Source.test.ts
+│   │           │   Source.ts
+│   │           │   UserMedia.test.ts
+│   │           │   UserMedia.ts
+│   │           │
+│   │           ├───buffer
+│   │           │       GrainPlayer.test.ts
+│   │           │       GrainPlayer.ts
+│   │           │       Player.test.ts
+│   │           │       Player.ts
+│   │           │       Players.test.ts
+│   │           │       Players.ts
+│   │           │       ToneBufferSource.test.ts
+│   │           │       ToneBufferSource.ts
+│   │           │
+│   │           └───oscillator
+│   │                   AMOscillator.test.ts
+│   │                   AMOscillator.ts
+│   │                   FatOscillator.test.ts
+│   │                   FatOscillator.ts
+│   │                   FMOscillator.test.ts
+│   │                   FMOscillator.ts
+│   │                   LFO.test.ts
+│   │                   LFO.ts
+│   │                   OmniOscillator.test.ts
+│   │                   OmniOscillator.ts
+│   │                   Oscillator.test.ts
+│   │                   Oscillator.ts
+│   │                   OscillatorInterface.ts
+│   │                   PulseOscillator.test.ts
+│   │                   PulseOscillator.ts
+│   │                   PWMOscillator.test.ts
+│   │                   PWMOscillator.ts
+│   │                   ToneOscillatorNode.test.ts
+│   │                   ToneOscillatorNode.ts
+│   │
+│   ├───touch
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───bin
+│   │           nodetouch.js
+│   │
+│   ├───tree-kill
+│   │       cli.js
+│   │       index.d.ts
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───tslib
+│   │   │   CopyrightNotice.txt
+│   │   │   LICENSE.txt
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   SECURITY.md
+│   │   │   tslib.d.ts
+│   │   │   tslib.es6.html
+│   │   │   tslib.es6.js
+│   │   │   tslib.es6.mjs
+│   │   │   tslib.html
+│   │   │   tslib.js
+│   │   │
+│   │   └───modules
+│   │           index.d.ts
+│   │           index.js
+│   │           package.json
+│   │
+│   ├───tunnel-agent
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───type-check
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───lib
+│   │           check.js
+│   │           index.js
+│   │           parse-type.js
+│   │
+│   ├───type-detect
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │       type-detect.js
+│   │
+│   ├───type-fest
+│   │   │   base.d.ts
+│   │   │   index.d.ts
+│   │   │   license
+│   │   │   package.json
+│   │   │   readme.md
+│   │   │
+│   │   ├───source
+│   │   │       async-return-type.d.ts
+│   │   │       asyncify.d.ts
+│   │   │       basic.d.ts
+│   │   │       conditional-except.d.ts
+│   │   │       conditional-keys.d.ts
+│   │   │       conditional-pick.d.ts
+│   │   │       entries.d.ts
+│   │   │       entry.d.ts
+│   │   │       except.d.ts
+│   │   │       fixed-length-array.d.ts
+│   │   │       iterable-element.d.ts
+│   │   │       literal-union.d.ts
+│   │   │       merge-exclusive.d.ts
+│   │   │       merge.d.ts
+│   │   │       mutable.d.ts
+│   │   │       opaque.d.ts
+│   │   │       package-json.d.ts
+│   │   │       partial-deep.d.ts
+│   │   │       promisable.d.ts
+│   │   │       promise-value.d.ts
+│   │   │       readonly-deep.d.ts
+│   │   │       require-at-least-one.d.ts
+│   │   │       require-exactly-one.d.ts
+│   │   │       set-optional.d.ts
+│   │   │       set-required.d.ts
+│   │   │       set-return-type.d.ts
+│   │   │       simplify.d.ts
+│   │   │       stringified.d.ts
+│   │   │       tsconfig-json.d.ts
+│   │   │       typed-array.d.ts
+│   │   │       union-to-intersection.d.ts
+│   │   │       utilities.d.ts
+│   │   │       value-of.d.ts
+│   │   │
+│   │   └───ts41
+│   │           camel-case.d.ts
+│   │           delimiter-case.d.ts
+│   │           get.d.ts
+│   │           index.d.ts
+│   │           kebab-case.d.ts
+│   │           pascal-case.d.ts
+│   │           snake-case.d.ts
+│   │           utilities.d.ts
+│   │
+│   ├───type-is
+│   │       HISTORY.md
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───typed-array-buffer
+│   │   │   .eslintrc
+│   │   │   .nycrc
+│   │   │   CHANGELOG.md
+│   │   │   index.d.ts
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   tsconfig.json
+│   │   │
+│   │   ├───.github
+│   │   │       FUNDING.yml
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───typed-array-byte-length
+│   │   │   .eslintrc
+│   │   │   .nycrc
+│   │   │   CHANGELOG.md
+│   │   │   index.d.ts
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   tsconfig.json
+│   │   │
+│   │   ├───.github
+│   │   │       FUNDING.yml
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───typed-array-byte-offset
+│   │   │   .eslintrc
+│   │   │   .nycrc
+│   │   │   CHANGELOG.md
+│   │   │   index.d.ts
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   tsconfig.json
+│   │   │
+│   │   ├───.github
+│   │   │       FUNDING.yml
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───typed-array-length
+│   │   │   .eslintrc
+│   │   │   .nycrc
+│   │   │   CHANGELOG.md
+│   │   │   index.d.ts
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   tsconfig.json
+│   │   │
+│   │   ├───.github
+│   │   │       FUNDING.yml
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───unbox-primitive
+│   │   │   .editorconfig
+│   │   │   .eslintrc
+│   │   │   .nycrc
+│   │   │   CHANGELOG.md
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   ├───.github
+│   │   │       FUNDING.yml
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───uncontrollable
+│   │   │   .babelrc
+│   │   │   .travis.yml
+│   │   │   CHANGELOG.md
+│   │   │   LICENSE
+│   │   │   manual-releases.md
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   tsconfig.json
+│   │   │
+│   │   ├───lib
+│   │   │   │   hook.js
+│   │   │   │   index.js
+│   │   │   │   LICENSE
+│   │   │   │   package.json
+│   │   │   │   README.md
+│   │   │   │   utils.js
+│   │   │   │
+│   │   │   ├───cjs
+│   │   │   │       hook.d.ts
+│   │   │   │       hook.js
+│   │   │   │       index.d.ts
+│   │   │   │       index.js
+│   │   │   │       uncontrollable.js
+│   │   │   │       utils.d.ts
+│   │   │   │       utils.js
+│   │   │   │
+│   │   │   └───esm
+│   │   │           hook.d.ts
+│   │   │           hook.js
+│   │   │           index.d.ts
+│   │   │           index.js
+│   │   │           uncontrollable.js
+│   │   │           utils.d.ts
+│   │   │           utils.js
+│   │   │
+│   │   └───test
+│   │           .eslintrc
+│   │           test.js
+│   │           types-test.tsx
+│   │
+│   ├───undefsafe
+│   │   │   .jscsrc
+│   │   │   .jshintrc
+│   │   │   .travis.yml
+│   │   │   example.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   ├───.github
+│   │   │   └───workflows
+│   │   │           release.yml
+│   │   │
+│   │   └───lib
+│   │           undefsafe.js
+│   │
+│   ├───undici-types
+│   │       agent.d.ts
+│   │       api.d.ts
+│   │       balanced-pool.d.ts
+│   │       cache.d.ts
+│   │       client.d.ts
+│   │       connector.d.ts
+│   │       content-type.d.ts
+│   │       cookies.d.ts
+│   │       diagnostics-channel.d.ts
+│   │       dispatcher.d.ts
+│   │       errors.d.ts
+│   │       eventsource.d.ts
+│   │       fetch.d.ts
+│   │       file.d.ts
+│   │       filereader.d.ts
+│   │       formdata.d.ts
+│   │       global-dispatcher.d.ts
+│   │       global-origin.d.ts
+│   │       handlers.d.ts
+│   │       header.d.ts
+│   │       index.d.ts
+│   │       interceptors.d.ts
+│   │       LICENSE
+│   │       mock-agent.d.ts
+│   │       mock-client.d.ts
+│   │       mock-errors.d.ts
+│   │       mock-interceptor.d.ts
+│   │       mock-pool.d.ts
+│   │       package.json
+│   │       patch.d.ts
+│   │       pool-stats.d.ts
+│   │       pool.d.ts
+│   │       proxy-agent.d.ts
+│   │       readable.d.ts
+│   │       README.md
+│   │       retry-agent.d.ts
+│   │       retry-handler.d.ts
+│   │       util.d.ts
+│   │       webidl.d.ts
+│   │       websocket.d.ts
+│   │
+│   ├───unicode-canonical-property-names-ecmascript
+│   │       index.js
+│   │       LICENSE-MIT.txt
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───unicode-match-property-ecmascript
+│   │       index.js
+│   │       LICENSE-MIT.txt
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───unicode-match-property-value-ecmascript
+│   │   │   index.js
+│   │   │   LICENSE-MIT.txt
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───data
+│   │           mappings.js
+│   │
+│   ├───unicode-property-aliases-ecmascript
+│   │       index.js
+│   │       LICENSE-MIT.txt
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───unicorn-magic
+│   │       default.js
+│   │       index.d.ts
+│   │       license
+│   │       node.js
+│   │       package.json
+│   │       readme.md
+│   │
+│   ├───unique-filename
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   ├───.nyc_output
+│   │   │       54942.json
+│   │   │       54944.json
+│   │   │
+│   │   ├───coverage
+│   │   │   │   base.css
+│   │   │   │   index.html
+│   │   │   │   prettify.css
+│   │   │   │   prettify.js
+│   │   │   │   sort-arrow-sprite.png
+│   │   │   │   sorter.js
+│   │   │   │
+│   │   │   └───__root__
+│   │   │           index.html
+│   │   │           index.js.html
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───unique-slug
+│   │   │   .travis.yml
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───unpipe
+│   │       HISTORY.md
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───update-browserslist-db
+│   │       check-npm-version.js
+│   │       cli.js
+│   │       index.d.ts
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │       utils.js
+│   │
+│   ├───uri-js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   yarn.lock
+│   │   │
+│   │   └───dist
+│   │       ├───es5
+│   │       │       uri.all.d.ts
+│   │       │       uri.all.js
+│   │       │       uri.all.js.map
+│   │       │       uri.all.min.d.ts
+│   │       │       uri.all.min.js
+│   │       │       uri.all.min.js.map
+│   │       │
+│   │       └───esnext
+│   │           │   index.d.ts
+│   │           │   index.js
+│   │           │   index.js.map
+│   │           │   regexps-iri.d.ts
+│   │           │   regexps-iri.js
+│   │           │   regexps-iri.js.map
+│   │           │   regexps-uri.d.ts
+│   │           │   regexps-uri.js
+│   │           │   regexps-uri.js.map
+│   │           │   uri.d.ts
+│   │           │   uri.js
+│   │           │   uri.js.map
+│   │           │   util.d.ts
+│   │           │   util.js
+│   │           │   util.js.map
+│   │           │
+│   │           └───schemes
+│   │                   http.d.ts
+│   │                   http.js
+│   │                   http.js.map
+│   │                   https.d.ts
+│   │                   https.js
+│   │                   https.js.map
+│   │                   mailto.d.ts
+│   │                   mailto.js
+│   │                   mailto.js.map
+│   │                   urn-uuid.d.ts
+│   │                   urn-uuid.js
+│   │                   urn-uuid.js.map
+│   │                   urn.d.ts
+│   │                   urn.js
+│   │                   urn.js.map
+│   │                   ws.d.ts
+│   │                   ws.js
+│   │                   ws.js.map
+│   │                   wss.d.ts
+│   │                   wss.js
+│   │                   wss.js.map
+│   │
+│   ├───use-sync-external-store
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   with-selector.js
+│   │   │
+│   │   ├───cjs
+│   │   │   │   use-sync-external-store-shim.development.js
+│   │   │   │   use-sync-external-store-shim.native.development.js
+│   │   │   │   use-sync-external-store-shim.native.production.min.js
+│   │   │   │   use-sync-external-store-shim.production.min.js
+│   │   │   │   use-sync-external-store-with-selector.development.js
+│   │   │   │   use-sync-external-store-with-selector.production.min.js
+│   │   │   │   use-sync-external-store.development.js
+│   │   │   │   use-sync-external-store.production.min.js
+│   │   │   │
+│   │   │   └───use-sync-external-store-shim
+│   │   │           with-selector.development.js
+│   │   │           with-selector.production.min.js
+│   │   │
+│   │   └───shim
+│   │           index.js
+│   │           index.native.js
+│   │           with-selector.js
+│   │
+│   ├───util-deprecate
+│   │       browser.js
+│   │       History.md
+│   │       LICENSE
+│   │       node.js
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───utila
+│   │   │   .npmignore
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   ├───lib
+│   │   │       array.js
+│   │   │       classic.js
+│   │   │       Emitter.js
+│   │   │       object.js
+│   │   │       string.js
+│   │   │       utila.js
+│   │   │       _common.js
+│   │   │
+│   │   └───test
+│   │           array.coffee
+│   │           object.coffee
+│   │           _prepare.coffee
+│   │
+│   ├───utils-merge
+│   │       .npmignore
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───uuid
+│   │   │   CHANGELOG.md
+│   │   │   CONTRIBUTING.md
+│   │   │   LICENSE.md
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   wrapper.mjs
+│   │   │
+│   │   └───dist
+│   │       │   index.js
+│   │       │   md5-browser.js
+│   │       │   md5.js
+│   │       │   nil.js
+│   │       │   parse.js
+│   │       │   regex.js
+│   │       │   rng-browser.js
+│   │       │   rng.js
+│   │       │   sha1-browser.js
+│   │       │   sha1.js
+│   │       │   stringify.js
+│   │       │   uuid-bin.js
+│   │       │   v1.js
+│   │       │   v3.js
+│   │       │   v35.js
+│   │       │   v4.js
+│   │       │   v5.js
+│   │       │   validate.js
+│   │       │   version.js
+│   │       │
+│   │       ├───bin
+│   │       │       uuid
+│   │       │
+│   │       ├───esm-browser
+│   │       │       index.js
+│   │       │       md5.js
+│   │       │       nil.js
+│   │       │       parse.js
+│   │       │       regex.js
+│   │       │       rng.js
+│   │       │       sha1.js
+│   │       │       stringify.js
+│   │       │       v1.js
+│   │       │       v3.js
+│   │       │       v35.js
+│   │       │       v4.js
+│   │       │       v5.js
+│   │       │       validate.js
+│   │       │       version.js
+│   │       │
+│   │       ├───esm-node
+│   │       │       index.js
+│   │       │       md5.js
+│   │       │       nil.js
+│   │       │       parse.js
+│   │       │       regex.js
+│   │       │       rng.js
+│   │       │       sha1.js
+│   │       │       stringify.js
+│   │       │       v1.js
+│   │       │       v3.js
+│   │       │       v35.js
+│   │       │       v4.js
+│   │       │       v5.js
+│   │       │       validate.js
+│   │       │       version.js
+│   │       │
+│   │       └───umd
+│   │               uuid.min.js
+│   │               uuidNIL.min.js
+│   │               uuidParse.min.js
+│   │               uuidStringify.min.js
+│   │               uuidv1.min.js
+│   │               uuidv3.min.js
+│   │               uuidv4.min.js
+│   │               uuidv5.min.js
+│   │               uuidValidate.min.js
+│   │               uuidVersion.min.js
+│   │
+│   ├───v8-to-istanbul
+│   │   │   CHANGELOG.md
+│   │   │   index.d.ts
+│   │   │   index.js
+│   │   │   LICENSE.txt
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───lib
+│   │           branch.js
+│   │           function.js
+│   │           line.js
+│   │           range.js
+│   │           source.js
+│   │           v8-to-istanbul.js
+│   │
+│   ├───v8flags
+│   │       config-path.js
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───vary
+│   │       HISTORY.md
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───walker
+│   │   │   .travis.yml
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   readme.md
+│   │   │
+│   │   └───lib
+│   │           walker.js
+│   │
+│   ├───warning
+│   │       CHANGELOG.md
+│   │       LICENSE.md
+│   │       package.json
+│   │       README.md
+│   │       warning.js
+│   │
+│   ├───watchpack
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───lib
+│   │           DirectoryWatcher.js
+│   │           getWatcherManager.js
+│   │           LinkResolver.js
+│   │           reducePlan.js
+│   │           watchEventSource.js
+│   │           watchpack.js
+│   │
+│   ├───wbuf
+│   │   │   index.js
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───test
+│   │           wbuf-test.js
+│   │
+│   ├───webpack
+│   │   │   LICENSE
+│   │   │   module.d.ts
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   SECURITY.md
+│   │   │   types.d.ts
+│   │   │
+│   │   ├───bin
+│   │   │       webpack.js
+│   │   │
+│   │   ├───hot
+│   │   │       dev-server.js
+│   │   │       emitter.js
+│   │   │       lazy-compilation-node.js
+│   │   │       lazy-compilation-web.js
+│   │   │       log-apply-result.js
+│   │   │       log.js
+│   │   │       only-dev-server.js
+│   │   │       poll.js
+│   │   │       signal.js
+│   │   │
+│   │   ├───lib
+│   │   │   │   AbstractMethodError.js
+│   │   │   │   APIPlugin.js
+│   │   │   │   AsyncDependenciesBlock.js
+│   │   │   │   AsyncDependencyToInitialChunkError.js
+│   │   │   │   AutomaticPrefetchPlugin.js
+│   │   │   │   BannerPlugin.js
+│   │   │   │   buildChunkGraph.js
+│   │   │   │   Cache.js
+│   │   │   │   CacheFacade.js
+│   │   │   │   CaseSensitiveModulesWarning.js
+│   │   │   │   Chunk.js
+│   │   │   │   ChunkGraph.js
+│   │   │   │   ChunkGroup.js
+│   │   │   │   ChunkRenderError.js
+│   │   │   │   ChunkTemplate.js
+│   │   │   │   CleanPlugin.js
+│   │   │   │   cli.js
+│   │   │   │   CodeGenerationError.js
+│   │   │   │   CodeGenerationResults.js
+│   │   │   │   CommentCompilationWarning.js
+│   │   │   │   CompatibilityPlugin.js
+│   │   │   │   Compilation.js
+│   │   │   │   Compiler.js
+│   │   │   │   ConcatenationScope.js
+│   │   │   │   ConcurrentCompilationError.js
+│   │   │   │   ConditionalInitFragment.js
+│   │   │   │   ConstPlugin.js
+│   │   │   │   ContextExclusionPlugin.js
+│   │   │   │   ContextModule.js
+│   │   │   │   ContextModuleFactory.js
+│   │   │   │   ContextReplacementPlugin.js
+│   │   │   │   CssModule.js
+│   │   │   │   DefinePlugin.js
+│   │   │   │   DelegatedModule.js
+│   │   │   │   DelegatedModuleFactoryPlugin.js
+│   │   │   │   DelegatedPlugin.js
+│   │   │   │   DependenciesBlock.js
+│   │   │   │   Dependency.js
+│   │   │   │   DependencyTemplate.js
+│   │   │   │   DependencyTemplates.js
+│   │   │   │   DllEntryPlugin.js
+│   │   │   │   DllModule.js
+│   │   │   │   DllModuleFactory.js
+│   │   │   │   DllPlugin.js
+│   │   │   │   DllReferencePlugin.js
+│   │   │   │   DynamicEntryPlugin.js
+│   │   │   │   EntryOptionPlugin.js
+│   │   │   │   EntryPlugin.js
+│   │   │   │   Entrypoint.js
+│   │   │   │   EnvironmentNotSupportAsyncWarning.js
+│   │   │   │   EnvironmentPlugin.js
+│   │   │   │   ErrorHelpers.js
+│   │   │   │   EvalDevToolModulePlugin.js
+│   │   │   │   EvalSourceMapDevToolPlugin.js
+│   │   │   │   ExportsInfo.js
+│   │   │   │   ExportsInfoApiPlugin.js
+│   │   │   │   ExternalModule.js
+│   │   │   │   ExternalModuleFactoryPlugin.js
+│   │   │   │   ExternalsPlugin.js
+│   │   │   │   FileSystemInfo.js
+│   │   │   │   FlagAllModulesAsUsedPlugin.js
+│   │   │   │   FlagDependencyExportsPlugin.js
+│   │   │   │   FlagDependencyUsagePlugin.js
+│   │   │   │   FlagEntryExportAsUsedPlugin.js
+│   │   │   │   formatLocation.js
+│   │   │   │   Generator.js
+│   │   │   │   GraphHelpers.js
+│   │   │   │   HarmonyLinkingError.js
+│   │   │   │   HookWebpackError.js
+│   │   │   │   HotModuleReplacementPlugin.js
+│   │   │   │   HotUpdateChunk.js
+│   │   │   │   IgnoreErrorModuleFactory.js
+│   │   │   │   IgnorePlugin.js
+│   │   │   │   IgnoreWarningsPlugin.js
+│   │   │   │   index.js
+│   │   │   │   InitFragment.js
+│   │   │   │   InvalidDependenciesModuleWarning.js
+│   │   │   │   JavascriptMetaInfoPlugin.js
+│   │   │   │   LibManifestPlugin.js
+│   │   │   │   LibraryTemplatePlugin.js
+│   │   │   │   LoaderOptionsPlugin.js
+│   │   │   │   LoaderTargetPlugin.js
+│   │   │   │   MainTemplate.js
+│   │   │   │   Module.js
+│   │   │   │   ModuleBuildError.js
+│   │   │   │   ModuleDependencyError.js
+│   │   │   │   ModuleDependencyWarning.js
+│   │   │   │   ModuleError.js
+│   │   │   │   ModuleFactory.js
+│   │   │   │   ModuleFilenameHelpers.js
+│   │   │   │   ModuleGraph.js
+│   │   │   │   ModuleGraphConnection.js
+│   │   │   │   ModuleHashingError.js
+│   │   │   │   ModuleInfoHeaderPlugin.js
+│   │   │   │   ModuleNotFoundError.js
+│   │   │   │   ModuleParseError.js
+│   │   │   │   ModuleProfile.js
+│   │   │   │   ModuleRestoreError.js
+│   │   │   │   ModuleStoreError.js
+│   │   │   │   ModuleTemplate.js
+│   │   │   │   ModuleTypeConstants.js
+│   │   │   │   ModuleWarning.js
+│   │   │   │   MultiCompiler.js
+│   │   │   │   MultiStats.js
+│   │   │   │   MultiWatching.js
+│   │   │   │   NodeStuffInWebError.js
+│   │   │   │   NodeStuffPlugin.js
+│   │   │   │   NoEmitOnErrorsPlugin.js
+│   │   │   │   NoModeWarning.js
+│   │   │   │   NormalModule.js
+│   │   │   │   NormalModuleFactory.js
+│   │   │   │   NormalModuleReplacementPlugin.js
+│   │   │   │   NullFactory.js
+│   │   │   │   OptimizationStages.js
+│   │   │   │   OptionsApply.js
+│   │   │   │   Parser.js
+│   │   │   │   PlatformPlugin.js
+│   │   │   │   PrefetchPlugin.js
+│   │   │   │   ProgressPlugin.js
+│   │   │   │   ProvidePlugin.js
+│   │   │   │   RawModule.js
+│   │   │   │   RecordIdsPlugin.js
+│   │   │   │   RequestShortener.js
+│   │   │   │   RequireJsStuffPlugin.js
+│   │   │   │   ResolverFactory.js
+│   │   │   │   RuntimeGlobals.js
+│   │   │   │   RuntimeModule.js
+│   │   │   │   RuntimePlugin.js
+│   │   │   │   RuntimeTemplate.js
+│   │   │   │   SelfModuleFactory.js
+│   │   │   │   SingleEntryPlugin.js
+│   │   │   │   SizeFormatHelpers.js
+│   │   │   │   SourceMapDevToolModuleOptionsPlugin.js
+│   │   │   │   SourceMapDevToolPlugin.js
+│   │   │   │   Stats.js
+│   │   │   │   Template.js
+│   │   │   │   TemplatedPathPlugin.js
+│   │   │   │   UnhandledSchemeError.js
+│   │   │   │   UnsupportedFeatureWarning.js
+│   │   │   │   UseStrictPlugin.js
+│   │   │   │   validateSchema.js
+│   │   │   │   WarnCaseSensitiveModulesPlugin.js
+│   │   │   │   WarnDeprecatedOptionPlugin.js
+│   │   │   │   WarnNoModeSetPlugin.js
+│   │   │   │   WatchIgnorePlugin.js
+│   │   │   │   Watching.js
+│   │   │   │   webpack.js
+│   │   │   │   WebpackError.js
+│   │   │   │   WebpackIsIncludedPlugin.js
+│   │   │   │   WebpackOptionsApply.js
+│   │   │   │   WebpackOptionsDefaulter.js
+│   │   │   │
+│   │   │   ├───asset
+│   │   │   │       AssetGenerator.js
+│   │   │   │       AssetModulesPlugin.js
+│   │   │   │       AssetParser.js
+│   │   │   │       AssetSourceGenerator.js
+│   │   │   │       AssetSourceParser.js
+│   │   │   │       RawDataUrlModule.js
+│   │   │   │
+│   │   │   ├───async-modules
+│   │   │   │       AwaitDependenciesInitFragment.js
+│   │   │   │       InferAsyncModulesPlugin.js
+│   │   │   │
+│   │   │   ├───cache
+│   │   │   │       AddBuildDependenciesPlugin.js
+│   │   │   │       AddManagedPathsPlugin.js
+│   │   │   │       getLazyHashedEtag.js
+│   │   │   │       IdleFileCachePlugin.js
+│   │   │   │       MemoryCachePlugin.js
+│   │   │   │       MemoryWithGcCachePlugin.js
+│   │   │   │       mergeEtags.js
+│   │   │   │       PackFileCacheStrategy.js
+│   │   │   │       ResolverCachePlugin.js
+│   │   │   │
+│   │   │   ├───config
+│   │   │   │       browserslistTargetHandler.js
+│   │   │   │       defaults.js
+│   │   │   │       normalization.js
+│   │   │   │       target.js
+│   │   │   │
+│   │   │   ├───container
+│   │   │   │       ContainerEntryDependency.js
+│   │   │   │       ContainerEntryModule.js
+│   │   │   │       ContainerEntryModuleFactory.js
+│   │   │   │       ContainerExposedDependency.js
+│   │   │   │       ContainerPlugin.js
+│   │   │   │       ContainerReferencePlugin.js
+│   │   │   │       FallbackDependency.js
+│   │   │   │       FallbackItemDependency.js
+│   │   │   │       FallbackModule.js
+│   │   │   │       FallbackModuleFactory.js
+│   │   │   │       ModuleFederationPlugin.js
+│   │   │   │       options.js
+│   │   │   │       RemoteModule.js
+│   │   │   │       RemoteRuntimeModule.js
+│   │   │   │       RemoteToExternalDependency.js
+│   │   │   │
+│   │   │   ├───css
+│   │   │   │       CssExportsGenerator.js
+│   │   │   │       CssGenerator.js
+│   │   │   │       CssLoadingRuntimeModule.js
+│   │   │   │       CssModulesPlugin.js
+│   │   │   │       CssParser.js
+│   │   │   │       walkCssTokens.js
+│   │   │   │
+│   │   │   ├───debug
+│   │   │   │       ProfilingPlugin.js
+│   │   │   │
+│   │   │   ├───dependencies
+│   │   │   │       AMDDefineDependency.js
+│   │   │   │       AMDDefineDependencyParserPlugin.js
+│   │   │   │       AMDPlugin.js
+│   │   │   │       AMDRequireArrayDependency.js
+│   │   │   │       AMDRequireContextDependency.js
+│   │   │   │       AMDRequireDependenciesBlock.js
+│   │   │   │       AMDRequireDependenciesBlockParserPlugin.js
+│   │   │   │       AMDRequireDependency.js
+│   │   │   │       AMDRequireItemDependency.js
+│   │   │   │       AMDRuntimeModules.js
+│   │   │   │       CachedConstDependency.js
+│   │   │   │       CommonJsDependencyHelpers.js
+│   │   │   │       CommonJsExportRequireDependency.js
+│   │   │   │       CommonJsExportsDependency.js
+│   │   │   │       CommonJsExportsParserPlugin.js
+│   │   │   │       CommonJsFullRequireDependency.js
+│   │   │   │       CommonJsImportsParserPlugin.js
+│   │   │   │       CommonJsPlugin.js
+│   │   │   │       CommonJsRequireContextDependency.js
+│   │   │   │       CommonJsRequireDependency.js
+│   │   │   │       CommonJsSelfReferenceDependency.js
+│   │   │   │       ConstDependency.js
+│   │   │   │       ContextDependency.js
+│   │   │   │       ContextDependencyHelpers.js
+│   │   │   │       ContextDependencyTemplateAsId.js
+│   │   │   │       ContextDependencyTemplateAsRequireCall.js
+│   │   │   │       ContextElementDependency.js
+│   │   │   │       CreateScriptUrlDependency.js
+│   │   │   │       CriticalDependencyWarning.js
+│   │   │   │       CssExportDependency.js
+│   │   │   │       CssImportDependency.js
+│   │   │   │       CssLocalIdentifierDependency.js
+│   │   │   │       CssSelfLocalIdentifierDependency.js
+│   │   │   │       CssUrlDependency.js
+│   │   │   │       DelegatedSourceDependency.js
+│   │   │   │       DllEntryDependency.js
+│   │   │   │       DynamicExports.js
+│   │   │   │       EntryDependency.js
+│   │   │   │       ExportsInfoDependency.js
+│   │   │   │       ExternalModuleDependency.js
+│   │   │   │       ExternalModuleInitFragment.js
+│   │   │   │       getFunctionExpression.js
+│   │   │   │       HarmonyAcceptDependency.js
+│   │   │   │       HarmonyAcceptImportDependency.js
+│   │   │   │       HarmonyCompatibilityDependency.js
+│   │   │   │       HarmonyDetectionParserPlugin.js
+│   │   │   │       HarmonyEvaluatedImportSpecifierDependency.js
+│   │   │   │       HarmonyExportDependencyParserPlugin.js
+│   │   │   │       HarmonyExportExpressionDependency.js
+│   │   │   │       HarmonyExportHeaderDependency.js
+│   │   │   │       HarmonyExportImportedSpecifierDependency.js
+│   │   │   │       HarmonyExportInitFragment.js
+│   │   │   │       HarmonyExports.js
+│   │   │   │       HarmonyExportSpecifierDependency.js
+│   │   │   │       HarmonyImportDependency.js
+│   │   │   │       HarmonyImportDependencyParserPlugin.js
+│   │   │   │       HarmonyImportSideEffectDependency.js
+│   │   │   │       HarmonyImportSpecifierDependency.js
+│   │   │   │       HarmonyModulesPlugin.js
+│   │   │   │       HarmonyTopLevelThisParserPlugin.js
+│   │   │   │       ImportContextDependency.js
+│   │   │   │       ImportDependency.js
+│   │   │   │       ImportEagerDependency.js
+│   │   │   │       ImportMetaContextDependency.js
+│   │   │   │       ImportMetaContextDependencyParserPlugin.js
+│   │   │   │       ImportMetaContextPlugin.js
+│   │   │   │       ImportMetaHotAcceptDependency.js
+│   │   │   │       ImportMetaHotDeclineDependency.js
+│   │   │   │       ImportMetaPlugin.js
+│   │   │   │       ImportParserPlugin.js
+│   │   │   │       ImportPlugin.js
+│   │   │   │       ImportWeakDependency.js
+│   │   │   │       JsonExportsDependency.js
+│   │   │   │       LoaderDependency.js
+│   │   │   │       LoaderImportDependency.js
+│   │   │   │       LoaderPlugin.js
+│   │   │   │       LocalModule.js
+│   │   │   │       LocalModuleDependency.js
+│   │   │   │       LocalModulesHelpers.js
+│   │   │   │       ModuleDecoratorDependency.js
+│   │   │   │       ModuleDependency.js
+│   │   │   │       ModuleDependencyTemplateAsId.js
+│   │   │   │       ModuleDependencyTemplateAsRequireId.js
+│   │   │   │       ModuleHotAcceptDependency.js
+│   │   │   │       ModuleHotDeclineDependency.js
+│   │   │   │       NullDependency.js
+│   │   │   │       PrefetchDependency.js
+│   │   │   │       processExportInfo.js
+│   │   │   │       ProvidedDependency.js
+│   │   │   │       PureExpressionDependency.js
+│   │   │   │       RequireContextDependency.js
+│   │   │   │       RequireContextDependencyParserPlugin.js
+│   │   │   │       RequireContextPlugin.js
+│   │   │   │       RequireEnsureDependenciesBlock.js
+│   │   │   │       RequireEnsureDependenciesBlockParserPlugin.js
+│   │   │   │       RequireEnsureDependency.js
+│   │   │   │       RequireEnsureItemDependency.js
+│   │   │   │       RequireEnsurePlugin.js
+│   │   │   │       RequireHeaderDependency.js
+│   │   │   │       RequireIncludeDependency.js
+│   │   │   │       RequireIncludeDependencyParserPlugin.js
+│   │   │   │       RequireIncludePlugin.js
+│   │   │   │       RequireResolveContextDependency.js
+│   │   │   │       RequireResolveDependency.js
+│   │   │   │       RequireResolveHeaderDependency.js
+│   │   │   │       RuntimeRequirementsDependency.js
+│   │   │   │       StaticExportsDependency.js
+│   │   │   │       SystemPlugin.js
+│   │   │   │       SystemRuntimeModule.js
+│   │   │   │       UnsupportedDependency.js
+│   │   │   │       URLDependency.js
+│   │   │   │       URLPlugin.js
+│   │   │   │       WebAssemblyExportImportedDependency.js
+│   │   │   │       WebAssemblyImportDependency.js
+│   │   │   │       WebpackIsIncludedDependency.js
+│   │   │   │       WorkerDependency.js
+│   │   │   │       WorkerPlugin.js
+│   │   │   │
+│   │   │   ├───electron
+│   │   │   │       ElectronTargetPlugin.js
+│   │   │   │
+│   │   │   ├───errors
+│   │   │   │       BuildCycleError.js
+│   │   │   │
+│   │   │   ├───esm
+│   │   │   │       ExportWebpackRequireRuntimeModule.js
+│   │   │   │       ModuleChunkFormatPlugin.js
+│   │   │   │       ModuleChunkLoadingPlugin.js
+│   │   │   │       ModuleChunkLoadingRuntimeModule.js
+│   │   │   │
+│   │   │   ├───hmr
+│   │   │   │       HotModuleReplacement.runtime.js
+│   │   │   │       HotModuleReplacementRuntimeModule.js
+│   │   │   │       JavascriptHotModuleReplacement.runtime.js
+│   │   │   │       lazyCompilationBackend.js
+│   │   │   │       LazyCompilationPlugin.js
+│   │   │   │
+│   │   │   ├───ids
+│   │   │   │       ChunkModuleIdRangePlugin.js
+│   │   │   │       DeterministicChunkIdsPlugin.js
+│   │   │   │       DeterministicModuleIdsPlugin.js
+│   │   │   │       HashedModuleIdsPlugin.js
+│   │   │   │       IdHelpers.js
+│   │   │   │       NamedChunkIdsPlugin.js
+│   │   │   │       NamedModuleIdsPlugin.js
+│   │   │   │       NaturalChunkIdsPlugin.js
+│   │   │   │       NaturalModuleIdsPlugin.js
+│   │   │   │       OccurrenceChunkIdsPlugin.js
+│   │   │   │       OccurrenceModuleIdsPlugin.js
+│   │   │   │       SyncModuleIdsPlugin.js
+│   │   │   │
+│   │   │   ├───javascript
+│   │   │   │       ArrayPushCallbackChunkFormatPlugin.js
+│   │   │   │       BasicEvaluatedExpression.js
+│   │   │   │       ChunkHelpers.js
+│   │   │   │       CommonJsChunkFormatPlugin.js
+│   │   │   │       EnableChunkLoadingPlugin.js
+│   │   │   │       JavascriptGenerator.js
+│   │   │   │       JavascriptModulesPlugin.js
+│   │   │   │       JavascriptParser.js
+│   │   │   │       JavascriptParserHelpers.js
+│   │   │   │       StartupHelpers.js
+│   │   │   │
+│   │   │   ├───json
+│   │   │   │       JsonData.js
+│   │   │   │       JsonGenerator.js
+│   │   │   │       JsonModulesPlugin.js
+│   │   │   │       JsonParser.js
+│   │   │   │
+│   │   │   ├───library
+│   │   │   │       AbstractLibraryPlugin.js
+│   │   │   │       AmdLibraryPlugin.js
+│   │   │   │       AssignLibraryPlugin.js
+│   │   │   │       EnableLibraryPlugin.js
+│   │   │   │       ExportPropertyLibraryPlugin.js
+│   │   │   │       JsonpLibraryPlugin.js
+│   │   │   │       ModernModuleLibraryPlugin.js
+│   │   │   │       ModuleLibraryPlugin.js
+│   │   │   │       SystemLibraryPlugin.js
+│   │   │   │       UmdLibraryPlugin.js
+│   │   │   │
+│   │   │   ├───logging
+│   │   │   │       createConsoleLogger.js
+│   │   │   │       Logger.js
+│   │   │   │       runtime.js
+│   │   │   │       truncateArgs.js
+│   │   │   │
+│   │   │   ├───node
+│   │   │   │       CommonJsChunkLoadingPlugin.js
+│   │   │   │       nodeConsole.js
+│   │   │   │       NodeEnvironmentPlugin.js
+│   │   │   │       NodeSourcePlugin.js
+│   │   │   │       NodeTargetPlugin.js
+│   │   │   │       NodeTemplatePlugin.js
+│   │   │   │       NodeWatchFileSystem.js
+│   │   │   │       ReadFileChunkLoadingRuntimeModule.js
+│   │   │   │       ReadFileCompileAsyncWasmPlugin.js
+│   │   │   │       ReadFileCompileWasmPlugin.js
+│   │   │   │       RequireChunkLoadingRuntimeModule.js
+│   │   │   │
+│   │   │   ├───optimize
+│   │   │   │       AggressiveMergingPlugin.js
+│   │   │   │       AggressiveSplittingPlugin.js
+│   │   │   │       ConcatenatedModule.js
+│   │   │   │       EnsureChunkConditionsPlugin.js
+│   │   │   │       FlagIncludedChunksPlugin.js
+│   │   │   │       InnerGraph.js
+│   │   │   │       InnerGraphPlugin.js
+│   │   │   │       LimitChunkCountPlugin.js
+│   │   │   │       MangleExportsPlugin.js
+│   │   │   │       MergeDuplicateChunksPlugin.js
+│   │   │   │       MinChunkSizePlugin.js
+│   │   │   │       MinMaxSizeWarning.js
+│   │   │   │       ModuleConcatenationPlugin.js
+│   │   │   │       RealContentHashPlugin.js
+│   │   │   │       RemoveEmptyChunksPlugin.js
+│   │   │   │       RemoveParentModulesPlugin.js
+│   │   │   │       RuntimeChunkPlugin.js
+│   │   │   │       SideEffectsFlagPlugin.js
+│   │   │   │       SplitChunksPlugin.js
+│   │   │   │
+│   │   │   ├───performance
+│   │   │   │       AssetsOverSizeLimitWarning.js
+│   │   │   │       EntrypointsOverSizeLimitWarning.js
+│   │   │   │       NoAsyncChunksWarning.js
+│   │   │   │       SizeLimitsPlugin.js
+│   │   │   │
+│   │   │   ├───prefetch
+│   │   │   │       ChunkPrefetchFunctionRuntimeModule.js
+│   │   │   │       ChunkPrefetchPreloadPlugin.js
+│   │   │   │       ChunkPrefetchStartupRuntimeModule.js
+│   │   │   │       ChunkPrefetchTriggerRuntimeModule.js
+│   │   │   │       ChunkPreloadTriggerRuntimeModule.js
+│   │   │   │
+│   │   │   ├───rules
+│   │   │   │       BasicEffectRulePlugin.js
+│   │   │   │       BasicMatcherRulePlugin.js
+│   │   │   │       ObjectMatcherRulePlugin.js
+│   │   │   │       RuleSetCompiler.js
+│   │   │   │       UseEffectRulePlugin.js
+│   │   │   │
+│   │   │   ├───runtime
+│   │   │   │       AsyncModuleRuntimeModule.js
+│   │   │   │       AutoPublicPathRuntimeModule.js
+│   │   │   │       BaseUriRuntimeModule.js
+│   │   │   │       ChunkNameRuntimeModule.js
+│   │   │   │       CompatGetDefaultExportRuntimeModule.js
+│   │   │   │       CompatRuntimeModule.js
+│   │   │   │       CreateFakeNamespaceObjectRuntimeModule.js
+│   │   │   │       CreateScriptRuntimeModule.js
+│   │   │   │       CreateScriptUrlRuntimeModule.js
+│   │   │   │       DefinePropertyGettersRuntimeModule.js
+│   │   │   │       EnsureChunkRuntimeModule.js
+│   │   │   │       GetChunkFilenameRuntimeModule.js
+│   │   │   │       GetFullHashRuntimeModule.js
+│   │   │   │       GetMainFilenameRuntimeModule.js
+│   │   │   │       GetTrustedTypesPolicyRuntimeModule.js
+│   │   │   │       GlobalRuntimeModule.js
+│   │   │   │       HasOwnPropertyRuntimeModule.js
+│   │   │   │       HelperRuntimeModule.js
+│   │   │   │       LoadScriptRuntimeModule.js
+│   │   │   │       MakeNamespaceObjectRuntimeModule.js
+│   │   │   │       NonceRuntimeModule.js
+│   │   │   │       OnChunksLoadedRuntimeModule.js
+│   │   │   │       PublicPathRuntimeModule.js
+│   │   │   │       RelativeUrlRuntimeModule.js
+│   │   │   │       RuntimeIdRuntimeModule.js
+│   │   │   │       StartupChunkDependenciesPlugin.js
+│   │   │   │       StartupChunkDependenciesRuntimeModule.js
+│   │   │   │       StartupEntrypointRuntimeModule.js
+│   │   │   │       SystemContextRuntimeModule.js
+│   │   │   │
+│   │   │   ├───schemes
+│   │   │   │       DataUriPlugin.js
+│   │   │   │       FileUriPlugin.js
+│   │   │   │       HttpUriPlugin.js
+│   │   │   │
+│   │   │   ├───serialization
+│   │   │   │       ArraySerializer.js
+│   │   │   │       BinaryMiddleware.js
+│   │   │   │       DateObjectSerializer.js
+│   │   │   │       ErrorObjectSerializer.js
+│   │   │   │       FileMiddleware.js
+│   │   │   │       MapObjectSerializer.js
+│   │   │   │       NullPrototypeObjectSerializer.js
+│   │   │   │       ObjectMiddleware.js
+│   │   │   │       PlainObjectSerializer.js
+│   │   │   │       RegExpObjectSerializer.js
+│   │   │   │       Serializer.js
+│   │   │   │       SerializerMiddleware.js
+│   │   │   │       SetObjectSerializer.js
+│   │   │   │       SingleItemMiddleware.js
+│   │   │   │       types.js
+│   │   │   │
+│   │   │   ├───sharing
+│   │   │   │       ConsumeSharedFallbackDependency.js
+│   │   │   │       ConsumeSharedModule.js
+│   │   │   │       ConsumeSharedPlugin.js
+│   │   │   │       ConsumeSharedRuntimeModule.js
+│   │   │   │       ProvideForSharedDependency.js
+│   │   │   │       ProvideSharedDependency.js
+│   │   │   │       ProvideSharedModule.js
+│   │   │   │       ProvideSharedModuleFactory.js
+│   │   │   │       ProvideSharedPlugin.js
+│   │   │   │       resolveMatchedConfigs.js
+│   │   │   │       SharePlugin.js
+│   │   │   │       ShareRuntimeModule.js
+│   │   │   │       utils.js
+│   │   │   │
+│   │   │   ├───stats
+│   │   │   │       DefaultStatsFactoryPlugin.js
+│   │   │   │       DefaultStatsPresetPlugin.js
+│   │   │   │       DefaultStatsPrinterPlugin.js
+│   │   │   │       StatsFactory.js
+│   │   │   │       StatsPrinter.js
+│   │   │   │
+│   │   │   ├───util
+│   │   │   │   │   ArrayHelpers.js
+│   │   │   │   │   ArrayQueue.js
+│   │   │   │   │   AsyncQueue.js
+│   │   │   │   │   binarySearchBounds.js
+│   │   │   │   │   chainedImports.js
+│   │   │   │   │   cleverMerge.js
+│   │   │   │   │   comparators.js
+│   │   │   │   │   compileBooleanMatcher.js
+│   │   │   │   │   conventions.js
+│   │   │   │   │   create-schema-validation.js
+│   │   │   │   │   createHash.js
+│   │   │   │   │   deprecation.js
+│   │   │   │   │   deterministicGrouping.js
+│   │   │   │   │   extractUrlAndGlobal.js
+│   │   │   │   │   findGraphRoots.js
+│   │   │   │   │   fs.js
+│   │   │   │   │   Hash.js
+│   │   │   │   │   identifier.js
+│   │   │   │   │   internalSerializables.js
+│   │   │   │   │   IterableHelpers.js
+│   │   │   │   │   LazyBucketSortedSet.js
+│   │   │   │   │   LazySet.js
+│   │   │   │   │   makeSerializable.js
+│   │   │   │   │   MapHelpers.js
+│   │   │   │   │   memoize.js
+│   │   │   │   │   mergeScope.js
+│   │   │   │   │   nonNumericOnlyHash.js
+│   │   │   │   │   numberHash.js
+│   │   │   │   │   objectToMap.js
+│   │   │   │   │   ParallelismFactorCalculator.js
+│   │   │   │   │   processAsyncTree.js
+│   │   │   │   │   propertyAccess.js
+│   │   │   │   │   propertyName.js
+│   │   │   │   │   Queue.js
+│   │   │   │   │   registerExternalSerializer.js
+│   │   │   │   │   runtime.js
+│   │   │   │   │   Semaphore.js
+│   │   │   │   │   semver.js
+│   │   │   │   │   serialization.js
+│   │   │   │   │   SetHelpers.js
+│   │   │   │   │   smartGrouping.js
+│   │   │   │   │   SortableSet.js
+│   │   │   │   │   source.js
+│   │   │   │   │   StackedCacheMap.js
+│   │   │   │   │   StackedMap.js
+│   │   │   │   │   StringXor.js
+│   │   │   │   │   TupleQueue.js
+│   │   │   │   │   TupleSet.js
+│   │   │   │   │   URLAbsoluteSpecifier.js
+│   │   │   │   │   WeakTupleMap.js
+│   │   │   │   │
+│   │   │   │   └───hash
+│   │   │   │           BatchedHash.js
+│   │   │   │           md4.js
+│   │   │   │           wasm-hash.js
+│   │   │   │           xxhash64.js
+│   │   │   │
+│   │   │   ├───wasm
+│   │   │   │       EnableWasmLoadingPlugin.js
+│   │   │   │
+│   │   │   ├───wasm-async
+│   │   │   │       AsyncWasmLoadingRuntimeModule.js
+│   │   │   │       AsyncWebAssemblyGenerator.js
+│   │   │   │       AsyncWebAssemblyJavascriptGenerator.js
+│   │   │   │       AsyncWebAssemblyModulesPlugin.js
+│   │   │   │       AsyncWebAssemblyParser.js
+│   │   │   │
+│   │   │   ├───wasm-sync
+│   │   │   │       UnsupportedWebAssemblyFeatureError.js
+│   │   │   │       WasmChunkLoadingRuntimeModule.js
+│   │   │   │       WasmFinalizeExportsPlugin.js
+│   │   │   │       WebAssemblyGenerator.js
+│   │   │   │       WebAssemblyInInitialChunkError.js
+│   │   │   │       WebAssemblyJavascriptGenerator.js
+│   │   │   │       WebAssemblyModulesPlugin.js
+│   │   │   │       WebAssemblyParser.js
+│   │   │   │       WebAssemblyUtils.js
+│   │   │   │
+│   │   │   ├───web
+│   │   │   │       FetchCompileAsyncWasmPlugin.js
+│   │   │   │       FetchCompileWasmPlugin.js
+│   │   │   │       JsonpChunkLoadingPlugin.js
+│   │   │   │       JsonpChunkLoadingRuntimeModule.js
+│   │   │   │       JsonpTemplatePlugin.js
+│   │   │   │
+│   │   │   └───webworker
+│   │   │           ImportScriptsChunkLoadingPlugin.js
+│   │   │           ImportScriptsChunkLoadingRuntimeModule.js
+│   │   │           WebWorkerTemplatePlugin.js
+│   │   │
+│   │   ├───node_modules
+│   │   │   └───schema-utils
+│   │   │       │   CHANGELOG.md
+│   │   │       │   LICENSE
+│   │   │       │   package.json
+│   │   │       │   README.md
+│   │   │       │
+│   │   │       ├───declarations
+│   │   │       │   │   index.d.ts
+│   │   │       │   │   validate.d.ts
+│   │   │       │   │   ValidationError.d.ts
+│   │   │       │   │
+│   │   │       │   ├───keywords
+│   │   │       │   │       absolutePath.d.ts
+│   │   │       │   │       undefinedAsNull.d.ts
+│   │   │       │   │
+│   │   │       │   └───util
+│   │   │       │           hints.d.ts
+│   │   │       │           Range.d.ts
+│   │   │       │
+│   │   │       └───dist
+│   │   │           │   index.js
+│   │   │           │   validate.js
+│   │   │           │   ValidationError.js
+│   │   │           │
+│   │   │           ├───keywords
+│   │   │           │       absolutePath.js
+│   │   │           │       undefinedAsNull.js
+│   │   │           │
+│   │   │           └───util
+│   │   │                   hints.js
+│   │   │                   Range.js
+│   │   │
+│   │   └───schemas
+│   │       │   WebpackOptions.check.d.ts
+│   │       │   WebpackOptions.check.js
+│   │       │   WebpackOptions.json
+│   │       │   _container.json
+│   │       │   _sharing.json
+│   │       │
+│   │       └───plugins
+│   │           │   BannerPlugin.check.d.ts
+│   │           │   BannerPlugin.check.js
+│   │           │   BannerPlugin.json
+│   │           │   DllPlugin.check.d.ts
+│   │           │   DllPlugin.check.js
+│   │           │   DllPlugin.json
+│   │           │   DllReferencePlugin.check.d.ts
+│   │           │   DllReferencePlugin.check.js
+│   │           │   DllReferencePlugin.json
+│   │           │   HashedModuleIdsPlugin.check.d.ts
+│   │           │   HashedModuleIdsPlugin.check.js
+│   │           │   HashedModuleIdsPlugin.json
+│   │           │   IgnorePlugin.check.d.ts
+│   │           │   IgnorePlugin.check.js
+│   │           │   IgnorePlugin.json
+│   │           │   JsonModulesPluginParser.check.d.ts
+│   │           │   JsonModulesPluginParser.check.js
+│   │           │   JsonModulesPluginParser.json
+│   │           │   LoaderOptionsPlugin.check.d.ts
+│   │           │   LoaderOptionsPlugin.check.js
+│   │           │   LoaderOptionsPlugin.json
+│   │           │   ProgressPlugin.check.d.ts
+│   │           │   ProgressPlugin.check.js
+│   │           │   ProgressPlugin.json
+│   │           │   SourceMapDevToolPlugin.check.d.ts
+│   │           │   SourceMapDevToolPlugin.check.js
+│   │           │   SourceMapDevToolPlugin.json
+│   │           │   WatchIgnorePlugin.check.d.ts
+│   │           │   WatchIgnorePlugin.check.js
+│   │           │   WatchIgnorePlugin.json
+│   │           │
+│   │           ├───asset
+│   │           │       AssetGeneratorOptions.check.d.ts
+│   │           │       AssetGeneratorOptions.check.js
+│   │           │       AssetGeneratorOptions.json
+│   │           │       AssetInlineGeneratorOptions.check.d.ts
+│   │           │       AssetInlineGeneratorOptions.check.js
+│   │           │       AssetInlineGeneratorOptions.json
+│   │           │       AssetParserOptions.check.d.ts
+│   │           │       AssetParserOptions.check.js
+│   │           │       AssetParserOptions.json
+│   │           │       AssetResourceGeneratorOptions.check.d.ts
+│   │           │       AssetResourceGeneratorOptions.check.js
+│   │           │       AssetResourceGeneratorOptions.json
+│   │           │
+│   │           ├───container
+│   │           │       ContainerPlugin.check.d.ts
+│   │           │       ContainerPlugin.check.js
+│   │           │       ContainerPlugin.json
+│   │           │       ContainerReferencePlugin.check.d.ts
+│   │           │       ContainerReferencePlugin.check.js
+│   │           │       ContainerReferencePlugin.json
+│   │           │       ExternalsType.check.d.ts
+│   │           │       ExternalsType.check.js
+│   │           │       ExternalsType.json
+│   │           │       ModuleFederationPlugin.check.d.ts
+│   │           │       ModuleFederationPlugin.check.js
+│   │           │       ModuleFederationPlugin.json
+│   │           │
+│   │           ├───css
+│   │           │       CssAutoGeneratorOptions.check.d.ts
+│   │           │       CssAutoGeneratorOptions.check.js
+│   │           │       CssAutoGeneratorOptions.json
+│   │           │       CssAutoParserOptions.check.d.ts
+│   │           │       CssAutoParserOptions.check.js
+│   │           │       CssAutoParserOptions.json
+│   │           │       CssGeneratorOptions.check.d.ts
+│   │           │       CssGeneratorOptions.check.js
+│   │           │       CssGeneratorOptions.json
+│   │           │       CssGlobalGeneratorOptions.check.d.ts
+│   │           │       CssGlobalGeneratorOptions.check.js
+│   │           │       CssGlobalGeneratorOptions.json
+│   │           │       CssGlobalParserOptions.check.d.ts
+│   │           │       CssGlobalParserOptions.check.js
+│   │           │       CssGlobalParserOptions.json
+│   │           │       CssModuleGeneratorOptions.check.d.ts
+│   │           │       CssModuleGeneratorOptions.check.js
+│   │           │       CssModuleGeneratorOptions.json
+│   │           │       CssModuleParserOptions.check.d.ts
+│   │           │       CssModuleParserOptions.check.js
+│   │           │       CssModuleParserOptions.json
+│   │           │       CssParserOptions.check.d.ts
+│   │           │       CssParserOptions.check.js
+│   │           │       CssParserOptions.json
+│   │           │
+│   │           ├───debug
+│   │           │       ProfilingPlugin.check.d.ts
+│   │           │       ProfilingPlugin.check.js
+│   │           │       ProfilingPlugin.json
+│   │           │
+│   │           ├───ids
+│   │           │       OccurrenceChunkIdsPlugin.check.d.ts
+│   │           │       OccurrenceChunkIdsPlugin.check.js
+│   │           │       OccurrenceChunkIdsPlugin.json
+│   │           │       OccurrenceModuleIdsPlugin.check.d.ts
+│   │           │       OccurrenceModuleIdsPlugin.check.js
+│   │           │       OccurrenceModuleIdsPlugin.json
+│   │           │
+│   │           ├───optimize
+│   │           │       AggressiveSplittingPlugin.check.d.ts
+│   │           │       AggressiveSplittingPlugin.check.js
+│   │           │       AggressiveSplittingPlugin.json
+│   │           │       LimitChunkCountPlugin.check.d.ts
+│   │           │       LimitChunkCountPlugin.check.js
+│   │           │       LimitChunkCountPlugin.json
+│   │           │       MinChunkSizePlugin.check.d.ts
+│   │           │       MinChunkSizePlugin.check.js
+│   │           │       MinChunkSizePlugin.json
+│   │           │
+│   │           ├───schemes
+│   │           │       HttpUriPlugin.check.d.ts
+│   │           │       HttpUriPlugin.check.js
+│   │           │       HttpUriPlugin.json
+│   │           │
+│   │           └───sharing
+│   │                   ConsumeSharedPlugin.check.d.ts
+│   │                   ConsumeSharedPlugin.check.js
+│   │                   ConsumeSharedPlugin.json
+│   │                   ProvideSharedPlugin.check.d.ts
+│   │                   ProvideSharedPlugin.check.js
+│   │                   ProvideSharedPlugin.json
+│   │                   SharePlugin.check.d.ts
+│   │                   SharePlugin.check.js
+│   │                   SharePlugin.json
+│   │
+│   ├───webpack-cli
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   ├───bin
+│   │   │       cli.js
+│   │   │
+│   │   ├───lib
+│   │   │   │   bootstrap.d.ts
+│   │   │   │   bootstrap.js
+│   │   │   │   index.d.ts
+│   │   │   │   index.js
+│   │   │   │   types.d.ts
+│   │   │   │   types.js
+│   │   │   │   webpack-cli.d.ts
+│   │   │   │   webpack-cli.js
+│   │   │   │
+│   │   │   ├───plugins
+│   │   │   │       cli-plugin.d.ts
+│   │   │   │       cli-plugin.js
+│   │   │   │
+│   │   │   └───utils
+│   │   │           dynamic-import-loader.d.ts
+│   │   │           dynamic-import-loader.js
+│   │   │
+│   │   └───node_modules
+│   │       └───commander
+│   │           │   esm.mjs
+│   │           │   index.js
+│   │           │   LICENSE
+│   │           │   package-support.json
+│   │           │   package.json
+│   │           │   Readme.md
+│   │           │
+│   │           ├───lib
+│   │           │       argument.js
+│   │           │       command.js
+│   │           │       error.js
+│   │           │       help.js
+│   │           │       option.js
+│   │           │       suggestSimilar.js
+│   │           │
+│   │           └───typings
+│   │                   index.d.ts
+│   │
+│   ├───webpack-dev-middleware
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   ├───dist
+│   │   │   │   index.js
+│   │   │   │   middleware.js
+│   │   │   │   options.json
+│   │   │   │
+│   │   │   └───utils
+│   │   │           compatibleAPI.js
+│   │   │           getFilenameFromUrl.js
+│   │   │           getPaths.js
+│   │   │           ready.js
+│   │   │           setupHooks.js
+│   │   │           setupOutputFileSystem.js
+│   │   │           setupWriteToDisk.js
+│   │   │
+│   │   └───types
+│   │       │   index.d.ts
+│   │       │   middleware.d.ts
+│   │       │
+│   │       └───utils
+│   │               compatibleAPI.d.ts
+│   │               getFilenameFromUrl.d.ts
+│   │               getPaths.d.ts
+│   │               ready.d.ts
+│   │               setupHooks.d.ts
+│   │               setupOutputFileSystem.d.ts
+│   │               setupWriteToDisk.d.ts
+│   │
+│   ├───webpack-dev-server
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   ├───bin
+│   │   │       cli-flags.js
+│   │   │       process-arguments.js
+│   │   │       webpack-dev-server.js
+│   │   │
+│   │   ├───client
+│   │   │   │   index.js
+│   │   │   │   overlay.js
+│   │   │   │   socket.js
+│   │   │   │
+│   │   │   ├───clients
+│   │   │   │       SockJSClient.js
+│   │   │   │       WebSocketClient.js
+│   │   │   │
+│   │   │   ├───modules
+│   │   │   │   ├───logger
+│   │   │   │   │       index.js
+│   │   │   │   │
+│   │   │   │   └───sockjs-client
+│   │   │   │           index.js
+│   │   │   │
+│   │   │   ├───overlay
+│   │   │   │       fsm.js
+│   │   │   │       runtime-error.js
+│   │   │   │       state-machine.js
+│   │   │   │       styles.js
+│   │   │   │
+│   │   │   └───utils
+│   │   │           createSocketURL.js
+│   │   │           getCurrentScriptSource.js
+│   │   │           log.js
+│   │   │           parseURL.js
+│   │   │           reloadApp.js
+│   │   │           sendMessage.js
+│   │   │           stripAnsi.js
+│   │   │
+│   │   ├───lib
+│   │   │   │   getPort.js
+│   │   │   │   options.json
+│   │   │   │   Server.js
+│   │   │   │
+│   │   │   └───servers
+│   │   │           BaseServer.js
+│   │   │           SockJSServer.js
+│   │   │           WebsocketServer.js
+│   │   │
+│   │   ├───node_modules
+│   │   │   └───ipaddr.js
+│   │   │       │   ipaddr.min.js
+│   │   │       │   LICENSE
+│   │   │       │   package.json
+│   │   │       │   README.md
+│   │   │       │
+│   │   │       └───lib
+│   │   │               ipaddr.js
+│   │   │               ipaddr.js.d.ts
+│   │   │
+│   │   └───types
+│   │       ├───bin
+│   │       │       cli-flags.d.ts
+│   │       │       process-arguments.d.ts
+│   │       │       webpack-dev-server.d.ts
+│   │       │
+│   │       └───lib
+│   │           │   getPort.d.ts
+│   │           │   Server.d.ts
+│   │           │
+│   │           └───servers
+│   │                   BaseServer.d.ts
+│   │                   SockJSServer.d.ts
+│   │                   WebsocketServer.d.ts
+│   │
+│   ├───webpack-merge
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───dist
+│   │           index.d.ts
+│   │           index.js
+│   │           index.js.map
+│   │           join-arrays.d.ts
+│   │           join-arrays.js
+│   │           join-arrays.js.map
+│   │           merge-with.d.ts
+│   │           merge-with.js
+│   │           merge-with.js.map
+│   │           types.d.ts
+│   │           types.js
+│   │           types.js.map
+│   │           unique.d.ts
+│   │           unique.js
+│   │           unique.js.map
+│   │           utils.d.ts
+│   │           utils.js
+│   │           utils.js.map
+│   │
+│   ├───webpack-sources
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───lib
+│   │       │   CachedSource.js
+│   │       │   CompatSource.js
+│   │       │   ConcatSource.js
+│   │       │   index.js
+│   │       │   OriginalSource.js
+│   │       │   PrefixSource.js
+│   │       │   RawSource.js
+│   │       │   ReplaceSource.js
+│   │       │   SizeOnlySource.js
+│   │       │   Source.js
+│   │       │   SourceMapSource.js
+│   │       │
+│   │       └───helpers
+│   │               createMappingsSerializer.js
+│   │               getFromStreamChunks.js
+│   │               getGeneratedSourceInfo.js
+│   │               getName.js
+│   │               getSource.js
+│   │               readMappings.js
+│   │               splitIntoLines.js
+│   │               splitIntoPotentialTokens.js
+│   │               streamAndGetSourceAndMap.js
+│   │               streamChunks.js
+│   │               streamChunksOfCombinedSourceMap.js
+│   │               streamChunksOfRawSource.js
+│   │               streamChunksOfSourceMap.js
+│   │
+│   ├───websocket-driver
+│   │   │   CHANGELOG.md
+│   │   │   LICENSE.md
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───lib
+│   │       └───websocket
+│   │           │   driver.js
+│   │           │   http_parser.js
+│   │           │   streams.js
+│   │           │
+│   │           └───driver
+│   │               │   base.js
+│   │               │   client.js
+│   │               │   draft75.js
+│   │               │   draft76.js
+│   │               │   headers.js
+│   │               │   hybi.js
+│   │               │   proxy.js
+│   │               │   server.js
+│   │               │   stream_reader.js
+│   │               │
+│   │               └───hybi
+│   │                       frame.js
+│   │                       message.js
+│   │
+│   ├───websocket-extensions
+│   │   │   CHANGELOG.md
+│   │   │   LICENSE.md
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───lib
+│   │       │   parser.js
+│   │       │   websocket_extensions.js
+│   │       │
+│   │       └───pipeline
+│   │               cell.js
+│   │               functor.js
+│   │               index.js
+│   │               pledge.js
+│   │               README.md
+│   │               ring_buffer.js
+│   │
+│   ├───which
+│   │   │   CHANGELOG.md
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   which.js
+│   │   │
+│   │   └───bin
+│   │           node-which
+│   │
+│   ├───which-boxed-primitive
+│   │   │   .editorconfig
+│   │   │   .eslintignore
+│   │   │   .eslintrc
+│   │   │   .nycrc
+│   │   │   CHANGELOG.md
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   ├───.github
+│   │   │       FUNDING.yml
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───which-builtin-type
+│   │   │   .eslintrc
+│   │   │   .nycrc
+│   │   │   CHANGELOG.md
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───which-collection
+│   │   │   .eslintrc
+│   │   │   .nycrc
+│   │   │   CHANGELOG.md
+│   │   │   index.d.ts
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   tsconfig.json
+│   │   │
+│   │   ├───.github
+│   │   │       FUNDING.yml
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───which-typed-array
+│   │   │   .editorconfig
+│   │   │   .eslintrc
+│   │   │   .nycrc
+│   │   │   CHANGELOG.md
+│   │   │   index.d.ts
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   tsconfig.json
+│   │   │
+│   │   ├───.github
+│   │   │       FUNDING.yml
+│   │   │
+│   │   └───test
+│   │           index.js
+│   │
+│   ├───wide-align
+│   │       align.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───wildcard
+│   │   │   docs.json
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   ├───.github
+│   │   │   └───workflows
+│   │   │           build.yml
+│   │   │
+│   │   ├───examples
+│   │   │       arrays.js
+│   │   │       objects.js
+│   │   │       strings.js
+│   │   │
+│   │   └───test
+│   │           all.js
+│   │           arrays.js
+│   │           objects.js
+│   │           strings.js
+│   │
+│   ├───word-wrap
+│   │       index.d.ts
+│   │       index.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │
+│   ├───wrap-ansi
+│   │   │   index.js
+│   │   │   license
+│   │   │   package.json
+│   │   │   readme.md
+│   │   │
+│   │   └───node_modules
+│   │       ├───ansi-styles
+│   │       │       index.d.ts
+│   │       │       index.js
+│   │       │       license
+│   │       │       package.json
+│   │       │       readme.md
+│   │       │
+│   │       ├───color-convert
+│   │       │       CHANGELOG.md
+│   │       │       conversions.js
+│   │       │       index.js
+│   │       │       LICENSE
+│   │       │       package.json
+│   │       │       README.md
+│   │       │       route.js
+│   │       │
+│   │       └───color-name
+│   │               index.js
+│   │               LICENSE
+│   │               package.json
+│   │               README.md
+│   │
+│   ├───wrappy
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │       wrappy.js
+│   │
+│   ├───write-file-atomic
+│   │   │   LICENSE.md
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───lib
+│   │           index.js
+│   │
+│   ├───ws
+│   │   │   browser.js
+│   │   │   index.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   wrapper.mjs
+│   │   │
+│   │   └───lib
+│   │           buffer-util.js
+│   │           constants.js
+│   │           event-target.js
+│   │           extension.js
+│   │           limiter.js
+│   │           permessage-deflate.js
+│   │           receiver.js
+│   │           sender.js
+│   │           stream.js
+│   │           subprotocol.js
+│   │           validation.js
+│   │           websocket-server.js
+│   │           websocket.js
+│   │
+│   ├───y18n
+│   │   │   CHANGELOG.md
+│   │   │   index.mjs
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───build
+│   │       │   index.cjs
+│   │       │
+│   │       └───lib
+│   │           │   cjs.js
+│   │           │   index.js
+│   │           │
+│   │           └───platform-shims
+│   │                   node.js
+│   │
+│   ├───yallist
+│   │       iterator.js
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │       yallist.js
+│   │
+│   ├───yargs
+│   │   │   browser.d.ts
+│   │   │   browser.mjs
+│   │   │   index.cjs
+│   │   │   index.mjs
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   yargs
+│   │   │   yargs.mjs
+│   │   │
+│   │   ├───build
+│   │   │   │   index.cjs
+│   │   │   │
+│   │   │   └───lib
+│   │   │       │   argsert.js
+│   │   │       │   command.js
+│   │   │       │   completion-templates.js
+│   │   │       │   completion.js
+│   │   │       │   middleware.js
+│   │   │       │   parse-command.js
+│   │   │       │   usage.js
+│   │   │       │   validation.js
+│   │   │       │   yargs-factory.js
+│   │   │       │   yerror.js
+│   │   │       │
+│   │   │       ├───typings
+│   │   │       │       common-types.js
+│   │   │       │       yargs-parser-types.js
+│   │   │       │
+│   │   │       └───utils
+│   │   │               apply-extends.js
+│   │   │               is-promise.js
+│   │   │               levenshtein.js
+│   │   │               maybe-async-result.js
+│   │   │               obj-filter.js
+│   │   │               process-argv.js
+│   │   │               set-blocking.js
+│   │   │               which-module.js
+│   │   │
+│   │   ├───helpers
+│   │   │       helpers.mjs
+│   │   │       index.js
+│   │   │       package.json
+│   │   │
+│   │   ├───lib
+│   │   │   └───platform-shims
+│   │   │           browser.mjs
+│   │   │           esm.mjs
+│   │   │
+│   │   └───locales
+│   │           be.json
+│   │           cs.json
+│   │           de.json
+│   │           en.json
+│   │           es.json
+│   │           fi.json
+│   │           fr.json
+│   │           hi.json
+│   │           hu.json
+│   │           id.json
+│   │           it.json
+│   │           ja.json
+│   │           ko.json
+│   │           nb.json
+│   │           nl.json
+│   │           nn.json
+│   │           pirate.json
+│   │           pl.json
+│   │           pt.json
+│   │           pt_BR.json
+│   │           ru.json
+│   │           th.json
+│   │           tr.json
+│   │           uk_UA.json
+│   │           uz.json
+│   │           zh_CN.json
+│   │           zh_TW.json
+│   │
+│   ├───yargs-parser
+│   │   │   browser.js
+│   │   │   CHANGELOG.md
+│   │   │   LICENSE.txt
+│   │   │   package.json
+│   │   │   README.md
+│   │   │
+│   │   └───build
+│   │       │   index.cjs
+│   │       │
+│   │       └───lib
+│   │               index.js
+│   │               string-utils.js
+│   │               tokenize-arg-string.js
+│   │               yargs-parser-types.js
+│   │               yargs-parser.js
+│   │
+│   └───yocto-queue
+│           index.d.ts
+│           index.js
+│           license
+│           package.json
+│           readme.md
+│
+├───public
+│   │   index.html
+│   │
+│   ├───images
+│   │       0C.png
+│   │       0D.png
+│   │       0H.png
+│   │       0S.png
+│   │       2C.png
+│   │       2D.png
+│   │       2H.png
+│   │       2S.png
+│   │       3C.png
+│   │       3D.png
+│   │       3H.png
+│   │       3S.png
+│   │       4C.png
+│   │       4D.png
+│   │       4H.png
+│   │       4S.png
+│   │       5C.png
+│   │       5D.png
+│   │       5H.png
+│   │       5S.png
+│   │       6C.png
+│   │       6D.png
+│   │       6H.png
+│   │       6S.png
+│   │       7C.png
+│   │       7D.png
+│   │       7H.png
+│   │       7S.png
+│   │       8C.png
+│   │       8D.png
+│   │       8H.png
+│   │       8S.png
+│   │       9C.png
+│   │       9D.png
+│   │       9H.png
+│   │       9S.png
+│   │       AC.png
+│   │       AD.png
+│   │       AH.png
+│   │       AS.png
+│   │       Blank.png
+│   │       JC.png
+│   │       JD.png
+│   │       JH.png
+│   │       JS.png
+│   │       KC.png
+│   │       KD.png
+│   │       KH.png
+│   │       KS.png
+│   │       QC.png
+│   │       QD.png
+│   │       QH.png
+│   │       QS.png
+│   │
+│   ├───img
+│   │       cursor.png
+│   │       favicon-android.png
+│   │
+│   └───models
+│           Cow.glb
+│
+├───routes
+│       sceneRoutes.js
+│
+├───scenes
+└───src
+    │   app.js
+    │   index.js
+    │   scene1.json
+    │   scene2.json
+    │   scene3.json
+    │   scene4.json
+    │   scene5.json
+    │   styles.css
+    │
+    ├───components
+    │       About.js
+    │       ChordPlayer.js
+    │       DebugPanel.js
+    │       GitHub.js
+    │       Home.js
+    │       Jazzbot.js
+    │       Login.js
+    │       PokerFrogs.js
+    │       PokerGUI.js
+    │       SiteNavbar.js
+    │
+    └───piano_mp3
+            Piano.ff.B3.mp3
+            Piano.ff.C3.mp3
+            Piano.ff.E3.mp3
+            Piano.ff.G3.mp3
