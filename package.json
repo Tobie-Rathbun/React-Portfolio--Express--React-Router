@@ -1,6 +1,6 @@
 {
   "name": "jazzbot",
-  "version": "0.1.01",
+  "version": "0.1.02",
   "description": "Jazz Music Generator",
   "main": "index.js",
   "scripts": {
