@@ -14,11 +14,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // CORS configuration
 const corsOptions = {
-    origin: 'https://tobie-rathbun.netlify.app/', // Replace with your front-end domain
+    origin: 'https://tobie-rathbun.netlify.app', // Exact match to your front-end domain
     methods: ['GET', 'POST'], // Specify the allowed methods
     allowedHeaders: ['Content-Type'], // Specify the allowed headers
-  };
-  app.use(cors(corsOptions));
+    credentials: true // Include this if you're dealing with cookies or authentication
+};
+
+app.use(cors(corsOptions));
+
 
 app.use((req, res, next) => {
     res.setHeader(
