@@ -3,6 +3,7 @@
   "version": "0.1.03",
   "description": "Jazz Music Generator",
   "main": "index.js",
+  "proxy": "http://localhost:4242",
   "scripts": {
     "test": "jest",
     "dev:server": "node local.js",
