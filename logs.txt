@@ -1,60 +1,30 @@
- * Tone.js v15.0.4 * index.js:6:43
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:10246690
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:2:10215705
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:10204686
- * Tone.js v15.0.4 * index.js:6:43
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:10246690
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:2:10215705
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:10204686
- * Tone.js v15.0.4 * index.js:6:43
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:10246690
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:2:10215705
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:10204686
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786:38
-Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
+[HMR] Waiting for update signal from WDS... log.js:39
+ * Tone.js v15.0.4 * Instrument.js:130
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:191668:38
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:191984:36
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:193668:44
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
+[HMR] Waiting for update signal from WDS... log.js:39
+ * Tone.js v15.0.4 * Instrument.js:130
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:191668:38
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:191984:36
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:193668:44
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
+[HMR] Waiting for update signal from WDS... log.js:39
+ * Tone.js v15.0.4 * Instrument.js:130
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:191668:38
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:191984:36
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:193668:44
+WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
+Babylon.js v5.57.1 - WebGL2 thinEngine.js:603
 Hands initialized: 
 Object { p0: (2) […], p1: (2) […], p2: (2) […], p3: (2) […], p4: (2) […] }
-Sampler.js:254:25
+PokerFrogs.js:71:16
 Community cards initialized: 
 Array []
-Sampler.js:254:25
-Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
-Hands initialized: 
-Object { p0: (2) […], p1: (2) […], p2: (2) […], p3: (2) […], p4: (2) […] }
-Sampler.js:254:25
-Community cards initialized: 
-Array []
-Sampler.js:254:25
-Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
-Hands initialized: 
-Object { p0: (2) […], p1: (2) […], p2: (2) […], p3: (2) […], p4: (2) […] }
-Sampler.js:254:25
-Community cards initialized: 
-Array []
-Sampler.js:254:25
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:4242/api/scene/1. (Reason: CORS request did not succeed). Status code: (null).
+PokerFrogs.js:72:16
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:4242/api/scene/1. (Reason: CORS header ‘Access-Control-Allow-Origin’ does not match ‘https://tobie-rathbun.netlify.app’).
 Error loading scene 1: 
-Object { stack: "Jc@https://tobie-rathbun.netlify.app/bundle.js:2:10414503\nQl</</m.onerror@https://tobie-rathbun.netlify.app/bundle.js:2:10431180\n", message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest }
-Sampler.js:254:25
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:4242/api/scene/1. (Reason: CORS request did not succeed). Status code: (null).
-Error loading scene 1: 
-Object { stack: "Jc@https://tobie-rathbun.netlify.app/bundle.js:2:10414503\nQl</</m.onerror@https://tobie-rathbun.netlify.app/bundle.js:2:10431180\n", message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest }
-Sampler.js:254:25
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:4242/api/scene/1. (Reason: CORS request did not succeed). Status code: (null).
-Error loading scene 1: 
-Object { stack: "Jc@https://tobie-rathbun.netlify.app/bundle.js:2:10414503\nQl</</m.onerror@https://tobie-rathbun.netlify.app/bundle.js:2:10431180\n", message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest }
-Sampler.js:254:25
-WebGL warning: drawElementsInstanced: Buffer for uniform block is smaller than UNIFORM_BLOCK_DATA_SIZE. 32
-After reporting 32, no further warnings will be reported for this WebGL context.
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786:38
-Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
-Hands initialized: 
-Object { p0: (2) […], p1: (2) […], p2: (2) […], p3: (2) […], p4: (2) […] }
-Sampler.js:254:25
-Community cards initialized: 
-Array []
-Sampler.js:254:25
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:4242/api/scene/1. (Reason: CORS request did not succeed). Status code: (null).
-Error loading scene 1: 
-Object { stack: "Jc@https://tobie-rathbun.netlify.app/bundle.js:2:10414503\nQl</</m.onerror@https://tobie-rathbun.netlify.app/bundle.js:2:10431180\n", message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest }
-Sampler.js:254:25
+Object { stack: "AxiosError@http://localhost:4141/bundle.js:543848:19\nhandleError@http://localhost:4141/bundle.js:543152:14\n", message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest }
+PokerFrogs.js:480:20

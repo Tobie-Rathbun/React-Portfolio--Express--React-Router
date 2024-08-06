@@ -1,6 +1,5 @@
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const serverless = require('serverless-http');
@@ -8,20 +7,22 @@ const serverless = require('serverless-http');
 const db = new sqlite3.Database('./data.db');
 const app = express();
 
-app.use(express.static(path.join(__dirname, '..', 'dist')));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+const allowedOrigins = ['http://localhost:4141', 'https://tobie-rathbun.netlify.app'];
 
-// CORS configuration
 const corsOptions = {
-    origin: 'https://tobie-rathbun.netlify.app', // Exact match to your front-end domain
-    methods: ['GET', 'POST'], // Specify the allowed methods
-    allowedHeaders: ['Content-Type'], // Specify the allowed headers
-    credentials: true // Include this if you're dealing with cookies or authentication
+    origin: function (origin, callback) {
+        if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions));
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use((req, res, next) => {
     res.setHeader(
