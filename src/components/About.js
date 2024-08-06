@@ -102,12 +102,12 @@ const About = () => {
       <h3>Cover Letter</h3>
       <p>
         Growing up I had computer access and mentorship through my SQL developer mom and my COBAL developer grandfather. <br />
-        Testing and performing well in high school secured $28,000 in scholarships to a university, which I chose Arizona State. <br />
-        To utilize previous experience in art and programming I entered Graphic Information Technology B.S. with a core focus in web development and graphic design. <br />
-        Dual enrollment credits from high schooll and enrolling in up to 19 credit hours per semester allowed me to complete 5 full semesters from 2016 to 2018  <br />
-        I left college at the end of 2018 to pursue live music performances until many of them were cancelled in 2020. <br />
-        While managing to secure relevant work, my immediate goal is to learn more about application development by working with a team on a React application <br />
-        I am passionate about wanting to work more with React <br />
+        Testing and performing well in high school secured scholarships to Arizona State University. <br />
+        To utilize previous experience in both art and programming I entered Graphic Information Technology B.S. with a core focus in web development and graphic design. <br />
+        Dual enrollment credits from high school and enrolling in up to 19 credit hours per semester allowed me to complete 5 full semesters from 2016 to 2018.  <br />
+        I left college at the end of 2018 to pursue alternative careers until deciding to return to development in 2020. <br />
+        While managing to secure relevant work overall, my immediate goal is to learn more about React by working with an Agile team.  <br />
+        I am most passionate to work with React and learn from experienced colleagues. <br />
       </p>
     </div>
   </div>
