@@ -11,7 +11,14 @@ const app = express();
 app.use(express.static(path.join(__dirname, '..', 'dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+
+// CORS configuration
+const corsOptions = {
+    origin: 'https://tobie-rathbun.netlify.app/', // Replace with your front-end domain
+    methods: ['GET', 'POST'], // Specify the allowed methods
+    allowedHeaders: ['Content-Type'], // Specify the allowed headers
+  };
+  app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
     res.setHeader(
