@@ -192,41 +192,42 @@ const PokerFrogs = () => {
     };
 
     useEffect(() => {
+        document.body.classList.add('no-scroll'); // Add the no-scroll class to body when the component mounts
+
         const canvas = document.getElementById("renderCanvas");
         const engine = new BABYLON.Engine(canvas, true);
         const scene = new BABYLON.Scene(engine);
         setScene(scene);
 
-        const runRenderLoop = () => {
-            engine.runRenderLoop(() => {
-                if (scene && scene.activeCamera) {
-                    scene.render();
-                }
-            });
+        const renderLoop = () => {
+            if (scene && scene.activeCamera) {
+                scene.render();
+            }
         };
 
-        loadSceneState(scene, 1).then(() => {
-            engine.runRenderLoop(() => {
-                if (scene && scene.activeCamera) {
-                    scene.render();
-                }
-            });
-        });
+        const runRenderLoop = () => {
+            engine.runRenderLoop(renderLoop);
+        };
 
-        window.addEventListener("resize", function () {
+        const handleResize = () => {
             if (engine) {
                 engine.resize();
             }
-        });
+        };
 
-        initializeGame();
+        const initialize = async () => {
+            await loadSceneState(scene, 1);
+            runRenderLoop();
+            initializeGame();
+        };
+
+        initialize();
+
+        window.addEventListener("resize", handleResize);
 
         return () => {
-            window.removeEventListener("resize", function () {
-                if (engine) {
-                    engine.resize();
-                }
-            });
+            document.body.classList.remove('no-scroll'); // Remove the no-scroll class from body when the component unmounts
+            window.removeEventListener("resize", handleResize);
             engine.dispose();
         };
     }, []);

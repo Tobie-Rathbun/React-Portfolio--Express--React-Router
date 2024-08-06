@@ -3,7 +3,7 @@ import '../styles.css';  // Adjusted path for all components
 
 const About = () => {
   return (
-    <div className="about-page">
+    <div className="-page">
       <div className="skills">
         <h2>Skills</h2>
         <div className="skill-category">

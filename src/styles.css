@@ -177,6 +177,7 @@ button:active, input[type="text"]:active, input[type="password"]:active {
   padding: 10px;
   border-radius: 8px;
   overflow: hidden; /* Keeps the expanding content within the box */
+  min-height: 150px; /* Set a minimum height to prevent cutting off content */
 }
 
 .skill-category h3 {
@@ -194,16 +195,10 @@ button:active, input[type="text"]:active, input[type="password"]:active {
 }
 
 .skill-category:hover .skill-list {
-  max-height: 500px; /* Enough max-height to show all content */
+  max-height: 500px; /* Set a consistent max-height for all skill lists */
   padding: 10px; /* Add padding during hover */
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Prevent scrolling */
-  height: 100%; /* Ensure the body takes full height */
-}
 
 #root {
   height: 100%;
@@ -311,25 +306,31 @@ body, html {
   font-size: 12px;
 }
 
-.home-page {
+.-page {
   text-align: center;
   margin: 0 auto;
   width: 80%; /* Adjust width as needed */
 }
 
-.home-page h1 {
+.-page h1 {
   font-size: 2em;
 }
 
-.home-page p {
+.-page p {
   margin: 10px 0;
 }
 
-.home-page a {
+.-page a {
   text-decoration: none;
   color: #007bff; /* Customize link color */
 }
 
-.home-page a:hover {
+.-page a:hover {
   text-decoration: underline;
+}
+
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
 }

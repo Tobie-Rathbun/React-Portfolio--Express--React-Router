@@ -4,7 +4,7 @@ import '../styles.css';  // Adjusted path for all components
 
 const Home = () => {
   return (
-    <div className="home-page">
+    <div className="-page">
       <h1>Howdy</h1>
       <p><Link to="/about">About page</Link> contains my qualifications and skillsets</p>
       <p><Link to="/jazzbot">Chord Player</Link> showcases file loading and JavaScript logic as well as GUI</p>
