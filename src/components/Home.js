@@ -7,8 +7,8 @@ const Home = () => {
     <div className="home-page">
       <h1>Howdy</h1>
       <p><Link to="/about">About page</Link> contains my qualifications and skillsets</p>
-      <p><Link to="/chord-player">Chord Player</Link> showcases file loading and JavaScript logic as well as GUI</p>
-      <p><Link to="/poker-frogs">Poker Frogs</Link> showcases file loading, polished and interactive GUI, as well as 3D rendering and manual tool design</p>
+      <p><Link to="/jazzbot">Chord Player</Link> showcases file loading and JavaScript logic as well as GUI</p>
+      <p><Link to="/pokerfrogs">Poker Frogs</Link> showcases file loading, polished and interactive GUI, as well as 3D rendering and manual tool design</p>
     </div>
   );
 };
