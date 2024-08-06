@@ -1,7 +1,7 @@
 {
   "name": "jazzbot",
-  "version": "0.1.03",
-  "description": "Jazz Music Generator",
+  "version": "0.1.04",
+  "description": "Tobie's Portfolio",
   "main": "index.js",
   "proxy": "http://localhost:4242",
   "scripts": {
