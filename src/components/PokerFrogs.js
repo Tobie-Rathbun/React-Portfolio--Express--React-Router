@@ -156,16 +156,16 @@ const PokerFrogs = () => {
         return cow;
     };
 
-    const displayHand = (hand, scene, cardConfig, faceDown = false) => {
-        if (!hand) return;
-        hand.forEach((card, index) => {
-            const position = cardConfig && cardConfig.position ? new BABYLON.Vector3(...cardConfig.position[index]) : new BABYLON.Vector3(0, 0, 0);
-            const cardMesh = createCard(card, scene, [position.x + index * 0.4, position.y, position.z], [0, 0, 0], [1, 1, 1]);
-            if (faceDown) {
-                cardMesh.rotation.y = Math.PI;
-            }
-        });
-    };
+    // const displayHand = (hand, scene, cardConfig, faceDown = false) => {
+    //     if (!hand) return;
+    //     hand.forEach((card, index) => {
+    //         const position = cardConfig && cardConfig.position ? new BABYLON.Vector3(...cardConfig.position[index]) : new BABYLON.Vector3(0, 0, 0);
+    //         const cardMesh = createCard(card, scene, [position.x + index * 0.4, position.y, position.z], [0, 0, 0], [1, 1, 1]);
+    //         if (faceDown) {
+    //             cardMesh.rotation.y = Math.PI;
+    //         }
+    //     });
+    // };
     
     
 
