@@ -1,487 +1,122 @@
-[HMR] Cannot apply update. Need to do a full reload! pokerfrogs:13851:25
-[HMR] Aborted because ./src/components/PokerFrogs.js is not accepted
-Update propagation: ./src/components/PokerFrogs.js -> ./src/app.js -> ./src/index.js
-applyHandler@http://localhost:4141/bundle.js:574069:31
-internalApply/results<@http://localhost:4141/bundle.js:573765:21
-internalApply@http://localhost:4141/bundle.js:573764:54
-hotCheck/</</</<@http://localhost:4141/bundle.js:573734:26
-waitForBlockingPromises@http://localhost:4141/bundle.js:573689:48
-hotCheck/</</<@http://localhost:4141/bundle.js:573732:24
-promise callback*hotCheck/</<@http://localhost:4141/bundle.js:573731:18
-promise callback*hotCheck/<@http://localhost:4141/bundle.js:573712:43
-promise callback*hotCheck@http://localhost:4141/bundle.js:573703:15
-check@http://localhost:4141/bundle.js:213382:5
-./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:213436:4
-emit@http://localhost:4141/bundle.js:143269:17
-reloadApp@http://localhost:4141/bundle.js:213271:67
-ok@http://localhost:4141/bundle.js:211385:68
-./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:212935:29
-./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:211130:10
-EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:211129:7
-initSocket@http://localhost:4141/bundle.js:212928:10
-./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:211478:55
-__webpack_require__@http://localhost:4141/bundle.js:573281:32
-@http://localhost:4141/bundle.js:574396:30
-@http://localhost:4141/bundle.js:574400:12
-pokerfrogs:13851:25
-[HMR] Update failed: Loading hot update chunk main failed.
-(missing: http://localhost:4141/main.566ba8a217497d48ccc2.hot-update.js)
-loadUpdateChunk/<@http://localhost:4141/bundle.js:573897:26
-loadUpdateChunk@http://localhost:4141/bundle.js:573892:20
-__webpack_require__.hmrC.jsonp/<@http://localhost:4141/bundle.js:574352:29
-__webpack_require__.hmrC.jsonp@http://localhost:4141/bundle.js:574347:22
-hotCheck/</</<@http://localhost:4141/bundle.js:573721:47
-hotCheck/</<@http://localhost:4141/bundle.js:573717:55
-promise callback*hotCheck/<@http://localhost:4141/bundle.js:573712:43
-promise callback*hotCheck@http://localhost:4141/bundle.js:573703:15
-check@http://localhost:4141/bundle.js:213382:5
-./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:213436:4
-emit@http://localhost:4141/bundle.js:143269:17
-reloadApp@http://localhost:4141/bundle.js:213271:67
-ok@http://localhost:4141/bundle.js:211385:68
-./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:212935:29
-./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:211130:10
-EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:211129:7
-initSocket@http://localhost:4141/bundle.js:212928:10
-./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:211478:55
-__webpack_require__@http://localhost:4141/bundle.js:573281:32
-@http://localhost:4141/bundle.js:574396:30
-@http://localhost:4141/bundle.js:574400:12
-pokerfrogs:13851:25
-[HMR] Update failed: Loading hot update chunk main failed.
-(missing: http://localhost:4141/main.566ba8a217497d48ccc2.hot-update.js)
-loadUpdateChunk/<@http://localhost:4141/bundle.js:573897:26
-loadUpdateChunk@http://localhost:4141/bundle.js:573892:20
-__webpack_require__.hmrC.jsonp/<@http://localhost:4141/bundle.js:574352:29
-__webpack_require__.hmrC.jsonp@http://localhost:4141/bundle.js:574347:22
-hotCheck/</</<@http://localhost:4141/bundle.js:573721:47
-hotCheck/</<@http://localhost:4141/bundle.js:573717:55
-promise callback*hotCheck/<@http://localhost:4141/bundle.js:573712:43
-promise callback*hotCheck@http://localhost:4141/bundle.js:573703:15
-check@http://localhost:4141/bundle.js:213382:5
-./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:213436:4
-emit@http://localhost:4141/bundle.js:143269:17
-reloadApp@http://localhost:4141/bundle.js:213271:67
-ok@http://localhost:4141/bundle.js:211385:68
-./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:212935:29
-./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:211130:10
-EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:211129:7
-initSocket@http://localhost:4141/bundle.js:212928:10
-./node_modules/webpack-dev-server/client/socket.js/initSocket/</<@http://localhost:4141/bundle.js:212924:15
-setTimeout handler*./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:212923:17
-EventHandlerNonNull*onClose@http://localhost:4141/bundle.js:211119:7
-initSocket@http://localhost:4141/bundle.js:212907:10
-./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:211478:55
-__webpack_require__@http://localhost:4141/bundle.js:573281:32
-@http://localhost:4141/bundle.js:574396:30
-@http://localhost:4141/bundle.js:574400:12
-pokerfrogs:13851:25
-[webpack-dev-server] Disconnected! bundle.js:211972:22
-[webpack-dev-server] Trying to reconnect... bundle.js:211972:22
-[webpack-dev-server] Disconnected! bundle.js:211972:22
-[webpack-dev-server] Trying to reconnect... bundle.js:211972:22
-[webpack-dev-server] Disconnected! bundle.js:211972:22
-[webpack-dev-server] Trying to reconnect... bundle.js:211972:22
-Source map error: request failed with status 404
-Resource URL: null
-Source Map URL: installHook.js.map
-[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
-[HMR] Waiting for update signal from WDS... log.js:39
- * Tone.js v15.0.4 * Instrument.js:130
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
-Babylon.js v5.57.1 - WebGL2 thinEngine.js:603
-Current card names: [] 
-Array []
-PokerFrogs.js:99:16
-Uncaught TypeError: sceneConfig is null
-    loadCardDataFromScene PokerFrogs.js:105
-    PokerFrogs PokerFrogs.js:294
-    React 8
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-PokerFrogs.js:105:22
-The above error occurred in the <PokerFrogs> component:
-
-PokerFrogs@http://localhost:4141/bundle.js:141621:66
-RenderedRoute@http://localhost:4141/bundle.js:186457:7
-Routes@http://localhost:4141/bundle.js:187157:7
-Router@http://localhost:4141/bundle.js:187096:7
-BrowserRouter@http://localhost:4141/bundle.js:185037:7
-App
-
-Consider adding an error boundary to your tree to customize error handling behavior.
-Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. react-dom.development.js:18704
-Uncaught TypeError: sceneConfig is null
-    loadCardDataFromScene PokerFrogs.js:105
-    PokerFrogs PokerFrogs.js:294
-    React 8
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-PokerFrogs.js:105:22
-[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
-[HMR] Waiting for update signal from WDS... log.js:39
- * Tone.js v15.0.4 * Instrument.js:130
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
-[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
-[HMR] Waiting for update signal from WDS... log.js:39
- * Tone.js v15.0.4 * Instrument.js:130
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
-GET
-http://localhost:4141/img/favicon-android.png
-[HTTP/1.1 404 Not Found 0ms]
-
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
-Babylon.js v5.57.1 - WebGL2 thinEngine.js:603
-Current card names: [] 
-Array []
-PokerFrogs.js:99:16
-Uncaught TypeError: sceneConfig is null
-    loadCardDataFromScene PokerFrogs.js:105
-    PokerFrogs PokerFrogs.js:294
-    React 8
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-PokerFrogs.js:105:22
-Uncaught DOMException: Node.removeChild: The node to be removed is not a child of this node
-    React 25
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-react-dom.development.js:11105
-The above error occurred in the <PokerFrogs> component:
-
-PokerFrogs@http://localhost:4141/bundle.js:141621:66
-RenderedRoute@http://localhost:4141/bundle.js:186457:7
-Routes@http://localhost:4141/bundle.js:187157:7
-Router@http://localhost:4141/bundle.js:187096:7
-BrowserRouter@http://localhost:4141/bundle.js:185037:7
-App
-
-Consider adding an error boundary to your tree to customize error handling behavior.
-Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. react-dom.development.js:18704
-Uncaught TypeError: sceneConfig is null
-    loadCardDataFromScene PokerFrogs.js:105
-    PokerFrogs PokerFrogs.js:294
-    React 8
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-PokerFrogs.js:105:22
-The above error occurred in the <App> component:
-
-App
-
-Consider adding an error boundary to your tree to customize error handling behavior.
-Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. react-dom.development.js:18704
-Uncaught DOMException: Node.removeChild: The node to be removed is not a child of this node
-    React 25
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-react-dom.development.js:11105
-Uncaught TypeError: this._engine._features is undefined
-    UniformBuffer uniformBuffer.js:43
-    createSceneUniformBuffer control.js:1217
-    node_modules bundle.js:251573
-    _createUbo control.js:822
-    Scene control.js:622
-    PokerFrogs PokerFrogs.js:222
-    React 8
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-uniformBuffer.js:43
-Uncaught DOMException: Node.removeChild: The node to be removed is not a child of this node
-    React 25
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-react-dom.development.js:11105
-The above error occurred in the <PokerFrogs> component:
-
-PokerFrogs@http://localhost:4141/bundle.js:141621:66
-RenderedRoute@http://localhost:4141/bundle.js:186457:7
-Routes@http://localhost:4141/bundle.js:187157:7
-Router@http://localhost:4141/bundle.js:187096:7
-BrowserRouter@http://localhost:4141/bundle.js:185037:7
-App
-
-Consider adding an error boundary to your tree to customize error handling behavior.
-Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. react-dom.development.js:18704
-Uncaught TypeError: this._engine._features is undefined
-    UniformBuffer uniformBuffer.js:43
-    createSceneUniformBuffer control.js:1217
-    node_modules bundle.js:251573
-    _createUbo control.js:822
-    Scene control.js:622
-    PokerFrogs PokerFrogs.js:222
-    React 8
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-uniformBuffer.js:43
-The above error occurred in the <App> component:
-
-App
-
-Consider adding an error boundary to your tree to customize error handling behavior.
-Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. react-dom.development.js:18704
-Uncaught DOMException: Node.removeChild: The node to be removed is not a child of this node
-    React 25
-    workLoop scheduler.development.js:266
-    flushWork scheduler.development.js:239
-    performWorkUntilDeadline scheduler.development.js:533
-    js scheduler.development.js:571
-    js scheduler.development.js:633
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js index.js:6
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    React 2
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js React
-    __webpack_require__ bundle.js:573281
-    fn bundle.js:573518
-    js bundle.js:142564
-    __webpack_require__ bundle.js:573281
-    <anonymous> bundle.js:574398
-    <anonymous> bundle.js:574400
-react-dom.development.js:11105
-Loading scene configuration: 
-Object { camera: {…}, cows: (4) […], cards: (15) […] }
-PokerFrogs.js:387:20
-Old meshes removed PokerFrogs.js:415:20
-Scene was disposed before loading meshes. PokerFrogs.js:423:24
-Scene 1 loaded successfully. PokerFrogs.js:544:20
-Hands initialized: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:73:16
-Community cards initialized: 
-Array(5) [ "6S", "0C", "4S", "4C", "2D" ]
-PokerFrogs.js:74:16
-Loading scene configuration: 
-Object { camera: {…}, cows: (4) […], cards: (15) […] }
-PokerFrogs.js:387:20
-Old meshes removed PokerFrogs.js:415:20
-Scene was disposed before loading meshes. PokerFrogs.js:423:24
-Scene 1 loaded successfully. PokerFrogs.js:544:20
-Hands initialized: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:73:16
-Community cards initialized: 
-Array(5) [ "6C", "AD", "4S", "JC", "7C" ]
-PokerFrogs.js:74:16
-Source map error: request failed with status 404
-Resource URL: null
-Source Map URL: react_devtools_backend_compact.js.map
+Console was cleared. PokerFrogs.js:514:32
+Mesh: Cow1 PokerFrogs.js:24:16
+Position: {X: -3 Y: 0 Z: 4} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:27:16
+Material: Name: cowMaterial PokerFrogs.js:28:16
+Mesh: cow PokerFrogs.js:24:16
+Position: {X: 9.890265464782715 Y: 0 Z: 2.780233383178711} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -3.0784664616058297 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 0.999999689242769 Y: 1 Z: 0.999999689242769} PokerFrogs.js:27:16
+Material: Name: cowtexture PokerFrogs.js:28:16
+Mesh: Cow2 PokerFrogs.js:24:16
+Position: {X: -1 Y: 0 Z: 4} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:27:16
+Material: Name: cowMaterial PokerFrogs.js:28:16
+Mesh: cow PokerFrogs.js:24:16
+Position: {X: 5.13809871673584 Y: 0 Z: 3.345414400100708} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -1.8219445127797003 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 0.9999999645775531 Y: 1 Z: 0.9999999645775531} PokerFrogs.js:27:16
+Material: Name: cowtexture PokerFrogs.js:28:16
+Mesh: Cow3 PokerFrogs.js:24:16
+Position: {X: 1 Y: 0 Z: 4} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:27:16
+Material: Name: cowMaterial PokerFrogs.js:28:16
+Mesh: cow PokerFrogs.js:24:16
+Position: {X: 5.220034599304199 Y: 0 Z: 2.4970221519470215} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -1.2650635192623452 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1.0000000566907132 Y: 1 Z: 1.0000000566907132} PokerFrogs.js:27:16
+Material: Name: cowtexture PokerFrogs.js:28:16
+Mesh: Cow4 PokerFrogs.js:24:16
+Position: {X: 3 Y: 0 Z: 4} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 1.5707963267948966 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:27:16
+Material: Name: cowMaterial PokerFrogs.js:28:16
+Mesh: cow PokerFrogs.js:24:16
+Position: {X: 11.668582916259766 Y: 0 Z: -1.7763568394002505e-15} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
+Material: Name: cowtexture PokerFrogs.js:28:16
+Mesh: myGround PokerFrogs.js:24:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
+Material: Name: groundMaterial PokerFrogs.js:28:16
+Mesh: 3C PokerFrogs.js:24:16
+Position: {X: -0.1894892156124115 Y: 0 Z: -0.03368286043405533} PokerFrogs.js:25:16
+Rotation: {X: 0.04022795501063467 Y: -1.5200658969901448 Z: 3.1415921735294843} PokerFrogs.js:26:16
+Scale: {X: 1.0000001854183471 Y: 0.999999782712439 Z: 1.0000001183916423} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: QD PokerFrogs.js:24:16
+Position: {X: 0.10629639774560928 Y: 0 Z: -0.049840524792671204} PokerFrogs.js:25:16
+Rotation: {X: 0.023560464132412463 Y: -1.356163785550403 Z: 3.141592529266158} PokerFrogs.js:26:16
+Scale: {X: 1.000000173071773 Y: 1.000000134919915 Z: 1.0000003204145689} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 4C PokerFrogs.js:24:16
+Position: {X: -1.6178576946258545 Y: 0 Z: 1.1561943292617798} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -2.773825008085754 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 0.9999999595323771 Y: 1 Z: 0.9999999595323771} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: QH PokerFrogs.js:24:16
+Position: {X: -1.5495686531066895 Y: 0 Z: 1.549292802810669} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 0H PokerFrogs.js:24:16
+Position: {X: -0.18664690852165222 Y: 0 Z: 2.090662956237793} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -1.3145520557047001 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1.000000012665419 Y: 1 Z: 1.000000012665419} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 6H PokerFrogs.js:24:16
+Position: {X: 0.14213307201862335 Y: 0 Z: 2.103743553161621} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -1.937913915357411 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1.000000150683327 Y: 1 Z: 1.000000150683327} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 2S PokerFrogs.js:24:16
+Position: {X: 1.4236716032028198 Y: 0 Z: 2.151197910308838} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 1.553032706511159 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1.0000001742299018 Y: 1 Z: 1.0000001742299018} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 6S PokerFrogs.js:24:16
+Position: {X: 1.7231931686401367 Y: 0 Z: 2.084951877593994} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -1.8069724006626833 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 0.9999998488164599 Y: 1 Z: 0.9999998488164599} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: JC PokerFrogs.js:24:16
+Position: {X: 2.371866226196289 Y: 0 Z: 1.496138572692871} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 5S PokerFrogs.js:24:16
+Position: {X: 2.350179433822632 Y: 0 Z: 1.1608117818832397} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 3.141592653589793 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 8H PokerFrogs.js:24:16
+Position: {X: -0.5828161239624023 Y: 0.0457630380988121 Z: 0.9388510584831238} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: 1.5886889236869886 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1.000000268770012 Y: 1 Z: 1.000000268770012} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 7H PokerFrogs.js:24:16
+Position: {X: -0.22221660614013672 Y: 0 Z: 1.0089069604873657} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -1.5758057083553212 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 0.9999999701966147 Y: 1 Z: 0.9999999701966147} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 0D PokerFrogs.js:24:16
+Position: {X: 0.10596361011266708 Y: 0 Z: 1.0026682615280151} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -1.5959718754058787 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1.0000000298343323 Y: 1 Z: 1.0000000298343323} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 3S PokerFrogs.js:24:16
+Position: {X: 0.4769194424152374 Y: 0 Z: 1} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -1.5840592513896992 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1.0000000347703584 Y: 1 Z: 1.0000000347703584} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Mesh: 3D PokerFrogs.js:24:16
+Position: {X: 0.8367300629615784 Y: 0 Z: 1.0000300407409668} PokerFrogs.js:25:16
+Rotation: {X: 0 Y: -1.570475647793536 Z: 0} PokerFrogs.js:26:16
+Scale: {X: 1.0000001706241837 Y: 1 Z: 1.0000001706241837} PokerFrogs.js:27:16
+Material: Name: cardMaterial PokerFrogs.js:28:16
+Gizmo removed PokerFrogs.js:521:32

@@ -67,6 +67,7 @@ db.serialize(() => {
         if (row.count === 0) {
             const defaultScenes = [
                 {
+                    id: 1,
                     camera: JSON.stringify({
                         alpha: -1.04,
                         beta: 1.12,
@@ -74,30 +75,31 @@ db.serialize(() => {
                         wheelPrecision: 100
                     }),
                     cows: JSON.stringify([
-                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
+                        { name: "Cow1", position: [-2.31, 0.00, 1.24], rotation: [0.00, -1.57, 0.00], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow2", position: [-0.10, 0.00, 2.73], rotation: [0.00, -0.15, 0.00], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow3", position: [1.73, 0.00, 2.68], rotation: [0.00, 0.15, 0.00], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow4", position: [2.96, 0.00, 1.32], rotation: [0.00, 1.57, 0.00], scale: [0.25, 0.25, 0.25] }
                     ]),
                     cards: JSON.stringify([
-                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_1", position: [2, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_2", position: [-9, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_3", position: [-7, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_4", position: [-4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_5", position: [-2, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_7", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_8", position: [6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_9", position: [8, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_10", position: [-4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_11", position: [-2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_12", position: [0, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_13", position: [2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_14", position: [4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                        { name: "3C", position: [-0.189, 0, -0.034], rotation: [0.04, -1.5201, 3.1416], scale: [1.0000001854183471, 0.999999782712439, 1.0000001183916423] },
+                        { name: "QD", position: [0.106, 0, -0.050], rotation: [0.0236, -1.3562, 3.1416], scale: [1.000000173071773, 1.000000134919915, 1.0000003204145689] },
+                        { name: "4C", position: [-1.618, 0, 1.156], rotation: [0, -2.7738, 0], scale: [0.9999999595323771, 1, 0.9999999595323771] },
+                        { name: "QH", position: [-1.550, 0, 1.549], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "0H", position: [-0.187, 0, 2.091], rotation: [0, -1.3146, 0], scale: [1.000000012665419, 1, 1.000000012665419] },
+                        { name: "6H", position: [0.142, 0, 2.104], rotation: [0, -1.9379, 0], scale: [1.000000150683327, 1, 1.000000150683327] },
+                        { name: "2S", position: [1.424, 0, 2.151], rotation: [0, 1.5530, 0], scale: [1.0000001742299018, 1, 1.0000001742299018] },
+                        { name: "6S", position: [1.723, 0, 2.085], rotation: [0, -1.8070, 0], scale: [0.9999998488164599, 1, 0.9999998488164599] },
+                        { name: "JC", position: [2.372, 0, 1.496], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "5S", position: [2.350, 0, 1.161], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "8H", position: [-0.583, 0.046, 0.939], rotation: [0, 1.5887, 0], scale: [1.000000268770012, 1, 1.000000268770012] },
+                        { name: "7H", position: [-0.222, 0, 1.009], rotation: [0, -1.5758, 0], scale: [0.9999999701966147, 1, 0.9999999701966147] },
+                        { name: "0D", position: [0.106, 0, 1.003], rotation: [0, -1.5960, 0], scale: [1.0000000298343323, 1, 1.0000000298343323] },
+                        { name: "3S", position: [0.477, 0, 1.000], rotation: [0, -1.5841, 0], scale: [1.0000000347703584, 1, 1.0000000347703584] },
+                        { name: "3D", position: [0.837, 0, 1.000], rotation: [0, -1.5705, 0], scale: [1.0000001706241837, 1, 1.0000001706241837] }
                     ])
                 },
                 {
+                    id: 2,
                     camera: JSON.stringify({
                         alpha: 1.04,
                         beta: -1.12,
@@ -105,30 +107,31 @@ db.serialize(() => {
                         wheelPrecision: 100
                     }),
                     cows: JSON.stringify([
-                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
+                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow3", position: [1, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow4", position: [3, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] }
                     ]),
                     cards: JSON.stringify([
-                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_1", position: [2, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_2", position: [-9, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_3", position: [-7, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_4", position: [-4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_5", position: [-2, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_7", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_8", position: [6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_9", position: [8, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_10", position: [-4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_11", position: [-2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_12", position: [0, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_13", position: [2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_14", position: [4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                        { name: "3C", position: [-0.189, 0, -0.034], rotation: [0.04, -1.5201, 3.1416], scale: [1.0000001854183471, 0.999999782712439, 1.0000001183916423] },
+                        { name: "QD", position: [0.106, 0, -0.050], rotation: [0.0236, -1.3562, 3.1416], scale: [1.000000173071773, 1.000000134919915, 1.0000003204145689] },
+                        { name: "4C", position: [-1.618, 0, 1.156], rotation: [0, -2.7738, 0], scale: [0.9999999595323771, 1, 0.9999999595323771] },
+                        { name: "QH", position: [-1.550, 0, 1.549], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "0H", position: [-0.187, 0, 2.091], rotation: [0, -1.3146, 0], scale: [1.000000012665419, 1, 1.000000012665419] },
+                        { name: "6H", position: [0.142, 0, 2.104], rotation: [0, -1.9379, 0], scale: [1.000000150683327, 1, 1.000000150683327] },
+                        { name: "2S", position: [1.424, 0, 2.151], rotation: [0, 1.5530, 0], scale: [1.0000001742299018, 1, 1.0000001742299018] },
+                        { name: "6S", position: [1.723, 0, 2.085], rotation: [0, -1.8070, 0], scale: [0.9999998488164599, 1, 0.9999998488164599] },
+                        { name: "JC", position: [2.372, 0, 1.496], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "5S", position: [2.350, 0, 1.161], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "8H", position: [-0.583, 0.046, 0.939], rotation: [0, 1.5887, 0], scale: [1.000000268770012, 1, 1.000000268770012] },
+                        { name: "7H", position: [-0.222, 0, 1.009], rotation: [0, -1.5758, 0], scale: [0.9999999701966147, 1, 0.9999999701966147] },
+                        { name: "0D", position: [0.106, 0, 1.003], rotation: [0, -1.5960, 0], scale: [1.0000000298343323, 1, 1.0000000298343323] },
+                        { name: "3S", position: [0.477, 0, 1.000], rotation: [0, -1.5841, 0], scale: [1.0000000347703584, 1, 1.0000000347703584] },
+                        { name: "3D", position: [0.837, 0, 1.000], rotation: [0, -1.5705, 0], scale: [1.0000001706241837, 1, 1.0000001706241837] }
                     ])
                 },
                 {
+                    id: 3,
                     camera: JSON.stringify({
                         alpha: 1.04,
                         beta: 1.12,
@@ -136,30 +139,31 @@ db.serialize(() => {
                         wheelPrecision: 100
                     }),
                     cows: JSON.stringify([
-                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
+                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow3", position: [1, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow4", position: [3, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] }
                     ]),
                     cards: JSON.stringify([
-                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_1", position: [2, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_2", position: [-9, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_3", position: [-7, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_4", position: [-4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_5", position: [-2, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_7", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_8", position: [6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_9", position: [8, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_10", position: [-4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_11", position: [-2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_12", position: [0, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_13", position: [2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_14", position: [4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                        { name: "3C", position: [-0.189, 0, -0.034], rotation: [0.04, -1.5201, 3.1416], scale: [1.0000001854183471, 0.999999782712439, 1.0000001183916423] },
+                        { name: "QD", position: [0.106, 0, -0.050], rotation: [0.0236, -1.3562, 3.1416], scale: [1.000000173071773, 1.000000134919915, 1.0000003204145689] },
+                        { name: "4C", position: [-1.618, 0, 1.156], rotation: [0, -2.7738, 0], scale: [0.9999999595323771, 1, 0.9999999595323771] },
+                        { name: "QH", position: [-1.550, 0, 1.549], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "0H", position: [-0.187, 0, 2.091], rotation: [0, -1.3146, 0], scale: [1.000000012665419, 1, 1.000000012665419] },
+                        { name: "6H", position: [0.142, 0, 2.104], rotation: [0, -1.9379, 0], scale: [1.000000150683327, 1, 1.000000150683327] },
+                        { name: "2S", position: [1.424, 0, 2.151], rotation: [0, 1.5530, 0], scale: [1.0000001742299018, 1, 1.0000001742299018] },
+                        { name: "6S", position: [1.723, 0, 2.085], rotation: [0, -1.8070, 0], scale: [0.9999998488164599, 1, 0.9999998488164599] },
+                        { name: "JC", position: [2.372, 0, 1.496], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "5S", position: [2.350, 0, 1.161], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "8H", position: [-0.583, 0.046, 0.939], rotation: [0, 1.5887, 0], scale: [1.000000268770012, 1, 1.000000268770012] },
+                        { name: "7H", position: [-0.222, 0, 1.009], rotation: [0, -1.5758, 0], scale: [0.9999999701966147, 1, 0.9999999701966147] },
+                        { name: "0D", position: [0.106, 0, 1.003], rotation: [0, -1.5960, 0], scale: [1.0000000298343323, 1, 1.0000000298343323] },
+                        { name: "3S", position: [0.477, 0, 1.000], rotation: [0, -1.5841, 0], scale: [1.0000000347703584, 1, 1.0000000347703584] },
+                        { name: "3D", position: [0.837, 0, 1.000], rotation: [0, -1.5705, 0], scale: [1.0000001706241837, 1, 1.0000001706241837] }
                     ])
                 },
                 {
+                    id: 4,
                     camera: JSON.stringify({
                         alpha: -1.04,
                         beta: -1.12,
@@ -167,30 +171,31 @@ db.serialize(() => {
                         wheelPrecision: 100
                     }),
                     cows: JSON.stringify([
-                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
+                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow3", position: [1, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow4", position: [3, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] }
                     ]),
                     cards: JSON.stringify([
-                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_1", position: [2, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_2", position: [-9, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_3", position: [-7, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_4", position: [-4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_5", position: [-2, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_7", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_8", position: [6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_9", position: [8, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_10", position: [-4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_11", position: [-2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_12", position: [0, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_13", position: [2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_14", position: [4, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                        { name: "3C", position: [-0.189, 0, -0.034], rotation: [0.04, -1.5201, 3.1416], scale: [1.0000001854183471, 0.999999782712439, 1.0000001183916423] },
+                        { name: "QD", position: [0.106, 0, -0.050], rotation: [0.0236, -1.3562, 3.1416], scale: [1.000000173071773, 1.000000134919915, 1.0000003204145689] },
+                        { name: "4C", position: [-1.618, 0, 1.156], rotation: [0, -2.7738, 0], scale: [0.9999999595323771, 1, 0.9999999595323771] },
+                        { name: "QH", position: [-1.550, 0, 1.549], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "0H", position: [-0.187, 0, 2.091], rotation: [0, -1.3146, 0], scale: [1.000000012665419, 1, 1.000000012665419] },
+                        { name: "6H", position: [0.142, 0, 2.104], rotation: [0, -1.9379, 0], scale: [1.000000150683327, 1, 1.000000150683327] },
+                        { name: "2S", position: [1.424, 0, 2.151], rotation: [0, 1.5530, 0], scale: [1.0000001742299018, 1, 1.0000001742299018] },
+                        { name: "6S", position: [1.723, 0, 2.085], rotation: [0, -1.8070, 0], scale: [0.9999998488164599, 1, 0.9999998488164599] },
+                        { name: "JC", position: [2.372, 0, 1.496], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "5S", position: [2.350, 0, 1.161], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "8H", position: [-0.583, 0.046, 0.939], rotation: [0, 1.5887, 0], scale: [1.000000268770012, 1, 1.000000268770012] },
+                        { name: "7H", position: [-0.222, 0, 1.009], rotation: [0, -1.5758, 0], scale: [0.9999999701966147, 1, 0.9999999701966147] },
+                        { name: "0D", position: [0.106, 0, 1.003], rotation: [0, -1.5960, 0], scale: [1.0000000298343323, 1, 1.0000000298343323] },
+                        { name: "3S", position: [0.477, 0, 1.000], rotation: [0, -1.5841, 0], scale: [1.0000000347703584, 1, 1.0000000347703584] },
+                        { name: "3D", position: [0.837, 0, 1.000], rotation: [0, -1.5705, 0], scale: [1.0000001706241837, 1, 1.0000001706241837] }
                     ])
                 },
                 {
+                    id: 5,
                     camera: JSON.stringify({
                         alpha: -1.04,
                         beta: 1.12,
@@ -198,27 +203,27 @@ db.serialize(() => {
                         wheelPrecision: 100
                     }),
                     cows: JSON.stringify([
-                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow3", position: [1, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] },
-                        { name: "Cow4", position: [3, 0, 4], rotation: [0, Math.PI / 2, 0], scale: [0.25, 0.25, 0.25] }
+                        { name: "Cow1", position: [-3, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow2", position: [-1, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow3", position: [1, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] },
+                        { name: "Cow4", position: [3, 0, 4], rotation: [0, 1.5708, 0], scale: [0.25, 0.25, 0.25] }
                     ]),
                     cards: JSON.stringify([
-                        { name: "card_0", position: [0, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_1", position: [0.4, 0, -2], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_2", position: [-3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_3", position: [-2.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_4", position: [-1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_5", position: [-0.6, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_6", position: [1, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_7", position: [1.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_8", position: [3, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_9", position: [3.4, 0, 3.5], rotation: [0, Math.PI, 0], scale: [1, 1, 1] },
-                        { name: "card_10", position: [-1, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_11", position: [-0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_12", position: [-0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_13", position: [0.2, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] },
-                        { name: "card_14", position: [0.6, 0, 1], rotation: [0, 0, 0], scale: [1, 1, 1] }
+                        { name: "3C", position: [-0.189, 0, -0.034], rotation: [0.04, -1.5201, 3.1416], scale: [1.0000001854183471, 0.999999782712439, 1.0000001183916423] },
+                        { name: "QD", position: [0.106, 0, -0.050], rotation: [0.0236, -1.3562, 3.1416], scale: [1.000000173071773, 1.000000134919915, 1.0000003204145689] },
+                        { name: "4C", position: [-1.618, 0, 1.156], rotation: [0, -2.7738, 0], scale: [0.9999999595323771, 1, 0.9999999595323771] },
+                        { name: "QH", position: [-1.550, 0, 1.549], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "0H", position: [-0.187, 0, 2.091], rotation: [0, -1.3146, 0], scale: [1.000000012665419, 1, 1.000000012665419] },
+                        { name: "6H", position: [0.142, 0, 2.104], rotation: [0, -1.9379, 0], scale: [1.000000150683327, 1, 1.000000150683327] },
+                        { name: "2S", position: [1.424, 0, 2.151], rotation: [0, 1.5530, 0], scale: [1.0000001742299018, 1, 1.0000001742299018] },
+                        { name: "6S", position: [1.723, 0, 2.085], rotation: [0, -1.8070, 0], scale: [0.9999998488164599, 1, 0.9999998488164599] },
+                        { name: "JC", position: [2.372, 0, 1.496], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "5S", position: [2.350, 0, 1.161], rotation: [0, 3.1416, 0], scale: [1, 1, 1] },
+                        { name: "8H", position: [-0.583, 0.046, 0.939], rotation: [0, 1.5887, 0], scale: [1.000000268770012, 1, 1.000000268770012] },
+                        { name: "7H", position: [-0.222, 0, 1.009], rotation: [0, -1.5758, 0], scale: [0.9999999701966147, 1, 0.9999999701966147] },
+                        { name: "0D", position: [0.106, 0, 1.003], rotation: [0, -1.5960, 0], scale: [1.0000000298343323, 1, 1.0000000298343323] },
+                        { name: "3S", position: [0.477, 0, 1.000], rotation: [0, -1.5841, 0], scale: [1.0000000347703584, 1, 1.0000000347703584] },
+                        { name: "3D", position: [0.837, 0, 1.000], rotation: [0, -1.5705, 0], scale: [1.0000001706241837, 1, 1.0000001706241837] }
                     ])
                 }
             ];

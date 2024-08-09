@@ -428,6 +428,7 @@ const PokerFrogs = () => {
             ground.receiveShadows = true;
             ground.material = new BABYLON.StandardMaterial("groundMaterial", scene);
             ground.material.diffuseColor = new BABYLON.Color3(0.6, 0.4, 0.2);
+            ground.isPickable = false;
     
             // Set up gizmos and event listeners
             const utilLayer = new BABYLON.UtilityLayerRenderer(scene);
@@ -454,10 +455,16 @@ const PokerFrogs = () => {
             };
     
             const logMeshInfo = (mesh) => {
-                const position = mesh.position;
+                // Ensure the world matrix is up-to-date
+                mesh.computeWorldMatrix(true);
+            
+                // Get world coordinates using getAbsolutePosition()
+                const position = mesh.getAbsolutePosition();
                 const rotation = mesh.rotation;
                 const scaling = mesh.scaling;
-                console.log(`Position: (${position.x.toFixed(2)}, ${position.y.toFixed(2)}, ${position.z.toFixed(2)})`);
+            
+                console.log(`Mesh: ${mesh.name}`);
+                console.log(`World Position: (${position.x.toFixed(2)}, ${position.y.toFixed(2)}, ${position.z.toFixed(2)})`);
                 console.log(`Rotation: (${rotation.x.toFixed(2)}, ${rotation.y.toFixed(2)}, ${rotation.z.toFixed(2)})`);
                 console.log(`Scale: (${scaling.x.toFixed(2)}, ${scaling.y.toFixed(2)}, ${scaling.z.toFixed(2)})`);
             };
@@ -509,6 +516,9 @@ const PokerFrogs = () => {
                             console.log('No mesh is attached to any gizmo.');
                         }
                         break;
+                    case 'k':
+                        console.clear();
+                        logAllMeshes(scene);
                     case 'd':
                         positionGizmo.attachedMesh = null;
                         rotationGizmo.attachedMesh = null;
