@@ -59,11 +59,11 @@ const DebugPanel = ({ hands, community, deck }) => {
             onMouseDown={handleMouseDown}
         >
             <p style={{ fontSize: '12px' }}>
-                Player 0 Hand: {hands.p0 && hands.p0.join(', ')}<br />
-                Player 1 Hand: {hands.p1 && hands.p1.join(', ')}<br />
-                Player 2 Hand: {hands.p2 && hands.p2.join(', ')}<br />
-                Player 3 Hand: {hands.p3 && hands.p3.join(', ')}<br />
-                Player 4 Hand: {hands.p4 && hands.p4.join(', ')}<br />
+            Player 0 Hand: {hands[0] && hands[0].join(', ')}<br />
+            Player 1 Hand: {hands[1] && hands[1].join(', ')}<br />
+            Player 2 Hand: {hands[2] && hands[2].join(', ')}<br />
+            Player 3 Hand: {hands[3] && hands[3].join(', ')}<br />
+            Player 4 Hand: {hands[4] && hands[4].join(', ')}<br />
                 Community Cards: {community.join(', ')}<br />
                 Deck: {deck.join(', ')}
             </p>

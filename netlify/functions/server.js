@@ -1,3 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Existing imports and setup
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const cors = require('cors');
@@ -31,6 +45,8 @@ app.use((req, res, next) => {
     );
     return next();
 });
+
+app.use(express.static(path.join(__dirname, '/')));
 
 db.serialize(() => {
     db.run(`
@@ -219,6 +235,22 @@ db.serialize(() => {
     });
 });
 
+
+
+// // New Route to Fetch Card Data
+// app.get('/api/cards', (req, res) => {
+//     db.all("SELECT * FROM cards", [], (err, rows) => {
+//         if (err) {
+//             res.status(500).json({ error: err.message });
+//             return;
+//         }
+//         res.json({
+//             message: "success",
+//             data: rows
+//         });
+//     });
+// });
+
 app.get('/api/scene/:id', (req, res) => {
     const sceneId = req.params.id;
     db.get("SELECT * FROM scenes WHERE id = ?", [sceneId], (err, row) => {
@@ -261,9 +293,19 @@ app.post('/api/scene/:id', (req, res) => {
     });
 });
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
-});
+
+
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
+// });
+
+// Existing default scenes and other setups
+// ...
+
+// const PORT = process.env.PORT || 4141;
+// app.listen(PORT, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// });
 
 module.exports = app;
 module.exports.handler = serverless(app);

@@ -15,10 +15,11 @@ const PokerFrogs = () => {
     const [blind, setBlind] = useState(200);
     const [betCurrent, setBetCurrent] = useState(blind);
     const [bets, setBets] = useState({ p0: 0, p1: 0, p2: 0, p3: 0, p4: 0 });
-    const [hands, setHands] = useState({});
+    const [hands, setHands] = useState([]);
     const [community, setCommunity] = useState([]);
     const [scene, setScene] = useState(null);
     const [isSceneReady, setIsSceneReady] = useState(false);
+    const [sceneConfig, setSceneConfig] = useState(null); 
     const logMeshDetails = (mesh) => {
         console.log(`Mesh: ${mesh.name}`);
         console.log(`Position: ${mesh.position}`);
@@ -58,17 +59,19 @@ const PokerFrogs = () => {
 
     const initializeGame = () => {
         let shuffledDeck = shuffle([...deck]);
-        let newHands = {};
+        
+        let hands = [];
         for (let i = 0; i <= 4; i++) {
-            newHands[`p${i}`] = drawHand(shuffledDeck);
+            hands[i] = drawHand(shuffledDeck);
         }
-        setHands(newHands);
-        const newCommunity = [
+        const community = [
             draw(shuffledDeck), draw(shuffledDeck), draw(shuffledDeck),
             draw(shuffledDeck), draw(shuffledDeck)
         ];
-        setCommunity(newCommunity);
-        console.log("Hands initialized:", newHands);
+        
+        setHands(hands);
+        setCommunity(community);
+        console.log("Hands initialized:", hands);
         console.log("Community cards initialized:", community);
     };
     
@@ -88,15 +91,52 @@ const PokerFrogs = () => {
     const getCurrentCardNames = () => {
         let cardNames = [];
         for (let i = 0; i <= 4; i++) {
-            if (hands[`p${i}`]) {
-                cardNames.push(...hands[`p${i}`]);
+            if (hands[i]) {
+                cardNames.push(hands[i][0], hands[i][1]);
             }
         }
         cardNames.push(...community);
-        console.log("Current card names:", cardNames);
+        let cardNameString = JSON.stringify(cardNames);
+        console.log("Current card names:", cardNameString, hands);
         return cardNames;
     };
     
+    const loadSceneConfig = async (scene, sceneId) => {
+        try {
+            const response = await axios.get(`http://localhost:4242/api/scene/${sceneId}`);
+            const sceneConfig = response.data;
+            if (!sceneConfig) {
+                throw new Error("Scene configuration is null");
+            }
+            console.log("Loading scene configuration:", sceneConfig);
+            setSceneConfig(sceneConfig); // Set sceneConfig state
+            return sceneConfig;
+        } catch (error) {
+            console.error("Error loading scene configuration:", error);
+            createDefaultScene(scene);
+            return null;
+        }
+    };
+
+    const loadCardDataFromScene = (sceneConfig, cardNames, scene) => {
+        const cards = sceneConfig.cards || [];
+        
+        if (cards.length === 0) {
+            console.error("No cards found in scene configuration");
+            return;
+        }
+    
+        cards.forEach((card, index) => {
+            if (index < cardNames.length) {
+                const cardName = cardNames[index];
+                
+                // Use your existing createCard function to create and position the card mesh
+                createCard(cardName, scene, card.position, card.rotation, card.scale);
+            } else {
+                console.warn(`No name found for card at index ${index}`);
+            }
+        });
+    };
 
     const getCardImage = (card) => {
         console.log('card name to pass: ', card);
@@ -116,13 +156,13 @@ const PokerFrogs = () => {
             new BABYLON.Vector4(2 / 114, 0, 3 / 114, 1),
             new BABYLON.Vector4(3 / 114, 0, 4 / 114, 1),
             new BABYLON.Vector4(4 / 114, 0, 59 / 114, 1),
-            new BABYLON.Vector4(59 / 114, 0, 1, 1)
+            new BABYLON.Vector4(59 / 114, 0, 1, 1),
         ];
         
         const cardMesh = BABYLON.MeshBuilder.CreateBox(card, {
-            width: 2.5 / 3.5,
+            width: .35,
             height: 0.005,
-            depth: 1,
+            depth: .25,
             faceUV: faceUV
         }, scene);
         cardMesh.material = cardMaterial;
@@ -152,20 +192,20 @@ const PokerFrogs = () => {
             cow.animationGroups[0].start(true, 1.0, cow.animationGroups[0].from, cow.animationGroups[0].to, false);
         }
 
-        console.log(`Created cow: ${cow.name} at position ${cow.position}`);
+        // console.log(`Created cow: ${cow.name} at position ${cow.position}`);
         return cow;
     };
 
-    // const displayHand = (hand, scene, cardConfig, faceDown = false) => {
-    //     if (!hand) return;
-    //     hand.forEach((card, index) => {
-    //         const position = cardConfig && cardConfig.position ? new BABYLON.Vector3(...cardConfig.position[index]) : new BABYLON.Vector3(0, 0, 0);
-    //         const cardMesh = createCard(card, scene, [position.x + index * 0.4, position.y, position.z], [0, 0, 0], [1, 1, 1]);
-    //         if (faceDown) {
-    //             cardMesh.rotation.y = Math.PI;
-    //         }
-    //     });
-    // };
+    const displayHand = (hand, scene, cardConfig, faceDown = false) => {
+        if (!hand) return;
+        hand.forEach((card, index) => {
+            const position = cardConfig && cardConfig.position ? new BABYLON.Vector3(...cardConfig.position[index]) : new BABYLON.Vector3(0, 0, 0);
+            const cardMesh = createCard(card, scene, [position.x + index * 0.4, position.y, position.z], [0, 0, 0], [1, 1, 1]);
+            if (faceDown) {
+                cardMesh.rotation.y = Math.PI;
+            }
+        });
+    };
     
     
 
@@ -232,11 +272,14 @@ const PokerFrogs = () => {
         };
     }, []);
 
+
     useEffect(() => {
-        if (scene && Object.keys(hands).length > 0) {
+        if (scene && sceneConfig) {
+            loadCardDataFromScene(sceneConfig, getCurrentCardNames(), scene);
             logAllMeshes(scene);
         }
-    }, [scene, hands]);
+    }, [scene, hands, sceneConfig]);
+    
 
     const keyMap = {
         save1: 'alt+1',
@@ -312,7 +355,7 @@ const PokerFrogs = () => {
                 }
             });
             console.log(`Scene ${sceneId} saved successfully.`);
-            logAllMeshes(scene);
+            // logAllMeshes(scene);
         } catch (error) {
             console.error(`Error saving scene ${sceneId}:`, error);
         }
@@ -320,11 +363,15 @@ const PokerFrogs = () => {
 
     const loadSceneState = async (scene, sceneId) => {
         try {
-            const response = await axios.get(`http://localhost:4242/api/scene/${sceneId}`);
-            const sceneConfig = response.data;
+            const sceneConfig = await loadSceneConfig(scene, sceneId);
+            if (!sceneConfig) {
+                throw new Error("Scene configuration is null");
+            }
+            
     
             console.log("Loading scene configuration:", sceneConfig);
-    
+            
+
             // Create camera if it doesn't exist
             if (!scene.activeCamera) {
                 const canvas = scene.getEngine().getRenderingCanvas();
@@ -352,21 +399,25 @@ const PokerFrogs = () => {
     
             console.log("Old meshes removed");
     
-            for (const cowConfig of sceneConfig.cows) {
-                await createCow(cowConfig.name, cowConfig.position, cowConfig.rotation, cowConfig.scale, scene);
+            // Ensure scene is not disposed of before loading
+            if (!scene.isDisposed) {
+                for (const cowConfig of sceneConfig.cows) {
+                    await createCow(cowConfig.name, cowConfig.position, cowConfig.rotation, cowConfig.scale, scene);
+                }
+            } else {
+                console.error("Scene was disposed before loading meshes.");
             }
     
-            // Get current card names for the round
-            const currentCardNames = getCurrentCardNames();
-            console.log("Current card names:", currentCardNames);
-            
-            let cardIndex = 0;
-            for (const cardConfig of sceneConfig.cards) {
-                const cardName = currentCardNames[cardIndex] || 'default';
-                console.log("Card name to pass:", cardName, cardIndex);
-                const cardMesh = createCard(cardName, scene, cardConfig.position, cardConfig.rotation, cardConfig.scale);
-                cardIndex++;
-            }
+            // const currentCardNames = getCurrentCardNames();
+
+
+            // let cardIndex = 0;
+            // for (const cardConfig of sceneConfig.cards) {
+            //     const cardName = currentCardNames[cardIndex] || 'default';
+            //     console.log("Card name to pass:", cardName, cardIndex);
+            //     const cardMesh = createCard(cardName, scene, cardConfig.position, cardConfig.rotation, cardConfig.scale);
+            //     cardIndex++;
+            // }
     
             // Set up lighting and ground
             const light = new BABYLON.DirectionalLight("directionalLight", new BABYLON.Vector3(-1, -1, -1), scene);
@@ -471,15 +522,17 @@ const PokerFrogs = () => {
                     default:
                         break;
                 }
+                return sceneConfig;
             });
     
             setIsSceneReady(true);
             console.log(`Scene ${sceneId} loaded successfully.`);
-            logAllMeshes(scene);
+            // logAllMeshes(scene);
     
         } catch (error) {
             console.error(`Error loading scene ${sceneId}:`, error);
             createDefaultScene(scene);
+            return null;
         }
     };
     
@@ -521,16 +574,24 @@ const PokerFrogs = () => {
         <HotKeys keyMap={keyMap} handlers={handlers}>
             <div>
                 <canvas id="renderCanvas" style={{ width: '100%', height: '100vh' }}></canvas>
-                <PokerGUI
-                    sliderValue={sliderValue}
-                    handleSliderChange={handleSliderChange}
-                    increaseBet={increaseBet}
-                    decreaseBet={decreaseBet}
-                />
-                <DebugPanel hands={hands} community={community} deck={deck} />
+                {scene && sceneConfig ? (
+                    <>
+                        <PokerGUI
+                            sliderValue={sliderValue}
+                            handleSliderChange={handleSliderChange}
+                            increaseBet={increaseBet}
+                            decreaseBet={decreaseBet}
+                        />
+                        <DebugPanel hands={hands} community={community} deck={deck} />
+                    </>
+                ) : (
+                    <p>Loading scene...</p>
+                )}
             </div>
         </HotKeys>
     );
+    
+    
 };
 
 export default PokerFrogs;
