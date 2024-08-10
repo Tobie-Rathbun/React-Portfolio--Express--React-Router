@@ -407,8 +407,8 @@ const PokerFrogs = () => {
 
         try {
             const apiBaseUrl = window.location.hostname === 'localhost' 
-                ? 'http://localhost:4242' 
-                : window.location.origin; // Use the current origin in production
+            ? 'http://localhost:4242' 
+            : 'https://tobie-rathbun.netlify.app';
             
             const formattedSceneConfig = JSON.stringify(sceneConfig, null, 4);
             await axios.post(`${apiBaseUrl}/api/scene/${sceneId}`, formattedSceneConfig, {
