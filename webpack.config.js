@@ -14,9 +14,14 @@ module.exports = {
   resolve: {
     alias: {
       tone: 'tone/build/esm',
-      path: 'path-browserify' // Use path-browserify for browser environment
+      path: 'path-browserify' 
     },
     extensions: ['.js', '.jsx'],
+    fallback: {
+      "fs": false,
+      "path": require.resolve("path-browserify"),
+      "util": require.resolve("util/")
+    }
   },
   module: {
     rules: [
@@ -72,7 +77,8 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development')
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
   resolve: {
     fallback: {
@@ -87,5 +93,6 @@ module.exports = {
     historyApiFallback: true,
     compress: true,
     open: true,
+    hot: true,
   },
 };

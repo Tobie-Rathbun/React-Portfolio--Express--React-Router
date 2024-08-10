@@ -1,30 +1,434 @@
+[HMR] Cannot apply update. Need to do a full reload! pokerfrogs:13851:25
+[HMR] Aborted because ./src/components/PokerFrogs.js is not accepted
+Update propagation: ./src/components/PokerFrogs.js -> ./src/app.js -> ./src/index.js
+applyHandler@http://localhost:4141/bundle.js:574071:31
+internalApply/results<@http://localhost:4141/bundle.js:573767:21
+internalApply@http://localhost:4141/bundle.js:573766:54
+hotCheck/</</</<@http://localhost:4141/bundle.js:573736:26
+waitForBlockingPromises@http://localhost:4141/bundle.js:573691:48
+hotCheck/</</<@http://localhost:4141/bundle.js:573734:24
+promise callback*hotCheck/</<@http://localhost:4141/bundle.js:573733:18
+promise callback*hotCheck/<@http://localhost:4141/bundle.js:573714:43
+promise callback*hotCheck@http://localhost:4141/bundle.js:573705:15
+check@http://localhost:4141/bundle.js:213384:5
+./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:213438:4
+emit@http://localhost:4141/bundle.js:143271:17
+reloadApp@http://localhost:4141/bundle.js:213273:67
+ok@http://localhost:4141/bundle.js:211387:68
+./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:212937:29
+./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:211132:10
+EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:211131:7
+initSocket@http://localhost:4141/bundle.js:212930:10
+./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:211480:55
+__webpack_require__@http://localhost:4141/bundle.js:573283:32
+@http://localhost:4141/bundle.js:574398:30
+@http://localhost:4141/bundle.js:574402:12
+pokerfrogs:13851:25
+[HMR] Update failed: Loading hot update chunk main failed.
+(missing: http://localhost:4141/main.735b4d5812bdbb9a19d4.hot-update.js)
+loadUpdateChunk/<@http://localhost:4141/bundle.js:573899:26
+loadUpdateChunk@http://localhost:4141/bundle.js:573894:20
+__webpack_require__.hmrC.jsonp/<@http://localhost:4141/bundle.js:574354:29
+__webpack_require__.hmrC.jsonp@http://localhost:4141/bundle.js:574349:22
+hotCheck/</</<@http://localhost:4141/bundle.js:573723:47
+hotCheck/</<@http://localhost:4141/bundle.js:573719:55
+promise callback*hotCheck/<@http://localhost:4141/bundle.js:573714:43
+promise callback*hotCheck@http://localhost:4141/bundle.js:573705:15
+check@http://localhost:4141/bundle.js:213384:5
+./node_modules/webpack/hot/dev-server.js/<@http://localhost:4141/bundle.js:213438:4
+emit@http://localhost:4141/bundle.js:143271:17
+reloadApp@http://localhost:4141/bundle.js:213273:67
+ok@http://localhost:4141/bundle.js:211387:68
+./node_modules/webpack-dev-server/client/socket.js/initSocket/<@http://localhost:4141/bundle.js:212937:29
+./node_modules/webpack-dev-server/client/clients/WebSocketClient.js/onMessage/this.client.onmessage@http://localhost:4141/bundle.js:211132:10
+EventHandlerNonNull*onMessage@http://localhost:4141/bundle.js:211131:7
+initSocket@http://localhost:4141/bundle.js:212930:10
+./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=4141&pathname=%2Fws&logging=info&overlay=true&reconnect=10&hot=true&live-reload=true@http://localhost:4141/bundle.js:211480:55
+__webpack_require__@http://localhost:4141/bundle.js:573283:32
+@http://localhost:4141/bundle.js:574398:30
+@http://localhost:4141/bundle.js:574402:12
+2 pokerfrogs:13851:25
+[webpack-dev-server] Disconnected! bundle.js:211974:22
+[webpack-dev-server] Trying to reconnect... bundle.js:211974:22
+[webpack-dev-server] Disconnected! bundle.js:211974:22
+[webpack-dev-server] Trying to reconnect... bundle.js:211974:22
+[webpack-dev-server] Disconnected! bundle.js:211974:22
+[webpack-dev-server] Trying to reconnect... bundle.js:211974:22
+Source map error: request failed with status 404
+Resource URL: null
+Source Map URL: installHook.js.map
+GET
+http://localhost:4141/img/favicon-android.png
+[HTTP/1.1 404 Not Found 0ms]
+
 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
 [HMR] Waiting for update signal from WDS... log.js:39
  * Tone.js v15.0.4 * Instrument.js:130
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:191668:38
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:191984:36
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:193668:44
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
 [HMR] Waiting for update signal from WDS... log.js:39
  * Tone.js v15.0.4 * Instrument.js:130
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:191668:38
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:191984:36
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:193668:44
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. index.js:485
 [HMR] Waiting for update signal from WDS... log.js:39
  * Tone.js v15.0.4 * Instrument.js:130
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:191668:38
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:191984:36
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:193668:44
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. audio-context-constructor.js:11
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 audio-listener-factory.js:71
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. constant-source-node-constructor.js:42
 WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. thinEngine.js:786
 Babylon.js v5.57.1 - WebGL2 thinEngine.js:603
-Hands initialized: 
-Object { p0: (2) […], p1: (2) […], p2: (2) […], p3: (2) […], p4: (2) […] }
-PokerFrogs.js:71:16
-Community cards initialized: 
+Initializing Babylon.js scene... PokerFrogs.js:280:24
+Hands or Community not ready PokerFrogs.js:326:20
+Babylon.js v5.57.1 - WebGL2 thinEngine.js:603
+Initializing Babylon.js scene... PokerFrogs.js:280:24
+Hands or Community not ready PokerFrogs.js:326:20
+Babylon.js v5.57.1 - WebGL2 thinEngine.js:603
+Initializing Babylon.js scene... PokerFrogs.js:280:24
+Hands or Community not ready PokerFrogs.js:326:20
+The connection to ws://localhost:4141/ws was interrupted while the page was loading. WebSocketClient.js:13
+[webpack-dev-server] 
+error { target: WebSocket, isTrusted: true, srcElement: WebSocket, currentTarget: WebSocket, eventPhase: 2, bubbles: false, cancelable: false, returnValue: true, defaultPrevented: false, composed: false, … }
+index.js:493
+[webpack-dev-server] Disconnected! index.js:485
+[webpack-dev-server] Trying to reconnect... index.js:485
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:118:20
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:424:20
+Old meshes removed PokerFrogs.js:452:20
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:118:20
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:424:20
+Old meshes removed PokerFrogs.js:452:20
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:118:20
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+PokerFrogs.js:424:20
+Old meshes removed PokerFrogs.js:452:20
+DebugPanel Received cardNames: 
 Array []
-PokerFrogs.js:72:16
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:4242/api/scene/1. (Reason: CORS header ‘Access-Control-Allow-Origin’ does not match ‘https://tobie-rathbun.netlify.app’).
-Error loading scene 1: 
-Object { stack: "AxiosError@http://localhost:4141/bundle.js:543848:19\nhandleError@http://localhost:4141/bundle.js:543152:14\n", message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest }
-PokerFrogs.js:480:20
+DebugPanel.js:56:16
+Hands or Community not ready. Skipping card data load. PokerFrogs.js:310:24
+DebugPanel Received cardNames: 
+Array []
+DebugPanel.js:56:16
+Hands or Community not ready. Skipping card data load. PokerFrogs.js:310:24
+DebugPanel Received cardNames: 
+Array []
+DebugPanel.js:56:16
+Hands or Community not ready. Skipping card data load. PokerFrogs.js:310:24
+Source map error: request failed with status 404
+Resource URL: null
+Source Map URL: react_devtools_backend_compact.js.map
+Scene 1 loaded successfully. PokerFrogs.js:580:20
+Scene state loaded. PokerFrogs.js:283:24
+Hands initialized: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:76:16
+Community cards initialized: 
+Array(5) [ "5S", "QS", "QD", "KS", "6D" ]
+PokerFrogs.js:77:16
+Game initialized. PokerFrogs.js:288:24
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:94:16
+Community state before cloning: 
+Array(5) [ "5S", "QS", "QD", "KS", "6D" ]
+PokerFrogs.js:95:16
+Generated card names: 
+Array(15) [ "5C", "5D", "KD", "9D", "KC", "7D", "3S", "QC", "6C", "AH", … ]
+PokerFrogs.js:107:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:94:16
+Community state before cloning: 
+Array(5) [ "5S", "QS", "QD", "KS", "6D" ]
+PokerFrogs.js:95:16
+Generated card names: 
+Array(15) [ "5C", "5D", "KD", "9D", "KC", "7D", "3S", "QC", "6C", "AH", … ]
+PokerFrogs.js:107:16
+Invalid scene object passed to createCard. 
+PokerFrogs@http://localhost:4141/bundle.js:141623:66
+RenderedRoute@http://localhost:4141/bundle.js:186516:7
+Routes@http://localhost:4141/bundle.js:187216:7
+Router@http://localhost:4141/bundle.js:187155:7
+BrowserRouter@http://localhost:4141/bundle.js:185096:7
+App 15 pokerfrogs:13851:25
+Mesh: Cow1 PokerFrogs.js:26:16
+Position: {X: -2.31 Y: 0 Z: 1.24} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: -1.57 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: Cow2 PokerFrogs.js:26:16
+Position: {X: 0.02 Y: 0 Z: 2.75} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: -0.15 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: Cow3 PokerFrogs.js:26:16
+Position: {X: 1.73 Y: 0 Z: 2.68} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0.15 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: Cow4 PokerFrogs.js:26:16
+Position: {X: 2.96 Y: 0 Z: 1.32} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 1.57 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: myGround PokerFrogs.js:26:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: groundMaterial PokerFrogs.js:30:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:94:16
+Community state before cloning: 
+Array(5) [ "5S", "QS", "QD", "KS", "6D" ]
+PokerFrogs.js:95:16
+Generated card names: 
+Array(15) [ "5C", "5D", "KD", "9D", "KC", "7D", "3S", "QC", "6C", "AH", … ]
+PokerFrogs.js:107:16
+Set card names: 
+Array(15) [ "5C", "5D", "KD", "9D", "KC", "7D", "3S", "QC", "6C", "AH", … ]
+PokerFrogs.js:321:24
+DebugPanel Received cardNames: 
+Array(15) [ "5C", "5D", "KD", "9D", "KC", "7D", "3S", "QC", "6C", "AH", … ]
+DebugPanel.js:56:16
+Source map error: Error: request failed with status 404
+Resource URL: null
+Source Map URL: react_devtools_backend_compact.js.map
+Scene 1 loaded successfully. PokerFrogs.js:580:20
+Scene state loaded. PokerFrogs.js:283:24
+Hands initialized: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:76:16
+Community cards initialized: 
+Array(5) [ "AC", "KC", "8H", "5D", "JH" ]
+PokerFrogs.js:77:16
+Game initialized. PokerFrogs.js:288:24
+Scene 1 loaded successfully. PokerFrogs.js:580:20
+Scene state loaded. PokerFrogs.js:283:24
+Hands initialized: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:76:16
+Community cards initialized: 
+Array(5) [ "9D", "4D", "KD", "7S", "7C" ]
+PokerFrogs.js:77:16
+Game initialized. PokerFrogs.js:288:24
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:94:16
+Community state before cloning: 
+Array(5) [ "AC", "KC", "8H", "5D", "JH" ]
+PokerFrogs.js:95:16
+Generated card names: 
+Array(15) [ "3D", "QH", "5H", "4H", "JS", "3C", "0C", "2H", "JD", "AH", … ]
+PokerFrogs.js:107:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:94:16
+Community state before cloning: 
+Array(5) [ "AC", "KC", "8H", "5D", "JH" ]
+PokerFrogs.js:95:16
+Generated card names: 
+Array(15) [ "3D", "QH", "5H", "4H", "JS", "3C", "0C", "2H", "JD", "AH", … ]
+PokerFrogs.js:107:16
+Invalid scene object passed to createCard. 
+PokerFrogs@http://localhost:4141/bundle.js:141623:66
+RenderedRoute@http://localhost:4141/bundle.js:186516:7
+Routes@http://localhost:4141/bundle.js:187216:7
+Router@http://localhost:4141/bundle.js:187155:7
+BrowserRouter@http://localhost:4141/bundle.js:185096:7
+App 15 pokerfrogs:13851:25
+Mesh: Cow1 PokerFrogs.js:26:16
+Position: {X: -2.31 Y: 0 Z: 1.24} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: -1.57 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: Cow2 PokerFrogs.js:26:16
+Position: {X: 0.02 Y: 0 Z: 2.75} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: -0.15 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: Cow3 PokerFrogs.js:26:16
+Position: {X: 1.73 Y: 0 Z: 2.68} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0.15 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: Cow4 PokerFrogs.js:26:16
+Position: {X: 2.96 Y: 0 Z: 1.32} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 1.57 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: myGround PokerFrogs.js:26:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: groundMaterial PokerFrogs.js:30:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:94:16
+Community state before cloning: 
+Array(5) [ "AC", "KC", "8H", "5D", "JH" ]
+PokerFrogs.js:95:16
+Generated card names: 
+Array(15) [ "3D", "QH", "5H", "4H", "JS", "3C", "0C", "2H", "JD", "AH", … ]
+PokerFrogs.js:107:16
+Set card names: 
+Array(15) [ "3D", "QH", "5H", "4H", "JS", "3C", "0C", "2H", "JD", "AH", … ]
+PokerFrogs.js:321:24
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:94:16
+Community state before cloning: 
+Array(5) [ "9D", "4D", "KD", "7S", "7C" ]
+PokerFrogs.js:95:16
+Generated card names: 
+Array(15) [ "4H", "4S", "JH", "3H", "6S", "8S", "9C", "AD", "4C", "3C", … ]
+PokerFrogs.js:107:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:94:16
+Community state before cloning: 
+Array(5) [ "9D", "4D", "KD", "7S", "7C" ]
+PokerFrogs.js:95:16
+Generated card names: 
+Array(15) [ "4H", "4S", "JH", "3H", "6S", "8S", "9C", "AD", "4C", "3C", … ]
+PokerFrogs.js:107:16
+Invalid scene object passed to createCard. 
+PokerFrogs@http://localhost:4141/bundle.js:141623:66
+RenderedRoute@http://localhost:4141/bundle.js:186516:7
+Routes@http://localhost:4141/bundle.js:187216:7
+Router@http://localhost:4141/bundle.js:187155:7
+BrowserRouter@http://localhost:4141/bundle.js:185096:7
+App 15 pokerfrogs:13851:25
+Mesh: Cow1 PokerFrogs.js:26:16
+Position: {X: -2.31 Y: 0 Z: 1.24} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: -1.57 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: Cow2 PokerFrogs.js:26:16
+Position: {X: 0.02 Y: 0 Z: 2.75} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: -0.15 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: Cow3 PokerFrogs.js:26:16
+Position: {X: 1.73 Y: 0 Z: 2.68} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0.15 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: Cow4 PokerFrogs.js:26:16
+Position: {X: 2.96 Y: 0 Z: 1.32} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 1.57 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:29:16
+Material: Name: cowMaterial PokerFrogs.js:30:16
+Mesh: cow PokerFrogs.js:26:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: cowtexture PokerFrogs.js:30:16
+Mesh: myGround PokerFrogs.js:26:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:27:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:28:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:29:16
+Material: Name: groundMaterial PokerFrogs.js:30:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:94:16
+Community state before cloning: 
+Array(5) [ "9D", "4D", "KD", "7S", "7C" ]
+PokerFrogs.js:95:16
+Generated card names: 
+Array(15) [ "4H", "4S", "JH", "3H", "6S", "8S", "9C", "AD", "4C", "3C", … ]
+PokerFrogs.js:107:16
+Set card names: 
+Array(15) [ "4H", "4S", "JH", "3H", "6S", "8S", "9C", "AD", "4C", "3C", … ]
+PokerFrogs.js:321:24
+DebugPanel Received cardNames: 
+Array(15) [ "3D", "QH", "5H", "4H", "JS", "3C", "0C", "2H", "JD", "AH", … ]
+DebugPanel.js:56:16
+DebugPanel Received cardNames: 
+Array(15) [ "4H", "4S", "JH", "3H", "6S", "8S", "9C", "AD", "4C", "3C", … ]
+DebugPanel.js:56:16
