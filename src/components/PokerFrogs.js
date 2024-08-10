@@ -17,9 +17,11 @@ const PokerFrogs = () => {
     const [bets, setBets] = useState({ p0: 0, p1: 0, p2: 0, p3: 0, p4: 0 });
     const [hands, setHands] = useState([]);
     const [community, setCommunity] = useState([]);
+    const [cardNames, setCardNames] = useState([]);
     const [scene, setScene] = useState(null);
     const [isSceneReady, setIsSceneReady] = useState(false);
     const [sceneConfig, setSceneConfig] = useState(null); 
+    
     const logMeshDetails = (mesh) => {
         console.log(`Mesh: ${mesh.name}`);
         console.log(`Position: ${mesh.position}`);
@@ -89,15 +91,20 @@ const PokerFrogs = () => {
     };
 
     const getCurrentCardNames = () => {
+        console.log("Hands state before cloning:", hands);
+        console.log("Community state before cloning:", community);
+
+        let clonedHands = hands.slice();
+        let clonedCommunity = community.slice();
         let cardNames = [];
+
         for (let i = 0; i <= 4; i++) {
-            if (hands[i]) {
-                cardNames.push(hands[i][0], hands[i][1]);
+            if (clonedHands[i]) {
+                cardNames.push(clonedHands[i][0], clonedHands[i][1]);
             }
         }
-        cardNames.push(...community);
-        let cardNameString = JSON.stringify(cardNames);
-        console.log("Current card names:", cardNameString, hands);
+        cardNames.push(...clonedCommunity);
+        console.log("Generated card names:", cardNames);
         return cardNames;
     };
     
@@ -118,19 +125,20 @@ const PokerFrogs = () => {
         }
     };
 
-    const loadCardDataFromScene = (sceneConfig, cardNames, scene) => {
+    const loadCardDataFromScene = (sceneConfig, scene) => {
         const cards = sceneConfig.cards || [];
+        const clonedCardNames = getCurrentCardNames().slice();
         
-        if (cards.length === 0) {
-            console.error("No cards found in scene configuration");
+        if (cards.length < 15) {
+            console.error("Loading cards in scene configuration");
             return;
         }
     
         cards.forEach((card, index) => {
-            if (index < cardNames.length) {
-                const cardName = cardNames[index];
-                
-                // Use your existing createCard function to create and position the card mesh
+            if (index < clonedCardNames.length) {
+                const cardName = clonedCardNames[index];
+                console.log("Scene before creating card:", scene);
+                console.log("Is scene disposed:", scene.isDisposed);
                 createCard(cardName, scene, card.position, card.rotation, card.scale);
             } else {
                 console.warn(`No name found for card at index ${index}`);
@@ -144,6 +152,14 @@ const PokerFrogs = () => {
     };    
 
     const createCard = (card, scene, position, rotation, scale) => {
+
+        if (!scene || typeof scene.getUniqueId !== 'function') {
+            console.error("Invalid scene object passed to createCard.");
+            return;
+        }
+
+        console.log(`Creating card: ${card}`);
+
         const cardMaterial = new BABYLON.StandardMaterial("cardMaterial", scene);
         cardMaterial.diffuseTexture = new BABYLON.Texture(getCardImage(card), scene);
         
@@ -232,8 +248,14 @@ const PokerFrogs = () => {
     };
 
     useEffect(() => {
-        document.body.classList.add('no-scroll'); // Add the no-scroll class to body when the component mounts
+        document.body.classList.add('no-scroll');
 
+        return () => {
+            document.body.classList.remove('no-scroll');
+        };
+    }, []);
+
+    useEffect(() => {
         const canvas = document.getElementById("renderCanvas");
         const engine = new BABYLON.Engine(canvas, true);
         const scene = new BABYLON.Scene(engine);
@@ -256,9 +278,19 @@ const PokerFrogs = () => {
         };
 
         const initialize = async () => {
-            await loadSceneState(scene, 1);
-            runRenderLoop();
-            initializeGame();
+            try {
+                console.log("Initializing Babylon.js scene...");
+
+                await loadSceneState(scene, 1);
+                console.log("Scene state loaded.");
+
+                runRenderLoop();
+
+                initializeGame();
+                console.log("Game initialized.");
+            } catch (error) {
+                console.error("Error during initialization:", error);
+            }
         };
 
         initialize();
@@ -266,19 +298,40 @@ const PokerFrogs = () => {
         window.addEventListener("resize", handleResize);
 
         return () => {
-            document.body.classList.remove('no-scroll'); // Remove the no-scroll class from body when the component unmounts
             window.removeEventListener("resize", handleResize);
-            engine.dispose();
+            engine.dispose(); 
         };
     }, []);
 
-
     useEffect(() => {
         if (scene && sceneConfig) {
-            loadCardDataFromScene(sceneConfig, getCurrentCardNames(), scene);
-            logAllMeshes(scene);
+            if (hands.length && community.length) {
+                loadCardDataFromScene(sceneConfig, scene);
+                logAllMeshes(scene);
+            } else {
+                console.warn("Hands or Community not ready. Skipping card data load.");
+            }
         }
-    }, [scene, hands, sceneConfig]);
+    }, [scene, sceneConfig, hands, community]);
+    
+
+    useEffect(() => {
+        if (hands.length > 0 && community.length > 0) {  // Ensure hands and community are ready
+            const loadedCardNames = getCurrentCardNames().slice();  // Shallow copy of the array
+            if (loadedCardNames.length === 15) {  // Ensure array has all 15 cards
+                setCardNames(loadedCardNames);  // Update state only if array has 15 cards
+                console.log("Set card names:", loadedCardNames);
+            } else {
+                console.warn("Loaded card names do not contain 15 cards, skipping setCardNames.");
+            }
+        } else {
+            console.log("Hands or Community not ready");
+        }
+    }, [hands, community]);
+ 
+    
+    
+    
     
 
     const keyMap = {
@@ -291,7 +344,8 @@ const PokerFrogs = () => {
         load2: '2',
         load3: '3',
         load4: '4',
-        load5: '5'
+        load5: '5',
+        logCamera: 'c'
     };
 
     const saveSceneState = async (sceneId) => {
@@ -384,11 +438,11 @@ const PokerFrogs = () => {
                 scene.activeCamera = camera; // Ensure the camera is assigned to the scene's activeCamera
             }
 
-            const camera = scene.activeCamera;
-            camera.alpha = sceneConfig.camera.alpha;
-            camera.beta = sceneConfig.camera.beta;
-            camera.radius = sceneConfig.camera.radius;
-            camera.wheelPrecision = sceneConfig.camera.wheelPrecision;
+            // const camera = scene.activeCamera;
+            // camera.alpha = sceneConfig.camera.alpha;
+            // camera.beta = sceneConfig.camera.beta;
+            // camera.radius = sceneConfig.camera.radius;
+            // camera.wheelPrecision = sceneConfig.camera.wheelPrecision;
     
             // Remove old meshes before loading new ones
             scene.meshes.forEach(mesh => {
@@ -407,17 +461,6 @@ const PokerFrogs = () => {
             } else {
                 console.error("Scene was disposed before loading meshes.");
             }
-    
-            // const currentCardNames = getCurrentCardNames();
-
-
-            // let cardIndex = 0;
-            // for (const cardConfig of sceneConfig.cards) {
-            //     const cardName = currentCardNames[cardIndex] || 'default';
-            //     console.log("Card name to pass:", cardName, cardIndex);
-            //     const cardMesh = createCard(cardName, scene, cardConfig.position, cardConfig.rotation, cardConfig.scale);
-            //     cardIndex++;
-            // }
     
             // Set up lighting and ground
             const light = new BABYLON.DirectionalLight("directionalLight", new BABYLON.Vector3(-1, -1, -1), scene);
@@ -546,6 +589,25 @@ const PokerFrogs = () => {
         }
     };
     
+    const logCameraInfo = () => {
+        if (!scene) {
+            console.error("Scene is not initialized.");
+            return;
+        }
+    
+        if (!scene.activeCamera) {
+            console.error("No active camera found in the scene.");
+            return;
+        }
+    
+        const camera = scene.activeCamera;
+        const cameraPosition = camera.position;
+        const cameraRotation = camera.rotation;
+    
+        console.log(`Camera World Position: (${cameraPosition.x.toFixed(2)}, ${cameraPosition.y.toFixed(2)}, ${cameraPosition.z.toFixed(2)})`);
+        console.log(`Camera Rotation: (${cameraRotation.x.toFixed(2)}, ${cameraRotation.y.toFixed(2)}, ${cameraRotation.z.toFixed(2)})`);
+    };
+    
 
     const handlers = {
         save1: () => { if (isSceneReady) saveSceneState(1); },
@@ -557,7 +619,8 @@ const PokerFrogs = () => {
         load2: () => { resetBabylonInstanceAndLoadScene(2); },
         load3: () => { resetBabylonInstanceAndLoadScene(3); },
         load4: () => { resetBabylonInstanceAndLoadScene(4); },
-        load5: () => { resetBabylonInstanceAndLoadScene(5); }
+        load5: () => { resetBabylonInstanceAndLoadScene(5); },
+        logCamera: () => { if (isSceneReady) logCameraInfo(); }
     };
 
     const resetBabylonInstanceAndLoadScene = (sceneId) => {
@@ -578,7 +641,9 @@ const PokerFrogs = () => {
             });
         });
     };
-    
+
+    // const loadedCardNames = getCurrentCardNames();
+    //     setCardNames(loadedCardNames);
 
     return (
         <HotKeys keyMap={keyMap} handlers={handlers}>
@@ -592,7 +657,7 @@ const PokerFrogs = () => {
                             increaseBet={increaseBet}
                             decreaseBet={decreaseBet}
                         />
-                        <DebugPanel hands={hands} community={community} deck={deck} />
+                        <DebugPanel cardNames={cardNames} />
                     </>
                 ) : (
                     <p>Loading scene...</p>
