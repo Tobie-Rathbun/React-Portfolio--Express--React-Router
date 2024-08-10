@@ -21,7 +21,9 @@ const PokerFrogs = () => {
     const [scene, setScene] = useState(null);
     const [isSceneReady, setIsSceneReady] = useState(false);
     const [sceneConfig, setSceneConfig] = useState(null); 
-    
+    const apiBaseUrl = window.location.hostname === 'localhost' 
+            ? 'http://localhost:4242' 
+            : `${window.location.origin}/.netlify/functions`;
     const logMeshDetails = (mesh) => {
         console.log(`Mesh: ${mesh.name}`);
         console.log(`Position: ${mesh.position}`);
@@ -110,10 +112,6 @@ const PokerFrogs = () => {
     
     const loadSceneConfig = async (scene, sceneId) => {
         try {
-            const apiBaseUrl = window.location.hostname === 'localhost' 
-            ? 'http://localhost:4242' 
-            : `${window.location.origin}/.netlify/functions`;
-        
         const response = await axios.get(`${apiBaseUrl}/api/scene/${sceneId}`);
             const sceneConfig = response.data;
             if (!sceneConfig) {
@@ -406,10 +404,6 @@ const PokerFrogs = () => {
         console.log("Saving scene configuration:", sceneConfig);
 
         try {
-            const apiBaseUrl = window.location.hostname === 'localhost' 
-            ? 'http://localhost:4242' 
-            : window.location.origin;
-            
             const formattedSceneConfig = JSON.stringify(sceneConfig, null, 4);
             await axios.post(`${apiBaseUrl}/api/scene/${sceneId}`, formattedSceneConfig, {
                 headers: {
