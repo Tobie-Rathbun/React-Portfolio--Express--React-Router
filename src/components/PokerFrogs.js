@@ -23,7 +23,7 @@ const PokerFrogs = () => {
     const [sceneConfig, setSceneConfig] = useState(null); 
     const apiBaseUrl = window.location.hostname === 'localhost' 
             ? 'http://localhost:4242' 
-            : `${window.location.origin}/.netlify/functions`;
+            : `https://tobie-rathbun.netlify.app`;
     const logMeshDetails = (mesh) => {
         console.log(`Mesh: ${mesh.name}`);
         console.log(`Position: ${mesh.position}`);
