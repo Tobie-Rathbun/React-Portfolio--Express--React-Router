@@ -1,6 +1,6 @@
 {
   "name": "jazzbot",
-  "version": "0.1.07",
+  "version": "0.1.08",
   "description": "Tobie's Portfolio",
   "main": "index.js",
   "proxy": "http://localhost:4242",

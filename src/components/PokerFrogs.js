@@ -110,7 +110,11 @@ const PokerFrogs = () => {
     
     const loadSceneConfig = async (scene, sceneId) => {
         try {
-            const response = await axios.get(`http://localhost:4242/api/scene/${sceneId}`);
+            const apiBaseUrl = window.location.hostname === 'localhost' 
+            ? 'http://localhost:4242' 
+            : 'https://tobie-rathbun.netlify.app';
+        
+        const response = await axios.get(`${apiBaseUrl}/api/scene/${sceneId}`);
             const sceneConfig = response.data;
             if (!sceneConfig) {
                 throw new Error("Scene configuration is null");
@@ -402,8 +406,12 @@ const PokerFrogs = () => {
         console.log("Saving scene configuration:", sceneConfig);
 
         try {
+            const apiBaseUrl = window.location.hostname === 'localhost' 
+                ? 'http://localhost:4242' 
+                : window.location.origin; // Use the current origin in production
+            
             const formattedSceneConfig = JSON.stringify(sceneConfig, null, 4);
-            await axios.post(`http://localhost:4242/api/scene/${sceneId}`, formattedSceneConfig, {
+            await axios.post(`${apiBaseUrl}/api/scene/${sceneId}`, formattedSceneConfig, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -412,7 +420,7 @@ const PokerFrogs = () => {
             // logAllMeshes(scene);
         } catch (error) {
             console.error(`Error saving scene ${sceneId}:`, error);
-        }
+        }        
     };
 
     const loadSceneState = async (scene, sceneId) => {

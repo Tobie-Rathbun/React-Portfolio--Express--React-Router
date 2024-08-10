@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Existing imports and setup
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const cors = require('cors');
@@ -31,7 +17,7 @@ const corsOptions = {
             callback(new Error('Not allowed by CORS'));
         }
     },
-    optionsSuccessStatus: 200
+    optionsSuccessStatus: 204
 };
 
 app.use(cors(corsOptions));
