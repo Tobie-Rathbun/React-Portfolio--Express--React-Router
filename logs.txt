@@ -31,7 +31,7 @@ Hands initialized:
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
 PokerFrogs.js:76:16
 Community cards initialized: 
-Array(5) [ "3D", "KD", "9S", "4S", "JS" ]
+Array(5) [ "4C", "0S", "6S", "AS", "9D" ]
 PokerFrogs.js:77:16
 Game initialized. PokerFrogs.js:294:24
 DebugPanel Received cardNames: 
@@ -41,10 +41,10 @@ Hands state before cloning:
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
 PokerFrogs.js:94:16
 Community state before cloning: 
-Array(5) [ "3D", "KD", "9S", "4S", "JS" ]
+Array(5) [ "4C", "0S", "6S", "AS", "9D" ]
 PokerFrogs.js:95:16
 Generated card names: 
-Array(15) [ "4D", "3S", "5D", "8S", "2H", "8C", "KH", "QS", "0H", "6S", … ]
+Array(15) [ "KS", "3S", "AD", "0D", "5S", "2C", "AC", "5H", "QH", "QS", … ]
 PokerFrogs.js:107:16
 Loading cards in scene configuration PokerFrogs.js:137:20
 Mesh: defaultGround PokerFrogs.js:26:16
@@ -56,16 +56,16 @@ Hands state before cloning:
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
 PokerFrogs.js:94:16
 Community state before cloning: 
-Array(5) [ "3D", "KD", "9S", "4S", "JS" ]
+Array(5) [ "4C", "0S", "6S", "AS", "9D" ]
 PokerFrogs.js:95:16
 Generated card names: 
-Array(15) [ "4D", "3S", "5D", "8S", "2H", "8C", "KH", "QS", "0H", "6S", … ]
+Array(15) [ "KS", "3S", "AD", "0D", "5S", "2C", "AC", "5H", "QH", "QS", … ]
 PokerFrogs.js:107:16
 Set card names: 
-Array(15) [ "4D", "3S", "5D", "8S", "2H", "8C", "KH", "QS", "0H", "6S", … ]
+Array(15) [ "KS", "3S", "AD", "0D", "5S", "2C", "AC", "5H", "QH", "QS", … ]
 PokerFrogs.js:327:24
 DebugPanel Received cardNames: 
-Array(15) [ "4D", "3S", "5D", "8S", "2H", "8C", "KH", "QS", "0H", "6S", … ]
+Array(15) [ "KS", "3S", "AD", "0D", "5S", "2C", "AC", "5H", "QH", "QS", … ]
 DebugPanel.js:56:16
 Source map error: JSON.parse: unexpected character at line 1 column 1 of the JSON data
 Resource URL: null

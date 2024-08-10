@@ -112,7 +112,7 @@ const PokerFrogs = () => {
         try {
             const apiBaseUrl = window.location.hostname === 'localhost' 
             ? 'http://localhost:4242' 
-            : 'https://tobie-rathbun.netlify.app';
+            : window.location.origin;
         
         const response = await axios.get(`${apiBaseUrl}/api/scene/${sceneId}`);
             const sceneConfig = response.data;
@@ -408,7 +408,7 @@ const PokerFrogs = () => {
         try {
             const apiBaseUrl = window.location.hostname === 'localhost' 
             ? 'http://localhost:4242' 
-            : 'https://tobie-rathbun.netlify.app';
+            : window.location.origin;
             
             const formattedSceneConfig = JSON.stringify(sceneConfig, null, 4);
             await axios.post(`${apiBaseUrl}/api/scene/${sceneId}`, formattedSceneConfig, {
