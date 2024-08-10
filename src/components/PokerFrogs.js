@@ -112,7 +112,7 @@ const PokerFrogs = () => {
         try {
             const apiBaseUrl = window.location.hostname === 'localhost' 
             ? 'http://localhost:4242' 
-            : window.location.origin;
+            : `${window.location.origin}/.netlify/functions`;
         
         const response = await axios.get(`${apiBaseUrl}/api/scene/${sceneId}`);
             const sceneConfig = response.data;

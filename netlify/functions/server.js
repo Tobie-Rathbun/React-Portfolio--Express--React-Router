@@ -290,8 +290,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
 });
 
-// Existing default scenes and other setups
-// ...
 
 // const PORT = process.env.PORT || 4141;
 // app.listen(PORT, () => {
