@@ -286,9 +286,9 @@ app.post('/api/scene/:id', (req, res) => {
 
 
 
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
+});
 
 // Existing default scenes and other setups
 // ...
