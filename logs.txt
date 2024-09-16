@@ -1,29 +1,28 @@
- * Tone.js v15.0.4 * bundle.js:2:4800986
+ * Tone.js v15.0.4 * Global.js:72:12
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4763544
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:2:4732559
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4721540
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. bundle.js:2:5750540
-Babylon.js v5.57.1 - WebGL2 bundle.js:2:5744838
-Initializing Babylon.js scene... bundle.js:2:4980475
-Hands or Community not ready bundle.js:2:4982479
- * Tone.js v15.0.4 * bundle.js:2:4800986
+ * Tone.js v15.0.4 * Global.js:72:12
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4763544
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:2:4732559
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4721540
- * Tone.js v15.0.4 * bundle.js:2:4800986
+ * Tone.js v15.0.4 * Global.js:72:12
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4763544
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:2:4732559
 An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4721540
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. bundle.js:2:5750540
-Babylon.js v5.57.1 - WebGL2 bundle.js:2:5744838
-Initializing Babylon.js scene... bundle.js:2:4980475
-Hands or Community not ready bundle.js:2:4982479
-Babylon.js v5.57.1 - WebGL2 bundle.js:2:5744838
-Initializing Babylon.js scene... bundle.js:2:4980475
-Hands or Community not ready bundle.js:2:4982479
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> bundle.js:2:4978405
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> bundle.js:2:4984455
-Old meshes removed bundle.js:2:4984809
+WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. bundle.js:2:5750520
+Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
+Initializing Babylon.js scene... PokerFrogs.js:284:24
+Hands or Community not ready PokerFrogs.js:330:20
+Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
+Initializing Babylon.js scene... PokerFrogs.js:284:24
+Hands or Community not ready PokerFrogs.js:330:20
+Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
+Initializing Babylon.js scene... PokerFrogs.js:284:24
+Hands or Community not ready PokerFrogs.js:330:20
+Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:120:20
+Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:428:20
+Old meshes removed PokerFrogs.js:456:20
 Error loading scene 1: TypeError: e is undefined
     bh https://tobie-rathbun.netlify.app/bundle.js:2
     e https://tobie-rathbun.netlify.app/bundle.js:2
@@ -32,48 +31,18 @@ Error loading scene 1: TypeError: e is undefined
     M https://tobie-rathbun.netlify.app/bundle.js:2
     Mh https://tobie-rathbun.netlify.app/bundle.js:2
     o https://tobie-rathbun.netlify.app/bundle.js:2
-bundle.js:2:4987438
-Scene state loaded. bundle.js:2:4980546
+PokerFrogs.js:588:20
+Scene state loaded. PokerFrogs.js:287:24
 Hands initialized: 
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-bundle.js:2:4977766
+PokerFrogs.js:78:16
 Community cards initialized: 
-Array(5) [ "6S", "JD", "7D", "0D", "KD" ]
-bundle.js:2:4977802
-Game initialized. bundle.js:2:4980604
-DebugPanel Received cardNames: 
-Array []
-bundle.js:2:4965787
-Hands state before cloning: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-bundle.js:2:4977862
-Community state before cloning: 
-Array(5) [ "6S", "JD", "7D", "0D", "KD" ]
-bundle.js:2:4977907
-Generated card names: 
-Array(15) [ "7C", "3D", "6C", "2C", "5D", "AC", "QS", "AD", "2S", "KC", … ]
-bundle.js:2:4978065
-Loading cards in scene configuration bundle.js:2:4981078
-Mesh: defaultGround bundle.js:2:4977007
-Position: {X: 0 Y: -2 Z: 0} bundle.js:2:4977044
-Rotation: {X: 0 Y: 0 Z: 0} bundle.js:2:4977089
-Scale: {X: 1 Y: 1 Z: 1} bundle.js:2:4977134
-Material: Name: groundMaterial bundle.js:2:4977175
-Hands state before cloning: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-bundle.js:2:4977862
-Community state before cloning: 
-Array(5) [ "6S", "JD", "7D", "0D", "KD" ]
-bundle.js:2:4977907
-Generated card names: 
-Array(15) [ "7C", "3D", "6C", "2C", "5D", "AC", "QS", "AD", "2S", "KC", … ]
-bundle.js:2:4978065
-Set card names: 
-Array(15) [ "7C", "3D", "6C", "2C", "5D", "AC", "QS", "AD", "2S", "KC", … ]
-bundle.js:2:4982358
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> bundle.js:2:4978405
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> bundle.js:2:4984455
-Old meshes removed bundle.js:2:4984809
+Array(5) [ "2S", "3C", "KC", "5S", "8D" ]
+PokerFrogs.js:79:16
+Game initialized. PokerFrogs.js:292:24
+Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:120:20
+Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:428:20
+Old meshes removed PokerFrogs.js:456:20
 Error loading scene 1: TypeError: e is undefined
     bh https://tobie-rathbun.netlify.app/bundle.js:2
     e https://tobie-rathbun.netlify.app/bundle.js:2
@@ -82,18 +51,18 @@ Error loading scene 1: TypeError: e is undefined
     M https://tobie-rathbun.netlify.app/bundle.js:2
     Mh https://tobie-rathbun.netlify.app/bundle.js:2
     o https://tobie-rathbun.netlify.app/bundle.js:2
-bundle.js:2:4987438
-Scene state loaded. bundle.js:2:4980546
+PokerFrogs.js:588:20
+Scene state loaded. PokerFrogs.js:287:24
 Hands initialized: 
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-bundle.js:2:4977766
+PokerFrogs.js:78:16
 Community cards initialized: 
-Array(5) [ "AS", "5D", "0C", "QD", "2H" ]
-bundle.js:2:4977802
-Game initialized. bundle.js:2:4980604
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> bundle.js:2:4978405
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> bundle.js:2:4984455
-Old meshes removed bundle.js:2:4984809
+Array(5) [ "AS", "3C", "KC", "6H", "7D" ]
+PokerFrogs.js:79:16
+Game initialized. PokerFrogs.js:292:24
+Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:120:20
+Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:428:20
+Old meshes removed PokerFrogs.js:456:20
 Error loading scene 1: TypeError: e is undefined
     bh https://tobie-rathbun.netlify.app/bundle.js:2
     e https://tobie-rathbun.netlify.app/bundle.js:2
@@ -102,84 +71,114 @@ Error loading scene 1: TypeError: e is undefined
     M https://tobie-rathbun.netlify.app/bundle.js:2
     Mh https://tobie-rathbun.netlify.app/bundle.js:2
     o https://tobie-rathbun.netlify.app/bundle.js:2
-bundle.js:2:4987438
-Scene state loaded. bundle.js:2:4980546
+PokerFrogs.js:588:20
+Scene state loaded. PokerFrogs.js:287:24
 Hands initialized: 
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-bundle.js:2:4977766
+PokerFrogs.js:78:16
 Community cards initialized: 
-Array(5) [ "JH", "8C", "2D", "6S", "AS" ]
-bundle.js:2:4977802
-Game initialized. bundle.js:2:4980604
-DebugPanel Received cardNames: 
-Array(15) [ "7C", "3D", "6C", "2C", "5D", "AC", "QS", "AD", "2S", "KC", … ]
-bundle.js:2:4965787
+Array(5) [ "5C", "KH", "5S", "4D", "8S" ]
+PokerFrogs.js:79:16
+Game initialized. PokerFrogs.js:292:24
 DebugPanel Received cardNames: 
 Array []
-bundle.js:2:4965787
+DebugPanel.js:56:16
 Hands state before cloning: 
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-bundle.js:2:4977862
+PokerFrogs.js:96:16
 Community state before cloning: 
-Array(5) [ "AS", "5D", "0C", "QD", "2H" ]
-bundle.js:2:4977907
+Array(5) [ "2S", "3C", "KC", "5S", "8D" ]
+PokerFrogs.js:97:16
 Generated card names: 
-Array(15) [ "6D", "7H", "3C", "3D", "2S", "3S", "8C", "AH", "6C", "4H", … ]
-bundle.js:2:4978065
-Loading cards in scene configuration bundle.js:2:4981078
-Mesh: defaultGround bundle.js:2:4977007
-Position: {X: 0 Y: -2 Z: 0} bundle.js:2:4977044
-Rotation: {X: 0 Y: 0 Z: 0} bundle.js:2:4977089
-Scale: {X: 1 Y: 1 Z: 1} bundle.js:2:4977134
-Material: Name: groundMaterial bundle.js:2:4977175
+Array(15) [ "QH", "9C", "KS", "KD", "JS", "6D", "7D", "8S", "3D", "5C", … ]
+PokerFrogs.js:109:16
+Loading cards in scene configuration PokerFrogs.js:135:20
+Mesh: defaultGround PokerFrogs.js:28:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: groundMaterial PokerFrogs.js:32:16
 Hands state before cloning: 
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-bundle.js:2:4977862
+PokerFrogs.js:96:16
 Community state before cloning: 
-Array(5) [ "AS", "5D", "0C", "QD", "2H" ]
-bundle.js:2:4977907
+Array(5) [ "2S", "3C", "KC", "5S", "8D" ]
+PokerFrogs.js:97:16
 Generated card names: 
-Array(15) [ "6D", "7H", "3C", "3D", "2S", "3S", "8C", "AH", "6C", "4H", … ]
-bundle.js:2:4978065
+Array(15) [ "QH", "9C", "KS", "KD", "JS", "6D", "7D", "8S", "3D", "5C", … ]
+PokerFrogs.js:109:16
 Set card names: 
-Array(15) [ "6D", "7H", "3C", "3D", "2S", "3S", "8C", "AH", "6C", "4H", … ]
-bundle.js:2:4982358
+Array(15) [ "QH", "9C", "KS", "KD", "JS", "6D", "7D", "8S", "3D", "5C", … ]
+PokerFrogs.js:325:24
+DebugPanel Received cardNames: 
+Array(15) [ "QH", "9C", "KS", "KD", "JS", "6D", "7D", "8S", "3D", "5C", … ]
+DebugPanel.js:56:16
 DebugPanel Received cardNames: 
 Array []
-bundle.js:2:4965787
+DebugPanel.js:56:16
 Hands state before cloning: 
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-bundle.js:2:4977862
+PokerFrogs.js:96:16
 Community state before cloning: 
-Array(5) [ "JH", "8C", "2D", "6S", "AS" ]
-bundle.js:2:4977907
+Array(5) [ "AS", "3C", "KC", "6H", "7D" ]
+PokerFrogs.js:97:16
 Generated card names: 
-Array(15) [ "KH", "AD", "QD", "KC", "9H", "JS", "0D", "0C", "4C", "9S", … ]
-bundle.js:2:4978065
-Loading cards in scene configuration bundle.js:2:4981078
-Mesh: defaultGround bundle.js:2:4977007
-Position: {X: 0 Y: -2 Z: 0} bundle.js:2:4977044
-Rotation: {X: 0 Y: 0 Z: 0} bundle.js:2:4977089
-Scale: {X: 1 Y: 1 Z: 1} bundle.js:2:4977134
-Material: Name: groundMaterial bundle.js:2:4977175
+Array(15) [ "QC", "JD", "4H", "5C", "5S", "7S", "4D", "4S", "AH", "KD", … ]
+PokerFrogs.js:109:16
+Loading cards in scene configuration PokerFrogs.js:135:20
+Mesh: defaultGround PokerFrogs.js:28:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: groundMaterial PokerFrogs.js:32:16
 Hands state before cloning: 
 Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-bundle.js:2:4977862
+PokerFrogs.js:96:16
 Community state before cloning: 
-Array(5) [ "JH", "8C", "2D", "6S", "AS" ]
-bundle.js:2:4977907
+Array(5) [ "AS", "3C", "KC", "6H", "7D" ]
+PokerFrogs.js:97:16
 Generated card names: 
-Array(15) [ "KH", "AD", "QD", "KC", "9H", "JS", "0D", "0C", "4C", "9S", … ]
-bundle.js:2:4978065
+Array(15) [ "QC", "JD", "4H", "5C", "5S", "7S", "4D", "4S", "AH", "KD", … ]
+PokerFrogs.js:109:16
 Set card names: 
-Array(15) [ "KH", "AD", "QD", "KC", "9H", "JS", "0D", "0C", "4C", "9S", … ]
-bundle.js:2:4982358
+Array(15) [ "QC", "JD", "4H", "5C", "5S", "7S", "4D", "4S", "AH", "KD", … ]
+PokerFrogs.js:325:24
 DebugPanel Received cardNames: 
-Array(15) [ "6D", "7H", "3C", "3D", "2S", "3S", "8C", "AH", "6C", "4H", … ]
-bundle.js:2:4965787
+Array(15) [ "QC", "JD", "4H", "5C", "5S", "7S", "4D", "4S", "AH", "KD", … ]
+DebugPanel.js:56:16
 DebugPanel Received cardNames: 
-Array(15) [ "KH", "AD", "QD", "KC", "9H", "JS", "0D", "0C", "4C", "9S", … ]
-bundle.js:2:4965787
+Array []
+DebugPanel.js:56:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:96:16
+Community state before cloning: 
+Array(5) [ "5C", "KH", "5S", "4D", "8S" ]
+PokerFrogs.js:97:16
+Generated card names: 
+Array(15) [ "KC", "7S", "AC", "0H", "0D", "JD", "8D", "QS", "0S", "8H", … ]
+PokerFrogs.js:109:16
+Loading cards in scene configuration PokerFrogs.js:135:20
+Mesh: defaultGround PokerFrogs.js:28:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: groundMaterial PokerFrogs.js:32:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:96:16
+Community state before cloning: 
+Array(5) [ "5C", "KH", "5S", "4D", "8S" ]
+PokerFrogs.js:97:16
+Generated card names: 
+Array(15) [ "KC", "7S", "AC", "0H", "0D", "JD", "8D", "QS", "0S", "8H", … ]
+PokerFrogs.js:109:16
+Set card names: 
+Array(15) [ "KC", "7S", "AC", "0H", "0D", "JD", "8D", "QS", "0S", "8H", … ]
+PokerFrogs.js:325:24
+DebugPanel Received cardNames: 
+Array(15) [ "KC", "7S", "AC", "0H", "0D", "JD", "8D", "QS", "0S", "8H", … ]
+DebugPanel.js:56:16
 Source map error: JSON.parse: unexpected character at line 1 column 1 of the JSON data
 Resource URL: null
 Source Map URL: installHook.js.map
