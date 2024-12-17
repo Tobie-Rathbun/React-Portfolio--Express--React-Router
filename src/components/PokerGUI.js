@@ -98,7 +98,7 @@ const PokerGUI = ({ sliderValue, setSliderValue, blind }) => {
                         <button className="gui-button" onClick={() => { /* fold logic */ }}>Fold</button>
                         <button className="gui-button" onClick={() => { /* check logic */ }}>Check</button>
                         <button className="gui-button" onClick={() => { /* call logic */ }}>Call</button>
-                        <button className="gui-button" onClick={() => { /* raise logic */ }}>Raise</button>
+                        <button className="gui-button" onClick={() => { /* next turn logic */ }}>Play</button>
                         <button className="gui-button" onClick={decreaseBet}>-</button>
                         <button className="gui-button" onClick={increaseBet}>+</button>
                     </div>

@@ -32,6 +32,15 @@ app.use((req, res, next) => {
     return next();
 });
 
+
+app.use('/images', express.static(path.join(__dirname, 'public/images'), {
+    setHeaders: (res, filePath) => {
+        if (filePath.endsWith('.png')) {
+            res.setHeader('Content-Type', 'image/png');
+        }
+    }
+}));
+
 app.use(express.static(path.join(__dirname, '/')));
 
 db.serialize(() => {

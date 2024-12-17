@@ -153,6 +153,9 @@ const PokerFrogs = () => {
         return `/images/${card}.png`;
     };    
 
+    
+
+
     const createCard = (card, scene, position, rotation, scale) => {
 
         if (!scene || typeof scene.getUniqueId !== 'function') {
@@ -160,7 +163,14 @@ const PokerFrogs = () => {
             return;
         }
 
-        console.log(`Creating card: ${card}`);
+        // console.log(`Creating card: ${card}`);
+        // if (card.name === "AD") {
+        //     const texturePath = `/images/AD.png?nocache=${Date.now()}`;
+        //         cardMaterial.diffuseTexture = new BABYLON.Texture(texturePath, scene
+        //     );
+        //     console.log("Applying texture path for AD:", texturePath);
+        // }
+        
 
         const cardMaterial = new BABYLON.StandardMaterial("cardMaterial", scene);
         cardMaterial.diffuseTexture = new BABYLON.Texture(getCardImage(card), scene);

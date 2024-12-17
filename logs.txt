@@ -1,187 +1,798 @@
- * Tone.js v15.0.4 * Global.js:72:12
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4763544
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:2:4732559
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4721540
- * Tone.js v15.0.4 * Global.js:72:12
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4763544
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:2:4732559
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4721540
- * Tone.js v15.0.4 * Global.js:72:12
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4763544
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:2:4732559
-An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:2:4721540
-WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. bundle.js:2:5750520
-Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
-Initializing Babylon.js scene... PokerFrogs.js:284:24
-Hands or Community not ready PokerFrogs.js:330:20
-Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
-Initializing Babylon.js scene... PokerFrogs.js:284:24
-Hands or Community not ready PokerFrogs.js:330:20
-Babylon.js v5.57.1 - WebGL2 thinEngine.js:603:16
-Initializing Babylon.js scene... PokerFrogs.js:284:24
-Hands or Community not ready PokerFrogs.js:330:20
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:120:20
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:428:20
-Old meshes removed PokerFrogs.js:456:20
-Error loading scene 1: TypeError: e is undefined
-    bh https://tobie-rathbun.netlify.app/bundle.js:2
-    e https://tobie-rathbun.netlify.app/bundle.js:2
-    u https://tobie-rathbun.netlify.app/bundle.js:2
-    T https://tobie-rathbun.netlify.app/bundle.js:2
-    M https://tobie-rathbun.netlify.app/bundle.js:2
-    Mh https://tobie-rathbun.netlify.app/bundle.js:2
-    o https://tobie-rathbun.netlify.app/bundle.js:2
-PokerFrogs.js:588:20
-Scene state loaded. PokerFrogs.js:287:24
-Hands initialized: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:78:16
-Community cards initialized: 
-Array(5) [ "2S", "3C", "KC", "5S", "8D" ]
-PokerFrogs.js:79:16
-Game initialized. PokerFrogs.js:292:24
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:120:20
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:428:20
-Old meshes removed PokerFrogs.js:456:20
-Error loading scene 1: TypeError: e is undefined
-    bh https://tobie-rathbun.netlify.app/bundle.js:2
-    e https://tobie-rathbun.netlify.app/bundle.js:2
-    u https://tobie-rathbun.netlify.app/bundle.js:2
-    T https://tobie-rathbun.netlify.app/bundle.js:2
-    M https://tobie-rathbun.netlify.app/bundle.js:2
-    Mh https://tobie-rathbun.netlify.app/bundle.js:2
-    o https://tobie-rathbun.netlify.app/bundle.js:2
-PokerFrogs.js:588:20
-Scene state loaded. PokerFrogs.js:287:24
-Hands initialized: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:78:16
-Community cards initialized: 
-Array(5) [ "AS", "3C", "KC", "6H", "7D" ]
-PokerFrogs.js:79:16
-Game initialized. PokerFrogs.js:292:24
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:120:20
-Loading scene configuration: <!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Tobie's Portfolio</title><link rel="icon" type="image/png" href="/img/favicon-android.png"><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="root"></div><script defer="defer" src="/bundle.js"></script></body></html> PokerFrogs.js:428:20
-Old meshes removed PokerFrogs.js:456:20
-Error loading scene 1: TypeError: e is undefined
-    bh https://tobie-rathbun.netlify.app/bundle.js:2
-    e https://tobie-rathbun.netlify.app/bundle.js:2
-    u https://tobie-rathbun.netlify.app/bundle.js:2
-    T https://tobie-rathbun.netlify.app/bundle.js:2
-    M https://tobie-rathbun.netlify.app/bundle.js:2
-    Mh https://tobie-rathbun.netlify.app/bundle.js:2
-    o https://tobie-rathbun.netlify.app/bundle.js:2
-PokerFrogs.js:588:20
-Scene state loaded. PokerFrogs.js:287:24
-Hands initialized: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:78:16
-Community cards initialized: 
-Array(5) [ "5C", "KH", "5S", "4D", "8S" ]
-PokerFrogs.js:79:16
-Game initialized. PokerFrogs.js:292:24
-DebugPanel Received cardNames: 
-Array []
-DebugPanel.js:56:16
-Hands state before cloning: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:96:16
-Community state before cloning: 
-Array(5) [ "2S", "3C", "KC", "5S", "8D" ]
-PokerFrogs.js:97:16
-Generated card names: 
-Array(15) [ "QH", "9C", "KS", "KD", "JS", "6D", "7D", "8S", "3D", "5C", … ]
-PokerFrogs.js:109:16
-Loading cards in scene configuration PokerFrogs.js:135:20
-Mesh: defaultGround PokerFrogs.js:28:16
-Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:29:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
-Material: Name: groundMaterial PokerFrogs.js:32:16
-Hands state before cloning: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:96:16
-Community state before cloning: 
-Array(5) [ "2S", "3C", "KC", "5S", "8D" ]
-PokerFrogs.js:97:16
-Generated card names: 
-Array(15) [ "QH", "9C", "KS", "KD", "JS", "6D", "7D", "8S", "3D", "5C", … ]
-PokerFrogs.js:109:16
-Set card names: 
-Array(15) [ "QH", "9C", "KS", "KD", "JS", "6D", "7D", "8S", "3D", "5C", … ]
-PokerFrogs.js:325:24
-DebugPanel Received cardNames: 
-Array(15) [ "QH", "9C", "KS", "KD", "JS", "6D", "7D", "8S", "3D", "5C", … ]
-DebugPanel.js:56:16
-DebugPanel Received cardNames: 
-Array []
-DebugPanel.js:56:16
-Hands state before cloning: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:96:16
-Community state before cloning: 
-Array(5) [ "AS", "3C", "KC", "6H", "7D" ]
-PokerFrogs.js:97:16
-Generated card names: 
-Array(15) [ "QC", "JD", "4H", "5C", "5S", "7S", "4D", "4S", "AH", "KD", … ]
-PokerFrogs.js:109:16
-Loading cards in scene configuration PokerFrogs.js:135:20
-Mesh: defaultGround PokerFrogs.js:28:16
-Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:29:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
-Material: Name: groundMaterial PokerFrogs.js:32:16
-Hands state before cloning: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:96:16
-Community state before cloning: 
-Array(5) [ "AS", "3C", "KC", "6H", "7D" ]
-PokerFrogs.js:97:16
-Generated card names: 
-Array(15) [ "QC", "JD", "4H", "5C", "5S", "7S", "4D", "4S", "AH", "KD", … ]
-PokerFrogs.js:109:16
-Set card names: 
-Array(15) [ "QC", "JD", "4H", "5C", "5S", "7S", "4D", "4S", "AH", "KD", … ]
-PokerFrogs.js:325:24
-DebugPanel Received cardNames: 
-Array(15) [ "QC", "JD", "4H", "5C", "5S", "7S", "4D", "4S", "AH", "KD", … ]
-DebugPanel.js:56:16
-DebugPanel Received cardNames: 
-Array []
-DebugPanel.js:56:16
-Hands state before cloning: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:96:16
-Community state before cloning: 
-Array(5) [ "5C", "KH", "5S", "4D", "8S" ]
-PokerFrogs.js:97:16
-Generated card names: 
-Array(15) [ "KC", "7S", "AC", "0H", "0D", "JD", "8D", "QS", "0S", "8H", … ]
-PokerFrogs.js:109:16
-Loading cards in scene configuration PokerFrogs.js:135:20
-Mesh: defaultGround PokerFrogs.js:28:16
-Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:29:16
-Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
-Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
-Material: Name: groundMaterial PokerFrogs.js:32:16
-Hands state before cloning: 
-Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
-PokerFrogs.js:96:16
-Community state before cloning: 
-Array(5) [ "5C", "KH", "5S", "4D", "8S" ]
-PokerFrogs.js:97:16
-Generated card names: 
-Array(15) [ "KC", "7S", "AC", "0H", "0D", "JD", "8D", "QS", "0S", "8H", … ]
-PokerFrogs.js:109:16
-Set card names: 
-Array(15) [ "KC", "7S", "AC", "0H", "0D", "JD", "8D", "QS", "0S", "8H", … ]
-PokerFrogs.js:325:24
-DebugPanel Received cardNames: 
-Array(15) [ "KC", "7S", "AC", "0H", "0D", "JD", "8D", "QS", "0S", "8H", … ]
-DebugPanel.js:56:16
-Source map error: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: installHook.js.map
-Source map error: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. bundle.js:212043:22
+[HMR] Waiting for update signal from WDS... bundle.js:213631:12
+ * Tone.js v15.0.4 * bundle.js:552071:13
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:191834:38
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:192150:36
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:193834:44
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. bundle.js:212043:22
+[HMR] Waiting for update signal from WDS... bundle.js:213631:12
+ * Tone.js v15.0.4 * bundle.js:552071:13
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:191834:38
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:192150:36
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:193834:44
+[webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. bundle.js:212043:22
+[HMR] Waiting for update signal from WDS... bundle.js:213631:12
+ * Tone.js v15.0.4 * bundle.js:552071:13
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:191834:38
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. 9 bundle.js:192150:36
+An AudioContext was prevented from starting automatically. It must be created or resumed after a user gesture on the page. bundle.js:193834:44
+WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. bundle.js:272489:39
+Babylon.js v5.57.1 - WebGL2 bundle.js:272306:17
+Initializing Babylon.js scene... bundle.js:141935:23
+Hands or Community not ready bundle.js:141988:15
+WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER. bundle.js:272489:39
+Babylon.js v5.57.1 - WebGL2 bundle.js:272306:17
+Initializing Babylon.js scene... bundle.js:141935:23
+Hands or Community not ready bundle.js:141988:15
+Babylon.js v5.57.1 - WebGL2 bundle.js:272306:17
+Initializing Babylon.js scene... bundle.js:141935:23
+Hands or Community not ready bundle.js:141988:15
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+bundle.js:141767:21
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+bundle.js:142106:21
+Old meshes removed bundle.js:142132:21
+DebugPanel Received cardNames: 
+Array []
+DebugPanel.js:56:16
+Hands or Community not ready. Skipping card data load. bundle.js:141972:17
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+bundle.js:141767:21
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+bundle.js:142106:21
+Old meshes removed bundle.js:142132:21
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+bundle.js:141767:21
+Loading scene configuration: 
+Object { camera: {…}, cows: (4) […], cards: (15) […] }
+bundle.js:142106:21
+Old meshes removed bundle.js:142132:21
+DebugPanel Received cardNames: 
+Array []
+DebugPanel.js:56:16
+Hands or Community not ready. Skipping card data load. bundle.js:141972:17
+DebugPanel Received cardNames: 
+Array []
+DebugPanel.js:56:16
+Hands or Community not ready. Skipping card data load. bundle.js:141972:17
+Source map error: request failed with status 404
 Resource URL: null
 Source Map URL: react_devtools_backend_compact.js.map
+Scene 1 loaded successfully. bundle.js:142283:21
+Scene state loaded. bundle.js:141939:23
+Hands initialized: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+bundle.js:141718:13
+Community cards initialized: 
+Array(5) [ "5S", "0C", "6C", "9D", "3S" ]
+bundle.js:141719:13
+Game initialized. bundle.js:141942:23
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:96:16
+Community state before cloning: 
+Array(5) [ "5S", "0C", "6C", "9D", "3S" ]
+PokerFrogs.js:97:16
+Generated card names: 
+Array(15) [ "3H", "5H", "8D", "4S", "9H", "AC", "KH", "3D", "KC", "6D", … ]
+PokerFrogs.js:109:16
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 3H bundle.js:141813:13
+card name to pass:  3H bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 5H bundle.js:141813:13
+card name to pass:  5H bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 8D bundle.js:141813:13
+card name to pass:  8D bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 4S bundle.js:141813:13
+card name to pass:  4S bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 9H bundle.js:141813:13
+card name to pass:  9H bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: AC bundle.js:141813:13
+card name to pass:  AC bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: KH bundle.js:141813:13
+card name to pass:  KH bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 3D bundle.js:141813:13
+card name to pass:  3D bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: KC bundle.js:141813:13
+card name to pass:  KC bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 6D bundle.js:141813:13
+card name to pass:  6D bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 5S bundle.js:141813:13
+card name to pass:  5S bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 0C bundle.js:141813:13
+card name to pass:  0C bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 6C bundle.js:141813:13
+card name to pass:  6C bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 9D bundle.js:141813:13
+card name to pass:  9D bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 3S bundle.js:141813:13
+card name to pass:  3S bundle.js:141805:13
+Mesh: Cow1 PokerFrogs.js:28:16
+Position: {X: -2.31 Y: 0 Z: 1.24} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.57 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: Cow2 PokerFrogs.js:28:16
+Position: {X: -0.1 Y: 0 Z: 2.73} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -0.15 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: Cow3 PokerFrogs.js:28:16
+Position: {X: 1.73 Y: 0 Z: 2.68} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0.15 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: Cow4 PokerFrogs.js:28:16
+Position: {X: 2.96 Y: 0 Z: 1.32} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 1.57 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: myGround PokerFrogs.js:28:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: groundMaterial PokerFrogs.js:32:16
+Mesh: 3H PokerFrogs.js:28:16
+Position: {X: -0.189 Y: 0 Z: -0.034} PokerFrogs.js:29:16
+Rotation: {X: 0.04 Y: -1.5201 Z: 3.1416} PokerFrogs.js:30:16
+Scale: {X: 1.0000001854183471 Y: 0.999999782712439 Z: 1.0000001183916423} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 5H PokerFrogs.js:28:16
+Position: {X: 0.106 Y: 0 Z: -0.05} PokerFrogs.js:29:16
+Rotation: {X: 0.0236 Y: -1.3562 Z: 3.1416} PokerFrogs.js:30:16
+Scale: {X: 1.000000173071773 Y: 1.000000134919915 Z: 1.0000003204145689} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 8D PokerFrogs.js:28:16
+Position: {X: -1.618 Y: 0 Z: 1.156} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -2.7738 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.9999999595323771 Y: 1 Z: 0.9999999595323771} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 4S PokerFrogs.js:28:16
+Position: {X: -1.55 Y: 0 Z: 1.549} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 3.1416 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 9H PokerFrogs.js:28:16
+Position: {X: -0.187 Y: 0 Z: 2.091} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.3146 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.000000012665419 Y: 1 Z: 1.000000012665419} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: AC PokerFrogs.js:28:16
+Position: {X: 0.142 Y: 0 Z: 2.104} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.9379 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.000000150683327 Y: 1 Z: 1.000000150683327} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: KH PokerFrogs.js:28:16
+Position: {X: 1.424 Y: 0 Z: 2.151} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 1.553 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000001742299018 Y: 1 Z: 1.0000001742299018} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 3D PokerFrogs.js:28:16
+Position: {X: 1.723 Y: 0 Z: 2.085} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.807 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.9999998488164599 Y: 1 Z: 0.9999998488164599} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: KC PokerFrogs.js:28:16
+Position: {X: 2.372 Y: 0 Z: 1.496} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 3.1416 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 6D PokerFrogs.js:28:16
+Position: {X: 2.35 Y: 0 Z: 1.161} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 3.1416 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 5S PokerFrogs.js:28:16
+Position: {X: -0.583 Y: 0.046 Z: 0.939} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 1.5887 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.000000268770012 Y: 1 Z: 1.000000268770012} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 0C PokerFrogs.js:28:16
+Position: {X: -0.222 Y: 0 Z: 1.009} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.5758 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.9999999701966147 Y: 1 Z: 0.9999999701966147} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 6C PokerFrogs.js:28:16
+Position: {X: 0.106 Y: 0 Z: 1.003} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.596 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000000298343323 Y: 1 Z: 1.0000000298343323} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 9D PokerFrogs.js:28:16
+Position: {X: 0.477 Y: 0 Z: 1} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.5841 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000000347703584 Y: 1 Z: 1.0000000347703584} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 3S PokerFrogs.js:28:16
+Position: {X: 0.837 Y: 0 Z: 1} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.5705 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000001706241837 Y: 1 Z: 1.0000001706241837} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:96:16
+Community state before cloning: 
+Array(5) [ "5S", "0C", "6C", "9D", "3S" ]
+PokerFrogs.js:97:16
+Generated card names: 
+Array(15) [ "3H", "5H", "8D", "4S", "9H", "AC", "KH", "3D", "KC", "6D", … ]
+PokerFrogs.js:109:16
+Set card names: 
+Array(15) [ "3H", "5H", "8D", "4S", "9H", "AC", "KH", "3D", "KC", "6D", … ]
+PokerFrogs.js:329:24
+DebugPanel Received cardNames: 
+Array(15) [ "3H", "5H", "8D", "4S", "9H", "AC", "KH", "3D", "KC", "6D", … ]
+DebugPanel.js:56:16
+Scene 1 loaded successfully. bundle.js:142283:21
+Scene state loaded. bundle.js:141939:23
+Hands initialized: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+bundle.js:141718:13
+Community cards initialized: 
+Array(5) [ "3D", "5C", "9H", "9C", "3S" ]
+bundle.js:141719:13
+Game initialized. bundle.js:141942:23
+Scene 1 loaded successfully. bundle.js:142283:21
+Scene state loaded. bundle.js:141939:23
+Hands initialized: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+bundle.js:141718:13
+Community cards initialized: 
+Array(5) [ "QS", "8S", "KD", "6D", "5S" ]
+bundle.js:141719:13
+Game initialized. bundle.js:141942:23
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:96:16
+Community state before cloning: 
+Array(5) [ "3D", "5C", "9H", "9C", "3S" ]
+PokerFrogs.js:97:16
+Generated card names: 
+Array(15) [ "2H", "KS", "0C", "KC", "4C", "5S", "KH", "5H", "2C", "JH", … ]
+PokerFrogs.js:109:16
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 2H bundle.js:141813:13
+card name to pass:  2H bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: KS bundle.js:141813:13
+card name to pass:  KS bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 0C bundle.js:141813:13
+card name to pass:  0C bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: KC bundle.js:141813:13
+card name to pass:  KC bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 4C bundle.js:141813:13
+card name to pass:  4C bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 5S bundle.js:141813:13
+card name to pass:  5S bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: KH bundle.js:141813:13
+card name to pass:  KH bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 5H bundle.js:141813:13
+card name to pass:  5H bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 2C bundle.js:141813:13
+card name to pass:  2C bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: JH bundle.js:141813:13
+card name to pass:  JH bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 3D bundle.js:141813:13
+card name to pass:  3D bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 5C bundle.js:141813:13
+card name to pass:  5C bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 9H bundle.js:141813:13
+card name to pass:  9H bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 9C bundle.js:141813:13
+card name to pass:  9C bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 3S bundle.js:141813:13
+card name to pass:  3S bundle.js:141805:13
+Mesh: Cow1 PokerFrogs.js:28:16
+Position: {X: -2.31 Y: 0 Z: 1.24} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.57 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: Cow2 PokerFrogs.js:28:16
+Position: {X: -0.1 Y: 0 Z: 2.73} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -0.15 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: Cow3 PokerFrogs.js:28:16
+Position: {X: 1.73 Y: 0 Z: 2.68} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0.15 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: Cow4 PokerFrogs.js:28:16
+Position: {X: 2.96 Y: 0 Z: 1.32} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 1.57 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: myGround PokerFrogs.js:28:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: groundMaterial PokerFrogs.js:32:16
+Mesh: 2H PokerFrogs.js:28:16
+Position: {X: -0.189 Y: 0 Z: -0.034} PokerFrogs.js:29:16
+Rotation: {X: 0.04 Y: -1.5201 Z: 3.1416} PokerFrogs.js:30:16
+Scale: {X: 1.0000001854183471 Y: 0.999999782712439 Z: 1.0000001183916423} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: KS PokerFrogs.js:28:16
+Position: {X: 0.106 Y: 0 Z: -0.05} PokerFrogs.js:29:16
+Rotation: {X: 0.0236 Y: -1.3562 Z: 3.1416} PokerFrogs.js:30:16
+Scale: {X: 1.000000173071773 Y: 1.000000134919915 Z: 1.0000003204145689} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 0C PokerFrogs.js:28:16
+Position: {X: -1.618 Y: 0 Z: 1.156} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -2.7738 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.9999999595323771 Y: 1 Z: 0.9999999595323771} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: KC PokerFrogs.js:28:16
+Position: {X: -1.55 Y: 0 Z: 1.549} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 3.1416 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 4C PokerFrogs.js:28:16
+Position: {X: -0.187 Y: 0 Z: 2.091} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.3146 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.000000012665419 Y: 1 Z: 1.000000012665419} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 5S PokerFrogs.js:28:16
+Position: {X: 0.142 Y: 0 Z: 2.104} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.9379 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.000000150683327 Y: 1 Z: 1.000000150683327} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: KH PokerFrogs.js:28:16
+Position: {X: 1.424 Y: 0 Z: 2.151} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 1.553 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000001742299018 Y: 1 Z: 1.0000001742299018} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 5H PokerFrogs.js:28:16
+Position: {X: 1.723 Y: 0 Z: 2.085} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.807 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.9999998488164599 Y: 1 Z: 0.9999998488164599} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 2C PokerFrogs.js:28:16
+Position: {X: 2.372 Y: 0 Z: 1.496} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 3.1416 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: JH PokerFrogs.js:28:16
+Position: {X: 2.35 Y: 0 Z: 1.161} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 3.1416 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 3D PokerFrogs.js:28:16
+Position: {X: -0.583 Y: 0.046 Z: 0.939} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 1.5887 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.000000268770012 Y: 1 Z: 1.000000268770012} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 5C PokerFrogs.js:28:16
+Position: {X: -0.222 Y: 0 Z: 1.009} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.5758 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.9999999701966147 Y: 1 Z: 0.9999999701966147} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 9H PokerFrogs.js:28:16
+Position: {X: 0.106 Y: 0 Z: 1.003} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.596 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000000298343323 Y: 1 Z: 1.0000000298343323} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 9C PokerFrogs.js:28:16
+Position: {X: 0.477 Y: 0 Z: 1} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.5841 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000000347703584 Y: 1 Z: 1.0000000347703584} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 3S PokerFrogs.js:28:16
+Position: {X: 0.837 Y: 0 Z: 1} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.5705 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000001706241837 Y: 1 Z: 1.0000001706241837} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:96:16
+Community state before cloning: 
+Array(5) [ "3D", "5C", "9H", "9C", "3S" ]
+PokerFrogs.js:97:16
+Generated card names: 
+Array(15) [ "2H", "KS", "0C", "KC", "4C", "5S", "KH", "5H", "2C", "JH", … ]
+PokerFrogs.js:109:16
+Set card names: 
+Array(15) [ "2H", "KS", "0C", "KC", "4C", "5S", "KH", "5H", "2C", "JH", … ]
+PokerFrogs.js:329:24
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:96:16
+Community state before cloning: 
+Array(5) [ "QS", "8S", "KD", "6D", "5S" ]
+PokerFrogs.js:97:16
+Generated card names: 
+Array(15) [ "4S", "AD", "3S", "AH", "9C", "7S", "0S", "4H", "JS", "9S", … ]
+PokerFrogs.js:109:16
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 4S bundle.js:141813:13
+card name to pass:  4S bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: AD bundle.js:141813:13
+card name to pass:  AD bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 3S bundle.js:141813:13
+card name to pass:  3S bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: AH bundle.js:141813:13
+card name to pass:  AH bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 9C bundle.js:141813:13
+card name to pass:  9C bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 7S bundle.js:141813:13
+card name to pass:  7S bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 0S bundle.js:141813:13
+card name to pass:  0S bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 4H bundle.js:141813:13
+card name to pass:  4H bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: JS bundle.js:141813:13
+card name to pass:  JS bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 9S bundle.js:141813:13
+card name to pass:  9S bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: QS bundle.js:141813:13
+card name to pass:  QS bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 8S bundle.js:141813:13
+card name to pass:  8S bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: KD bundle.js:141813:13
+card name to pass:  KD bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 6D bundle.js:141813:13
+card name to pass:  6D bundle.js:141805:13
+Scene before creating card: 
+Object { rootNodes: (22) […], cameras: (1) […], lights: (1) […], meshes: (24) […], skeletons: (4) […], particleSystems: [], animations: [], animationGroups: (20) […], multiMaterials: [], materials: (24) […], … }
+bundle.js:141796:17
+Is scene disposed: false bundle.js:141797:17
+Creating card: 5S bundle.js:141813:13
+card name to pass:  5S bundle.js:141805:13
+Mesh: Cow1 PokerFrogs.js:28:16
+Position: {X: -2.31 Y: 0 Z: 1.24} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.57 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: Cow2 PokerFrogs.js:28:16
+Position: {X: -0.1 Y: 0 Z: 2.73} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -0.15 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: Cow3 PokerFrogs.js:28:16
+Position: {X: 1.73 Y: 0 Z: 2.68} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0.15 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: Cow4 PokerFrogs.js:28:16
+Position: {X: 2.96 Y: 0 Z: 1.32} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 1.57 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.25 Y: 0.25 Z: 0.25} PokerFrogs.js:31:16
+Material: Name: cowMaterial PokerFrogs.js:32:16
+Mesh: cow PokerFrogs.js:28:16
+Position: {X: 0 Y: 0 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cowtexture PokerFrogs.js:32:16
+Mesh: myGround PokerFrogs.js:28:16
+Position: {X: 0 Y: -2 Z: 0} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 0 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: groundMaterial PokerFrogs.js:32:16
+Mesh: 4S PokerFrogs.js:28:16
+Position: {X: -0.189 Y: 0 Z: -0.034} PokerFrogs.js:29:16
+Rotation: {X: 0.04 Y: -1.5201 Z: 3.1416} PokerFrogs.js:30:16
+Scale: {X: 1.0000001854183471 Y: 0.999999782712439 Z: 1.0000001183916423} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: AD PokerFrogs.js:28:16
+Position: {X: 0.106 Y: 0 Z: -0.05} PokerFrogs.js:29:16
+Rotation: {X: 0.0236 Y: -1.3562 Z: 3.1416} PokerFrogs.js:30:16
+Scale: {X: 1.000000173071773 Y: 1.000000134919915 Z: 1.0000003204145689} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 3S PokerFrogs.js:28:16
+Position: {X: -1.618 Y: 0 Z: 1.156} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -2.7738 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.9999999595323771 Y: 1 Z: 0.9999999595323771} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: AH PokerFrogs.js:28:16
+Position: {X: -1.55 Y: 0 Z: 1.549} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 3.1416 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 9C PokerFrogs.js:28:16
+Position: {X: -0.187 Y: 0 Z: 2.091} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.3146 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.000000012665419 Y: 1 Z: 1.000000012665419} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 7S PokerFrogs.js:28:16
+Position: {X: 0.142 Y: 0 Z: 2.104} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.9379 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.000000150683327 Y: 1 Z: 1.000000150683327} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 0S PokerFrogs.js:28:16
+Position: {X: 1.424 Y: 0 Z: 2.151} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 1.553 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000001742299018 Y: 1 Z: 1.0000001742299018} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 4H PokerFrogs.js:28:16
+Position: {X: 1.723 Y: 0 Z: 2.085} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.807 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.9999998488164599 Y: 1 Z: 0.9999998488164599} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: JS PokerFrogs.js:28:16
+Position: {X: 2.372 Y: 0 Z: 1.496} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 3.1416 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 9S PokerFrogs.js:28:16
+Position: {X: 2.35 Y: 0 Z: 1.161} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 3.1416 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1 Y: 1 Z: 1} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: QS PokerFrogs.js:28:16
+Position: {X: -0.583 Y: 0.046 Z: 0.939} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: 1.5887 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.000000268770012 Y: 1 Z: 1.000000268770012} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 8S PokerFrogs.js:28:16
+Position: {X: -0.222 Y: 0 Z: 1.009} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.5758 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 0.9999999701966147 Y: 1 Z: 0.9999999701966147} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: KD PokerFrogs.js:28:16
+Position: {X: 0.106 Y: 0 Z: 1.003} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.596 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000000298343323 Y: 1 Z: 1.0000000298343323} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 6D PokerFrogs.js:28:16
+Position: {X: 0.477 Y: 0 Z: 1} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.5841 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000000347703584 Y: 1 Z: 1.0000000347703584} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Mesh: 5S PokerFrogs.js:28:16
+Position: {X: 0.837 Y: 0 Z: 1} PokerFrogs.js:29:16
+Rotation: {X: 0 Y: -1.5705 Z: 0} PokerFrogs.js:30:16
+Scale: {X: 1.0000001706241837 Y: 1 Z: 1.0000001706241837} PokerFrogs.js:31:16
+Material: Name: cardMaterial PokerFrogs.js:32:16
+Hands state before cloning: 
+Array(5) [ (2) […], (2) […], (2) […], (2) […], (2) […] ]
+PokerFrogs.js:96:16
+Community state before cloning: 
+Array(5) [ "QS", "8S", "KD", "6D", "5S" ]
+PokerFrogs.js:97:16
+Generated card names: 
+Array(15) [ "4S", "AD", "3S", "AH", "9C", "7S", "0S", "4H", "JS", "9S", … ]
+PokerFrogs.js:109:16
+Set card names: 
+Array(15) [ "4S", "AD", "3S", "AH", "9C", "7S", "0S", "4H", "JS", "9S", … ]
+PokerFrogs.js:329:24
+DebugPanel Received cardNames: 
+Array(15) [ "2H", "KS", "0C", "KC", "4C", "5S", "KH", "5H", "2C", "JH", … ]
+DebugPanel.js:56:16
+DebugPanel Received cardNames: 
+Array(15) [ "4S", "AD", "3S", "AH", "9C", "7S", "0S", "4H", "JS", "9S", … ]
+DebugPanel.js:56:16
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 16

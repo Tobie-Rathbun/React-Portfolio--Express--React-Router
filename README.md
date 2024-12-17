@@ -26,8 +26,8 @@ npm install redux react-redux
 ```
 ### Run it locally
 Open terminal in **project root directory**, run:
-<br> `**npm run dev:server**`
-<br> Navigate to **http://localhost:4242/**
+<br> `**npm run start**`
+<br> Your default browser will open the site at **http://localhost:4242/**
 
 
 
